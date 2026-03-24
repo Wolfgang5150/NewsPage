@@ -1,0 +1,20 @@
+[
+  {
+    "n": "WORLD",
+    "items": [
+      {"title": "Feed cache will populate after the GitHub Action runs.", "link": "https://wolfgang5150.github.io/NewsPage/"}
+    ]
+  },
+  {
+    "n": "TECH",
+    "items": [
+      {"title": "Open the Actions tab and run the Update Feeds workflow once.", "link": "https://github.com/Wolfgang5150/NewsPage/actions"}
+    ]
+  },
+  {
+    "n": "US_NEWS",
+    "items": [
+      {"title": "After that, the site will use same-origin feed data instead of live browser RSS fetches.", "link": "https://wolfgang5150.github.io/NewsPage/"}
+    ]
+  }
+]

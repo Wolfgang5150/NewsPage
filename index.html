@@ -41,7 +41,7 @@
  __________________________________________________________________________________________
 </div>
     <br>
-    <div class="corp-tag">============ A WEYLAND-YUTANI COMPANY ============</div>
+    <div class="corp-tag">============ A WEYLAND-YUTANI PARTNER ============</div>
 </div>
 
 <div id="output"></div>
@@ -56,17 +56,11 @@
         document.getElementById('sync-timer').innerHTML = "NEXT_SYNC: " + (m<10?"0":"")+m + ":" + (s<10?"0":"")+s;
     }, 1000);
 
-    var feeds = [
-        { n: "WORLD", u: "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en" },
-        { n: "TECH", u: "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVdlsU01OWhiazV1U0FpU0F3Z0FQAQ?hl=en-US&gl=US&ceid=US:en" },
-        { n: "US_NEWS", u: "https://news.google.com/rss/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTkhOMGNpUStBQVAB?hl=en-US&gl=US&ceid=US:en" }
-    ];
-
     var out = document.getElementById('output');
 
     function write(txt, el, callback) {
         var i = 0;
-        var text = txt || "";
+        var text = txt || '';
         var intv = setInterval(function() {
             el.innerHTML += text.charAt(i);
             i++;
@@ -78,86 +72,30 @@
         }, 12);
     }
 
-    function fetchWithTimeout(url, options, timeoutMs) {
-        var controller = new AbortController();
-        var timer = setTimeout(function() { controller.abort(); }, timeoutMs || 10000);
-        return fetch(url, Object.assign({}, options || {}, { signal: controller.signal }))
-            .finally(function() { clearTimeout(timer); });
-    }
-
-    function parseXmlItems(xmlText) {
-        var parser = new DOMParser();
-        var xml = parser.parseFromString(xmlText, "text/xml");
-        if (xml.querySelector('parsererror')) throw new Error('Invalid XML');
-
-        return Array.from(xml.querySelectorAll('item')).map(function(item) {
-            var titleNode = item.querySelector('title');
-            var linkNode = item.querySelector('link');
+    function normalizeFeeds(data) {
+        if (!Array.isArray(data)) return [];
+        return data.map(function(group) {
             return {
-                title: titleNode ? titleNode.textContent.trim() : '',
-                link: linkNode ? linkNode.textContent.trim() : ''
+                n: group.n || 'FEED',
+                items: Array.isArray(group.items) ? group.items : []
             };
-        }).filter(function(item) {
-            return item.title && item.link;
         });
     }
 
-    async function tryGoogleDirect(feedUrl) {
-        var response = await fetchWithTimeout(feedUrl, {}, 8000);
-        if (!response.ok) throw new Error('Direct fetch failed');
-        return parseXmlItems(await response.text());
+    function loadFeedData() {
+        return fetch('feeds.json?ts=' + Date.now(), { cache: 'no-store' })
+            .then(function(r) {
+                if (!r.ok) throw new Error('Feed data unavailable');
+                return r.json();
+            })
+            .then(normalizeFeeds);
     }
 
-    async function tryAllOriginsRaw(feedUrl) {
-        var response = await fetchWithTimeout('https://api.allorigins.win/raw?url=' + encodeURIComponent(feedUrl), {}, 10000);
-        if (!response.ok) throw new Error('AllOrigins raw failed');
-        return parseXmlItems(await response.text());
-    }
-
-    async function tryAllOriginsGet(feedUrl) {
-        var response = await fetchWithTimeout('https://api.allorigins.win/get?url=' + encodeURIComponent(feedUrl), {}, 10000);
-        if (!response.ok) throw new Error('AllOrigins get failed');
-        var data = await response.json();
-        if (!data || !data.contents) throw new Error('AllOrigins empty');
-        return parseXmlItems(data.contents);
-    }
-
-    async function tryRss2Json(feedUrl) {
-        var response = await fetchWithTimeout('https://api.rss2json.com/v1/api.json?count=8&rss_url=' + encodeURIComponent(feedUrl), {}, 10000);
-        if (!response.ok) throw new Error('rss2json failed');
-        var data = await response.json();
-        if (!data || data.status !== 'ok' || !Array.isArray(data.items)) throw new Error('rss2json invalid');
-        return data.items.map(function(item) {
-            return {
-                title: (item.title || '').trim(),
-                link: (item.link || '').trim()
-            };
-        }).filter(function(item) {
-            return item.title && item.link;
-        });
-    }
-
-    async function getFeedItems(feedUrl) {
-        var methods = [tryGoogleDirect, tryAllOriginsRaw, tryAllOriginsGet, tryRss2Json];
-        var lastError = null;
-
-        for (var i = 0; i < methods.length; i++) {
-            try {
-                var items = await methods[i](feedUrl);
-                if (items && items.length) return items;
-            } catch (err) {
-                lastError = err;
-            }
-        }
-
-        throw lastError || new Error('All feed methods failed');
-    }
-
-    function loadGroup(idx) {
+    function loadGroup(feeds, idx) {
         if (idx >= feeds.length) {
-            var f = document.createElement('div');
-            out.appendChild(f);
-            write("\n[SYSTEM STATUS: MONITORING ACTIVE]", f);
+            var f = document.createElement('div'); out.appendChild(f);
+            write("
+[SYSTEM STATUS: MONITORING ACTIVE]", f);
             return;
         }
 
@@ -166,46 +104,55 @@
         h.className = 'category-header';
         out.appendChild(h);
 
-        write("[SEC: " + group.n + "]", h, function() {
+        write('[SEC: ' + group.n + ']', h, function() {
             out.appendChild(document.createElement('br'));
 
-            setTimeout(function() {
-                getFeedItems(group.u)
-                    .then(function(items) {
-                        var itemIdx = 0;
-                        function showNext() {
-                            if (itemIdx >= 4 || itemIdx >= items.length) {
-                                loadGroup(idx + 1);
-                                return;
-                            }
+            var itemIdx = 0;
+            function showNext() {
+                if (itemIdx >= 4 || itemIdx >= group.items.length) {
+                    loadGroup(feeds, idx + 1);
+                    return;
+                }
 
-                            var title = items[itemIdx].title;
-                            var link = items[itemIdx].link;
-                            var div = document.createElement('div');
-                            div.className = 'feed-item';
-                            out.appendChild(div);
+                var item = group.items[itemIdx] || {};
+                var title = item.title || '[UNTITLED]';
+                var link = item.link || '#';
+                var div = document.createElement('div');
+                div.className = 'feed-item';
+                out.appendChild(div);
+                write('+ ' + title, div, function() {
+                    div.innerHTML = '<a href="' + link + '" target="_blank" rel="noopener noreferrer">+ ' + title + '</a>';
+                    itemIdx++;
+                    showNext();
+                });
+            }
 
-                            write('+ ' + title, div, function() {
-                                div.innerHTML = '<a href="' + link.replace(/"/g, '&quot;') + '" target="_blank" rel="noopener noreferrer">+ ' + title + '</a>';
-                                itemIdx++;
-                                showNext();
-                            });
-                        }
-                        showNext();
-                    })
-                    .catch(function() {
-                        var err = document.createElement('div');
-                        out.appendChild(err);
-                        write('> [SIGNAL_LOSS]', err, function() { loadGroup(idx + 1); });
-                    });
-            }, 750);
+            if (!group.items.length) {
+                var err = document.createElement('div'); out.appendChild(err);
+                write('> [NO DATA AVAILABLE]', err, function() { loadGroup(feeds, idx + 1); });
+                return;
+            }
+
+            showNext();
         });
     }
 
     var boot = document.createElement('div');
     out.appendChild(boot);
-    write('> [LOADER_v4.3] INITIALIZING...\n> ESTABLISHING SECURE COMM-LINK...\n', boot, function() {
-        loadGroup(0);
+    write('> [LOADER_v5.0] INITIALIZING...
+> ACCESSING LOCAL FEED CACHE...
+', boot, function() {
+        loadFeedData()
+            .then(function(feeds) {
+                if (!feeds.length) throw new Error('No feeds');
+                loadGroup(feeds, 0);
+            })
+            .catch(function() {
+                var err = document.createElement('div'); out.appendChild(err);
+                write('> [CACHE_UNAVAILABLE]
+> RUN GITHUB ACTION: UPDATE FEEDS
+', err);
+            });
     });
 </script>
 
