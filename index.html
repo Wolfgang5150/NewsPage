@@ -19,7 +19,7 @@
     }
 
     * { box-sizing: border-box; font-family: inherit; }
-    html, body { height: 100%; }
+    html, body { min-height: 100%; }
 
     @font-face {
       font-family: "PrintChar21";
@@ -44,7 +44,7 @@
         0 0 12px rgba(55,255,99,.95),
         0 0 26px rgba(55,255,99,.60),
         0 0 42px rgba(55,255,99,.30);
-      overflow: hidden;
+      overflow-x: hidden;
       position: relative;
       animation: crt-flicker 9s infinite steps(1);
     }
@@ -107,11 +107,6 @@
     .page {
       position: relative;
       z-index: 2;
-      height: calc(100vh - 88px);
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      min-height: 0;
     }
 
     .frame {
@@ -121,11 +116,11 @@
         inset 0 0 34px rgba(55,255,99,.24),
         0 0 20px rgba(55,255,99,.42),
         0 0 40px rgba(55,255,99,.20);
-      padding: 10px 14px 9px;
-      min-height: 0;
+      padding: 14px 22px 12px;
+      margin-bottom: 26px;
+      min-height: 180px;
       position: relative;
       overflow: hidden;
-      flex: 0 0 auto;
     }
 
     .frame::before {
@@ -138,34 +133,24 @@
     }
 
     .hero {
-      width: min(100%, 1600px);
+      max-width: 1320px;
       margin: 0 auto;
-      padding: 2px 0 0;
       text-align: center;
       position: relative;
       z-index: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
     }
 
     .hero-rule { display: none; }
 
     .ascii-title {
-      display: block;
-      width: 100%;
-      max-width: 100%;
+      display: inline-block;
       margin: 0 auto;
       padding: 0;
       text-align: center;
-      font-size: clamp(18px, 3.25vw, 35px);
-      line-height: 1.02;
-      letter-spacing: .045em;
-      white-space: pre-wrap;
-      overflow-wrap: anywhere;
-      word-break: break-word;
+      font-size: 35px;
+      line-height: 1;
+      letter-spacing: .06em;
+      white-space: pre;
       color: rgba(55,255,99,.98);
       text-shadow:
         0 0 4px rgba(55,255,99,.98),
@@ -178,50 +163,35 @@
       box-shadow: none;
     }
 
-    .ascii-title::before { content: none; }
+    .ascii-title::before {
+      content: none;
+    }
 
     .corp-tag {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: block;
       width: 100%;
-      min-height: 30px;
-      margin-top: 0;
-      padding: 5px 10px 4px;
+      margin-top: 12px;
+      padding: 6px 0;
       background:
         repeating-linear-gradient(to bottom, rgba(255,255,255,.16) 0 1px, rgba(0,0,0,.14) 1px 3px, rgba(16,58,20,.14) 3px 5px),
         rgba(55,255,99,.98);
       color: #061006;
       font-weight: 700;
       letter-spacing: .04em;
-      font-size: clamp(9px, 1.15vw, 12px);
-      line-height: 1.05;
-      text-align: center;
+      font-size: 12px;
       box-shadow: 0 0 20px rgba(55,255,99,.56), inset 0 0 12px rgba(255,255,255,.10);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: clip;
     }
 
-    .top-panel {
-      flex: 0 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      min-height: 0;
-    }
-
-    .status {
+    .status, .category, .feed-item {
       max-width: 1600px;
       position: relative;
       z-index: 2;
-      flex: 0 0 auto;
     }
 
     .status-line, .meta-line {
-      margin: 6px 0;
-      font-size: 8px;
-      line-height: 1.18;
+      margin: 8px 0;
+      font-size: 12px;
+      line-height: 1.22;
       text-shadow:
         0 0 2px rgba(55,255,99,1),
         0 0 14px rgba(55,255,99,.74),
@@ -241,38 +211,6 @@
     }
 
     .startup-meta { opacity: .34; }
-
-    .feed-shell {
-      flex: 1 1 auto;
-      min-height: 0;
-      overflow: hidden;
-      position: relative;
-      z-index: 2;
-      border-top: 1px solid rgba(55,255,99,.18);
-      padding-top: 10px;
-    }
-
-    .feed-scroll {
-      height: 100%;
-      overflow-y: auto;
-      overflow-x: hidden;
-      padding-right: 10px;
-      scrollbar-width: thin;
-      scrollbar-color: rgba(55,255,99,.5) rgba(0,0,0,.18);
-    }
-
-    .feed-scroll::-webkit-scrollbar {
-      width: 10px;
-    }
-
-    .feed-scroll::-webkit-scrollbar-track {
-      background: rgba(0,0,0,.18);
-    }
-
-    .feed-scroll::-webkit-scrollbar-thumb {
-      background: rgba(55,255,99,.45);
-      box-shadow: 0 0 10px rgba(55,255,99,.25);
-    }
 
     .category {
       display: inline-block;
@@ -313,10 +251,8 @@
       vertical-align: bottom;
       animation: blink .85s steps(1) infinite;
       box-shadow: 0 0 14px rgba(55,255,99,.62);
-      position: fixed;
-      left: 16px;
-      bottom: 16px;
-      z-index: 5;
+      position: relative;
+      z-index: 2;
     }
 
     #sync-timer {
@@ -351,21 +287,10 @@
 
     @media (max-width: 700px) {
       body { padding-inline: 10px; }
-      .page { height: calc(100vh - 84px); }
-      .frame { padding: 8px 10px 7px; min-height: 0; }
-      .hero { gap: 6px; }
-      .corp-tag {
-        min-height: 24px;
-        font-size: clamp(7px, 2.2vw, 11px);
-        padding-inline: 6px;
-      }
-      .ascii-title {
-        font-size: clamp(12px, 4.8vw, 22px);
-        letter-spacing: .03em;
-        padding-inline: 0;
-      }
-      .status-line, .meta-line { font-size: 7px; }
-      .category, .feed-item, #sync-timer { font-size: 14px; }
+      .frame { padding-inline: 10px; min-height: 250px; }
+      .corp-tag { font-size: 12px; padding-inline: 10px; }
+      .ascii-title { font-size: 15px; letter-spacing: .05em; padding-inline: 10px; }
+      .status-line, .meta-line, .category, .feed-item, #sync-timer { font-size: 14px; }
     }
   </style>
 </head>
@@ -374,24 +299,16 @@
   <div class="page">
     <div id="sync-timer">NEXT_SYNC: 04:00</div>
 
-    <div class="top-panel">
-      <section class="frame">
-        <div class="hero">
-          <div class="hero-rule"></div>
-          <pre class="ascii-title" data-glow="---### GLOBAL DIGITAL NETWORK ###---">---### GLOBAL DIGITAL NETWORK ###---</pre>
-          <div class="hero-rule"></div>
-          <div class="corp-tag">============ A WEYLAND-YUTANI COMPANY ============</div>
-        </div>
-      </section>
-
-      <main id="status-output" class="status"></main>
-    </div>
-
-    <section class="feed-shell">
-      <div id="feed-output" class="feed-scroll"></div>
+    <section class="frame">
+      <div class="hero">
+        <div class="hero-rule"></div>
+<pre class="ascii-title" data-glow="---### GLOBAL DIGITAL NETWORK ###---">---### GLOBAL DIGITAL NETWORK ###---</pre>
+        <div class="hero-rule"></div>
+        <div class="corp-tag">============ A WEYLAND-YUTANI COMPANY ============</div>
+      </div>
     </section>
 
-    <span class="cursor" aria-hidden="true"></span>
+    <main id="output" class="status"></main>
   </div>
 
   <script>
@@ -403,8 +320,7 @@
       const LINE_DELAY = 185;
       const STARTUP_LINE_DELAY = 650;
       const timerEl = document.getElementById('sync-timer');
-      const statusOutput = document.getElementById('status-output');
-      const feedOutput = document.getElementById('feed-output');
+      const output = document.getElementById('output');
       let timeLeft = REFRESH_SECONDS;
 
       function updateTimer() {
@@ -417,28 +333,34 @@
         return new Promise(resolve => setTimeout(resolve, ms));
       }
 
-      function autoScrollFeeds() {
-        feedOutput.scrollTo({
-          top: feedOutput.scrollHeight,
+      function autoScroll() {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight || document.body.scrollHeight,
           behavior: 'smooth'
         });
       }
 
       async function typeText(el, text, delay = TYPE_DELAY) {
         el.textContent = '';
+        const cursor = document.createElement('span');
+        cursor.className = 'cursor';
+        cursor.setAttribute('aria-hidden', 'true');
+        el.appendChild(cursor);
         for (const ch of text) {
-          el.textContent += ch;
+          cursor.insertAdjacentText('beforebegin', ch);
+          autoScrollFeeds();
           await sleep(delay);
         }
+        cursor.remove();
       }
 
       async function typeLine(text, className = 'status-line') {
         const el = document.createElement('div');
         el.className = className;
-        feedOutput.appendChild(el);
-        autoScrollFeeds();
+        output.appendChild(el);
+        autoScroll();
         await typeText(el, text);
-        autoScrollFeeds();
+        autoScroll();
         await sleep(LINE_DELAY);
         return el;
       }
@@ -446,8 +368,10 @@
       async function revealLine(text, className = 'startup-line', delay = STARTUP_LINE_DELAY) {
         const el = document.createElement('div');
         el.className = className;
-        statusOutput.appendChild(el);
+        output.appendChild(el);
+        autoScroll();
         el.textContent = text;
+        autoScroll();
         await sleep(delay);
         return el;
       }
@@ -455,10 +379,10 @@
       async function typeCategory(text) {
         const el = document.createElement('div');
         el.className = 'category';
-        feedOutput.appendChild(el);
-        autoScrollFeeds();
+        output.appendChild(el);
+        autoScroll();
         await typeText(el, text);
-        autoScrollFeeds();
+        autoScroll();
         await sleep(LINE_DELAY);
         return el;
       }
@@ -471,10 +395,10 @@
         a.target = '_blank';
         a.rel = 'noopener noreferrer';
         row.appendChild(a);
-        feedOutput.appendChild(row);
-        autoScrollFeeds();
+        output.appendChild(row);
+        autoScroll();
         await typeText(a, '+ ' + (item.title || 'UNTITLED REPORT'));
-        autoScrollFeeds();
+        autoScroll();
         await sleep(118);
         return row;
       }
@@ -487,8 +411,7 @@
       }
 
       async function render(data) {
-        statusOutput.innerHTML = '';
-        feedOutput.innerHTML = '';
+        output.innerHTML = '';
         await revealLine('...INITIALIZING PROTOCOL 5150/1984', 'status-line startup-line');
         await revealLine('...ESTABLISHING SECURE COMM-LINK', 'status-line startup-line');
         await revealLine('...UPLINK TARGET: ICE STATION ZEBRA', 'status-line startup-line');
@@ -513,8 +436,7 @@
       }
 
       async function fail(err) {
-        statusOutput.innerHTML = '';
-        feedOutput.innerHTML = '';
+        output.innerHTML = '';
         await revealLine('...INITIALIZING PROTOCOL 5150/1984', 'status-line startup-line');
         await revealLine('...ESTABLISHING SECURE COMM-LINK', 'status-line startup-line');
         await revealLine('...UPLINK TARGET: ICE STATION ZEBRA', 'status-line startup-line');
