@@ -3,51 +3,104 @@ name: Update feeds
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 * * * *"
+    - cron: '17 * * * *'
 
 permissions:
   contents: write
 
 jobs:
-  update:
+  update-feeds:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Fetch RSS feeds and build feeds.json
+      - name: Build feeds.json from RSS
         run: |
-          python - <<'PY'
+          python <<'PY'
           import json
-          import xml.etree.ElementTree as ET
           import urllib.request
+          import urllib.parse
+          import xml.etree.ElementTree as ET
+          from email.utils import parsedate_to_datetime
+          from datetime import datetime, timezone
 
-          feeds = {
-              "WY-1": "https://news.google.com/rss/search?q=world+news&hl=en-US&gl=US&ceid=US:en",
-              "WY-2": "https://news.google.com/rss/search?q=technology&hl=en-US&gl=US&ceid=US:en",
-              "WY-3": "https://news.google.com/rss/search?q=science&hl=en-US&gl=US&ceid=US:en",
-              "WY-4": "https://news.google.com/rss/search?q=finance&hl=en-US&gl=US&ceid=US:en"
+          FEEDS = [
+              (
+                  'WORLD',
+                  'https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en'
+              ),
+              (
+                  'TECH',
+                  'https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVdlsU01OWhiazV1U0FpU0F3Z0FQAQ?hl=en-US&gl=US&ceid=US:en'
+              ),
+              (
+                  'US_NEWS',
+                  'https://news.google.com/rss/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTkhOMGNpUStBQVAB?hl=en-US&gl=US&ceid=US:en'
+              )
+          ]
+
+          HEADERS = {
+              'User-Agent': 'Mozilla/5.0 (compatible; NewsPageBot/1.0; +https://github.com/)'
           }
 
-          output = {}
+          def clean_google_link(link: str) -> str:
+              if not link:
+                  return '#'
+              if 'news.google.com/rss/articles/' not in link:
+                  return link
+              parsed = urllib.parse.urlparse(link)
+              query = urllib.parse.parse_qs(parsed.query)
+              if 'url' in query and query['url']:
+                  return query['url'][0]
+              return link
 
-          for key, url in feeds.items():
+          def parse_items(xml_bytes: bytes):
+              root = ET.fromstring(xml_bytes)
+              items = root.findall('./channel/item')
+              results = []
+              for item in items[:8]:
+                  title = (item.findtext('title') or '').strip()
+                  link = clean_google_link((item.findtext('link') or '').strip())
+                  pub_date = (item.findtext('pubDate') or '').strip()
+                  iso_date = ''
+                  if pub_date:
+                      try:
+                          iso_date = parsedate_to_datetime(pub_date).astimezone(timezone.utc).isoformat().replace('+00:00', 'Z')
+                      except Exception:
+                          iso_date = ''
+                  if title:
+                      results.append({
+                          'title': title,
+                          'link': link,
+                          'published_at': iso_date
+                      })
+              return results
+
+          categories = []
+          for name, url in FEEDS:
               try:
-                  with urllib.request.urlopen(url, timeout=20) as r:
-                      xml_data = r.read()
-                  root = ET.fromstring(xml_data)
-                  items = []
-                  for item in root.findall("./channel/item")[:10]:
-                      title = item.findtext("title", "").strip()
-                      if title:
-                          items.append(title)
-                  output[key] = items
-              except Exception as e:
-                  output[key] = [f"[SIGNAL LOSS] {e}"]
+                  request = urllib.request.Request(url, headers=HEADERS)
+                  with urllib.request.urlopen(request, timeout=30) as response:
+                      xml_bytes = response.read()
+                  items = parse_items(xml_bytes)
+                  if not items:
+                      items = [{'title': 'NO HEADLINES RETURNED', 'link': '#', 'published_at': ''}]
+              except Exception as exc:
+                  items = [{'title': f'SIGNAL LOSS: {exc}', 'link': '#', 'published_at': ''}]
+              categories.append({
+                  'name': name,
+                  'items': items
+              })
 
-          with open("feeds.json", "w", encoding="utf-8") as f:
-              json.dump(output, f, indent=2, ensure_ascii=False)
+          payload = {
+              'generated_at': datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
+              'categories': categories
+          }
+
+          with open('feeds.json', 'w', encoding='utf-8') as fh:
+              json.dump(payload, fh, indent=2, ensure_ascii=False)
+              fh.write('\n')
           PY
 
       - name: Commit updated feeds.json
@@ -55,5 +108,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add feeds.json
-          git diff --cached --quiet || git commit -m "Update feeds.json"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update feeds.json"
+            git push
+          fi
