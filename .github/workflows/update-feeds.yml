@@ -27,23 +27,24 @@ jobs:
           from email.utils import parsedate_to_datetime
 
           FEEDS = [
-              (
-                  'WORLD',
-                  'https://news.google.com/rss/search?q=' + urllib.parse.quote('world news') + '&hl=en-US&gl=US&ceid=US:en'
-              ),
-              (
-                  'TECH',
-                  'https://news.google.com/rss/search?q=' + urllib.parse.quote('technology news') + '&hl=en-US&gl=US&ceid=US:en'
-              ),
-              (
-                  'US_NEWS',
-                  'https://news.google.com/rss/search?q=' + urllib.parse.quote('united states news') + '&hl=en-US&gl=US&ceid=US:en'
-              )
+              ('WORLD', 'world news'),
+              ('TECH', 'technology news'),
+              ('US_NEWS', 'united states news'),
+              ('GAMES', 'video game news'),
+              ('MUSIC', 'music news'),
+              ('STRANGE_NEWS', 'odd news OR strange news OR weird news')
           ]
 
           HEADERS = {
               'User-Agent': 'Mozilla/5.0 (compatible; NewsPageBot/1.0; +https://github.com/)'
           }
+
+          def build_url(query: str) -> str:
+              return (
+                  'https://news.google.com/rss/search?q='
+                  + urllib.parse.quote(query)
+                  + '&hl=en-US&gl=US&ceid=US:en'
+              )
 
           def clean_google_link(link: str) -> str:
               if not link:
@@ -58,7 +59,7 @@ jobs:
               root = ET.fromstring(xml_bytes)
               items = root.findall('./channel/item')
               results = []
-              for item in items[:8]:
+              for item in items[:10]:
                   title = (item.findtext('title') or '').strip()
                   link = clean_google_link((item.findtext('link') or '').strip())
                   pub_date = (item.findtext('pubDate') or '').strip()
@@ -77,7 +78,8 @@ jobs:
               return results
 
           categories = []
-          for name, url in FEEDS:
+          for name, query in FEEDS:
+              url = build_url(query)
               try:
                   request = urllib.request.Request(url, headers=HEADERS)
                   with urllib.request.urlopen(request, timeout=30) as response:
