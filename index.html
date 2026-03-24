@@ -116,9 +116,9 @@
         inset 0 0 34px rgba(55,255,99,.24),
         0 0 20px rgba(55,255,99,.42),
         0 0 40px rgba(55,255,99,.20);
-      padding: 14px 22px 12px;
+      padding: 10px 14px 9px;
       margin-bottom: 26px;
-      min-height: 180px;
+      min-height: 0;
       position: relative;
       overflow: hidden;
     }
@@ -133,24 +133,34 @@
     }
 
     .hero {
-      max-width: 1320px;
+      width: min(100%, 1600px);
       margin: 0 auto;
+      padding: 2px 0 0;
       text-align: center;
       position: relative;
       z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
     }
 
     .hero-rule { display: none; }
 
     .ascii-title {
-      display: inline-block;
+      display: block;
+      width: 100%;
+      max-width: 100%;
       margin: 0 auto;
       padding: 0;
       text-align: center;
-      font-size: 35px;
-      line-height: 1;
-      letter-spacing: .06em;
-      white-space: pre;
+      font-size: clamp(18px, 3.25vw, 35px);
+      line-height: 1.02;
+      letter-spacing: .045em;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      word-break: break-word;
       color: rgba(55,255,99,.98);
       text-shadow:
         0 0 4px rgba(55,255,99,.98),
@@ -168,18 +178,26 @@
     }
 
     .corp-tag {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100%;
-      margin-top: 12px;
-      padding: 6px 0;
+      min-height: 30px;
+      margin-top: 0;
+      padding: 5px 10px 4px;
       background:
         repeating-linear-gradient(to bottom, rgba(255,255,255,.16) 0 1px, rgba(0,0,0,.14) 1px 3px, rgba(16,58,20,.14) 3px 5px),
         rgba(55,255,99,.98);
       color: #061006;
       font-weight: 700;
       letter-spacing: .04em;
-      font-size: 12px;
+      font-size: clamp(9px, 1.15vw, 12px);
+      line-height: 1.05;
+      text-align: center;
       box-shadow: 0 0 20px rgba(55,255,99,.56), inset 0 0 12px rgba(255,255,255,.10);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: clip;
     }
 
     .status, .category, .feed-item {
@@ -287,9 +305,18 @@
 
     @media (max-width: 700px) {
       body { padding-inline: 10px; }
-      .frame { padding-inline: 10px; min-height: 250px; }
-      .corp-tag { font-size: 12px; padding-inline: 10px; }
-      .ascii-title { font-size: 15px; letter-spacing: .05em; padding-inline: 10px; }
+      .frame { padding: 8px 10px 7px; min-height: 0; }
+      .hero { gap: 6px; }
+      .corp-tag {
+        min-height: 24px;
+        font-size: clamp(7px, 2.2vw, 11px);
+        padding-inline: 6px;
+      }
+      .ascii-title {
+        font-size: clamp(12px, 4.8vw, 22px);
+        letter-spacing: .03em;
+        padding-inline: 0;
+      }
       .status-line, .meta-line, .category, .feed-item, #sync-timer { font-size: 14px; }
     }
   </style>
