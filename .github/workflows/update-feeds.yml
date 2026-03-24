@@ -16,27 +16,28 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build feeds.json from RSS
+        shell: bash
         run: |
           python <<'PY'
           import json
-          import urllib.request
           import urllib.parse
+          import urllib.request
           import xml.etree.ElementTree as ET
-          from email.utils import parsedate_to_datetime
           from datetime import datetime, timezone
+          from email.utils import parsedate_to_datetime
 
           FEEDS = [
               (
                   'WORLD',
-                  'https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en'
+                  'https://news.google.com/rss/search?q=' + urllib.parse.quote('world news') + '&hl=en-US&gl=US&ceid=US:en'
               ),
               (
                   'TECH',
-                  'https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVdlsU01OWhiazV1U0FpU0F3Z0FQAQ?hl=en-US&gl=US&ceid=US:en'
+                  'https://news.google.com/rss/search?q=' + urllib.parse.quote('technology news') + '&hl=en-US&gl=US&ceid=US:en'
               ),
               (
                   'US_NEWS',
-                  'https://news.google.com/rss/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTkhOMGNpUStBQVAB?hl=en-US&gl=US&ceid=US:en'
+                  'https://news.google.com/rss/search?q=' + urllib.parse.quote('united states news') + '&hl=en-US&gl=US&ceid=US:en'
               )
           ]
 
@@ -47,8 +48,6 @@ jobs:
           def clean_google_link(link: str) -> str:
               if not link:
                   return '#'
-              if 'news.google.com/rss/articles/' not in link:
-                  return link
               parsed = urllib.parse.urlparse(link)
               query = urllib.parse.parse_qs(parsed.query)
               if 'url' in query and query['url']:
@@ -88,10 +87,7 @@ jobs:
                       items = [{'title': 'NO HEADLINES RETURNED', 'link': '#', 'published_at': ''}]
               except Exception as exc:
                   items = [{'title': f'SIGNAL LOSS: {exc}', 'link': '#', 'published_at': ''}]
-              categories.append({
-                  'name': name,
-                  'items': items
-              })
+              categories.append({'name': name, 'items': items})
 
           payload = {
               'generated_at': datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
@@ -104,13 +100,14 @@ jobs:
           PY
 
       - name: Commit updated feeds.json
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add feeds.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
-          else
-            git commit -m "Update feeds.json"
-            git push
+            exit 0
           fi
+          git commit -m "Update feeds.json"
+          git push
