@@ -1,0 +1,59 @@
+name: Update feeds
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Fetch RSS feeds and build feeds.json
+        run: |
+          python - <<'PY'
+          import json
+          import xml.etree.ElementTree as ET
+          import urllib.request
+
+          feeds = {
+              "WY-1": "https://news.google.com/rss/search?q=world+news&hl=en-US&gl=US&ceid=US:en",
+              "WY-2": "https://news.google.com/rss/search?q=technology&hl=en-US&gl=US&ceid=US:en",
+              "WY-3": "https://news.google.com/rss/search?q=science&hl=en-US&gl=US&ceid=US:en",
+              "WY-4": "https://news.google.com/rss/search?q=finance&hl=en-US&gl=US&ceid=US:en"
+          }
+
+          output = {}
+
+          for key, url in feeds.items():
+              try:
+                  with urllib.request.urlopen(url, timeout=20) as r:
+                      xml_data = r.read()
+                  root = ET.fromstring(xml_data)
+                  items = []
+                  for item in root.findall("./channel/item")[:10]:
+                      title = item.findtext("title", "").strip()
+                      if title:
+                          items.append(title)
+                  output[key] = items
+              except Exception as e:
+                  output[key] = [f"[SIGNAL LOSS] {e}"]
+
+          with open("feeds.json", "w", encoding="utf-8") as f:
+              json.dump(output, f, indent=2, ensure_ascii=False)
+          PY
+
+      - name: Commit updated feeds.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feeds.json
+          git diff --cached --quiet || git commit -m "Update feeds.json"
+          git push
