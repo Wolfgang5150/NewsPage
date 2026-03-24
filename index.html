@@ -31,7 +31,7 @@
 
     body {
       margin: 0;
-      padding: 16px 16px 72px;
+      padding: 16px;
       color: var(--green);
       font-family: "PrintChar21", "Courier New", Courier, monospace;
       text-transform: uppercase;
@@ -107,7 +107,7 @@
     .page {
       position: relative;
       z-index: 2;
-      height: calc(100vh - 88px);
+      height: calc(100vh - 32px);
       display: flex;
       flex-direction: column;
       gap: 14px;
@@ -250,6 +250,35 @@
       z-index: 2;
       border-top: 1px solid rgba(55,255,99,.18);
       padding-top: 10px;
+      padding-bottom: 0;
+    }
+
+    .bottom-panel {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 214px;
+      border-top: 1px solid rgba(55,255,99,.18);
+      padding-top: 12px;
+      margin-top: 2px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .bottom-left {
+      display: flex;
+      align-items: flex-end;
+      gap: 14px;
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+
+    .bottom-right {
+      display: flex;
+      align-items: flex-end;
+      flex: 0 0 auto;
     }
 
     .feed-scroll {
@@ -313,16 +342,16 @@
       vertical-align: bottom;
       animation: blink .85s steps(1) infinite;
       box-shadow: 0 0 14px rgba(55,255,99,.62);
-      position: fixed;
-      left: 16px;
-      bottom: 16px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
       z-index: 5;
     }
 
     #sync-timer {
-      position: fixed;
-      right: 16px;
-      bottom: 16px;
+      position: relative;
+      right: auto;
+      bottom: auto;
       background:
         repeating-linear-gradient(to bottom, rgba(255,255,255,.16) 0 1px, rgba(0,0,0,.14) 1px 3px, rgba(16,58,20,.14) 3px 5px),
         rgba(55,255,99,.98);
@@ -332,19 +361,21 @@
       font-weight: 700;
       z-index: 5;
       box-shadow: 0 0 20px rgba(55,255,99,.56), inset 0 0 12px rgba(255,255,255,.10);
+      align-self: flex-end;
     }
 
 
     .qr-callout {
-      position: fixed;
-      left: 16px;
-      bottom: 16px;
+      position: relative;
+      left: auto;
+      bottom: auto;
       z-index: 5;
       display: flex;
       align-items: flex-end;
       gap: 14px;
       max-width: min(52vw, 760px);
       pointer-events: none;
+      flex: 1 1 auto;
     }
 
     .qr-callout img {
@@ -399,7 +430,7 @@
 
     @media (max-width: 700px) {
       body { padding-inline: 10px; }
-      .page { height: calc(100vh - 84px); }
+      .page { height: calc(100vh - 20px); }
       .frame { padding: 8px 10px 7px; min-height: 0; }
       .hero { gap: 6px; }
       .corp-tag {
@@ -414,6 +445,14 @@
       }
       .status-line, .meta-line { font-size: 7px; }
       .category, .feed-item, #sync-timer { font-size: 14px; }
+      .bottom-panel {
+        min-height: 146px;
+        gap: 10px;
+        padding-top: 10px;
+      }
+      .bottom-left {
+        gap: 8px;
+      }
       .qr-callout {
         gap: 8px;
         max-width: 64vw;
@@ -433,8 +472,6 @@
 <body>
   <div class="screen-noise" aria-hidden="true"></div>
   <div class="page">
-    <div id="sync-timer">NEXT_SYNC: 04:00</div>
-
     <div class="top-panel">
       <section class="frame">
         <div class="hero">
@@ -452,16 +489,21 @@
       <div id="feed-output" class="feed-scroll"></div>
     </section>
 
-
-    <div class="qr-callout" aria-label="Global Digital Network mobile access">
-      <img src="./GREEN_SCREEN_QR.png" alt="QR code linking to Global Digital Network Mobile">
-      <div class="qr-copy">
-        <div class="line-1">JOIN US ON YOUR OWN DEVICE</div>
-        <div class="line-2">GLOBAL DIGITAL NETWORK MOBILE</div>
+    <section class="bottom-panel" aria-label="Mobile access and sync status">
+      <div class="bottom-left">
+        <div class="qr-callout" aria-label="Global Digital Network mobile access">
+          <img src="./GREEN_SCREEN_QR.png" alt="QR code linking to Global Digital Network Mobile">
+          <div class="qr-copy">
+            <div class="line-1">JOIN US ON YOUR OWN DEVICE</div>
+            <div class="line-2">GLOBAL DIGITAL NETWORK MOBILE</div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <span class="cursor" aria-hidden="true"></span>
+      <div class="bottom-right">
+        <div id="sync-timer">NEXT_SYNC: 04:00</div>
+      </div>
+      <span class="cursor" aria-hidden="true"></span>
+    </section>
   </div>
 
   <script>
