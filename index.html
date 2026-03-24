@@ -41,7 +41,7 @@
  __________________________________________________________________________________________
 </div>
     <br>
-    <div class="corp-tag">============ A WEYLAND-YUTANI JSON 1 ============</div>
+    <div class="corp-tag">============ A WEYLAND-YUTANI PARTNER ============</div>
 </div>
 
 <div id="output"></div>
@@ -53,7 +53,7 @@
         timeLeft--;
         if (timeLeft < 0) { window.location.reload(); }
         var m = Math.floor(timeLeft / 60), s = timeLeft % 60;
-        document.getElementById('sync-timer').innerHTML = "NEXT_SYNC: " + (m<10?"0":"")+m + ":" + (s<10?"0":"")+s;
+        document.getElementById('sync-timer').innerHTML = "NEXT_SYNC: " + (m<10?"0":"") + m + ":" + (s<10?"0":"") + s;
     }, 1000);
 
     var out = document.getElementById('output');
@@ -93,9 +93,10 @@
 
     function loadGroup(feeds, idx) {
         if (idx >= feeds.length) {
-            var f = document.createElement('div'); out.appendChild(f);
-            write("
-[SYSTEM STATUS: MONITORING ACTIVE]", f);
+            var f = document.createElement('div');
+            out.appendChild(f);
+            write('
+[SYSTEM STATUS: MONITORING ACTIVE]', f);
             return;
         }
 
@@ -128,7 +129,8 @@
             }
 
             if (!group.items.length) {
-                var err = document.createElement('div'); out.appendChild(err);
+                var err = document.createElement('div');
+                out.appendChild(err);
                 write('> [NO DATA AVAILABLE]', err, function() { loadGroup(feeds, idx + 1); });
                 return;
             }
@@ -148,7 +150,8 @@
                 loadGroup(feeds, 0);
             })
             .catch(function() {
-                var err = document.createElement('div'); out.appendChild(err);
+                var err = document.createElement('div');
+                out.appendChild(err);
                 write('> [CACHE_UNAVAILABLE]
 > RUN GITHUB ACTION: UPDATE FEEDS
 ', err);
