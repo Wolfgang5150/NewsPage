@@ -4,143 +4,256 @@
   <meta charset="UTF-8">
   <meta http-equiv="refresh" content="240">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>W/Y_TERMINAL_v14</title>
+  <title>GLOBAL NEWS NETWORK</title>
   <style>
+    :root {
+      --bg: #040904;
+      --green: #22ff44;
+      --green-dim: #0f5f1e;
+      --panel: rgba(0, 22, 0, 0.32);
+    }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; }
     body {
-      background-color: #050a05;
-      color: #33ff33;
-      font-family: 'Courier New', Courier, monospace;
       margin: 0;
-      padding: 20px;
+      padding: 16px 16px 72px;
+      background:
+        radial-gradient(circle at center, rgba(0,40,0,.18), transparent 45%),
+        repeating-linear-gradient(to bottom, rgba(255,255,255,.025) 0 1px, transparent 1px 4px),
+        var(--bg);
+      color: var(--green);
+      font-family: "Courier New", Courier, monospace;
       text-transform: uppercase;
-      text-shadow: 0 0 5px #33ff33;
+      text-shadow: 0 0 4px rgba(34,255,68,.85), 0 0 12px rgba(34,255,68,.28);
       overflow-x: hidden;
     }
-    body::before {
-      content: " ";
-      display: block;
+    body::after {
+      content: "";
       position: fixed;
       inset: 0;
-      background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.1) 50%);
-      z-index: 1000;
-      background-size: 100% 3px;
       pointer-events: none;
+      background: linear-gradient(to bottom, rgba(0,0,0,.06), rgba(0,0,0,0), rgba(0,0,0,.08));
+      mix-blend-mode: multiply;
     }
-    .hero-container {
-      border: 2px solid #33ff33;
-      padding: 20px;
+    .frame {
+      border: 2px solid var(--green);
+      background: var(--panel);
+      padding: 22px 20px 20px;
+      margin-bottom: 26px;
+      min-height: 320px;
+    }
+    .hero {
+      max-width: 980px;
+      margin: 0 auto;
       text-align: center;
-      margin-bottom: 30px;
-      background: rgba(0,20,0,0.4);
+    }
+    .hero-rule {
+      height: 2px;
+      width: 64%;
+      margin: 8px auto;
+      background: linear-gradient(to right, transparent, var(--green), transparent);
+      box-shadow: 0 0 10px rgba(34,255,68,.45);
     }
     .hero-title {
-      font-size: 10px;
-      line-height: 1.1;
-      white-space: pre;
-      display: inline-block;
+      margin: 10px 0 0;
+      line-height: .92;
+      letter-spacing: .08em;
+      font-weight: 700;
+      text-align: center;
+    }
+    .hero-title .line {
+      display: block;
+      font-size: clamp(54px, 8.6vw, 94px);
+      text-align: center;
+      white-space: nowrap;
+    }
+    .hero-title .line.small {
+      font-size: clamp(48px, 7.2vw, 82px);
+      margin-top: .06em;
+    }
+    .hero-title .outlined {
+      color: transparent;
+      -webkit-text-stroke: 1.5px rgba(34,255,68,.95);
+      text-shadow:
+        0 0 6px rgba(34,255,68,.55),
+        0 0 18px rgba(34,255,68,.2);
     }
     .corp-tag {
-      background-color: #33ff33;
-      color: #050a05;
-      padding: 5px 20px;
       display: inline-block;
-      margin-top: 15px;
-      font-weight: bold;
+      margin-top: 16px;
+      padding: 6px 22px;
+      background: var(--green);
+      color: #031103;
+      font-weight: 700;
+      letter-spacing: .04em;
+      box-shadow: 0 0 10px rgba(34,255,68,.35);
+    }
+    .status, .category, .feed-item {
+      max-width: 1600px;
+    }
+    .status-line, .meta-line {
+      margin: 8px 0;
+      font-size: clamp(16px, 1.55vw, 24px);
+      line-height: 1.22;
+    }
+    .meta-line { opacity: .95; }
+    .category {
+      display: inline-block;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      border: 1px solid var(--green);
+      padding: 5px 10px;
+      background: rgba(0,40,0,.35);
+      font-size: clamp(16px, 1.45vw, 24px);
+    }
+    .feed-item {
+      margin: 14px 0;
+      padding-left: 10px;
+      border-left: 2px solid var(--green);
+      font-size: clamp(17px, 1.52vw, 26px);
+      line-height: 1.3;
+      word-break: break-word;
+    }
+    .feed-item a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .feed-item a:hover { text-decoration: underline; }
+    .cursor {
+      display: inline-block;
+      width: 12px;
+      height: 1.15em;
+      background: var(--green);
+      vertical-align: bottom;
+      animation: blink .85s steps(1) infinite;
+      box-shadow: 0 0 10px rgba(34,255,68,.5);
     }
     #sync-timer {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #33ff33;
-      color: #050a05;
-      padding: 5px 10px;
-      font-weight: bold;
-      z-index: 1100;
+      right: 16px;
+      bottom: 16px;
+      background: var(--green);
+      color: #061006;
+      padding: 8px 14px;
+      font-size: clamp(18px, 1.45vw, 24px);
+      font-weight: 700;
+      z-index: 5;
+      box-shadow: 0 0 10px rgba(34,255,68,.35);
     }
-    .category-header {
-      background-color: #003300;
-      padding: 5px;
-      margin-top: 30px;
-      border: 1px solid #33ff33;
-      display: inline-block;
-    }
-    .feed-item {
-      margin: 12px 0;
-      padding-left: 10px;
-      border-left: 2px solid #33ff33;
-      line-height: 1.4;
-    }
-    a {
-      color: #33ff33;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .cursor {
-      display: inline-block;
-      width: 10px;
-      height: 1.2em;
-      background-color: #33ff33;
-      animation: blink 0.8s infinite;
-      vertical-align: middle;
-    }
-    .status-line, .meta-line {
-      margin: 6px 0;
-    }
-    .muted {
-      opacity: 0.9;
-    }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (max-width: 700px) {
+      body { padding-inline: 10px; }
+      .frame { padding-inline: 10px; min-height: 250px; }
+      .corp-tag { font-size: 12px; padding-inline: 10px; }
     }
   </style>
 </head>
 <body>
   <div id="sync-timer">NEXT_SYNC: 04:00</div>
 
-  <div class="hero-container">
-    <div class="hero-title">
- __________________________________________________________________________________________
-   _____  _       ____   ____           _        _   _  ________          _______
-  / ____|| |     / __ \ |  _ \    /\   | |      | \ | ||  ____\ \        / / ____|
- | |  __ | |    | |  | || |_) |  /  \  | |      |  \| || |__   \ \  /\  / / (___
- | | |_ || |    | |  | ||  _ <  / /\ \ | |      | . ` ||  __|   \ \/  \/ / \___ \
- | |__| || |____| |__| || |_) |/ ____ \| |____  | |\  || |____   \  /\  /  ____) |
-  \_____||______| \____/|____//_/    \_\______| |_| \_||______|   \/  \/  |_____/
-
-                 _   _  ______ _______ __          ______  _____  _  __
-                | \ | ||  ____|__   __|\ \        / / __ \|  __ \| |/ /
-                |  \| || |__     | |    \ \  /\  / / |  | || |__) | ' /
-                | . ` ||  __|    | |     \ \/  \/ /| |  | ||  _  /|  <
-                | |\  || |____   | |      \  /\  / | |__| || | \ \| . \
-                |_| \_||______|  |_|       \/  \/   \____/ |_|  \_\_|\_\
- __________________________________________________________________________________________
+  <section class="frame">
+    <div class="hero">
+      <div class="hero-rule"></div>
+      <div class="hero-title outlined">
+        <span class="line">GLOBAL NEWS</span>
+        <span class="line small">NETWORK</span>
+      </div>
+      <div class="hero-rule"></div>
+      <div class="corp-tag">============ A WEYLAND-YUTANI PARTNER ============</div>
     </div>
-    <br>
-    <div class="corp-tag">============ A WEYLAND-YUTANI PARTNER ============</div>
-  </div>
+  </section>
 
-  <div id="output"></div>
-  <span class="cursor"></span>
+  <main id="output" class="status"></main>
+  <span class="cursor" aria-hidden="true"></span>
 
   <script>
-    (function () {
+    (() => {
       const REFRESH_SECONDS = 240;
       const FEED_JSON_URL = './feeds.json';
-      const output = document.getElementById('output');
+      const MAX_ITEMS = 5;
       const timerEl = document.getElementById('sync-timer');
+      const output = document.getElementById('output');
       let timeLeft = REFRESH_SECONDS;
 
       function updateTimer() {
-        const m = Math.floor(timeLeft / 60);
-        const s = timeLeft % 60;
-        timerEl.textContent = 'NEXT_SYNC: ' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        timerEl.textContent = `NEXT_SYNC: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      }
+
+      function line(text, className = 'status-line') {
+        const el = document.createElement('div');
+        el.className = className;
+        el.textContent = text;
+        output.appendChild(el);
+        return el;
+      }
+
+      function category(text) {
+        const el = document.createElement('div');
+        el.className = 'category';
+        el.textContent = text;
+        output.appendChild(el);
+        return el;
+      }
+
+      function feedItem(item) {
+        const row = document.createElement('div');
+        row.className = 'feed-item';
+        const a = document.createElement('a');
+        a.href = item.link || '#';
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.textContent = '+ ' + (item.title || 'UNTITLED REPORT');
+        row.appendChild(a);
+        output.appendChild(row);
+      }
+
+      function normalize(data) {
+        if (!data || !Array.isArray(data.categories)) {
+          throw new Error('INVALID_FEEDS_JSON');
+        }
+        return data;
+      }
+
+      function render(data) {
+        output.innerHTML = '';
+        line('> [LOADER_v6.2] INITIALIZING...');
+        line('> ESTABLISHING SECURE COMM-LINK...');
+        line('> LINK TARGET: LOCAL FEED CACHE');
+        line('> STATUS: ONLINE');
+        if (data.generated_at) {
+          line('> LAST_SYNC: ' + data.generated_at.replace('T', ' ').replace('Z', ' UTC'), 'meta-line');
+        }
+        for (const section of data.categories) {
+          category(`[SEC: ${section.name}]`);
+          const items = Array.isArray(section.items) ? section.items.slice(0, MAX_ITEMS) : [];
+          if (!items.length) {
+            line('> [NO_TRANSMISSIONS_RECEIVED]', 'feed-item');
+            continue;
+          }
+          for (const item of items) feedItem(item);
+        }
+        line('[SYSTEM STATUS: MONITORING ACTIVE]');
+      }
+
+      function fail(err) {
+        output.innerHTML = '';
+        line('> [LOADER_v6.2] INITIALIZING...');
+        line('> ESTABLISHING SECURE COMM-LINK...');
+        line('> [SIGNAL LOSS] FEED CACHE UNAVAILABLE');
+        line('> ERROR: ' + String(err && err.message ? err.message : err), 'meta-line');
+      }
+
+      async function loadFeeds() {
+        const response = await fetch(FEED_JSON_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        const data = normalize(await response.json());
+        render(data);
       }
 
       updateTimer();
-      setInterval(function () {
+      setInterval(() => {
         timeLeft -= 1;
         if (timeLeft < 0) {
           window.location.reload();
@@ -149,98 +262,7 @@
         updateTimer();
       }, 1000);
 
-      function appendLine(text, className) {
-        const div = document.createElement('div');
-        div.className = className || 'status-line';
-        div.textContent = text;
-        output.appendChild(div);
-        return div;
-      }
-
-      function appendHeader(text) {
-        const h = document.createElement('div');
-        h.className = 'category-header';
-        h.textContent = text;
-        output.appendChild(h);
-        output.appendChild(document.createElement('br'));
-        return h;
-      }
-
-      function appendItem(title, link) {
-        const div = document.createElement('div');
-        div.className = 'feed-item';
-        const a = document.createElement('a');
-        a.href = link || '#';
-        a.target = '_blank';
-        a.rel = 'noopener noreferrer';
-        a.textContent = '+ ' + title;
-        div.appendChild(a);
-        output.appendChild(div);
-      }
-
-      function normalizePayload(data) {
-        if (!data || !Array.isArray(data.categories)) {
-          throw new Error('INVALID_FEED_PAYLOAD');
-        }
-        return data;
-      }
-
-      function renderFeeds(data) {
-        output.innerHTML = '';
-
-        appendLine('> [LOADER_v5.0] INITIALIZING...');
-        appendLine('> ESTABLISHING SECURE COMM-LINK...');
-        appendLine('> LINK TARGET: LOCAL FEED CACHE');
-        appendLine('> STATUS: ONLINE');
-
-        if (data.generated_at) {
-          appendLine('> LAST_SYNC: ' + data.generated_at.replace('T', ' ').replace('Z', ' UTC'), 'meta-line muted');
-        }
-
-        data.categories.forEach(function (category) {
-          appendHeader('[SEC: ' + category.name + ']');
-
-          if (!Array.isArray(category.items) || category.items.length === 0) {
-            appendLine('> [NO_TRANSMISSIONS_RECEIVED]', 'feed-item');
-            return;
-          }
-
-          category.items.slice(0, 5).forEach(function (item) {
-            appendItem(item.title || 'UNTITLED REPORT', item.link || '#');
-          });
-        });
-
-        appendLine('[SYSTEM STATUS: MONITORING ACTIVE]', 'status-line');
-      }
-
-      function renderFailure(message) {
-        output.innerHTML = '';
-        appendLine('> [LOADER_v5.0] INITIALIZING...');
-        appendLine('> ESTABLISHING SECURE COMM-LINK...');
-        appendLine('> [SIGNAL_LOSS] FEED CACHE UNAVAILABLE');
-        appendLine('> ' + message);
-        appendLine('> VERIFY feeds.json EXISTS IN REPO ROOT');
-        appendLine('> VERIFY ACTIONS WORKFLOW HAS RUN SUCCESSFULLY');
-      }
-
-      fetch(FEED_JSON_URL + '?ts=' + Date.now(), {
-        cache: 'no-store',
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-        .then(function (response) {
-          if (!response.ok) {
-            throw new Error('HTTP_' + response.status);
-          }
-          return response.json();
-        })
-        .then(function (data) {
-          renderFeeds(normalizePayload(data));
-        })
-        .catch(function (error) {
-          renderFailure(error.message || 'UNKNOWN_ERROR');
-        });
+      loadFeeds().catch(fail);
     })();
   </script>
 </body>
