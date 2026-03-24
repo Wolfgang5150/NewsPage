@@ -135,10 +135,10 @@
       display: inline-block;
       margin: 0 auto;
       padding: 4px 0;
-      text-align: left;
-      font-size: 13px;
-      line-height: .94;
-      letter-spacing: 0;
+      text-align: center;
+      font-size: 28px;
+      line-height: 1;
+      letter-spacing: .10em;
       white-space: pre;
       color: rgba(55,255,99,.96);
       text-shadow:
@@ -189,6 +189,17 @@
     }
 
     .meta-line { opacity: .95; }
+
+    .startup-line, .startup-meta {
+      opacity: .40;
+      text-shadow:
+        0 0 1px rgba(55,255,99,.45),
+        0 0 5px rgba(55,255,99,.22),
+        0 0 10px rgba(55,255,99,.10);
+      filter: brightness(.78);
+    }
+
+    .startup-meta { opacity: .34; }
 
     .category {
       display: inline-block;
@@ -267,7 +278,7 @@
       body { padding-inline: 10px; }
       .frame { padding-inline: 10px; min-height: 250px; }
       .corp-tag { font-size: 12px; padding-inline: 10px; }
-      .ascii-title { font-size: 6px; }
+      .ascii-title { font-size: 15px; letter-spacing: .06em; }
       .status-line, .meta-line, .category, .feed-item, #sync-timer { font-size: 16px; }
     }
   </style>
@@ -280,31 +291,7 @@
     <section class="frame">
       <div class="hero">
         <div class="hero-rule"></div>
-<pre class="ascii-title" data-glow=" ██████╗ ██╗      ██████╗ ██████╗  █████╗ ██╗         ███╗   ██╗███████╗██╗    ██╗███████╗
-██╔════╝ ██║     ██╔═══██╗██╔══██╗██╔══██╗██║         ████╗  ██║██╔════╝██║    ██║██╔════╝
-██║  ███╗██║     ██║   ██║██████╔╝███████║██║         ██╔██╗ ██║█████╗  ██║ █╗ ██║███████╗
-██║   ██║██║     ██║   ██║██╔══██╗██╔══██║██║         ██║╚██╗██║██╔══╝  ██║███╗██║╚════██║
-╚██████╔╝███████╗╚██████╔╝██████╔╝██║  ██║███████╗    ██║ ╚████║███████╗╚███╔███╔╝███████║
- ╚═════╝ ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═╝  ╚═══╝╚══════╝ ╚══╝╚══╝ ╚══════╝
-
-███╗   ██╗███████╗████████╗██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
-████╗  ██║██╔════╝╚══██╔══╝██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝
-██╔██╗ ██║█████╗     ██║   ██║ █╗ ██║██║   ██║██████╔╝█████╔╝ 
-██║╚██╗██║██╔══╝     ██║   ██║███╗██║██║   ██║██╔══██╗██╔═██╗ 
-██║ ╚████║███████╗   ██║   ╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗
-╚═╝  ╚═══╝╚══════╝   ╚═╝    ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝"> ██████╗ ██╗      ██████╗ ██████╗  █████╗ ██╗         ███╗   ██╗███████╗██╗    ██╗███████╗
-██╔════╝ ██║     ██╔═══██╗██╔══██╗██╔══██╗██║         ████╗  ██║██╔════╝██║    ██║██╔════╝
-██║  ███╗██║     ██║   ██║██████╔╝███████║██║         ██╔██╗ ██║█████╗  ██║ █╗ ██║███████╗
-██║   ██║██║     ██║   ██║██╔══██╗██╔══██║██║         ██║╚██╗██║██╔══╝  ██║███╗██║╚════██║
-╚██████╔╝███████╗╚██████╔╝██████╔╝██║  ██║███████╗    ██║ ╚████║███████╗╚███╔███╔╝███████║
- ╚═════╝ ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═╝  ╚═══╝╚══════╝ ╚══╝╚══╝ ╚══════╝
-
-███╗   ██╗███████╗████████╗██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
-████╗  ██║██╔════╝╚══██╔══╝██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝
-██╔██╗ ██║█████╗     ██║   ██║ █╗ ██║██║   ██║██████╔╝█████╔╝ 
-██║╚██╗██║██╔══╝     ██║   ██║███╗██║██║   ██║██╔══██╗██╔═██╗ 
-██║ ╚████║███████╗   ██║   ╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗
-╚═╝  ╚═══╝╚══════╝   ╚═╝    ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝</pre>
+<pre class="ascii-title" data-glow=">>> [ GLOBAL NEWS NETWORK ] <<<">>>> [ GLOBAL NEWS NETWORK ] <<<</pre>
         <div class="hero-rule"></div>
         <div class="corp-tag">============ A WEYLAND-YUTANI COMPANY ============</div>
       </div>
@@ -321,6 +308,7 @@
       const MAX_ITEMS = 5;
       const TYPE_DELAY = 20;
       const LINE_DELAY = 185;
+      const STARTUP_LINE_DELAY = 650;
       const timerEl = document.getElementById('sync-timer');
       const output = document.getElementById('output');
       let timeLeft = REFRESH_SECONDS;
@@ -335,6 +323,13 @@
         return new Promise(resolve => setTimeout(resolve, ms));
       }
 
+      function autoScroll() {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight || document.body.scrollHeight,
+          behavior: 'smooth'
+        });
+      }
+
       async function typeText(el, text, delay = TYPE_DELAY) {
         el.textContent = '';
         for (const ch of text) {
@@ -347,8 +342,21 @@
         const el = document.createElement('div');
         el.className = className;
         output.appendChild(el);
+        autoScroll();
         await typeText(el, text);
+        autoScroll();
         await sleep(LINE_DELAY);
+        return el;
+      }
+
+      async function revealLine(text, className = 'startup-line', delay = STARTUP_LINE_DELAY) {
+        const el = document.createElement('div');
+        el.className = className;
+        output.appendChild(el);
+        autoScroll();
+        el.textContent = text;
+        autoScroll();
+        await sleep(delay);
         return el;
       }
 
@@ -356,7 +364,9 @@
         const el = document.createElement('div');
         el.className = 'category';
         output.appendChild(el);
+        autoScroll();
         await typeText(el, text);
+        autoScroll();
         await sleep(LINE_DELAY);
         return el;
       }
@@ -370,7 +380,9 @@
         a.rel = 'noopener noreferrer';
         row.appendChild(a);
         output.appendChild(row);
+        autoScroll();
         await typeText(a, '+ ' + (item.title || 'UNTITLED REPORT'));
+        autoScroll();
         await sleep(118);
         return row;
       }
@@ -384,12 +396,12 @@
 
       async function render(data) {
         output.innerHTML = '';
-        await typeLine('...INITIALIZING PROTOCOL 5150/1984');
-        await typeLine('...ESTABLISHING SECURE COMM-LINK');
-        await typeLine('...UPLINK TARGET: ICE STATION ZEBRA');
-        await typeLine('...STATUS: ONLINE');
+        await revealLine('...INITIALIZING PROTOCOL 5150/1984', 'status-line startup-line');
+        await revealLine('...ESTABLISHING SECURE COMM-LINK', 'status-line startup-line');
+        await revealLine('...UPLINK TARGET: ICE STATION ZEBRA', 'status-line startup-line');
+        await revealLine('...STATUS: ONLINE', 'status-line startup-line');
         if (data.generated_at) {
-          await typeLine('...LAST_SYNC: ' + data.generated_at.replace('T', ' ').replace('Z', ' UTC'), 'meta-line');
+          await revealLine('...LAST_SYNC: ' + data.generated_at.replace('T', ' ').replace('Z', ' UTC'), 'meta-line startup-meta');
         }
         for (const section of data.categories) {
           await typeCategory(`[SEC: ${section.name}]`);
@@ -407,11 +419,11 @@
 
       async function fail(err) {
         output.innerHTML = '';
-        await typeLine('...INITIALIZING PROTOCOL 5150/1984');
-        await typeLine('...ESTABLISHING SECURE COMM-LINK');
-        await typeLine('...UPLINK TARGET: ICE STATION ZEBRA');
-        await typeLine('...STATUS: SIGNAL LOSS');
-        await typeLine('...ERROR: ' + String(err && err.message ? err.message : err), 'meta-line');
+        await revealLine('...INITIALIZING PROTOCOL 5150/1984', 'status-line startup-line');
+        await revealLine('...ESTABLISHING SECURE COMM-LINK', 'status-line startup-line');
+        await revealLine('...UPLINK TARGET: ICE STATION ZEBRA', 'status-line startup-line');
+        await revealLine('...STATUS: SIGNAL LOSS', 'status-line startup-line');
+        await revealLine('...ERROR: ' + String(err && err.message ? err.message : err), 'meta-line startup-meta');
       }
 
       async function loadFeeds() {
