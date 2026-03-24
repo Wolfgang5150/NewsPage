@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="240">
+    <title>W/Y_TERMINAL_v13</title>
+    <style>
+        body { background-color: #050a05; color: #33ff33; font-family: 'Courier New', Courier, monospace; margin: 0; padding: 20px; text-transform: uppercase; text-shadow: 0 0 5px #33ff33; overflow-x: hidden; }
+        body::before { content: " "; display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.1) 50%); z-index: 1000; background-size: 100% 3px; pointer-events: none; }
+        .hero-container { border: 2px solid #33ff33; padding: 20px; text-align: center; margin-bottom: 30px; background: rgba(0,20,0,0.4); }
+        .hero-title { font-size: 10px; line-height: 1.1; white-space: pre; display: inline-block; }
+        .corp-tag { background-color: #33ff33; color: #050a05; padding: 5px 20px; display: inline-block; margin-top: 15px; font-weight: bold; }
+        #sync-timer { position: fixed; bottom: 20px; right: 20px; background-color: #33ff33; color: #050a05; padding: 5px 10px; font-weight: bold; z-index: 1100; }
+        .category-header { background-color: #003300; padding: 5px; margin-top: 30px; border: 1px solid #33ff33; display: inline-block; }
+        .feed-item { margin: 12px 0; padding-left: 10px; border-left: 2px solid #33ff33; line-height: 1.4; }
+        a { color: #33ff33; text-decoration: none; }
+        .cursor { display: inline-block; width: 10px; height: 1.2em; background-color: #33ff33; animation: blink 0.8s infinite; vertical-align: middle; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+
+<div id="sync-timer">NEXT_SYNC: 04:00</div>
+
+<div class="hero-container">
+<div class="hero-title">
+ __________________________________________________________________________________________
+   _____  _       ____   ____           _        _   _  ________          _______ 
+  / ____|| |     / __ \ |  _ \    /\   | |      | \ | ||  ____\ \        / / ____|
+ | |  __ | |    | |  | || |_) |  /  \  | |      |  \| || |__   \ \  /\  / / (___  
+ | | |_ || |    | |  | ||  _ <  / /\ \ | |      |  \| ||  __|   \ \/  \/ / \___ \ 
+ | |__| || |____| |__| || |_) |/ ____ \| |____  | |\  || |____   \  /\  /  ____) |
+  \_____||______| \____/|____//_/    \_\______| |_| \_||______|   \/  \/  |_____/ 
+                                                                                  
+                 _   _  ______ _______ __          ______  _____  _  __ 
+                | \ | ||  ____|__   __|\ \        / / __ \|  __ \| |/ / 
+                |  \| || |__     | |    \ \  /\  / / |  | || |__) | ' /  
+                | . ` ||  __|    | |     \ \/  \/ /| |  | ||  _  /|  <   
+                | |\  || |____   | |      \  /\  / | |__| || | \ \| . \  
+                |_| \_||______|  |_|       \/  \/   \____/ |_|  \_\_|\_\ 
+ __________________________________________________________________________________________
+</div>
+    <br>
+    <div class="corp-tag">============ A WEYLAND-YUTANI PARTNER ============</div>
+</div>
+
+<div id="output"></div>
+<span class="cursor"></span>
+
+<script>
+    var timeLeft = 240;
+    setInterval(function() {
+        timeLeft--;
+        if (timeLeft < 0) { window.location.reload(); }
+        var m = Math.floor(timeLeft / 60), s = timeLeft % 60;
+        document.getElementById('sync-timer').innerHTML = "NEXT_SYNC: " + (m<10?"0":"")+m + ":" + (s<10?"0":"")+s;
+    }, 1000);
+
+    var feeds = [
+        { n: "WORLD", u: "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en" },
+        { n: "TECH", u: "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVdlsU01OWhiazV1U0FpU0F3Z0FQAQ?hl=en-US&gl=US&ceid=US:en" },
+        { n: "US_NEWS", u: "https://news.google.com/rss/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTkhOMGNpUStBQVAB?hl=en-US&gl=US&ceid=US:en" }
+    ];
+
+    var out = document.getElementById('output');
+
+    function write(txt, el, callback) {
+        var i = 0;
+        var text = txt || "";
+        var intv = setInterval(function() {
+            el.innerHTML += text.charAt(i);
+            i++;
+            if (i % 5 === 0) window.scrollTo(0, document.body.scrollHeight);
+            if (i >= text.length) {
+                clearInterval(intv);
+                if (callback) callback();
+            }
+        }, 12);
+    }
+
+    function fetchWithTimeout(url, options, timeoutMs) {
+        var controller = new AbortController();
+        var timer = setTimeout(function() { controller.abort(); }, timeoutMs || 10000);
+        return fetch(url, Object.assign({}, options || {}, { signal: controller.signal }))
+            .finally(function() { clearTimeout(timer); });
+    }
+
+    function parseXmlItems(xmlText) {
+        var parser = new DOMParser();
+        var xml = parser.parseFromString(xmlText, "text/xml");
+        if (xml.querySelector('parsererror')) throw new Error('Invalid XML');
+
+        return Array.from(xml.querySelectorAll('item')).map(function(item) {
+            var titleNode = item.querySelector('title');
+            var linkNode = item.querySelector('link');
+            return {
+                title: titleNode ? titleNode.textContent.trim() : '',
+                link: linkNode ? linkNode.textContent.trim() : ''
+            };
+        }).filter(function(item) {
+            return item.title && item.link;
+        });
+    }
+
+    async function tryGoogleDirect(feedUrl) {
+        var response = await fetchWithTimeout(feedUrl, {}, 8000);
+        if (!response.ok) throw new Error('Direct fetch failed');
+        return parseXmlItems(await response.text());
+    }
+
+    async function tryAllOriginsRaw(feedUrl) {
+        var response = await fetchWithTimeout('https://api.allorigins.win/raw?url=' + encodeURIComponent(feedUrl), {}, 10000);
+        if (!response.ok) throw new Error('AllOrigins raw failed');
+        return parseXmlItems(await response.text());
+    }
+
+    async function tryAllOriginsGet(feedUrl) {
+        var response = await fetchWithTimeout('https://api.allorigins.win/get?url=' + encodeURIComponent(feedUrl), {}, 10000);
+        if (!response.ok) throw new Error('AllOrigins get failed');
+        var data = await response.json();
+        if (!data || !data.contents) throw new Error('AllOrigins empty');
+        return parseXmlItems(data.contents);
+    }
+
+    async function tryRss2Json(feedUrl) {
+        var response = await fetchWithTimeout('https://api.rss2json.com/v1/api.json?count=8&rss_url=' + encodeURIComponent(feedUrl), {}, 10000);
+        if (!response.ok) throw new Error('rss2json failed');
+        var data = await response.json();
+        if (!data || data.status !== 'ok' || !Array.isArray(data.items)) throw new Error('rss2json invalid');
+        return data.items.map(function(item) {
+            return {
+                title: (item.title || '').trim(),
+                link: (item.link || '').trim()
+            };
+        }).filter(function(item) {
+            return item.title && item.link;
+        });
+    }
+
+    async function getFeedItems(feedUrl) {
+        var methods = [tryGoogleDirect, tryAllOriginsRaw, tryAllOriginsGet, tryRss2Json];
+        var lastError = null;
+
+        for (var i = 0; i < methods.length; i++) {
+            try {
+                var items = await methods[i](feedUrl);
+                if (items && items.length) return items;
+            } catch (err) {
+                lastError = err;
+            }
+        }
+
+        throw lastError || new Error('All feed methods failed');
+    }
+
+    function loadGroup(idx) {
+        if (idx >= feeds.length) {
+            var f = document.createElement('div');
+            out.appendChild(f);
+            write("\n[SYSTEM STATUS: MONITORING ACTIVE]", f);
+            return;
+        }
+
+        var group = feeds[idx];
+        var h = document.createElement('div');
+        h.className = 'category-header';
+        out.appendChild(h);
+
+        write("[SEC: " + group.n + "]", h, function() {
+            out.appendChild(document.createElement('br'));
+
+            setTimeout(function() {
+                getFeedItems(group.u)
+                    .then(function(items) {
+                        var itemIdx = 0;
+                        function showNext() {
+                            if (itemIdx >= 4 || itemIdx >= items.length) {
+                                loadGroup(idx + 1);
+                                return;
+                            }
+
+                            var title = items[itemIdx].title;
+                            var link = items[itemIdx].link;
+                            var div = document.createElement('div');
+                            div.className = 'feed-item';
+                            out.appendChild(div);
+
+                            write('+ ' + title, div, function() {
+                                div.innerHTML = '<a href="' + link.replace(/"/g, '&quot;') + '" target="_blank" rel="noopener noreferrer">+ ' + title + '</a>';
+                                itemIdx++;
+                                showNext();
+                            });
+                        }
+                        showNext();
+                    })
+                    .catch(function() {
+                        var err = document.createElement('div');
+                        out.appendChild(err);
+                        write('> [SIGNAL_LOSS]', err, function() { loadGroup(idx + 1); });
+                    });
+            }, 750);
+        });
+    }
+
+    var boot = document.createElement('div');
+    out.appendChild(boot);
+    write('> [LOADER_v4.3] INITIALIZING...\n> ESTABLISHING SECURE COMM-LINK...\n', boot, function() {
+        loadGroup(0);
+    });
+</script>
+
+</body>
+</html>
