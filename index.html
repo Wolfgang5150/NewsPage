@@ -216,6 +216,7 @@
       position: relative;
       z-index: 2;
       flex: 0 0 auto;
+      min-height: 12px;
     }
 
     .status-line, .meta-line {
@@ -308,15 +309,12 @@
     .cursor {
       display: inline-block;
       width: 12px;
-      height: 1.15em;
+      height: 1.05em;
       background: var(--green);
-      vertical-align: bottom;
+      vertical-align: text-bottom;
       animation: blink .85s steps(1) infinite;
       box-shadow: 0 0 14px rgba(55,255,99,.62);
-      position: fixed;
-      left: 16px;
-      bottom: 16px;
-      z-index: 5;
+      margin-left: 2px;
     }
 
     #sync-timer {
@@ -390,8 +388,6 @@
     <section class="feed-shell">
       <div id="feed-output" class="feed-scroll"></div>
     </section>
-
-    <span class="cursor" aria-hidden="true"></span>
   </div>
 
   <script>
@@ -401,11 +397,14 @@
       const MAX_ITEMS = 10;
       const TYPE_DELAY = 20;
       const LINE_DELAY = 185;
-      const STARTUP_LINE_DELAY = 650;
+      const STARTUP_LINE_DELAY = 1400;
+      const STATUS_CYCLE_DELAY = 2000;
       const timerEl = document.getElementById('sync-timer');
       const statusOutput = document.getElementById('status-output');
       const feedOutput = document.getElementById('feed-output');
       let timeLeft = REFRESH_SECONDS;
+      let activeCursor = null;
+      let statusCycleInterval = null;
 
       function updateTimer() {
         const minutes = Math.floor(timeLeft / 60);
@@ -424,12 +423,38 @@
         });
       }
 
+      function makeCursor() {
+        const cursor = document.createElement('span');
+        cursor.className = 'cursor';
+        cursor.setAttribute('aria-hidden', 'true');
+        return cursor;
+      }
+
+      function moveCursorTo(el) {
+        if (!activeCursor) activeCursor = makeCursor();
+        if (activeCursor.parentNode) {
+          activeCursor.parentNode.removeChild(activeCursor);
+        }
+        el.appendChild(activeCursor);
+      }
+
+      function removeCursor() {
+        if (activeCursor && activeCursor.parentNode) {
+          activeCursor.parentNode.removeChild(activeCursor);
+        }
+      }
+
       async function typeText(el, text, delay = TYPE_DELAY) {
-        el.textContent = '';
+        el.innerHTML = '';
+        const textNode = document.createTextNode('');
+        el.appendChild(textNode);
+        moveCursorTo(el);
         for (const ch of text) {
-          el.textContent += ch;
+          textNode.nodeValue += ch;
+          autoScrollFeeds();
           await sleep(delay);
         }
+        removeCursor();
       }
 
       async function typeLine(text, className = 'status-line') {
@@ -440,15 +465,6 @@
         await typeText(el, text);
         autoScrollFeeds();
         await sleep(LINE_DELAY);
-        return el;
-      }
-
-      async function revealLine(text, className = 'startup-line', delay = STARTUP_LINE_DELAY) {
-        const el = document.createElement('div');
-        el.className = className;
-        statusOutput.appendChild(el);
-        el.textContent = text;
-        await sleep(delay);
         return el;
       }
 
@@ -486,17 +502,48 @@
         return data;
       }
 
-      async function render(data) {
+      function startStatusCycle(data) {
+        if (statusCycleInterval) clearInterval(statusCycleInterval);
+
+        const lines = [
+          { text: '...INITIALIZING PROTOCOL 5150/1984', className: 'status-line startup-line' },
+          { text: '...ESTABLISHING SECURE COMM-LINK', className: 'status-line startup-line' },
+          { text: '...UPLINK TARGET: ICE STATION ZEBRA', className: 'status-line startup-line' },
+          { text: '...STATUS: ONLINE', className: 'status-line startup-line', blink: true },
+          {
+            text: '...LAST_SYNC: ' + (
+              data.generated_at
+                ? data.generated_at.replace('T', ' ').replace('Z', ' UTC')
+                : 'UNKNOWN'
+            ),
+            className: 'meta-line startup-meta'
+          }
+        ];
+
+        const holder = document.createElement('div');
         statusOutput.innerHTML = '';
+        statusOutput.appendChild(holder);
+
+        let i = 0;
+        const showLine = () => {
+          const line = lines[i];
+          holder.className = line.className;
+          holder.textContent = line.text;
+          holder.style.animation = line.blink ? 'blink .34s steps(1) infinite' : 'none';
+          i = (i + 1) % lines.length;
+        };
+
+        showLine();
+        statusCycleInterval = setInterval(showLine, STATUS_CYCLE_DELAY);
+      }
+
+      async function render(data) {
+        removeCursor();
         feedOutput.innerHTML = '';
-        await revealLine('...INITIALIZING PROTOCOL 5150/1984', 'status-line startup-line');
-        await revealLine('...ESTABLISHING SECURE COMM-LINK', 'status-line startup-line');
-        await revealLine('...UPLINK TARGET: ICE STATION ZEBRA', 'status-line startup-line');
-        const onlineEl = await revealLine('...STATUS: ONLINE', 'status-line startup-line');
-        onlineEl.style.animation = 'blink .34s steps(1) infinite';
-        if (data.generated_at) {
-          await revealLine('...LAST_SYNC: ' + data.generated_at.replace('T', ' ').replace('Z', ' UTC'), 'meta-line startup-meta');
-        }
+        startStatusCycle(data);
+
+        await sleep(STARTUP_LINE_DELAY);
+
         for (const section of data.categories) {
           await typeCategory(`[SEC: ${section.name}]`);
           const items = Array.isArray(section.items) ? section.items.slice(0, MAX_ITEMS) : [];
@@ -508,18 +555,17 @@
             await typeFeedItem(item);
           }
         }
-        const monitorEl = await revealLine('[SYSTEM STATUS: MONITORING ACTIVE]', 'meta-line startup-meta');
-        monitorEl.style.animation = 'blink .34s steps(1) infinite';
       }
 
       async function fail(err) {
+        if (statusCycleInterval) clearInterval(statusCycleInterval);
+        removeCursor();
         statusOutput.innerHTML = '';
         feedOutput.innerHTML = '';
-        await revealLine('...INITIALIZING PROTOCOL 5150/1984', 'status-line startup-line');
-        await revealLine('...ESTABLISHING SECURE COMM-LINK', 'status-line startup-line');
-        await revealLine('...UPLINK TARGET: ICE STATION ZEBRA', 'status-line startup-line');
-        await revealLine('...STATUS: SIGNAL LOSS', 'status-line startup-line');
-        await revealLine('...ERROR: ' + String(err && err.message ? err.message : err), 'meta-line startup-meta');
+        const el = document.createElement('div');
+        el.className = 'meta-line startup-meta';
+        el.textContent = '...ERROR: ' + String(err && err.message ? err.message : err);
+        statusOutput.appendChild(el);
       }
 
       async function loadFeeds() {
