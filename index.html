@@ -1,163 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="240">
-    <title>W/Y_TERMINAL_v13</title>
-    <style>
-        body { background-color: #050a05; color: #33ff33; font-family: 'Courier New', Courier, monospace; margin: 0; padding: 20px; text-transform: uppercase; text-shadow: 0 0 5px #33ff33; overflow-x: hidden; }
-        body::before { content: " "; display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.1) 50%); z-index: 1000; background-size: 100% 3px; pointer-events: none; }
-        .hero-container { border: 2px solid #33ff33; padding: 20px; text-align: center; margin-bottom: 30px; background: rgba(0,20,0,0.4); }
-        .hero-title { font-size: 10px; line-height: 1.1; white-space: pre; display: inline-block; }
-        .corp-tag { background-color: #33ff33; color: #050a05; padding: 5px 20px; display: inline-block; margin-top: 15px; font-weight: bold; }
-        #sync-timer { position: fixed; bottom: 20px; right: 20px; background-color: #33ff33; color: #050a05; padding: 5px 10px; font-weight: bold; z-index: 1100; }
-        .category-header { background-color: #003300; padding: 5px; margin-top: 30px; border: 1px solid #33ff33; display: inline-block; }
-        .feed-item { margin: 12px 0; padding-left: 10px; border-left: 2px solid #33ff33; line-height: 1.4; }
-        a { color: #33ff33; text-decoration: none; }
-        .cursor { display: inline-block; width: 10px; height: 1.2em; background-color: #33ff33; animation: blink 0.8s infinite; vertical-align: middle; }
-        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="240">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W/Y_TERMINAL_v14</title>
+  <style>
+    body {
+      background-color: #050a05;
+      color: #33ff33;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 20px;
+      text-transform: uppercase;
+      text-shadow: 0 0 5px #33ff33;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: " ";
+      display: block;
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.1) 50%);
+      z-index: 1000;
+      background-size: 100% 3px;
+      pointer-events: none;
+    }
+    .hero-container {
+      border: 2px solid #33ff33;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+      background: rgba(0,20,0,0.4);
+    }
+    .hero-title {
+      font-size: 10px;
+      line-height: 1.1;
+      white-space: pre;
+      display: inline-block;
+    }
+    .corp-tag {
+      background-color: #33ff33;
+      color: #050a05;
+      padding: 5px 20px;
+      display: inline-block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    #sync-timer {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #33ff33;
+      color: #050a05;
+      padding: 5px 10px;
+      font-weight: bold;
+      z-index: 1100;
+    }
+    .category-header {
+      background-color: #003300;
+      padding: 5px;
+      margin-top: 30px;
+      border: 1px solid #33ff33;
+      display: inline-block;
+    }
+    .feed-item {
+      margin: 12px 0;
+      padding-left: 10px;
+      border-left: 2px solid #33ff33;
+      line-height: 1.4;
+    }
+    a {
+      color: #33ff33;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 1.2em;
+      background-color: #33ff33;
+      animation: blink 0.8s infinite;
+      vertical-align: middle;
+    }
+    .status-line, .meta-line {
+      margin: 6px 0;
+    }
+    .muted {
+      opacity: 0.9;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
 </head>
 <body>
+  <div id="sync-timer">NEXT_SYNC: 04:00</div>
 
-<div id="sync-timer">NEXT_SYNC: 04:00</div>
-
-<div class="hero-container">
-<div class="hero-title">
+  <div class="hero-container">
+    <div class="hero-title">
  __________________________________________________________________________________________
-   _____  _       ____   ____           _        _   _  ________          _______ 
+   _____  _       ____   ____           _        _   _  ________          _______
   / ____|| |     / __ \ |  _ \    /\   | |      | \ | ||  ____\ \        / / ____|
- | |  __ | |    | |  | || |_) |  /  \  | |      |  \| || |__   \ \  /\  / / (___  
- | | |_ || |    | |  | ||  _ <  / /\ \ | |      |  \| ||  __|   \ \/  \/ / \___ \ 
+ | |  __ | |    | |  | || |_) |  /  \  | |      |  \| || |__   \ \  /\  / / (___
+ | | |_ || |    | |  | ||  _ <  / /\ \ | |      | . ` ||  __|   \ \/  \/ / \___ \
  | |__| || |____| |__| || |_) |/ ____ \| |____  | |\  || |____   \  /\  /  ____) |
-  \_____||______| \____/|____//_/    \_\______| |_| \_||______|   \/  \/  |_____/ 
-                                                                                  
-                 _   _  ______ _______ __          ______  _____  _  __ 
-                | \ | ||  ____|__   __|\ \        / / __ \|  __ \| |/ / 
-                |  \| || |__     | |    \ \  /\  / / |  | || |__) | ' /  
-                | . ` ||  __|    | |     \ \/  \/ /| |  | ||  _  /|  <   
-                | |\  || |____   | |      \  /\  / | |__| || | \ \| . \  
-                |_| \_||______|  |_|       \/  \/   \____/ |_|  \_\_|\_\ 
+  \_____||______| \____/|____//_/    \_\______| |_| \_||______|   \/  \/  |_____/
+
+                 _   _  ______ _______ __          ______  _____  _  __
+                | \ | ||  ____|__   __|\ \        / / __ \|  __ \| |/ /
+                |  \| || |__     | |    \ \  /\  / / |  | || |__) | ' /
+                | . ` ||  __|    | |     \ \/  \/ /| |  | ||  _  /|  <
+                | |\  || |____   | |      \  /\  / | |__| || | \ \| . \
+                |_| \_||______|  |_|       \/  \/   \____/ |_|  \_\_|\_\
  __________________________________________________________________________________________
-</div>
+    </div>
     <br>
-    <div class="corp-tag">============ A WEYLAND-YUTANI FUNFUNFUN ============</div>
-</div>
+    <div class="corp-tag">============ A WEYLAND-YUTANI PARTNER ============</div>
+  </div>
 
-<div id="output"></div>
-<span class="cursor"></span>
+  <div id="output"></div>
+  <span class="cursor"></span>
 
-<script>
-    var timeLeft = 240;
-    setInterval(function() {
-        timeLeft--;
-        if (timeLeft < 0) { window.location.reload(); }
-        var m = Math.floor(timeLeft / 60), s = timeLeft % 60;
-        document.getElementById('sync-timer').innerHTML = "NEXT_SYNC: " + (m<10?"0":"") + m + ":" + (s<10?"0":"") + s;
-    }, 1000);
+  <script>
+    (function () {
+      const REFRESH_SECONDS = 240;
+      const FEED_JSON_URL = './feeds.json';
+      const output = document.getElementById('output');
+      const timerEl = document.getElementById('sync-timer');
+      let timeLeft = REFRESH_SECONDS;
 
-    var out = document.getElementById('output');
+      function updateTimer() {
+        const m = Math.floor(timeLeft / 60);
+        const s = timeLeft % 60;
+        timerEl.textContent = 'NEXT_SYNC: ' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+      }
 
-    function write(txt, el, callback) {
-        var i = 0;
-        var text = txt || '';
-        var intv = setInterval(function() {
-            el.innerHTML += text.charAt(i);
-            i++;
-            if (i % 5 === 0) window.scrollTo(0, document.body.scrollHeight);
-            if (i >= text.length) {
-                clearInterval(intv);
-                if (callback) callback();
-            }
-        }, 12);
-    }
+      updateTimer();
+      setInterval(function () {
+        timeLeft -= 1;
+        if (timeLeft < 0) {
+          window.location.reload();
+          return;
+        }
+        updateTimer();
+      }, 1000);
 
-    function normalizeFeeds(data) {
-        if (!Array.isArray(data)) return [];
-        return data.map(function(group) {
-            return {
-                n: group.n || 'FEED',
-                items: Array.isArray(group.items) ? group.items : []
-            };
-        });
-    }
+      function appendLine(text, className) {
+        const div = document.createElement('div');
+        div.className = className || 'status-line';
+        div.textContent = text;
+        output.appendChild(div);
+        return div;
+      }
 
-    function loadFeedData() {
-        return fetch('feeds.json?ts=' + Date.now(), { cache: 'no-store' })
-            .then(function(r) {
-                if (!r.ok) throw new Error('Feed data unavailable');
-                return r.json();
-            })
-            .then(normalizeFeeds);
-    }
+      function appendHeader(text) {
+        const h = document.createElement('div');
+        h.className = 'category-header';
+        h.textContent = text;
+        output.appendChild(h);
+        output.appendChild(document.createElement('br'));
+        return h;
+      }
 
-    function loadGroup(feeds, idx) {
-        if (idx >= feeds.length) {
-            var f = document.createElement('div');
-            out.appendChild(f);
-            write('
-[SYSTEM STATUS: MONITORING ACTIVE]', f);
-            return;
+      function appendItem(title, link) {
+        const div = document.createElement('div');
+        div.className = 'feed-item';
+        const a = document.createElement('a');
+        a.href = link || '#';
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.textContent = '+ ' + title;
+        div.appendChild(a);
+        output.appendChild(div);
+      }
+
+      function normalizePayload(data) {
+        if (!data || !Array.isArray(data.categories)) {
+          throw new Error('INVALID_FEED_PAYLOAD');
+        }
+        return data;
+      }
+
+      function renderFeeds(data) {
+        output.innerHTML = '';
+
+        appendLine('> [LOADER_v5.0] INITIALIZING...');
+        appendLine('> ESTABLISHING SECURE COMM-LINK...');
+        appendLine('> LINK TARGET: LOCAL FEED CACHE');
+        appendLine('> STATUS: ONLINE');
+
+        if (data.generated_at) {
+          appendLine('> LAST_SYNC: ' + data.generated_at.replace('T', ' ').replace('Z', ' UTC'), 'meta-line muted');
         }
 
-        var group = feeds[idx];
-        var h = document.createElement('div');
-        h.className = 'category-header';
-        out.appendChild(h);
+        data.categories.forEach(function (category) {
+          appendHeader('[SEC: ' + category.name + ']');
 
-        write('[SEC: ' + group.n + ']', h, function() {
-            out.appendChild(document.createElement('br'));
+          if (!Array.isArray(category.items) || category.items.length === 0) {
+            appendLine('> [NO_TRANSMISSIONS_RECEIVED]', 'feed-item');
+            return;
+          }
 
-            var itemIdx = 0;
-            function showNext() {
-                if (itemIdx >= 4 || itemIdx >= group.items.length) {
-                    loadGroup(feeds, idx + 1);
-                    return;
-                }
-
-                var item = group.items[itemIdx] || {};
-                var title = item.title || '[UNTITLED]';
-                var link = item.link || '#';
-                var div = document.createElement('div');
-                div.className = 'feed-item';
-                out.appendChild(div);
-                write('+ ' + title, div, function() {
-                    div.innerHTML = '<a href="' + link + '" target="_blank" rel="noopener noreferrer">+ ' + title + '</a>';
-                    itemIdx++;
-                    showNext();
-                });
-            }
-
-            if (!group.items.length) {
-                var err = document.createElement('div');
-                out.appendChild(err);
-                write('> [NO DATA AVAILABLE]', err, function() { loadGroup(feeds, idx + 1); });
-                return;
-            }
-
-            showNext();
+          category.items.slice(0, 5).forEach(function (item) {
+            appendItem(item.title || 'UNTITLED REPORT', item.link || '#');
+          });
         });
-    }
 
-    var boot = document.createElement('div');
-    out.appendChild(boot);
-    write('> [LOADER_v5.0] INITIALIZING...
-> ACCESSING LOCAL FEED CACHE...
-', boot, function() {
-        loadFeedData()
-            .then(function(feeds) {
-                if (!feeds.length) throw new Error('No feeds');
-                loadGroup(feeds, 0);
-            })
-            .catch(function() {
-                var err = document.createElement('div');
-                out.appendChild(err);
-                write('> [CACHE_UNAVAILABLE]
-> RUN GITHUB ACTION: UPDATE FEEDS
-', err);
-            });
-    });
-</script>
+        appendLine('[SYSTEM STATUS: MONITORING ACTIVE]', 'status-line');
+      }
 
+      function renderFailure(message) {
+        output.innerHTML = '';
+        appendLine('> [LOADER_v5.0] INITIALIZING...');
+        appendLine('> ESTABLISHING SECURE COMM-LINK...');
+        appendLine('> [SIGNAL_LOSS] FEED CACHE UNAVAILABLE');
+        appendLine('> ' + message);
+        appendLine('> VERIFY feeds.json EXISTS IN REPO ROOT');
+        appendLine('> VERIFY ACTIONS WORKFLOW HAS RUN SUCCESSFULLY');
+      }
+
+      fetch(FEED_JSON_URL + '?ts=' + Date.now(), {
+        cache: 'no-store',
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error('HTTP_' + response.status);
+          }
+          return response.json();
+        })
+        .then(function (data) {
+          renderFeeds(normalizePayload(data));
+        })
+        .catch(function (error) {
+          renderFailure(error.message || 'UNKNOWN_ERROR');
+        });
+    })();
+  </script>
 </body>
 </html>
