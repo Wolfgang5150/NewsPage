@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="refresh" content="240">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GLOBAL NEWS NETWORK</title>
+  <title>GLOBAL DIGITAL NETWORK</title>
   <style>
     :root {
       --bg: #020602;
       --bg-deep: #010301;
       --green: #37ff63;
-      --green-soft: rgba(55,255,99,.30);
-      --green-mid: rgba(55,255,99,.72);
-      --green-strong: rgba(55,255,99,.95);
+      --green-soft: rgba(55,255,99,.36);
+      --green-mid: rgba(55,255,99,.82);
+      --green-strong: rgba(55,255,99,1);
       --green-dim: #0e4d18;
       --panel: rgba(0, 18, 0, 0.30);
       --line: rgba(90, 255, 135, 0.10);
@@ -32,10 +32,10 @@
         radial-gradient(circle at center, rgba(0,0,0,0) 52%, rgba(0,0,0,.32) 92%),
         linear-gradient(to bottom, #031003 0%, var(--bg) 48%, var(--bg-deep) 100%);
       text-shadow:
-        0 0 2px rgba(55,255,99,1),
-        0 0 10px rgba(55,255,99,.86),
-        0 0 22px rgba(55,255,99,.48),
-        0 0 36px rgba(55,255,99,.24);
+        0 0 3px rgba(55,255,99,1),
+        0 0 12px rgba(55,255,99,.95),
+        0 0 26px rgba(55,255,99,.60),
+        0 0 42px rgba(55,255,99,.30);
       overflow-x: hidden;
       position: relative;
       animation: crt-flicker 9s infinite steps(1);
@@ -54,16 +54,25 @@
       background:
         repeating-linear-gradient(
           to bottom,
-          rgba(255,255,255,.02) 0px,
-          rgba(255,255,255,.02) 1px,
-          rgba(0,0,0,.12) 2px,
-          rgba(0,0,0,.12) 3px,
-          transparent 4px,
-          transparent 6px
+          rgba(110,255,150,.11) 0px,
+          rgba(110,255,150,.11) 1px,
+          rgba(0,0,0,.24) 1px,
+          rgba(0,0,0,.24) 3px,
+          rgba(14,55,18,.14) 3px,
+          rgba(14,55,18,.14) 5px,
+          transparent 5px,
+          transparent 7px
         ),
-        linear-gradient(to right, rgba(0,0,0,.10), rgba(0,0,0,0) 8%, rgba(0,0,0,0) 92%, rgba(0,0,0,.10));
+        repeating-linear-gradient(
+          to bottom,
+          rgba(255,255,255,.025) 0px,
+          rgba(255,255,255,.025) 1px,
+          transparent 1px,
+          transparent 2px
+        ),
+        linear-gradient(to right, rgba(0,0,0,.14), rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,.14));
       mix-blend-mode: screen;
-      opacity: 1.0;
+      opacity: 1;
     }
 
     body::after {
@@ -77,13 +86,13 @@
       position: fixed;
       inset: 0;
       pointer-events: none;
-      opacity: .095;
+      opacity: .04;
       z-index: 1;
       background-image:
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,.9) .4px, transparent .8px),
-        radial-gradient(circle at 80% 60%, rgba(255,255,255,.7) .4px, transparent .8px),
-        radial-gradient(circle at 40% 85%, rgba(255,255,255,.8) .4px, transparent .8px);
-      background-size: 7px 7px, 9px 9px, 11px 11px;
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.5) .35px, transparent .75px),
+        radial-gradient(circle at 80% 60%, rgba(255,255,255,.38) .35px, transparent .75px),
+        radial-gradient(circle at 40% 85%, rgba(255,255,255,.44) .35px, transparent .75px);
+      background-size: 13px 13px, 17px 17px, 19px 19px;
       animation: noise-jitter .25s infinite steps(2);
     }
 
@@ -96,12 +105,12 @@
       border: 2px solid var(--green);
       background: linear-gradient(to bottom, rgba(0,18,0,.22), rgba(0,12,0,.34));
       box-shadow:
-        inset 0 0 30px rgba(55,255,99,.18),
-        0 0 16px rgba(55,255,99,.34),
-        0 0 34px rgba(55,255,99,.16);
+        inset 0 0 34px rgba(55,255,99,.24),
+        0 0 20px rgba(55,255,99,.42),
+        0 0 40px rgba(55,255,99,.20);
       padding: 24px 22px 20px;
       margin-bottom: 26px;
-      min-height: 320px;
+      min-height: 260px;
       position: relative;
       overflow: hidden;
     }
@@ -111,12 +120,12 @@
       position: absolute;
       inset: 0;
       pointer-events: none;
-      background: repeating-linear-gradient(to bottom, rgba(55,255,99,.08) 0 1px, rgba(0,0,0,.08) 1px 2px, transparent 2px 5px);
-      opacity: .6;
+      background: repeating-linear-gradient(to bottom, rgba(80,255,130,.12) 0 1px, rgba(0,0,0,.12) 1px 3px, rgba(16,60,20,.12) 3px 5px, transparent 5px 7px);
+      opacity: .78;
     }
 
     .hero {
-      max-width: 980px;
+      max-width: 1320px;
       margin: 0 auto;
       text-align: center;
       position: relative;
@@ -125,36 +134,44 @@
 
     .hero-rule {
       height: 2px;
-      width: 64%;
-      margin: 8px auto 12px;
+      width: min(92%, 880px);
+      margin: 8px auto 10px;
       background: linear-gradient(to right, transparent, var(--green), transparent);
-      box-shadow: 0 0 14px rgba(55,255,99,.60), 0 0 24px rgba(55,255,99,.18);
+      box-shadow: 0 0 18px rgba(55,255,99,.72), 0 0 30px rgba(55,255,99,.24);
     }
 
     .ascii-title {
       display: inline-block;
       margin: 0 auto;
-      padding: 4px 0;
+      padding: 8px 22px 10px;
       text-align: center;
-      font-size: 28px;
+      font-size: 27px;
       line-height: 1;
-      letter-spacing: .10em;
+      letter-spacing: .085em;
       white-space: pre;
-      color: rgba(55,255,99,.96);
+      color: rgba(55,255,99,.98);
       text-shadow:
-        0 0 2px rgba(55,255,99,1),
-        0 0 12px rgba(55,255,99,.82),
-        0 0 26px rgba(55,255,99,.42),
-        0 0 40px rgba(55,255,99,.22);
-      filter: drop-shadow(0 0 10px rgba(55,255,99,.28));
+        0 0 3px rgba(55,255,99,1),
+        0 0 14px rgba(55,255,99,.90),
+        0 0 30px rgba(55,255,99,.50),
+        0 0 46px rgba(55,255,99,.25);
+      filter: drop-shadow(0 0 12px rgba(55,255,99,.34));
       position: relative;
+      border: 2px solid rgba(55,255,99,.88);
+      background:
+        repeating-linear-gradient(to bottom, rgba(110,255,150,.10) 0 1px, rgba(0,0,0,.12) 1px 3px, transparent 3px 6px),
+        rgba(0, 24, 0, 0.24);
+      box-shadow:
+        inset 0 0 18px rgba(55,255,99,.16),
+        0 0 16px rgba(55,255,99,.34),
+        0 0 30px rgba(55,255,99,.16);
     }
 
     .ascii-title::before {
       content: attr(data-glow);
       position: absolute;
       inset: 0;
-      color: rgba(55,255,99,.26);
+      color: rgba(55,255,99,.30);
       transform: translate(1px, 0);
       z-index: -1;
       white-space: pre;
@@ -163,12 +180,12 @@
     .corp-tag {
       display: inline-block;
       margin-top: 12px;
-      padding: 6px 22px;
+      padding: 6px 18px;
       background: rgba(55,255,99,.96);
       color: #031103;
       font-weight: 700;
       letter-spacing: .04em;
-      box-shadow: 0 0 14px rgba(55,255,99,.45), inset 0 0 10px rgba(255,255,255,.08);
+      box-shadow: 0 0 18px rgba(55,255,99,.55), inset 0 0 12px rgba(255,255,255,.10);
     }
 
     .status, .category, .feed-item {
@@ -183,8 +200,8 @@
       line-height: 1.22;
       text-shadow:
         0 0 2px rgba(55,255,99,1),
-        0 0 12px rgba(55,255,99,.62),
-        0 0 24px rgba(55,255,99,.24);
+        0 0 14px rgba(55,255,99,.74),
+        0 0 28px rgba(55,255,99,.30);
       text-align: right;
     }
 
@@ -209,7 +226,7 @@
       padding: 5px 10px;
       background: rgba(0,40,0,.35);
       font-size: 22px;
-      box-shadow: inset 0 0 8px rgba(55,255,99,.06), 0 0 8px rgba(55,255,99,.12);
+      box-shadow: inset 0 0 10px rgba(55,255,99,.10), 0 0 12px rgba(55,255,99,.18);
     }
 
     .feed-item {
@@ -221,8 +238,8 @@
       word-break: break-word;
       text-shadow:
         0 0 2px rgba(55,255,99,1),
-        0 0 13px rgba(55,255,99,.56),
-        0 0 24px rgba(55,255,99,.22);
+        0 0 16px rgba(55,255,99,.68),
+        0 0 30px rgba(55,255,99,.28);
     }
 
     .feed-item a {
@@ -239,7 +256,7 @@
       background: var(--green);
       vertical-align: bottom;
       animation: blink .85s steps(1) infinite;
-      box-shadow: 0 0 10px rgba(55,255,99,.5);
+      box-shadow: 0 0 14px rgba(55,255,99,.62);
       position: relative;
       z-index: 2;
     }
@@ -249,14 +266,14 @@
       right: 16px;
       bottom: 16px;
       background:
-        repeating-linear-gradient(to bottom, rgba(255,255,255,.12) 0 1px, rgba(0,0,0,.08) 1px 3px),
-        rgba(55,255,99,.96);
+        repeating-linear-gradient(to bottom, rgba(255,255,255,.16) 0 1px, rgba(0,0,0,.14) 1px 3px, rgba(16,58,20,.14) 3px 5px),
+        rgba(55,255,99,.98);
       color: #061006;
       padding: 8px 14px;
       font-size: 22px;
       font-weight: 700;
       z-index: 5;
-      box-shadow: 0 0 16px rgba(55,255,99,.45), inset 0 0 10px rgba(255,255,255,.08);
+      box-shadow: 0 0 20px rgba(55,255,99,.56), inset 0 0 12px rgba(255,255,255,.10);
     }
 
     @keyframes blink { 50% { opacity: 0; } }
@@ -278,7 +295,7 @@
       body { padding-inline: 10px; }
       .frame { padding-inline: 10px; min-height: 250px; }
       .corp-tag { font-size: 12px; padding-inline: 10px; }
-      .ascii-title { font-size: 15px; letter-spacing: .06em; }
+      .ascii-title { font-size: 15px; letter-spacing: .05em; padding-inline: 10px; }
       .status-line, .meta-line, .category, .feed-item, #sync-timer { font-size: 16px; }
     }
   </style>
@@ -291,7 +308,7 @@
     <section class="frame">
       <div class="hero">
         <div class="hero-rule"></div>
-<pre class="ascii-title" data-glow=">>> [ GLOBAL NEWS NETWORK ] <<<">>>> [ GLOBAL NEWS NETWORK ] <<<</pre>
+<pre class="ascii-title" data-glow=">>> [ GLOBAL DIGITAL NETWORK ] <<<">>>> [ GLOBAL DIGITAL NETWORK ] <<<</pre>
         <div class="hero-rule"></div>
         <div class="corp-tag">============ A WEYLAND-YUTANI COMPANY ============</div>
       </div>
