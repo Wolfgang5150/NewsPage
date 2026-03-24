@@ -378,9 +378,9 @@
       <section class="frame">
         <div class="hero">
           <div class="hero-rule"></div>
-          <pre class="ascii-title" data-glow="---### GLOBAL DIGITAL NETWORK ###---">---### GLOBAL DIGITAL NETWORK ###---</pre>
+          <pre class="ascii-title" data-glow="---### GLOBAL DIGITAL NETWORK ###---"> -# GLOBAL DIGITAL NETWORK #-</pre>
           <div class="hero-rule"></div>
-          <div class="corp-tag">============ A WEYLAND-YUTANI COMPANY ============</div>
+          <div class="corp-tag">================== A WEYLAND-YUTANI COMPANY ==================</div>
         </div>
       </section>
 
@@ -508,7 +508,7 @@
             await typeFeedItem(item);
           }
         }
-        const monitorEl = await revealLine('[SYSTEM STATUS: MONITORING ACTIVE]', 'meta-line startup-meta');
+        const monitorEl = await revealLine('[SYSTEM STATUS: MONITORING NARRATIVE ACTIVE]', 'meta-line startup-meta');
         monitorEl.style.animation = 'blink .34s steps(1) infinite';
       }
 
@@ -516,8 +516,8 @@
         statusOutput.innerHTML = '';
         feedOutput.innerHTML = '';
         await revealLine('...INITIALIZING PROTOCOL 5150/1984', 'status-line startup-line');
-        await revealLine('...ESTABLISHING SECURE COMM-LINK', 'status-line startup-line');
         await revealLine('...UPLINK TARGET: ICE STATION ZEBRA', 'status-line startup-line');
+        await revealLine('...ESTABLISHING SECURE COMM-LINK', 'status-line startup-line');
         await revealLine('...STATUS: SIGNAL LOSS', 'status-line startup-line');
         await revealLine('...ERROR: ' + String(err && err.message ? err.message : err), 'meta-line startup-meta');
       }
