@@ -429,6 +429,7 @@
       font-weight: 700;
       z-index: 5;
       box-shadow: 0 0 20px rgba(55,255,99,.56), inset 0 0 12px rgba(255,255,255,.10);
+      animation: purge-pulse 3.6s ease-in-out infinite;
     }
 
     @keyframes blink { 50% { opacity: 0; } }
@@ -449,6 +450,21 @@
     @keyframes corp-marquee {
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
+    }
+
+    @keyframes purge-pulse {
+      0%, 100% {
+        background:
+          repeating-linear-gradient(to bottom, rgba(255,255,255,.16) 0 1px, rgba(0,0,0,.14) 1px 3px, rgba(16,58,20,.14) 3px 5px),
+          rgba(55,255,99,.88);
+        box-shadow: 0 0 14px rgba(55,255,99,.42), inset 0 0 10px rgba(255,255,255,.08);
+      }
+      50% {
+        background:
+          repeating-linear-gradient(to bottom, rgba(255,255,255,.12) 0 1px, rgba(0,0,0,.18) 1px 3px, rgba(16,58,20,.18) 3px 5px),
+          rgba(35,180,70,.72);
+        box-shadow: 0 0 8px rgba(55,255,99,.22), inset 0 0 6px rgba(255,255,255,.05);
+      }
     }
 
     @media (max-width: 700px) {
@@ -482,7 +498,7 @@
       <section class="frame">
         <div class="hero">
           <div class="hero-rule"></div>
-          <pre class="ascii-title" data-glow="///  G L O B A L  D I G I T A L  N E T W O R K   ///">///  G L O B A L  D I G I T A L  N E T W O R K   ///</pre>
+          <pre class="ascii-title" data-glow="/// GLOBAL DIGITAL NETWORK ///">/// GLOBAL DIGITAL NETWORK ///</pre>
           <div class="hero-rule"></div>
           <div class="corp-tag" id="corp-tag">
             <div class="corp-tag-static" id="corp-tag-static">GDN OPERATIONAL COMPLIANCE TERMINAL  ///   ACHERON_OS_REVISION: v2084.42</div>
