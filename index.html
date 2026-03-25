@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="240">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GLOBAL DIGITAL NETWORK v23</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLOBAL DIGITAL NETWORK</title>
   <style>
     :root {
       --bg: #020602;
@@ -582,7 +581,7 @@
     (() => {
       const REFRESH_SECONDS = 240;
       const FEED_JSON_URL = './feeds.json';
-      const MAX_ITEMS = 10;
+      const MAX_ITEMS = 13;
       const TYPE_DELAY = 20;
       const LINE_DELAY = 185;
       const STARTUP_LINE_DELAY = 1400;
@@ -858,24 +857,67 @@
         statusCycleInterval = setInterval(showLine, STATUS_CYCLE_DELAY);
       }
 
-      async function render(data) {
+      async function renderSection(section) {
         removeCursor();
         feedOutput.innerHTML = '';
+
+        await typeCategory(`[SEC: ${section.name}]`);
+        const items = Array.isArray(section.items) ? section.items.slice(0, MAX_ITEMS) : [];
+        if (!items.length) {
+          await typeLine('> [NO_TRANSMISSIONS_RECEIVED]', 'feed-item');
+          return;
+        }
+        for (const item of items) {
+          await typeFeedItem(item);
+        }
+      }
+
+      async function runSections(data) {
         startStatusCycle(data);
 
-        await sleep(STARTUP_LINE_DELAY);
-
-        for (const section of data.categories) {
-          await typeCategory(`[SEC: ${section.name}]`);
-          const items = Array.isArray(section.items) ? section.items.slice(0, MAX_ITEMS) : [];
-          if (!items.length) {
-            await typeLine('> [NO_TRANSMISSIONS_RECEIVED]', 'feed-item');
-            continue;
-          }
-          for (const item of items) {
-            await typeFeedItem(item);
-          }
+        const sections = Array.isArray(data.categories) ? data.categories : [];
+        if (!sections.length) {
+          feedOutput.innerHTML = '';
+          await typeLine('> [NO_TRANSMISSIONS_RECEIVED]', 'feed-item');
+          return;
         }
+
+        let currentSectionIndex = 0;
+        let transitionInProgress = false;
+
+        const loadCurrentSection = async () => {
+          transitionInProgress = true;
+          await renderSection(sections[currentSectionIndex]);
+          timeLeft = REFRESH_SECONDS;
+          updateTimer();
+          transitionInProgress = false;
+        };
+
+        await sleep(STARTUP_LINE_DELAY);
+        await loadCurrentSection();
+
+        setInterval(async () => {
+          if (transitionInProgress) return;
+
+          timeLeft -= 1;
+          if (timeLeft < 0) {
+            transitionInProgress = true;
+
+            if (currentSectionIndex >= sections.length - 1) {
+              window.location.reload();
+              return;
+            }
+
+            currentSectionIndex += 1;
+            await renderSection(sections[currentSectionIndex]);
+            timeLeft = REFRESH_SECONDS;
+            updateTimer();
+            transitionInProgress = false;
+            return;
+          }
+
+          updateTimer();
+        }, 1000);
       }
 
       async function fail(err) {
@@ -893,18 +935,10 @@
         const response = await fetch(FEED_JSON_URL + '?t=' + Date.now(), { cache: 'no-store' });
         if (!response.ok) throw new Error('HTTP ' + response.status);
         const data = normalize(await response.json());
-        await render(data);
+        await runSections(data);
       }
 
       updateTimer();
-      setInterval(() => {
-        timeLeft -= 1;
-        if (timeLeft < 0) {
-          window.location.reload();
-          return;
-        }
-        updateTimer();
-      }, 1000);
 
       initCorpTicker();
       loadFeeds().catch(fail);
