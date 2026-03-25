@@ -476,16 +476,16 @@
 <body>
   <div class="screen-noise" aria-hidden="true"></div>
   <div class="page">
-    <div id="sync-timer">NEXT_SYNC: 04:00</div>
+    <div id="sync-timer">PURGE_CYCLE: 04:00</div>
 
     <div class="top-panel">
       <section class="frame">
         <div class="hero">
           <div class="hero-rule"></div>
-          <pre class="ascii-title" data-glow="---### GLOBAL DIGITAL NETWORK ###---">---### GLOBAL DIGITAL NETWORK ###---</pre>
+          <pre class="ascii-title" data-glow="///  G L O B A L  D I G I T A L  N E T W O R K   ///">///  G L O B A L  D I G I T A L  N E T W O R K   ///</pre>
           <div class="hero-rule"></div>
           <div class="corp-tag" id="corp-tag">
-            <div class="corp-tag-static" id="corp-tag-static">============ A WEYLAND-YUTANI COMPANY ============</div>
+            <div class="corp-tag-static" id="corp-tag-static">GDN OPERATIONAL COMPLIANCE TERMINAL  ///   ACHERON_OS_REVISION: v2084.42</div>
             <div class="corp-tag-marquee" id="corp-tag-marquee" aria-hidden="false">
               <div class="corp-tag-track" id="corp-tag-track"></div>
             </div>
@@ -617,7 +617,7 @@
       function updateTimer() {
         const minutes = Math.floor(timeLeft / 60);
         const seconds = timeLeft % 60;
-        timerEl.textContent = `NEXT_SYNC: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        timerEl.textContent = `PURGE_CYCLE: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
       }
 
       function sleep(ms) {
