@@ -181,8 +181,9 @@
     .ascii-title::before { content: none; }
 
     .corp-tag {
-      position: relative;
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       min-height: 30px;
       margin-top: 0;
@@ -200,56 +201,6 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: clip;
-    }
-
-    .corp-tag-static,
-    .corp-tag-marquee {
-      min-height: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .corp-tag-static {
-      width: 100%;
-    }
-
-    .corp-tag-marquee {
-      position: absolute;
-      inset: 0;
-      justify-content: flex-start;
-      overflow: hidden;
-      opacity: 0;
-      transition: opacity .35s ease;
-      pointer-events: none;
-    }
-
-    .corp-tag.scrolling .corp-tag-static {
-      opacity: 0;
-    }
-
-    .corp-tag.scrolling .corp-tag-marquee {
-      opacity: 1;
-    }
-
-    .corp-tag-track {
-      display: inline-flex;
-      align-items: center;
-      white-space: nowrap;
-      will-change: transform;
-      animation: corp-marquee 34s linear infinite;
-      padding-left: 100%;
-    }
-
-    .corp-tag-item {
-      display: inline-block;
-      padding-right: 3.2rem;
-    }
-
-    .corp-tag-sep {
-      display: inline-block;
-      padding-right: 3.2rem;
-      opacity: .9;
     }
 
     .top-panel {
@@ -355,21 +306,6 @@
 
     .feed-item a:hover { text-decoration: underline; }
 
-    .headline-time {
-      display: inline;
-      margin-left: 10px;
-      font-size: 8px;
-      line-height: 1.18;
-      opacity: .34;
-      color: var(--green);
-      text-shadow:
-        0 0 1px rgba(55,255,99,.45),
-        0 0 5px rgba(55,255,99,.22),
-        0 0 10px rgba(55,255,99,.10);
-      filter: brightness(.78);
-      white-space: nowrap;
-    }
-
     .cursor {
       display: inline-block;
       width: 12px;
@@ -411,11 +347,6 @@
       64% { opacity: .996; }
     }
 
-    @keyframes corp-marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
     @media (max-width: 700px) {
       body { padding-inline: 10px; }
       .page { height: calc(100vh - 84px); }
@@ -432,7 +363,6 @@
         padding-inline: 0;
       }
       .status-line, .meta-line { font-size: 7px; }
-      .headline-time { font-size: 7px; }
       .category, .feed-item, #sync-timer { font-size: 14px; }
     }
   </style>
@@ -446,14 +376,9 @@
       <section class="frame">
         <div class="hero">
           <div class="hero-rule"></div>
-          <pre class="ascii-title" data-glow="---### GLOBAL DIGITAL NETWORK ###---">---### GLOBAL DIGITAL NETWORK ###---</pre>
+          <pre class="ascii-title" data-glow="-# GLOBAL DIGITAL NETWORK #-">-# GLOBAL DIGITAL NETWORK #-</pre>
           <div class="hero-rule"></div>
-          <div class="corp-tag" id="corp-tag">
-            <div class="corp-tag-static" id="corp-tag-static">============ A WEYLAND-YUTANI COMPANY ============</div>
-            <div class="corp-tag-marquee" id="corp-tag-marquee" aria-hidden="true">
-              <div class="corp-tag-track" id="corp-tag-track"></div>
-            </div>
-          </div>
+          <div class="corp-tag">============ A WEYLAND-YUTANI COMPANY ============</div>
         </div>
       </section>
 
@@ -477,124 +402,9 @@
       const timerEl = document.getElementById('sync-timer');
       const statusOutput = document.getElementById('status-output');
       const feedOutput = document.getElementById('feed-output');
-      const corpTag = document.getElementById('corp-tag');
-      const corpTagTrack = document.getElementById('corp-tag-track');
-
-      const CUSTOM_TICKERS = ['AAPL', 'NASX', 'AMZN', 'GOOGL', 'META', 'TSLA'];
-
-      const US_HOLIDAYS = {
-        '01-01': 'NEW YEAR\'S DAY',
-        '01-15': 'MARTIN LUTHER KING JR DAY',
-        '02-14': 'VALENTINE\'S DAY',
-        '02-19': 'PRESIDENTS DAY',
-        '03-17': 'ST PATRICK\'S DAY',
-        '04-01': 'APRIL FOOLS\' DAY',
-        '05-27': 'MEMORIAL DAY',
-        '06-14': 'FLAG DAY',
-        '07-04': 'INDEPENDENCE DAY',
-        '09-02': 'LABOR DAY',
-        '10-14': 'INDIGENOUS PEOPLES DAY',
-        '10-31': 'HALLOWEEN',
-        '11-11': 'VETERANS DAY',
-        '11-28': 'THANKSGIVING',
-        '12-24': 'CHRISTMAS EVE',
-        '12-25': 'CHRISTMAS DAY',
-        '12-31': 'NEW YEAR\'S EVE'
-      };
-
-      const US_OBSCURE = {
-        '01-02': 'SCIENCE FICTION DAY',
-        '01-08': 'BUBBLE BATH DAY',
-        '02-05': 'WORLD NUTELLA DAY',
-        '02-16': 'DO A GROUCH A FAVOR DAY',
-        '03-14': 'PI DAY',
-        '04-12': 'GRILLED CHEESE DAY',
-        '05-04': 'STAR WARS DAY',
-        '06-21': 'GO SKATEBOARDING DAY',
-        '07-15': 'GUMMY WORM DAY',
-        '08-08': 'INTERNATIONAL CAT DAY',
-        '09-19': 'TALK LIKE A PIRATE DAY',
-        '10-01': 'INTERNATIONAL COFFEE DAY',
-        '10-21': 'BACK TO THE FUTURE DAY',
-        '11-08': 'WORLD URBANISM DAY',
-        '12-08': 'PRETEND TO BE A TIME TRAVELER DAY'
-      };
-
-      const WORLD_OBSERVANCES = {
-        '01-27': 'INTERNATIONAL HOLOCAUST REMEMBRANCE DAY',
-        '02-20': 'WORLD DAY OF SOCIAL JUSTICE',
-        '03-08': 'INTERNATIONAL WOMEN\'S DAY',
-        '03-20': 'INTERNATIONAL DAY OF HAPPINESS',
-        '04-22': 'EARTH DAY',
-        '05-15': 'INTERNATIONAL DAY OF FAMILIES',
-        '06-05': 'WORLD ENVIRONMENT DAY',
-        '06-21': 'INTERNATIONAL YOGA DAY',
-        '07-30': 'INTERNATIONAL DAY OF FRIENDSHIP',
-        '08-12': 'INTERNATIONAL YOUTH DAY',
-        '09-21': 'INTERNATIONAL DAY OF PEACE',
-        '10-01': 'INTERNATIONAL DAY OF OLDER PERSONS',
-        '10-24': 'UNITED NATIONS DAY',
-        '11-13': 'WORLD KINDNESS DAY',
-        '12-10': 'HUMAN RIGHTS DAY'
-      };
-
-      const WORLD_OBSCURE = {
-        '01-04': 'WORLD BRAILLE DAY',
-        '02-27': 'INTERNATIONAL POLAR BEAR DAY',
-        '03-23': 'WORLD METEOROLOGICAL DAY',
-        '04-26': 'ALIEN DAY',
-        '05-25': 'TOWEL DAY',
-        '06-08': 'WORLD OCEANS DAY',
-        '07-17': 'WORLD EMOJI DAY',
-        '08-19': 'WORLD PHOTOGRAPHY DAY',
-        '09-26': 'WORLD MARITIME DAY',
-        '10-08': 'WORLD OCTOPUS DAY',
-        '11-19': 'WORLD TOILET DAY',
-        '12-11': 'INTERNATIONAL MOUNTAIN DAY'
-      };
       let timeLeft = REFRESH_SECONDS;
       let activeCursor = null;
       let statusCycleInterval = null;
-
-      function todayKey() {
-        const now = new Date();
-        const mm = String(now.getMonth() + 1).padStart(2, '0');
-        const dd = String(now.getDate()).padStart(2, '0');
-        return `${mm}-${dd}`;
-      }
-
-      function pickDailyLabel(primaryMap, fallbackMap) {
-        const key = todayKey();
-        return primaryMap[key] || fallbackMap[key] || 'NO SPECIAL OBSERVANCE';
-      }
-
-      function buildCorpTickerItems() {
-        const usHoliday = pickDailyLabel(US_HOLIDAYS, US_OBSCURE);
-        const worldHoliday = pickDailyLabel(WORLD_OBSERVANCES, WORLD_OBSCURE);
-
-        const items = [
-          ...CUSTOM_TICKERS.map(t => `TICKER ${t}`),
-          `US HOLIDAY ${usHoliday}`,
-          `WORLD OBSERVANCE ${worldHoliday}`
-        ];
-
-        return items;
-      }
-
-      function initCorpTicker() {
-        if (!corpTag || !corpTagTrack) return;
-        const items = buildCorpTickerItems();
-        const doubled = items.concat(items);
-        corpTagTrack.innerHTML = doubled.map((item, idx) => {
-          const sep = idx < doubled.length - 1 ? '<span class="corp-tag-sep">///</span>' : '';
-          return `<span class="corp-tag-item">${item}</span>${sep}`;
-        }).join('');
-
-        corpTag.classList.remove('scrolling');
-        setTimeout(() => {
-          corpTag.classList.add('scrolling');
-        }, 5000);
-      }
 
       function updateTimer() {
         const minutes = Math.floor(timeLeft / 60);
@@ -669,45 +479,17 @@
         return el;
       }
 
-      function formatHeadlineTimestamp(value) {
-        if (!value) return '';
-        try {
-          const d = new Date(value);
-          if (Number.isNaN(d.getTime())) return '';
-          const yyyy = d.getUTCFullYear();
-          const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
-          const dd = String(d.getUTCDate()).padStart(2, '0');
-          const hh = String(d.getUTCHours()).padStart(2, '0');
-          const min = String(d.getUTCMinutes()).padStart(2, '0');
-          return ` [${yyyy}-${mm}-${dd} ${hh}:${min} UTC]`;
-        } catch (e) {
-          return '';
-        }
-      }
-
       async function typeFeedItem(item) {
         const row = document.createElement('div');
         row.className = 'feed-item';
-
         const a = document.createElement('a');
         a.href = item.link || '#';
         a.target = '_blank';
         a.rel = 'noopener noreferrer';
         row.appendChild(a);
-
         feedOutput.appendChild(row);
         autoScrollFeeds();
-
         await typeText(a, '+ ' + (item.title || 'UNTITLED REPORT'));
-
-        const stamp = formatHeadlineTimestamp(item.published_at);
-        if (stamp) {
-          const time = document.createElement('span');
-          time.className = 'headline-time';
-          time.textContent = stamp;
-          row.appendChild(time);
-        }
-
         autoScrollFeeds();
         await sleep(118);
         return row;
@@ -803,7 +585,6 @@
         updateTimer();
       }, 1000);
 
-      initCorpTicker();
       loadFeeds().catch(fail);
     })();
   </script>
