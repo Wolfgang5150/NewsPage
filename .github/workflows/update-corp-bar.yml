@@ -209,7 +209,8 @@ jobs:
                       "symbol": symbol,
                       "price": "N/A",
                       "change_percent": "",
-                      "as_of": "NO API KEY",
+                      "as_of": now_et.isoformat(),
+                      "note": "NO API KEY",
                   }
 
               params = urlencode({
@@ -226,17 +227,16 @@ jobs:
                       "symbol": symbol,
                       "price": "N/A",
                       "change_percent": "",
-                      "as_of": note[:80],
+                      "as_of": now_et.isoformat(),
+                      "note": note[:80],
                   }
-
-              latest_day = quote.get("07. latest trading day", "")
-              latest_stamp = latest_day + " ET" if latest_day else now_et.strftime("%Y-%m-%d %H:%M ET")
 
               return {
                   "symbol": symbol,
                   "price": quote.get("05. price", "N/A"),
                   "change_percent": quote.get("10. change percent", ""),
-                  "as_of": latest_stamp,
+                  "as_of": now_et.isoformat(),
+                  "latest_trading_day": quote.get("07. latest trading day", ""),
               }
 
           today_items = fetch_checkiday_items(now_et)
