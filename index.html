@@ -597,7 +597,7 @@
 
   <script>
     (() => {
-      const REFRESH_SECONDS = 150;
+      const REFRESH_SECONDS = 90;
       const FEED_JSON_URL = './feeds.json';
       const MAX_ITEMS = 13;
       const TYPE_DELAY = 20;
@@ -621,7 +621,7 @@
       const DEFAULT_US_HOLIDAY = { name: 'US HOLIDAY DATA LINK OFFLINE', region: 'US', date: '', link: '#', source: 'LOCAL FALLBACK' };
       const DEFAULT_WORLD_OBSERVANCE = { name: 'WORLD OBSERVANCE DATA LINK OFFLINE', region: 'WORLD', date: '', link: '#', source: 'LOCAL FALLBACK' };
       let timeLeft = REFRESH_SECONDS;
-      const TIMER_STEP_MS = 100;
+      const TIMER_STEP_MS = 10;
       let activeCursor = null;
       let statusCycleInterval = null;
 
@@ -718,11 +718,12 @@
       }
 
       function updateTimer() {
-        const totalTenths = Math.max(0, Math.ceil(timeLeft * 10));
-        const minutes = Math.floor(totalTenths / 600);
-        const seconds = Math.floor((totalTenths % 600) / 10);
-        const fractional = totalTenths % 10;
-        timerEl.textContent = `PURGE_CYCLE: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}:${String(fractional).padStart(2, '0')}`;
+        const totalHundredths = Math.max(0, Math.ceil(timeLeft * 100));
+        const minutes = Math.floor(totalHundredths / 6000);
+        const seconds = Math.floor((totalHundredths % 6000) / 100);
+        const fractionalPrimary = Math.floor((totalHundredths % 100) / 10);
+        const fractionalSecondary = totalHundredths % 10;
+        timerEl.textContent = `PURGE_CYCLE: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}:${String(fractionalPrimary).padStart(2, '0')}:${String(fractionalSecondary).padStart(2, '0')}`;
       }
 
       function sleep(ms) {
@@ -904,9 +905,9 @@
         }
 
         if (nextSectionName) {
-          await typeNextUp(`.....BUFFERING DATA SEQUENCE: ${nextSectionName}`);
+          await typeNextUp(`.....BUFFERING INCOMING DATA SEQUENCE: ${nextSectionName}`);
         } else {
-          await typeNextUp('.....BUFFERING DATA SEQUENCE: SYSTEM RELOAD / RETURN TO FIRST SECTION');
+          await typeNextUp('.....BUFFERING INCOMING DATA SEQUENCE: SYSTEM RELOAD / RETURN TO FIRST SECTION');
         }
       }
 
