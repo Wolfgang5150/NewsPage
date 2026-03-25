@@ -446,6 +446,22 @@
       white-space: nowrap;
     }
 
+.next-up {
+      margin: 22px 0 10px;
+      padding-left: 10px;
+      border-left: 2px solid rgba(55,255,99,.45);
+      font-size: 8px;
+      line-height: 1.18;
+      opacity: .40;
+      color: var(--green);
+      text-shadow:
+        0 0 1px rgba(55,255,99,.45),
+        0 0 5px rgba(55,255,99,.22),
+        0 0 10px rgba(55,255,99,.10);
+      filter: brightness(.78);
+      white-space: nowrap;
+    }
+
     .cursor {
       display: inline-block;
       width: 12px;
@@ -544,6 +560,7 @@
       }
       .status-line, .meta-line { font-size: 7px; }
       .headline-time { font-size: 7px; }
+      .next-up { font-size: 7px; }
       .category, .feed-item { font-size: 14px; }
       #sync-timer { font-size: 12px; max-width: calc(100vw - 36px); }
     }
@@ -579,7 +596,7 @@
 
   <script>
     (() => {
-      const REFRESH_SECONDS = 240;
+      const REFRESH_SECONDS = 150;
       const FEED_JSON_URL = './feeds.json';
       const MAX_ITEMS = 13;
       const TYPE_DELAY = 20;
@@ -815,6 +832,17 @@
         return row;
       }
 
+      async function typeNextUp(text) {
+        const el = document.createElement('div');
+        el.className = 'next-up';
+        feedOutput.appendChild(el);
+        autoScrollFeeds();
+        await typeText(el, text);
+        autoScrollFeeds();
+        await sleep(LINE_DELAY);
+        return el;
+      }
+
       function normalize(data) {
         if (!data || !Array.isArray(data.categories)) {
           throw new Error('INVALID_FEEDS_JSON');
@@ -857,7 +885,7 @@
         statusCycleInterval = setInterval(showLine, STATUS_CYCLE_DELAY);
       }
 
-      async function renderSection(section) {
+      async function renderSection(section, nextSectionName) {
         removeCursor();
         feedOutput.innerHTML = '';
 
@@ -865,10 +893,16 @@
         const items = Array.isArray(section.items) ? section.items.slice(0, MAX_ITEMS) : [];
         if (!items.length) {
           await typeLine('> [NO_TRANSMISSIONS_RECEIVED]', 'feed-item');
-          return;
+        } else {
+          for (const item of items) {
+            await typeFeedItem(item);
+          }
         }
-        for (const item of items) {
-          await typeFeedItem(item);
+
+        if (nextSectionName) {
+          await typeNextUp(`...NEXT_UP: ${nextSectionName}`);
+        } else {
+          await typeNextUp('...NEXT_UP: SYSTEM RELOAD / RETURN TO FIRST SECTION');
         }
       }
 
@@ -884,10 +918,14 @@
 
         let currentSectionIndex = 0;
         let transitionInProgress = false;
+        let cycleInterval = null;
 
         const loadCurrentSection = async () => {
           transitionInProgress = true;
-          await renderSection(sections[currentSectionIndex]);
+          const nextName = currentSectionIndex < sections.length - 1
+            ? sections[currentSectionIndex + 1].name
+            : null;
+          await renderSection(sections[currentSectionIndex], nextName);
           timeLeft = REFRESH_SECONDS;
           updateTimer();
           transitionInProgress = false;
@@ -896,7 +934,7 @@
         await sleep(STARTUP_LINE_DELAY);
         await loadCurrentSection();
 
-        setInterval(async () => {
+        cycleInterval = setInterval(async () => {
           if (transitionInProgress) return;
 
           timeLeft -= 1;
@@ -904,12 +942,16 @@
             transitionInProgress = true;
 
             if (currentSectionIndex >= sections.length - 1) {
+              clearInterval(cycleInterval);
               window.location.reload();
               return;
             }
 
             currentSectionIndex += 1;
-            await renderSection(sections[currentSectionIndex]);
+            const nextName = currentSectionIndex < sections.length - 1
+              ? sections[currentSectionIndex + 1].name
+              : null;
+            await renderSection(sections[currentSectionIndex], nextName);
             timeLeft = REFRESH_SECONDS;
             updateTimer();
             transitionInProgress = false;
