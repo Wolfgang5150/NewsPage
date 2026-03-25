@@ -717,11 +717,6 @@
         return row;
       }
 
-        autoScrollFeeds();
-        await sleep(118);
-        return row;
-      }
-
       function normalize(data) {
         if (!data || !Array.isArray(data.categories)) {
           throw new Error('INVALID_FEEDS_JSON');
