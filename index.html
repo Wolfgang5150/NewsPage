@@ -222,6 +222,7 @@
       opacity: 0;
       transition: opacity .35s ease;
       pointer-events: auto;
+      contain: layout paint;
     }
 
     .corp-tag.scrolling .corp-tag-static {
@@ -236,9 +237,19 @@
       display: inline-flex;
       align-items: center;
       white-space: nowrap;
+      width: max-content;
+      min-width: max-content;
       will-change: transform;
-      animation: corp-marquee 38s linear infinite;
-      padding-left: 100%;
+      animation: corp-marquee 47.5s linear infinite;
+      padding-left: 0;
+      transform: translate3d(0,0,0);
+    }
+
+    .corp-tag-segment {
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      flex: 0 0 auto;
     }
 
     .corp-tag-item {
@@ -265,7 +276,7 @@
     .corp-tag-meta {
       opacity: .72;
       margin-left: .55rem;
-      font-size: .92em;
+      font-size: .5em; line-height: 1; white-space: nowrap;
     }
 
     .corp-tag-sep {
@@ -433,13 +444,14 @@
         font-size: clamp(7px, 2.2vw, 11px);
         padding-inline: 6px;
       }
-      .corp-tag-track { animation-duration: 32s; }
+      .corp-tag-track { animation-duration: 40s; }
       .ascii-title {
         font-size: clamp(12px, 4.8vw, 22px);
         letter-spacing: .03em;
         padding-inline: 0;
       }
       .status-line, .meta-line { font-size: 7px; }
+      .headline-time { font-size: 7px; }
       .category, .feed-item, #sync-timer { font-size: 14px; }
     }
   </style>
@@ -520,11 +532,44 @@
           .replace(/"/g, '&quot;');
       }
 
+      function formatCorpTimestamp(value) {
+        if (!value) return '';
+        try {
+          const d = new Date(value);
+          if (Number.isNaN(d.getTime())) return String(value);
+          const mm = String(d.getMonth() + 1).padStart(2, '0');
+          const dd = String(d.getDate()).padStart(2, '0');
+          const yy = String(d.getFullYear()).slice(-2);
+          const hh = String(((d.getHours() + 11) % 12) + 1);
+          const min = String(d.getMinutes()).padStart(2, '0');
+          const ampm = d.getHours() >= 12 ? 'PM' : 'AM';
+          return `${mm}/${dd}/${yy} ${hh}:${min} ${ampm}`;
+        } catch (e) {
+          return String(value);
+        }
+      }
+
+      function formatHeadlineTimestamp(value) {
+        if (!value) return '';
+        try {
+          const d = new Date(value);
+          if (Number.isNaN(d.getTime())) return '';
+          const yyyy = d.getUTCFullYear();
+          const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
+          const dd = String(d.getUTCDate()).padStart(2, '0');
+          const hh = String(d.getUTCHours()).padStart(2, '0');
+          const min = String(d.getUTCMinutes()).padStart(2, '0');
+          return ` [${yyyy}-${mm}-${dd} ${hh}:${min} UTC]`;
+        } catch (e) {
+          return '';
+        }
+      }
+
       function formatTickerItem(ticker) {
         const symbol = ticker.symbol || 'UNKNOWN';
         const price = (ticker.price !== undefined && ticker.price !== null && ticker.price !== '') ? String(ticker.price) : 'N/A';
         const change = ticker.change_percent ? ` ${ticker.change_percent}` : '';
-        const stamp = ticker.as_of ? ` ${ticker.as_of}` : '';
+        const stamp = ticker.as_of ? ` ${formatCorpTimestamp(ticker.as_of)}` : '';
         const href = ticker.link || '#';
         const source = ticker.source ? ` ${ticker.source}` : '';
         return `<a class="corp-tag-item" href="${esc(href)}" target="_blank" rel="noopener noreferrer"><span class="corp-tag-value">${esc(symbol)} ${esc(price)}${esc(change)}</span><span class="corp-tag-meta">${esc(stamp + source)}</span></a>`;
@@ -534,7 +579,7 @@
         const item = payload || fallbackPayload;
         const href = item.link || '#';
         const region = item.region ? ` ${item.region}` : '';
-        const stamp = item.date ? ` ${item.date}` : '';
+        const stamp = item.date ? ` ${formatCorpTimestamp(item.date + 'T12:00:00')}` : '';
         const source = item.source ? ` ${item.source}` : '';
         return `<a class="corp-tag-item" href="${esc(href)}" target="_blank" rel="noopener noreferrer"><span class="corp-tag-label">${esc(label)}</span><span class="corp-tag-value">${esc(item.name)}${esc(region)}</span><span class="corp-tag-meta">${esc(stamp + source)}</span></a>`;
       }
@@ -561,11 +606,15 @@
         if (!corpTag || !corpTagTrack) return;
         const data = await loadCorpBarData();
         const items = buildCorpTickerItems(data);
-        const doubled = items.concat(items);
-        corpTagTrack.innerHTML = doubled.map((item, idx) => {
-          const sep = idx < doubled.length - 1 ? '<span class="corp-tag-sep">///</span>' : '';
+        const segmentHtml = items.map((item, idx) => {
+          const sep = idx < items.length - 1 ? '<span class="corp-tag-sep">///</span>' : '<span class="corp-tag-sep">///</span>';
           return `${item}${sep}`;
         }).join('');
+
+        corpTagTrack.innerHTML =
+          `<span class="corp-tag-segment">${segmentHtml}</span>` +
+          `<span class="corp-tag-segment">${segmentHtml}</span>`;
+
         corpTag.classList.remove('scrolling');
         setTimeout(() => corpTag.classList.add('scrolling'), 5000);
       }
@@ -654,6 +703,20 @@
         feedOutput.appendChild(row);
         autoScrollFeeds();
         await typeText(a, '+ ' + (item.title || 'UNTITLED REPORT'));
+
+        const stamp = formatHeadlineTimestamp(item.published_at);
+        if (stamp) {
+          const time = document.createElement('span');
+          time.className = 'headline-time';
+          time.textContent = stamp;
+          row.appendChild(time);
+        }
+
+        autoScrollFeeds();
+        await sleep(118);
+        return row;
+      }
+
         autoScrollFeeds();
         await sleep(118);
         return row;
