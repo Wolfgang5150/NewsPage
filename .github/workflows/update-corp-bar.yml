@@ -1,0 +1,166 @@
+name: Update corp bar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 12 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update-corp-bar:
+    runs-on: ubuntu-latest
+    env:
+      ALPHA_VANTAGE_API_KEY: ${{ secrets.ALPHA_VANTAGE_API_KEY }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build corpbar.json
+        shell: bash
+        run: |
+          python <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone
+          from urllib.parse import urlencode
+          from urllib.request import Request, urlopen
+
+          TICKERS = ['AAPL', 'COMP', 'AMZN', 'GOOGL', 'META', 'TSLA']
+          ALPHA_KEY = os.environ.get('ALPHA_VANTAGE_API_KEY', '').strip()
+
+          WORLD_OBSERVANCE_FALLBACK = {
+              '01-04': 'WORLD BRAILLE DAY',
+              '02-27': 'INTERNATIONAL POLAR BEAR DAY',
+              '03-20': 'INTERNATIONAL DAY OF HAPPINESS',
+              '04-22': 'EARTH DAY',
+              '05-25': 'TOWEL DAY',
+              '06-08': 'WORLD OCEANS DAY',
+              '07-17': 'WORLD EMOJI DAY',
+              '08-19': 'WORLD PHOTOGRAPHY DAY',
+              '09-21': 'INTERNATIONAL DAY OF PEACE',
+              '10-08': 'WORLD OCTOPUS DAY',
+              '11-13': 'WORLD KINDNESS DAY',
+              '12-10': 'HUMAN RIGHTS DAY'
+          }
+
+          def get_json(url, headers=None):
+              req = Request(url, headers=headers or {'User-Agent': 'Mozilla/5.0'})
+              with urlopen(req, timeout=30) as response:
+                  return json.loads(response.read().decode('utf-8'))
+
+          now = datetime.now(timezone.utc)
+          mmdd = now.strftime('%m-%d')
+          payload = {
+              'as_of': now.isoformat().replace('+00:00', 'Z'),
+              'tickers': [],
+              'us_holiday': None,
+              'world_observance': None
+          }
+
+          def alpha_quote(symbol):
+              params = urlencode({
+                  'function': 'GLOBAL_QUOTE',
+                  'symbol': symbol,
+                  'apikey': ALPHA_KEY
+              })
+              data = get_json('https://www.alphavantage.co/query?' + params)
+              quote = data.get('Global Quote', {})
+              return {
+                  'symbol': symbol,
+                  'price': quote.get('05. price', 'N/A'),
+                  'change_percent': quote.get('10. change percent', ''),
+                  'as_of': quote.get('07. latest trading day', ''),
+                  'source_url': f'https://www.nasdaq.com/market-activity/stocks/{symbol.lower()}' if symbol != 'COMP' else 'https://www.nasdaq.com/market-activity/index/comp'
+              }
+
+          for symbol in TICKERS:
+              if not ALPHA_KEY:
+                  payload['tickers'].append({
+                      'symbol': symbol,
+                      'price': 'N/A',
+                      'change_percent': '',
+                      'as_of': 'NO API KEY',
+                      'source_url': f'https://www.nasdaq.com/market-activity/stocks/{symbol.lower()}' if symbol != 'COMP' else 'https://www.nasdaq.com/market-activity/index/comp'
+                  })
+                  continue
+
+              try:
+                  payload['tickers'].append(alpha_quote(symbol))
+              except Exception:
+                  payload['tickers'].append({
+                      'symbol': symbol,
+                      'price': 'N/A',
+                      'change_percent': '',
+                      'as_of': 'SOURCE ERROR',
+                      'source_url': f'https://www.nasdaq.com/market-activity/stocks/{symbol.lower()}' if symbol != 'COMP' else 'https://www.nasdaq.com/market-activity/index/comp'
+                  })
+
+          # No-key live US holiday via Nager.Date
+          try:
+              us_list = get_json(f'https://date.nager.at/api/v3/PublicHolidays/{now.year}/US')
+              us_today = next((h for h in us_list if h.get('date') == now.strftime('%Y-%m-%d')), None)
+              if us_today:
+                  payload['us_holiday'] = {
+                      'name': us_today.get('localName') or us_today.get('name') or 'UNKNOWN',
+                      'region': 'US',
+                      'date': us_today.get('date', ''),
+                      'source_url': 'https://date.nager.at/Api'
+                  }
+          except Exception:
+              pass
+
+          if not payload['us_holiday']:
+              payload['us_holiday'] = {
+                  'name': 'NO US PUBLIC HOLIDAY TODAY',
+                  'region': 'US',
+                  'date': now.strftime('%Y-%m-%d'),
+                  'source_url': 'https://date.nager.at/Api'
+              }
+
+          # No-key live world holiday via Nager.Date, with observance fallback
+          countries = ['GB', 'CA', 'AU', 'NZ']
+          found_world = None
+          for code in countries:
+              try:
+                  holidays = get_json(f'https://date.nager.at/api/v3/PublicHolidays/{now.year}/{code}')
+                  today_hit = next((h for h in holidays if h.get('date') == now.strftime('%Y-%m-%d')), None)
+                  if today_hit:
+                      found_world = {
+                          'name': today_hit.get('localName') or today_hit.get('name') or 'UNKNOWN',
+                          'region': code,
+                          'date': today_hit.get('date', ''),
+                          'source_url': 'https://date.nager.at/Api'
+                      }
+                      break
+              except Exception:
+                  continue
+
+          if found_world:
+              payload['world_observance'] = found_world
+          else:
+              payload['world_observance'] = {
+                  'name': WORLD_OBSERVANCE_FALLBACK.get(mmdd, 'NO MAJOR WORLD HOLIDAY TODAY'),
+                  'region': 'GLOBAL',
+                  'date': now.strftime('%Y-%m-%d'),
+                  'source_url': 'https://date.nager.at/'
+              }
+
+          with open('corpbar.json', 'w', encoding='utf-8') as fh:
+              json.dump(payload, fh, indent=2, ensure_ascii=False)
+              fh.write('\n')
+          PY
+
+      - name: Commit updated corpbar.json
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add corpbar.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update corpbar.json"
+          git push
