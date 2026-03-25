@@ -3,10 +3,15 @@ name: Update corp bar
 on:
   workflow_dispatch:
   schedule:
-    - cron: '43 12 * * *'
+    - cron: '0 9,11,13,15,17 * * 1-5'
+      timezone: 'America/New_York'
 
 permissions:
   contents: write
+
+concurrency:
+  group: corpbar-update
+  cancel-in-progress: false
 
 jobs:
   update-corp-bar:
@@ -23,133 +28,220 @@ jobs:
           python <<'PY'
           import json
           import os
-          from datetime import datetime, timezone
+          import time
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
           from urllib.parse import urlencode
           from urllib.request import Request, urlopen
 
-          TICKERS = ['AAPL', 'COMP', 'AMZN', 'GOOGL', 'META', 'TSLA']
-          ALPHA_KEY = os.environ.get('ALPHA_VANTAGE_API_KEY', '').strip()
+          EASTERN = ZoneInfo("America/New_York")
+          now_et = datetime.now(EASTERN)
+
+          # 5 symbols max to stay inside Alpha Vantage free daily limit:
+          # 5 runs/day x 5 symbols = 25 requests/day
+          TICKERS = [
+              ("AAPL", "https://www.nasdaq.com/market-activity/stocks/aapl", "Nasdaq"),
+              ("COMP", "https://www.nasdaq.com/market-activity/index/comp", "Nasdaq"),
+              ("AMZN", "https://www.nasdaq.com/market-activity/stocks/amzn", "Nasdaq"),
+              ("GOOGL", "https://www.nasdaq.com/market-activity/stocks/googl", "Nasdaq"),
+              ("META", "https://www.nasdaq.com/market-activity/stocks/meta", "Nasdaq"),
+          ]
+
+          MAJOR_US_HOLIDAYS = {
+              "01-01": ("New Year's Day", "https://date.nager.at/"),
+              "01-15": ("Martin Luther King Jr. Day", "https://date.nager.at/"),
+              "02-19": ("Presidents Day", "https://date.nager.at/"),
+              "05-27": ("Memorial Day", "https://date.nager.at/"),
+              "06-19": ("Juneteenth", "https://date.nager.at/"),
+              "07-04": ("Independence Day", "https://date.nager.at/"),
+              "09-02": ("Labor Day", "https://date.nager.at/"),
+              "10-14": ("Indigenous Peoples Day", "https://date.nager.at/"),
+              "11-11": ("Veterans Day", "https://date.nager.at/"),
+              "11-28": ("Thanksgiving", "https://date.nager.at/"),
+              "12-25": ("Christmas Day", "https://date.nager.at/"),
+          }
+
+          OBSCURE_US_FALLBACK = {
+              "01-02": ("Science Fiction Day", "https://www.checkiday.com/1/2"),
+              "02-16": ("Do a Grouch a Favor Day", "https://www.checkiday.com/2/16"),
+              "03-14": ("Pi Day", "https://www.checkiday.com/3/14"),
+              "04-12": ("Grilled Cheese Day", "https://www.checkiday.com/4/12"),
+              "05-04": ("Star Wars Day", "https://www.checkiday.com/5/4"),
+              "06-21": ("Go Skateboarding Day", "https://www.checkiday.com/6/21"),
+              "07-15": ("Gummy Worm Day", "https://www.checkiday.com/7/15"),
+              "08-08": ("International Cat Day", "https://www.checkiday.com/8/8"),
+              "09-19": ("Talk Like a Pirate Day", "https://www.checkiday.com/9/19"),
+              "10-21": ("Back to the Future Day", "https://www.checkiday.com/10/21"),
+              "11-08": ("World Urbanism Day", "https://www.checkiday.com/11/8"),
+              "12-08": ("Pretend to Be a Time Traveler Day", "https://www.checkiday.com/12/8"),
+          }
 
           WORLD_OBSERVANCE_FALLBACK = {
-              '01-04': 'WORLD BRAILLE DAY',
-              '02-27': 'INTERNATIONAL POLAR BEAR DAY',
-              '03-20': 'INTERNATIONAL DAY OF HAPPINESS',
-              '04-22': 'EARTH DAY',
-              '05-25': 'TOWEL DAY',
-              '06-08': 'WORLD OCEANS DAY',
-              '07-17': 'WORLD EMOJI DAY',
-              '08-19': 'WORLD PHOTOGRAPHY DAY',
-              '09-21': 'INTERNATIONAL DAY OF PEACE',
-              '10-08': 'WORLD OCTOPUS DAY',
-              '11-13': 'WORLD KINDNESS DAY',
-              '12-10': 'HUMAN RIGHTS DAY'
+              "01-27": ("International Holocaust Remembrance Day", "https://www.un.org/en/observances/holocaust-remembrance-day"),
+              "03-08": ("International Women's Day", "https://www.un.org/en/observances/womens-day"),
+              "03-20": ("International Day of Happiness", "https://www.un.org/en/observances/happiness-day"),
+              "04-22": ("Earth Day", "https://www.earthday.org/"),
+              "06-05": ("World Environment Day", "https://www.un.org/en/observances/environment-day"),
+              "07-30": ("International Day of Friendship", "https://www.un.org/en/observances/friendship-day"),
+              "09-21": ("International Day of Peace", "https://www.un.org/en/observances/international-day-peace"),
+              "10-24": ("United Nations Day", "https://www.un.org/en/observances/un-day"),
+              "11-13": ("World Kindness Day", "https://www.randomactsofkindness.org/world-kindness-day"),
+              "12-10": ("Human Rights Day", "https://www.un.org/en/observances/human-rights-day"),
           }
+
+          WORLD_HOLIDAY_COUNTRIES = [
+              ("GB", "United Kingdom"),
+              ("CA", "Canada"),
+              ("AU", "Australia"),
+              ("JP", "Japan"),
+              ("DE", "Germany"),
+          ]
 
           def get_json(url, headers=None):
-              req = Request(url, headers=headers or {'User-Agent': 'Mozilla/5.0'})
+              req = Request(url, headers=headers or {"User-Agent": "Mozilla/5.0"})
               with urlopen(req, timeout=30) as response:
-                  return json.loads(response.read().decode('utf-8'))
+                  return json.loads(response.read().decode("utf-8"))
 
-          now = datetime.now(timezone.utc)
-          mmdd = now.strftime('%m-%d')
+          def nager_holidays(country_code, year):
+              url = f"https://date.nager.at/api/v3/PublicHolidays/{year}/{country_code}"
+              try:
+                  return get_json(url)
+              except Exception:
+                  return []
+
+          def todays_us_holiday(now_dt):
+              mmdd = now_dt.strftime("%m-%d")
+              holidays = nager_holidays("US", now_dt.year)
+              today_items = [h for h in holidays if h.get("date") == now_dt.strftime("%Y-%m-%d")]
+              if today_items:
+                  picked = today_items[0]
+                  return {
+                      "name": picked.get("localName") or picked.get("name") or "US Holiday",
+                      "region": "US",
+                      "date": picked.get("date", ""),
+                      "link": "https://date.nager.at/",
+                      "source": "Nager.Date"
+                  }
+
+              if mmdd in MAJOR_US_HOLIDAYS:
+                  name, link = MAJOR_US_HOLIDAYS[mmdd]
+                  return {
+                      "name": name,
+                      "region": "US",
+                      "date": now_dt.strftime("%Y-%m-%d"),
+                      "link": link,
+                      "source": "Major US Holiday Fallback"
+                  }
+
+              if mmdd in OBSCURE_US_FALLBACK:
+                  name, link = OBSCURE_US_FALLBACK[mmdd]
+                  return {
+                      "name": name,
+                      "region": "US",
+                      "date": now_dt.strftime("%Y-%m-%d"),
+                      "link": link,
+                      "source": "Obscure US Fallback"
+                  }
+
+              return {
+                  "name": "No Major U.S. Holiday Today",
+                  "region": "US",
+                  "date": now_dt.strftime("%Y-%m-%d"),
+                  "link": "https://www.checkiday.com/",
+                  "source": "Fallback"
+              }
+
+          def todays_world_observance(now_dt):
+              target_date = now_dt.strftime("%Y-%m-%d")
+              mmdd = now_dt.strftime("%m-%d")
+
+              for code, name in WORLD_HOLIDAY_COUNTRIES:
+                  holidays = nager_holidays(code, now_dt.year)
+                  today_items = [h for h in holidays if h.get("date") == target_date]
+                  if today_items:
+                      picked = today_items[0]
+                      return {
+                          "name": picked.get("localName") or picked.get("name") or "World Holiday",
+                          "region": name,
+                          "date": target_date,
+                          "link": "https://date.nager.at/",
+                          "source": "Nager.Date"
+                      }
+
+              if mmdd in WORLD_OBSERVANCE_FALLBACK:
+                  name, link = WORLD_OBSERVANCE_FALLBACK[mmdd]
+                  return {
+                      "name": name,
+                      "region": "WORLD",
+                      "date": target_date,
+                      "link": link,
+                      "source": "Observance Fallback"
+                  }
+
+              return {
+                  "name": "No Major World Observance Today",
+                  "region": "WORLD",
+                  "date": target_date,
+                  "link": "https://www.un.org/en/observances/list-days-weeks",
+                  "source": "Fallback"
+              }
+
+          def fetch_quote(symbol):
+              api_key = os.environ.get("ALPHA_VANTAGE_API_KEY", "").strip()
+              if not api_key:
+                  return {
+                      "symbol": symbol,
+                      "price": "N/A",
+                      "change_percent": "",
+                      "as_of": "NO API KEY",
+                  }
+
+              params = urlencode({
+                  "function": "GLOBAL_QUOTE",
+                  "symbol": symbol,
+                  "apikey": api_key,
+              })
+              data = get_json("https://www.alphavantage.co/query?" + params)
+              quote = data.get("Global Quote", {})
+
+              if not quote:
+                  note = data.get("Note") or data.get("Information") or "NO DATA"
+                  return {
+                      "symbol": symbol,
+                      "price": "N/A",
+                      "change_percent": "",
+                      "as_of": note[:80],
+                  }
+
+              latest_day = quote.get("07. latest trading day", "")
+              latest_stamp = latest_day + " ET" if latest_day else now_et.strftime("%Y-%m-%d %H:%M ET")
+
+              return {
+                  "symbol": symbol,
+                  "price": quote.get("05. price", "N/A"),
+                  "change_percent": quote.get("10. change percent", ""),
+                  "as_of": latest_stamp,
+              }
+
           payload = {
-              'as_of': now.isoformat().replace('+00:00', 'Z'),
-              'tickers': [],
-              'us_holiday': None,
-              'world_observance': None
+              "as_of": now_et.isoformat(),
+              "tickers": [],
+              "us_holiday": todays_us_holiday(now_et),
+              "world_observance": todays_world_observance(now_et),
           }
 
-          def alpha_quote(symbol):
-              params = urlencode({
-                  'function': 'GLOBAL_QUOTE',
-                  'symbol': symbol,
-                  'apikey': ALPHA_KEY
-              })
-              data = get_json('https://www.alphavantage.co/query?' + params)
-              quote = data.get('Global Quote', {})
-              return {
-                  'symbol': symbol,
-                  'price': quote.get('05. price', 'N/A'),
-                  'change_percent': quote.get('10. change percent', ''),
-                  'as_of': quote.get('07. latest trading day', ''),
-                  'source_url': f'https://www.nasdaq.com/market-activity/stocks/{symbol.lower()}' if symbol != 'COMP' else 'https://www.nasdaq.com/market-activity/index/comp'
-              }
+          # Spread requests to reduce per-minute throttling
+          for idx, (symbol, link, source) in enumerate(TICKERS):
+              quote = fetch_quote(symbol)
+              quote["link"] = link
+              quote["source"] = source
+              payload["tickers"].append(quote)
+              if idx < len(TICKERS) - 1:
+                  time.sleep(15)
 
-          for symbol in TICKERS:
-              if not ALPHA_KEY:
-                  payload['tickers'].append({
-                      'symbol': symbol,
-                      'price': 'N/A',
-                      'change_percent': '',
-                      'as_of': 'NO API KEY',
-                      'source_url': f'https://www.nasdaq.com/market-activity/stocks/{symbol.lower()}' if symbol != 'COMP' else 'https://www.nasdaq.com/market-activity/index/comp'
-                  })
-                  continue
-
-              try:
-                  payload['tickers'].append(alpha_quote(symbol))
-              except Exception:
-                  payload['tickers'].append({
-                      'symbol': symbol,
-                      'price': 'N/A',
-                      'change_percent': '',
-                      'as_of': 'SOURCE ERROR',
-                      'source_url': f'https://www.nasdaq.com/market-activity/stocks/{symbol.lower()}' if symbol != 'COMP' else 'https://www.nasdaq.com/market-activity/index/comp'
-                  })
-
-          # No-key live US holiday via Nager.Date
-          try:
-              us_list = get_json(f'https://date.nager.at/api/v3/PublicHolidays/{now.year}/US')
-              us_today = next((h for h in us_list if h.get('date') == now.strftime('%Y-%m-%d')), None)
-              if us_today:
-                  payload['us_holiday'] = {
-                      'name': us_today.get('localName') or us_today.get('name') or 'UNKNOWN',
-                      'region': 'US',
-                      'date': us_today.get('date', ''),
-                      'source_url': 'https://date.nager.at/Api'
-                  }
-          except Exception:
-              pass
-
-          if not payload['us_holiday']:
-              payload['us_holiday'] = {
-                  'name': 'NO US PUBLIC HOLIDAY TODAY',
-                  'region': 'US',
-                  'date': now.strftime('%Y-%m-%d'),
-                  'source_url': 'https://date.nager.at/Api'
-              }
-
-          # No-key live world holiday via Nager.Date, with observance fallback
-          countries = ['GB', 'CA', 'AU', 'NZ']
-          found_world = None
-          for code in countries:
-              try:
-                  holidays = get_json(f'https://date.nager.at/api/v3/PublicHolidays/{now.year}/{code}')
-                  today_hit = next((h for h in holidays if h.get('date') == now.strftime('%Y-%m-%d')), None)
-                  if today_hit:
-                      found_world = {
-                          'name': today_hit.get('localName') or today_hit.get('name') or 'UNKNOWN',
-                          'region': code,
-                          'date': today_hit.get('date', ''),
-                          'source_url': 'https://date.nager.at/Api'
-                      }
-                      break
-              except Exception:
-                  continue
-
-          if found_world:
-              payload['world_observance'] = found_world
-          else:
-              payload['world_observance'] = {
-                  'name': WORLD_OBSERVANCE_FALLBACK.get(mmdd, 'NO MAJOR WORLD HOLIDAY TODAY'),
-                  'region': 'GLOBAL',
-                  'date': now.strftime('%Y-%m-%d'),
-                  'source_url': 'https://date.nager.at/'
-              }
-
-          with open('corpbar.json', 'w', encoding='utf-8') as fh:
+          with open("corpbar.json", "w", encoding="utf-8") as fh:
               json.dump(payload, fh, indent=2, ensure_ascii=False)
-              fh.write('\n')
+              fh.write("\n")
           PY
 
       - name: Commit updated corpbar.json
