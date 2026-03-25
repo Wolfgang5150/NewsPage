@@ -28,17 +28,18 @@ jobs:
           python <<'PY'
           import json
           import os
+          import re
           import time
           from datetime import datetime
+          from html import unescape
           from zoneinfo import ZoneInfo
-          from urllib.parse import urlencode
+          from urllib.parse import urlencode, urljoin
           from urllib.request import Request, urlopen
 
           EASTERN = ZoneInfo("America/New_York")
           now_et = datetime.now(EASTERN)
 
-          # 5 symbols max to stay inside Alpha Vantage free daily limit:
-          # 5 runs/day x 5 symbols = 25 requests/day
+          # 5 symbols x 5 runs/day = 25 requests/day (fits Alpha Vantage free daily cap)
           TICKERS = [
               ("AAPL", "https://www.nasdaq.com/market-activity/stocks/aapl", "Nasdaq"),
               ("COMP", "https://www.nasdaq.com/market-activity/index/comp", "Nasdaq"),
@@ -46,48 +47,6 @@ jobs:
               ("GOOGL", "https://www.nasdaq.com/market-activity/stocks/googl", "Nasdaq"),
               ("META", "https://www.nasdaq.com/market-activity/stocks/meta", "Nasdaq"),
           ]
-
-          MAJOR_US_HOLIDAYS = {
-              "01-01": ("New Year's Day", "https://date.nager.at/"),
-              "01-15": ("Martin Luther King Jr. Day", "https://date.nager.at/"),
-              "02-19": ("Presidents Day", "https://date.nager.at/"),
-              "05-27": ("Memorial Day", "https://date.nager.at/"),
-              "06-19": ("Juneteenth", "https://date.nager.at/"),
-              "07-04": ("Independence Day", "https://date.nager.at/"),
-              "09-02": ("Labor Day", "https://date.nager.at/"),
-              "10-14": ("Indigenous Peoples Day", "https://date.nager.at/"),
-              "11-11": ("Veterans Day", "https://date.nager.at/"),
-              "11-28": ("Thanksgiving", "https://date.nager.at/"),
-              "12-25": ("Christmas Day", "https://date.nager.at/"),
-          }
-
-          OBSCURE_US_FALLBACK = {
-              "01-02": ("Science Fiction Day", "https://www.checkiday.com/1/2"),
-              "02-16": ("Do a Grouch a Favor Day", "https://www.checkiday.com/2/16"),
-              "03-14": ("Pi Day", "https://www.checkiday.com/3/14"),
-              "04-12": ("Grilled Cheese Day", "https://www.checkiday.com/4/12"),
-              "05-04": ("Star Wars Day", "https://www.checkiday.com/5/4"),
-              "06-21": ("Go Skateboarding Day", "https://www.checkiday.com/6/21"),
-              "07-15": ("Gummy Worm Day", "https://www.checkiday.com/7/15"),
-              "08-08": ("International Cat Day", "https://www.checkiday.com/8/8"),
-              "09-19": ("Talk Like a Pirate Day", "https://www.checkiday.com/9/19"),
-              "10-21": ("Back to the Future Day", "https://www.checkiday.com/10/21"),
-              "11-08": ("World Urbanism Day", "https://www.checkiday.com/11/8"),
-              "12-08": ("Pretend to Be a Time Traveler Day", "https://www.checkiday.com/12/8"),
-          }
-
-          WORLD_OBSERVANCE_FALLBACK = {
-              "01-27": ("International Holocaust Remembrance Day", "https://www.un.org/en/observances/holocaust-remembrance-day"),
-              "03-08": ("International Women's Day", "https://www.un.org/en/observances/womens-day"),
-              "03-20": ("International Day of Happiness", "https://www.un.org/en/observances/happiness-day"),
-              "04-22": ("Earth Day", "https://www.earthday.org/"),
-              "06-05": ("World Environment Day", "https://www.un.org/en/observances/environment-day"),
-              "07-30": ("International Day of Friendship", "https://www.un.org/en/observances/friendship-day"),
-              "09-21": ("International Day of Peace", "https://www.un.org/en/observances/international-day-peace"),
-              "10-24": ("United Nations Day", "https://www.un.org/en/observances/un-day"),
-              "11-13": ("World Kindness Day", "https://www.randomactsofkindness.org/world-kindness-day"),
-              "12-10": ("Human Rights Day", "https://www.un.org/en/observances/human-rights-day"),
-          }
 
           WORLD_HOLIDAY_COUNTRIES = [
               ("GB", "United Kingdom"),
@@ -97,10 +56,15 @@ jobs:
               ("DE", "Germany"),
           ]
 
-          def get_json(url, headers=None):
+          CHECKIDAY_BASE = "https://www.checkiday.com"
+
+          def get_text(url, headers=None):
               req = Request(url, headers=headers or {"User-Agent": "Mozilla/5.0"})
               with urlopen(req, timeout=30) as response:
-                  return json.loads(response.read().decode("utf-8"))
+                  return response.read().decode("utf-8", errors="replace")
+
+          def get_json(url, headers=None):
+              return json.loads(get_text(url, headers=headers))
 
           def nager_holidays(country_code, year):
               url = f"https://date.nager.at/api/v3/PublicHolidays/{year}/{country_code}"
@@ -109,10 +73,10 @@ jobs:
               except Exception:
                   return []
 
-          def todays_us_holiday(now_dt):
-              mmdd = now_dt.strftime("%m-%d")
+          def todays_major_us_holiday(now_dt):
+              target_date = now_dt.strftime("%Y-%m-%d")
               holidays = nager_holidays("US", now_dt.year)
-              today_items = [h for h in holidays if h.get("date") == now_dt.strftime("%Y-%m-%d")]
+              today_items = [h for h in holidays if h.get("date") == target_date]
               if today_items:
                   picked = today_items[0]
                   return {
@@ -122,68 +86,120 @@ jobs:
                       "link": "https://date.nager.at/",
                       "source": "Nager.Date"
                   }
+              return None
 
-              if mmdd in MAJOR_US_HOLIDAYS:
-                  name, link = MAJOR_US_HOLIDAYS[mmdd]
-                  return {
-                      "name": name,
-                      "region": "US",
-                      "date": now_dt.strftime("%Y-%m-%d"),
-                      "link": link,
-                      "source": "Major US Holiday Fallback"
-                  }
-
-              if mmdd in OBSCURE_US_FALLBACK:
-                  name, link = OBSCURE_US_FALLBACK[mmdd]
-                  return {
-                      "name": name,
-                      "region": "US",
-                      "date": now_dt.strftime("%Y-%m-%d"),
-                      "link": link,
-                      "source": "Obscure US Fallback"
-                  }
-
-              return {
-                  "name": "No Major U.S. Holiday Today",
-                  "region": "US",
-                  "date": now_dt.strftime("%Y-%m-%d"),
-                  "link": "https://www.checkiday.com/",
-                  "source": "Fallback"
-              }
-
-          def todays_world_observance(now_dt):
+          def todays_world_major_holiday(now_dt):
               target_date = now_dt.strftime("%Y-%m-%d")
-              mmdd = now_dt.strftime("%m-%d")
-
-              for code, name in WORLD_HOLIDAY_COUNTRIES:
+              for code, region_name in WORLD_HOLIDAY_COUNTRIES:
                   holidays = nager_holidays(code, now_dt.year)
                   today_items = [h for h in holidays if h.get("date") == target_date]
                   if today_items:
                       picked = today_items[0]
                       return {
                           "name": picked.get("localName") or picked.get("name") or "World Holiday",
-                          "region": name,
+                          "region": region_name,
                           "date": target_date,
                           "link": "https://date.nager.at/",
                           "source": "Nager.Date"
                       }
+              return None
 
-              if mmdd in WORLD_OBSERVANCE_FALLBACK:
-                  name, link = WORLD_OBSERVANCE_FALLBACK[mmdd]
+          def strip_tags(value):
+              value = re.sub(r"<[^>]+>", "", value)
+              value = unescape(value)
+              value = re.sub(r"\s+", " ", value).strip()
+              return value
+
+          def fetch_checkiday_items(now_dt):
+              url = f"{CHECKIDAY_BASE}/{now_dt.month}/{now_dt.day}/{now_dt.year}"
+              try:
+                  html = get_text(url, headers={"User-Agent": "Mozilla/5.0"})
+              except Exception:
+                  return []
+
+              # Extract H2-linked holiday titles before the "On This Day in History" section.
+              pattern = re.compile(
+                  r"<h2[^>]*>\s*<a[^>]+href=[\"\'](?P<href>[^\"\']+)[\"\'][^>]*>(?P<title>.*?)</a>\s*</h2>",
+                  re.IGNORECASE | re.DOTALL
+              )
+
+              items = []
+              for match in pattern.finditer(html):
+                  title = strip_tags(match.group("title"))
+                  href = urljoin(CHECKIDAY_BASE, match.group("href"))
+                  if not title or title.lower() == "on this day in history":
+                      continue
+                  items.append({
+                      "name": title,
+                      "link": href,
+                      "source": "Checkiday",
+                      "date": now_dt.strftime("%Y-%m-%d"),
+                  })
+
+              # Deduplicate while preserving order
+              seen = set()
+              unique = []
+              for item in items:
+                  key = (item["name"], item["link"])
+                  if key in seen:
+                      continue
+                  seen.add(key)
+                  unique.append(item)
+              return unique
+
+          def pick_checkiday_us_observance(items, now_dt):
+              # Prefer clearly US/national items; otherwise take the first valid daily listing item.
+              preferred = []
+              secondary = []
+              for item in items:
+                  name = item["name"].lower()
+                  if any(token in name for token in ["national ", "american ", "u.s.", "us ", " usa "]):
+                      preferred.append(item)
+                  elif any(token in name for token in ["international ", "world ", "global ", "united nations"]):
+                      secondary.append(item)
+
+              picked = preferred[0] if preferred else (items[0] if items else None)
+              if not picked:
                   return {
-                      "name": name,
-                      "region": "WORLD",
-                      "date": target_date,
-                      "link": link,
-                      "source": "Observance Fallback"
+                      "name": "Daily Observance",
+                      "region": "US",
+                      "date": now_dt.strftime("%Y-%m-%d"),
+                      "link": CHECKIDAY_BASE,
+                      "source": "Static Fallback"
                   }
 
               return {
-                  "name": "No Major World Observance Today",
+                  "name": picked["name"],
+                  "region": "US",
+                  "date": picked["date"],
+                  "link": picked["link"],
+                  "source": picked["source"]
+              }
+
+          def pick_checkiday_world_observance(items, now_dt):
+              # Prefer international/world/global observances; otherwise fall back to the first item.
+              preferred = []
+              for item in items:
+                  name = item["name"].lower()
+                  if any(token in name for token in ["international ", "world ", "global ", "united nations"]):
+                      preferred.append(item)
+
+              picked = preferred[0] if preferred else (items[0] if items else None)
+              if not picked:
+                  return {
+                      "name": "Daily World Observance",
+                      "region": "WORLD",
+                      "date": now_dt.strftime("%Y-%m-%d"),
+                      "link": CHECKIDAY_BASE,
+                      "source": "Static Fallback"
+                  }
+
+              return {
+                  "name": picked["name"],
                   "region": "WORLD",
-                  "date": target_date,
-                  "link": "https://www.un.org/en/observances/list-days-weeks",
-                  "source": "Fallback"
+                  "date": picked["date"],
+                  "link": picked["link"],
+                  "source": picked["source"]
               }
 
           def fetch_quote(symbol):
@@ -223,14 +239,24 @@ jobs:
                   "as_of": latest_stamp,
               }
 
+          today_items = fetch_checkiday_items(now_et)
+
+          us_holiday = todays_major_us_holiday(now_et)
+          if not us_holiday:
+              us_holiday = pick_checkiday_us_observance(today_items, now_et)
+
+          world_observance = todays_world_major_holiday(now_et)
+          if not world_observance:
+              world_observance = pick_checkiday_world_observance(today_items, now_et)
+
           payload = {
               "as_of": now_et.isoformat(),
               "tickers": [],
-              "us_holiday": todays_us_holiday(now_et),
-              "world_observance": todays_world_observance(now_et),
+              "us_holiday": us_holiday,
+              "world_observance": world_observance,
           }
 
-          # Spread requests to reduce per-minute throttling
+          # Spread requests to reduce per-minute throttling on Alpha Vantage free tier
           for idx, (symbol, link, source) in enumerate(TICKERS):
               quote = fetch_quote(symbol)
               quote["link"] = link
