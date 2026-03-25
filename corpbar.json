@@ -1,59 +1,59 @@
 {
-  "as_of": "2026-03-25T15:00:54.661035Z",
+  "as_of": "2026-03-25T11:27:48.530231-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "",
-      "source_url": "https://www.nasdaq.com/market-activity/stocks/aapl"
+      "price": "251.6400",
+      "change_percent": "0.0596%",
+      "as_of": "2026-03-24 ET",
+      "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
+      "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "",
-      "source_url": "https://www.nasdaq.com/market-activity/index/comp"
+      "price": "8.1000",
+      "change_percent": "-4.3684%",
+      "as_of": "2026-03-24 ET",
+      "link": "https://www.nasdaq.com/market-activity/index/comp",
+      "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
       "price": "207.2400",
       "change_percent": "-1.3800%",
-      "as_of": "2026-03-24",
-      "source_url": "https://www.nasdaq.com/market-activity/stocks/amzn"
+      "as_of": "2026-03-24 ET",
+      "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
+      "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "",
-      "source_url": "https://www.nasdaq.com/market-activity/stocks/googl"
+      "price": "290.4400",
+      "change_percent": "-3.8469%",
+      "as_of": "2026-03-24 ET",
+      "link": "https://www.nasdaq.com/market-activity/stocks/googl",
+      "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "",
-      "source_url": "https://www.nasdaq.com/market-activity/stocks/meta"
-    },
-    {
-      "symbol": "TSLA",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "",
-      "source_url": "https://www.nasdaq.com/market-activity/stocks/tsla"
+      "price": "592.9200",
+      "change_percent": "-1.8442%",
+      "as_of": "2026-03-24 ET",
+      "link": "https://www.nasdaq.com/market-activity/stocks/meta",
+      "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "NO US PUBLIC HOLIDAY TODAY",
+    "name": "No Major U.S. Holiday Today",
     "region": "US",
     "date": "2026-03-25",
-    "source_url": "https://date.nager.at/Api"
+    "link": "https://www.checkiday.com/",
+    "source": "Fallback"
   },
   "world_observance": {
-    "name": "NO MAJOR WORLD HOLIDAY TODAY",
-    "region": "GLOBAL",
+    "name": "No Major World Observance Today",
+    "region": "WORLD",
     "date": "2026-03-25",
-    "source_url": "https://date.nager.at/"
+    "link": "https://www.un.org/en/observances/list-days-weeks",
+    "source": "Fallback"
   }
 }
