@@ -460,6 +460,7 @@
         0 0 10px rgba(55,255,99,.10);
       filter: brightness(.78);
       white-space: nowrap;
+      animation: blink .34s steps(1) infinite;
     }
 
     .cursor {
@@ -620,6 +621,7 @@
       const DEFAULT_US_HOLIDAY = { name: 'US HOLIDAY DATA LINK OFFLINE', region: 'US', date: '', link: '#', source: 'LOCAL FALLBACK' };
       const DEFAULT_WORLD_OBSERVANCE = { name: 'WORLD OBSERVANCE DATA LINK OFFLINE', region: 'WORLD', date: '', link: '#', source: 'LOCAL FALLBACK' };
       let timeLeft = REFRESH_SECONDS;
+      const TIMER_STEP_MS = 100;
       let activeCursor = null;
       let statusCycleInterval = null;
 
@@ -716,9 +718,11 @@
       }
 
       function updateTimer() {
-        const minutes = Math.floor(timeLeft / 60);
-        const seconds = timeLeft % 60;
-        timerEl.textContent = `PURGE_CYCLE: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        const totalTenths = Math.max(0, Math.ceil(timeLeft * 10));
+        const minutes = Math.floor(totalTenths / 600);
+        const seconds = Math.floor((totalTenths % 600) / 10);
+        const fractional = totalTenths % 10;
+        timerEl.textContent = `PURGE_CYCLE: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}:${String(fractional).padStart(2, '0')}`;
       }
 
       function sleep(ms) {
@@ -900,9 +904,9 @@
         }
 
         if (nextSectionName) {
-          await typeNextUp(`...NEXT_UP: ${nextSectionName}`);
+          await typeNextUp(`.....BUFFERING DATA SEQUENCE: ${nextSectionName}`);
         } else {
-          await typeNextUp('...NEXT_UP: SYSTEM RELOAD / RETURN TO FIRST SECTION');
+          await typeNextUp('.....BUFFERING DATA SEQUENCE: SYSTEM RELOAD / RETURN TO FIRST SECTION');
         }
       }
 
@@ -937,8 +941,8 @@
         cycleInterval = setInterval(async () => {
           if (transitionInProgress) return;
 
-          timeLeft -= 1;
-          if (timeLeft < 0) {
+          timeLeft -= TIMER_STEP_MS / 1000;
+          if (timeLeft <= 0) {
             transitionInProgress = true;
 
             if (currentSectionIndex >= sections.length - 1) {
@@ -959,7 +963,7 @@
           }
 
           updateTimer();
-        }, 1000);
+        }, TIMER_STEP_MS);
       }
 
       async function fail(err) {
