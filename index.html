@@ -181,8 +181,9 @@
     .ascii-title::before { content: none; }
 
     .corp-tag {
-      position: relative;
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       min-height: 30px;
       margin-top: 0;
@@ -200,89 +201,6 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: clip;
-    }
-
-    .corp-tag-static,
-    .corp-tag-marquee {
-      min-height: 20px;
-      display: flex;
-      align-items: center;
-    }
-
-    .corp-tag-static {
-      width: 100%;
-      justify-content: center;
-    }
-
-    .corp-tag-marquee {
-      position: absolute;
-      inset: 0;
-      justify-content: flex-start;
-      overflow: hidden;
-      opacity: 0;
-      transition: opacity .35s ease;
-      pointer-events: auto;
-      contain: layout paint;
-    }
-
-    .corp-tag.scrolling .corp-tag-static {
-      opacity: 0;
-    }
-
-    .corp-tag.scrolling .corp-tag-marquee {
-      opacity: 1;
-    }
-
-    .corp-tag-track {
-      display: inline-flex;
-      align-items: center;
-      white-space: nowrap;
-      width: max-content;
-      min-width: max-content;
-      will-change: transform;
-      animation: corp-marquee 47.5s linear infinite;
-      padding-left: 0;
-      transform: translate3d(0,0,0);
-    }
-
-    .corp-tag-segment {
-      display: inline-flex;
-      align-items: center;
-      white-space: nowrap;
-      flex: 0 0 auto;
-    }
-
-    .corp-tag-item {
-      display: inline-flex;
-      align-items: center;
-      padding-right: 3.2rem;
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .corp-tag-item:hover {
-      text-decoration: underline;
-    }
-
-    .corp-tag-label {
-      opacity: .82;
-      margin-right: .55rem;
-    }
-
-    .corp-tag-value {
-      font-weight: 700;
-    }
-
-    .corp-tag-meta {
-      opacity: .72;
-      margin-left: .55rem;
-      font-size: .5em; line-height: 1; white-space: nowrap;
-    }
-
-    .corp-tag-sep {
-      display: inline-block;
-      padding-right: 3.2rem;
-      opacity: .9;
     }
 
     .top-panel {
@@ -388,6 +306,21 @@
 
     .feed-item a:hover { text-decoration: underline; }
 
+.headline-time {
+      display: inline;
+      margin-left: 10px;
+      font-size: 8px;
+      line-height: 1.18;
+      opacity: .40;
+      color: var(--green);
+      text-shadow:
+        0 0 1px rgba(55,255,99,.45),
+        0 0 5px rgba(55,255,99,.22),
+        0 0 10px rgba(55,255,99,.10);
+      filter: brightness(.78);
+      white-space: nowrap;
+    }
+
     .cursor {
       display: inline-block;
       width: 12px;
@@ -429,11 +362,6 @@
       64% { opacity: .996; }
     }
 
-    @keyframes corp-marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
     @media (max-width: 700px) {
       body { padding-inline: 10px; }
       .page { height: calc(100vh - 84px); }
@@ -444,7 +372,6 @@
         font-size: clamp(7px, 2.2vw, 11px);
         padding-inline: 6px;
       }
-      .corp-tag-track { animation-duration: 40s; }
       .ascii-title {
         font-size: clamp(12px, 4.8vw, 22px);
         letter-spacing: .03em;
@@ -465,14 +392,9 @@
       <section class="frame">
         <div class="hero">
           <div class="hero-rule"></div>
-          <pre class="ascii-title" data-glow="-# GLOBAL DIGITAL NETWORK #-">-# GLOBAL DIGITAL NETWORK #-</pre>
+          <pre class="ascii-title" data-glow="---### GLOBAL DIGITAL NETWORK ###---">---### GLOBAL DIGITAL NETWORK ###---</pre>
           <div class="hero-rule"></div>
-          <div class="corp-tag" id="corp-tag">
-            <div class="corp-tag-static" id="corp-tag-static">============ A WEYLAND-YUTANI COMPANY ============</div>
-            <div class="corp-tag-marquee" id="corp-tag-marquee" aria-hidden="false">
-              <div class="corp-tag-track" id="corp-tag-track"></div>
-            </div>
-          </div>
+          <div class="corp-tag">============ A WEYLAND-YUTANI COMPANY ============</div>
         </div>
       </section>
 
@@ -496,128 +418,9 @@
       const timerEl = document.getElementById('sync-timer');
       const statusOutput = document.getElementById('status-output');
       const feedOutput = document.getElementById('feed-output');
-      const corpTag = document.getElementById('corp-tag');
-      const corpTagTrack = document.getElementById('corp-tag-track');
-
-      const CORP_BAR_URL = './corpbar.json';
-      const DEFAULT_TICKERS = [
-        { symbol: 'AAPL', price: 'N/A', link: 'https://www.nasdaq.com/market-activity/stocks/aapl', source: 'Nasdaq' },
-        { symbol: 'COMP', price: 'N/A', link: 'https://www.nasdaq.com/market-activity/index/comp', source: 'Nasdaq' },
-        { symbol: 'AMZN', price: 'N/A', link: 'https://www.nasdaq.com/market-activity/stocks/amzn', source: 'Nasdaq' },
-        { symbol: 'GOOGL', price: 'N/A', link: 'https://www.nasdaq.com/market-activity/stocks/googl', source: 'Nasdaq' },
-        { symbol: 'META', price: 'N/A', link: 'https://www.nasdaq.com/market-activity/stocks/meta', source: 'Nasdaq' },
-        { symbol: 'TSLA', price: 'N/A', link: 'https://www.nasdaq.com/market-activity/stocks/tsla', source: 'Nasdaq' }
-      ];
-      const DEFAULT_US_HOLIDAY = { name: 'US HOLIDAY DATA LINK OFFLINE', region: 'US', date: '', link: '#', source: 'LOCAL FALLBACK' };
-      const DEFAULT_WORLD_OBSERVANCE = { name: 'WORLD OBSERVANCE DATA LINK OFFLINE', region: 'WORLD', date: '', link: '#', source: 'LOCAL FALLBACK' };
       let timeLeft = REFRESH_SECONDS;
       let activeCursor = null;
       let statusCycleInterval = null;
-
-      function normalizeCorpBar(data) {
-        if (!data || typeof data !== 'object') return null;
-        return {
-          as_of: data.as_of || '',
-          tickers: Array.isArray(data.tickers) ? data.tickers : [],
-          us_holiday: data.us_holiday && typeof data.us_holiday === 'object' ? data.us_holiday : null,
-          world_observance: data.world_observance && typeof data.world_observance === 'object' ? data.world_observance : null
-        };
-      }
-
-      function esc(value) {
-        return String(value ?? '')
-          .replace(/&/g, '&amp;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;')
-          .replace(/"/g, '&quot;');
-      }
-
-      function formatCorpTimestamp(value) {
-        if (!value) return '';
-        try {
-          const d = new Date(value);
-          if (Number.isNaN(d.getTime())) return String(value);
-          const mm = String(d.getMonth() + 1).padStart(2, '0');
-          const dd = String(d.getDate()).padStart(2, '0');
-          const yy = String(d.getFullYear()).slice(-2);
-          const hh = String(((d.getHours() + 11) % 12) + 1);
-          const min = String(d.getMinutes()).padStart(2, '0');
-          const ampm = d.getHours() >= 12 ? 'PM' : 'AM';
-          return `${mm}/${dd}/${yy} ${hh}:${min} ${ampm}`;
-        } catch (e) {
-          return String(value);
-        }
-      }
-
-      function formatHeadlineTimestamp(value) {
-        if (!value) return '';
-        try {
-          const d = new Date(value);
-          if (Number.isNaN(d.getTime())) return '';
-          const yyyy = d.getUTCFullYear();
-          const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
-          const dd = String(d.getUTCDate()).padStart(2, '0');
-          const hh = String(d.getUTCHours()).padStart(2, '0');
-          const min = String(d.getUTCMinutes()).padStart(2, '0');
-          return ` [${yyyy}-${mm}-${dd} ${hh}:${min} UTC]`;
-        } catch (e) {
-          return '';
-        }
-      }
-
-      function formatTickerItem(ticker) {
-        const symbol = ticker.symbol || 'UNKNOWN';
-        const price = (ticker.price !== undefined && ticker.price !== null && ticker.price !== '') ? String(ticker.price) : 'N/A';
-        const change = ticker.change_percent ? ` ${ticker.change_percent}` : '';
-        const stamp = ticker.as_of ? ` ${formatCorpTimestamp(ticker.as_of)}` : '';
-        const href = ticker.link || '#';
-        const source = ticker.source ? ` ${ticker.source}` : '';
-        return `<a class="corp-tag-item" href="${esc(href)}" target="_blank" rel="noopener noreferrer"><span class="corp-tag-value">${esc(symbol)} ${esc(price)}${esc(change)}</span><span class="corp-tag-meta">${esc(stamp + source)}</span></a>`;
-      }
-
-      function formatHolidayItem(label, payload, fallbackPayload) {
-        const item = payload || fallbackPayload;
-        const href = item.link || '#';
-        const region = item.region ? ` ${item.region}` : '';
-        const stamp = item.date ? ` ${formatCorpTimestamp(item.date + 'T12:00:00')}` : '';
-        const source = item.source ? ` ${item.source}` : '';
-        return `<a class="corp-tag-item" href="${esc(href)}" target="_blank" rel="noopener noreferrer"><span class="corp-tag-label">${esc(label)}</span><span class="corp-tag-value">${esc(item.name)}${esc(region)}</span><span class="corp-tag-meta">${esc(stamp + source)}</span></a>`;
-      }
-
-      function buildCorpTickerItems(data) {
-        const tickers = (data && data.tickers && data.tickers.length) ? data.tickers : DEFAULT_TICKERS;
-        const tickerItems = tickers.map(formatTickerItem);
-        const usHolidayItem = formatHolidayItem('US HOLIDAY', data && data.us_holiday, DEFAULT_US_HOLIDAY);
-        const worldObservanceItem = formatHolidayItem('WORLD OBSERVANCE', data && data.world_observance, DEFAULT_WORLD_OBSERVANCE);
-        return [...tickerItems, usHolidayItem, worldObservanceItem];
-      }
-
-      async function loadCorpBarData() {
-        try {
-          const response = await fetch(CORP_BAR_URL + '?t=' + Date.now(), { cache: 'no-store' });
-          if (!response.ok) throw new Error('HTTP ' + response.status);
-          return normalizeCorpBar(await response.json());
-        } catch (err) {
-          return null;
-        }
-      }
-
-      async function initCorpTicker() {
-        if (!corpTag || !corpTagTrack) return;
-        const data = await loadCorpBarData();
-        const items = buildCorpTickerItems(data);
-        const segmentHtml = items.map((item, idx) => {
-          const sep = idx < items.length - 1 ? '<span class="corp-tag-sep">///</span>' : '<span class="corp-tag-sep">///</span>';
-          return `${item}${sep}`;
-        }).join('');
-
-        corpTagTrack.innerHTML =
-          `<span class="corp-tag-segment">${segmentHtml}</span>` +
-          `<span class="corp-tag-segment">${segmentHtml}</span>`;
-
-        corpTag.classList.remove('scrolling');
-        setTimeout(() => corpTag.classList.add('scrolling'), 5000);
-      }
 
       function updateTimer() {
         const minutes = Math.floor(timeLeft / 60);
@@ -703,15 +506,6 @@
         feedOutput.appendChild(row);
         autoScrollFeeds();
         await typeText(a, '+ ' + (item.title || 'UNTITLED REPORT'));
-
-        const stamp = formatHeadlineTimestamp(item.published_at);
-        if (stamp) {
-          const time = document.createElement('span');
-          time.className = 'headline-time';
-          time.textContent = stamp;
-          row.appendChild(time);
-        }
-
         autoScrollFeeds();
         await sleep(118);
         return row;
@@ -807,7 +601,6 @@
         updateTimer();
       }, 1000);
 
-      initCorpTicker();
       loadFeeds().catch(fail);
     })();
   </script>
