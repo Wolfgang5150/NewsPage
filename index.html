@@ -306,6 +306,21 @@
 
     .feed-item a:hover { text-decoration: underline; }
 
+    .headline-time {
+      display: inline;
+      margin-left: 10px;
+      font-size: 8px;
+      line-height: 1.18;
+      opacity: .34;
+      color: var(--green);
+      text-shadow:
+        0 0 1px rgba(55,255,99,.45),
+        0 0 5px rgba(55,255,99,.22),
+        0 0 10px rgba(55,255,99,.10);
+      filter: brightness(.78);
+      white-space: nowrap;
+    }
+
     .cursor {
       display: inline-block;
       width: 12px;
@@ -363,6 +378,7 @@
         padding-inline: 0;
       }
       .status-line, .meta-line { font-size: 7px; }
+      .headline-time { font-size: 7px; }
       .category, .feed-item, #sync-timer { font-size: 14px; }
     }
   </style>
@@ -376,7 +392,7 @@
       <section class="frame">
         <div class="hero">
           <div class="hero-rule"></div>
-          <pre class="ascii-title" data-glow="---### GLOBAL DIGITAL NETWORK ###---">-# GLOBAL DIGITAL NETWORK #-</pre>
+          <pre class="ascii-title" data-glow="---### GLOBAL DIGITAL NETWORK ###---">---### GLOBAL DIGITAL NETWORK ###---</pre>
           <div class="hero-rule"></div>
           <div class="corp-tag">============ A WEYLAND-YUTANI COMPANY ============</div>
         </div>
@@ -479,17 +495,45 @@
         return el;
       }
 
+      function formatHeadlineTimestamp(value) {
+        if (!value) return '';
+        try {
+          const d = new Date(value);
+          if (Number.isNaN(d.getTime())) return '';
+          const yyyy = d.getUTCFullYear();
+          const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
+          const dd = String(d.getUTCDate()).padStart(2, '0');
+          const hh = String(d.getUTCHours()).padStart(2, '0');
+          const min = String(d.getUTCMinutes()).padStart(2, '0');
+          return ` [${yyyy}-${mm}-${dd} ${hh}:${min} UTC]`;
+        } catch (e) {
+          return '';
+        }
+      }
+
       async function typeFeedItem(item) {
         const row = document.createElement('div');
         row.className = 'feed-item';
+
         const a = document.createElement('a');
         a.href = item.link || '#';
         a.target = '_blank';
         a.rel = 'noopener noreferrer';
         row.appendChild(a);
+
         feedOutput.appendChild(row);
         autoScrollFeeds();
+
         await typeText(a, '+ ' + (item.title || 'UNTITLED REPORT'));
+
+        const stamp = formatHeadlineTimestamp(item.published_at);
+        if (stamp) {
+          const time = document.createElement('span');
+          time.className = 'headline-time';
+          time.textContent = stamp;
+          row.appendChild(time);
+        }
+
         autoScrollFeeds();
         await sleep(118);
         return row;
