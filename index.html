@@ -19,7 +19,7 @@
     }
 
     * { box-sizing: border-box; font-family: inherit; }
-    html, body { min-height: 100%; }
+    html, body { height: 100%; }
 
     @font-face {
       font-family: "PrintChar21";
@@ -44,7 +44,7 @@
         0 0 12px rgba(55,255,99,.95),
         0 0 26px rgba(55,255,99,.60),
         0 0 42px rgba(55,255,99,.30);
-      overflow-x: hidden;
+      overflow: hidden;
       position: relative;
       animation: crt-flicker 9s infinite steps(1);
     }
@@ -107,6 +107,11 @@
     .page {
       position: relative;
       z-index: 2;
+      height: calc(100vh - 88px);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      min-height: 0;
     }
 
     .frame {
@@ -116,11 +121,11 @@
         inset 0 0 34px rgba(55,255,99,.24),
         0 0 20px rgba(55,255,99,.42),
         0 0 40px rgba(55,255,99,.20);
-      padding: 14px 22px 12px;
-      margin-bottom: 26px;
-      min-height: 180px;
+      padding: 10px 14px 9px;
+      min-height: 0;
       position: relative;
       overflow: hidden;
+      flex: 0 0 auto;
     }
 
     .frame::before {
@@ -133,75 +138,91 @@
     }
 
     .hero {
-      max-width: 1320px;
+      width: min(100%, 1600px);
       margin: 0 auto;
+      padding: 2px 0 0;
       text-align: center;
       position: relative;
       z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
     }
 
-    .hero-rule {
-      height: 2px;
-      width: min(92%, 880px);
-      margin: 8px auto 10px;
-      background: linear-gradient(to right, transparent, var(--green), transparent);
-      box-shadow: 0 0 18px rgba(55,255,99,.72), 0 0 30px rgba(55,255,99,.24);
-    }
+    .hero-rule { display: none; }
 
     .ascii-title {
-      display: inline-block;
+      display: block;
+      width: 100%;
+      max-width: 100%;
       margin: 0 auto;
-      padding: 6px 18px 7px;
+      padding: 0;
       text-align: center;
-      font-size: 35px;
-      line-height: 1;
-      letter-spacing: .085em;
-      white-space: pre;
+      font-size: clamp(18px, 3.25vw, 35px);
+      line-height: 1.02;
+      letter-spacing: .045em;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      word-break: break-word;
       color: rgba(55,255,99,.98);
       text-shadow:
-        0 0 2px rgba(55,255,99,.95),
-        0 0 10px rgba(55,255,99,.72),
-        0 0 22px rgba(55,255,99,.34);
+        0 0 4px rgba(55,255,99,.98),
+        0 0 14px rgba(55,255,99,.78),
+        0 0 28px rgba(55,255,99,.32);
       filter: none;
       position: relative;
-      border: 2px solid rgba(55,255,99,.88);
-      background:
-        repeating-linear-gradient(to bottom, rgba(110,255,150,.10) 0 1px, rgba(0,0,0,.12) 1px 3px, transparent 3px 6px),
-        rgba(0, 24, 0, 0.24);
-      box-shadow:
-        inset 0 0 18px rgba(55,255,99,.16),
-        0 0 20px rgba(55,255,99,.46),
-        0 0 34px rgba(55,255,99,.24);
+      border: none;
+      background: none;
+      box-shadow: none;
     }
 
-    .ascii-title::before {
-      content: none;
-    }
+    .ascii-title::before { content: none; }
 
     .corp-tag {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 6px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 30px;
+      margin-top: 0;
+      padding: 5px 10px 4px;
       background:
         repeating-linear-gradient(to bottom, rgba(255,255,255,.16) 0 1px, rgba(0,0,0,.14) 1px 3px, rgba(16,58,20,.14) 3px 5px),
         rgba(55,255,99,.98);
       color: #061006;
       font-weight: 700;
       letter-spacing: .04em;
-      font-size: 12px;
+      font-size: clamp(9px, 1.15vw, 12px);
+      line-height: 1.05;
+      text-align: center;
       box-shadow: 0 0 20px rgba(55,255,99,.56), inset 0 0 12px rgba(255,255,255,.10);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: clip;
     }
 
-    .status, .category, .feed-item {
+    .top-panel {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-height: 0;
+    }
+
+    .status {
       max-width: 1600px;
       position: relative;
       z-index: 2;
+      flex: 0 0 auto;
+      min-height: 12px;
     }
 
     .status-line, .meta-line {
-      margin: 8px 0;
-      font-size: 12px;
-      line-height: 1.22;
+      margin: 6px 0;
+      font-size: 8px;
+      line-height: 1.18;
       text-shadow:
         0 0 2px rgba(55,255,99,1),
         0 0 14px rgba(55,255,99,.74),
@@ -222,8 +243,36 @@
 
     .startup-meta { opacity: .34; }
 
-    .slow-blink {
-      animation: slow-blink 2.8s ease-in-out infinite;
+    .feed-shell {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+      border-top: 1px solid rgba(55,255,99,.18);
+      padding-top: 10px;
+    }
+
+    .feed-scroll {
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-right: 10px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(55,255,99,.5) rgba(0,0,0,.18);
+    }
+
+    .feed-scroll::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .feed-scroll::-webkit-scrollbar-track {
+      background: rgba(0,0,0,.18);
+    }
+
+    .feed-scroll::-webkit-scrollbar-thumb {
+      background: rgba(55,255,99,.45);
+      box-shadow: 0 0 10px rgba(55,255,99,.25);
     }
 
     .category {
@@ -262,7 +311,7 @@
       margin-left: 10px;
       font-size: 8px;
       line-height: 1.18;
-      opacity: .40;
+      opacity: .34;
       color: var(--green);
       text-shadow:
         0 0 1px rgba(55,255,99,.45),
@@ -275,13 +324,12 @@
     .cursor {
       display: inline-block;
       width: 12px;
-      height: 1.15em;
+      height: 1.05em;
       background: var(--green);
-      vertical-align: bottom;
+      vertical-align: text-bottom;
       animation: blink .85s steps(1) infinite;
       box-shadow: 0 0 14px rgba(55,255,99,.62);
-      position: relative;
-      z-index: 2;
+      margin-left: 2px;
     }
 
     #sync-timer {
@@ -314,22 +362,24 @@
       64% { opacity: .996; }
     }
 
-    @keyframes corp-marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    @keyframes slow-blink {
-      0%, 100% { opacity: .42; }
-      50% { opacity: .16; }
-    }
-
     @media (max-width: 700px) {
       body { padding-inline: 10px; }
-      .frame { padding-inline: 10px; min-height: 250px; }
-      .corp-tag { font-size: 12px; padding-inline: 10px; }
-      .ascii-title { font-size: 15px; letter-spacing: .05em; padding-inline: 10px; }
-      .status-line, .meta-line, .category, .feed-item, #sync-timer { font-size: 16px; }
+      .page { height: calc(100vh - 84px); }
+      .frame { padding: 8px 10px 7px; min-height: 0; }
+      .hero { gap: 6px; }
+      .corp-tag {
+        min-height: 24px;
+        font-size: clamp(7px, 2.2vw, 11px);
+        padding-inline: 6px;
+      }
+      .ascii-title {
+        font-size: clamp(12px, 4.8vw, 22px);
+        letter-spacing: .03em;
+        padding-inline: 0;
+      }
+      .status-line, .meta-line { font-size: 7px; }
+      .headline-time { font-size: 7px; }
+      .category, .feed-item, #sync-timer { font-size: 14px; }
     }
   </style>
 </head>
@@ -338,69 +388,111 @@
   <div class="page">
     <div id="sync-timer">NEXT_SYNC: 04:00</div>
 
-    <section class="frame">
-      <div class="hero">
-        <div class="hero-rule"></div>
-<pre class="ascii-title" data-glow=">>> [ GLOBAL DIGITAL NETWORK ] <<<">>>> [ GLOBAL DIGITAL NETWORK ] <<<</pre>
-        <div class="hero-rule"></div>
-        <div class="corp-tag" id="corp-tag">
-            <div class="corp-tag-static" id="corp-tag-static">============ A WEYLAND-YUTANI COMPANY ============</div>
-            <div class="corp-tag-marquee" id="corp-tag-marquee" aria-hidden="false">
-              <div class="corp-tag-track" id="corp-tag-track"></div>
-            </div>
-          </div>
-      </div>
-    </section>
+    <div class="top-panel">
+      <section class="frame">
+        <div class="hero">
+          <div class="hero-rule"></div>
+          <pre class="ascii-title" data-glow="---### GLOBAL DIGITAL NETWORK ###---">---### GLOBAL DIGITAL NETWORK ###---</pre>
+          <div class="hero-rule"></div>
+          <div class="corp-tag">============ A WEYLAND-YUTANI COMPANY ============</div>
+        </div>
+      </section>
 
-    <main id="output" class="status"></main>
-    <span class="cursor" aria-hidden="true"></span>
+      <main id="status-output" class="status"></main>
+    </div>
+
+    <section class="feed-shell">
+      <div id="feed-output" class="feed-scroll"></div>
+    </section>
   </div>
 
   <script>
     (() => {
       const REFRESH_SECONDS = 240;
       const FEED_JSON_URL = './feeds.json';
-      const MAX_ITEMS = 5;
+      const MAX_ITEMS = 10;
       const TYPE_DELAY = 20;
       const LINE_DELAY = 185;
-      const STARTUP_LINE_DELAY = 650;
+      const STARTUP_LINE_DELAY = 1400;
+      const STATUS_CYCLE_DELAY = 2000;
       const timerEl = document.getElementById('sync-timer');
-      const output = document.getElementById('output');
+      const statusOutput = document.getElementById('status-output');
+      const feedOutput = document.getElementById('feed-output');
       let timeLeft = REFRESH_SECONDS;
+      let activeCursor = null;
+      let statusCycleInterval = null;
 
-      function normalizeCorpBar(data) {
-        if (!data || typeof data !== 'object') return null;
-        return {
-          as_of: data.as_of || '',
-          tickers: Array.isArray(data.tickers) ? data.tickers : [],
-          us_holiday: data.us_holiday && typeof data.us_holiday === 'object' ? data.us_holiday : null,
-          world_observance: data.world_observance && typeof data.world_observance === 'object' ? data.world_observance : null
-        };
+      function updateTimer() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        timerEl.textContent = `NEXT_SYNC: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
       }
 
-      function esc(value) {
-        return String(value ?? '')
-          .replace(/&/g, '&amp;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;')
-          .replace(/"/g, '&quot;');
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
       }
 
-      function formatCorpTimestamp(value) {
-        if (!value) return '';
-        try {
-          const d = new Date(value);
-          if (Number.isNaN(d.getTime())) return String(value);
-          const mm = String(d.getMonth() + 1).padStart(2, '0');
-          const dd = String(d.getDate()).padStart(2, '0');
-          const yy = String(d.getFullYear()).slice(-2);
-          const hh = String(((d.getHours() + 11) % 12) + 1);
-          const min = String(d.getMinutes()).padStart(2, '0');
-          const ampm = d.getHours() >= 12 ? 'PM' : 'AM';
-          return `${mm}/${dd}/${yy} ${hh}:${min} ${ampm}`;
-        } catch (e) {
-          return String(value);
+      function autoScrollFeeds() {
+        feedOutput.scrollTo({
+          top: feedOutput.scrollHeight,
+          behavior: 'smooth'
+        });
+      }
+
+      function makeCursor() {
+        const cursor = document.createElement('span');
+        cursor.className = 'cursor';
+        cursor.setAttribute('aria-hidden', 'true');
+        return cursor;
+      }
+
+      function moveCursorTo(el) {
+        if (!activeCursor) activeCursor = makeCursor();
+        if (activeCursor.parentNode) {
+          activeCursor.parentNode.removeChild(activeCursor);
         }
+        el.appendChild(activeCursor);
+      }
+
+      function removeCursor() {
+        if (activeCursor && activeCursor.parentNode) {
+          activeCursor.parentNode.removeChild(activeCursor);
+        }
+      }
+
+      async function typeText(el, text, delay = TYPE_DELAY) {
+        el.innerHTML = '';
+        const textNode = document.createTextNode('');
+        el.appendChild(textNode);
+        moveCursorTo(el);
+        for (const ch of text) {
+          textNode.nodeValue += ch;
+          autoScrollFeeds();
+          await sleep(delay);
+        }
+        removeCursor();
+      }
+
+      async function typeLine(text, className = 'status-line') {
+        const el = document.createElement('div');
+        el.className = className;
+        feedOutput.appendChild(el);
+        autoScrollFeeds();
+        await typeText(el, text);
+        autoScrollFeeds();
+        await sleep(LINE_DELAY);
+        return el;
+      }
+
+      async function typeCategory(text) {
+        const el = document.createElement('div');
+        el.className = 'category';
+        feedOutput.appendChild(el);
+        autoScrollFeeds();
+        await typeText(el, text);
+        autoScrollFeeds();
+        await sleep(LINE_DELAY);
+        return el;
       }
 
       function formatHeadlineTimestamp(value) {
@@ -419,123 +511,19 @@
         }
       }
 
-      function formatTickerItem(ticker) {
-        const symbol = ticker.symbol || 'UNKNOWN';
-        const price = (ticker.price !== undefined && ticker.price !== null && ticker.price !== '') ? String(ticker.price) : 'N/A';
-        const change = ticker.change_percent ? ` ${ticker.change_percent}` : '';
-        const stamp = ticker.as_of ? ` ${formatCorpTimestamp(ticker.as_of)}` : '';
-        const href = ticker.link || '#';
-        const source = ticker.source ? ` ${ticker.source}` : '';
-        return `<a class="corp-tag-item" href="${esc(href)}" target="_blank" rel="noopener noreferrer"><span class="corp-tag-value">${esc(symbol)} ${esc(price)}${esc(change)}</span><span class="corp-tag-meta">${esc(stamp + source)}</span></a>`;
-      }
-
-      function formatHolidayItem(label, payload, fallbackPayload) {
-        const item = payload || fallbackPayload;
-        const href = item.link || '#';
-        const region = item.region ? ` ${item.region}` : '';
-        const stamp = item.date ? ` ${formatCorpTimestamp(item.date + 'T12:00:00')}` : '';
-        const source = item.source ? ` ${item.source}` : '';
-        return `<a class="corp-tag-item" href="${esc(href)}" target="_blank" rel="noopener noreferrer"><span class="corp-tag-label">${esc(label)}</span><span class="corp-tag-value">${esc(item.name)}${esc(region)}</span><span class="corp-tag-meta">${esc(stamp + source)}</span></a>`;
-      }
-
-      function buildCorpTickerItems(data) {
-        const tickers = (data && data.tickers && data.tickers.length) ? data.tickers : DEFAULT_TICKERS;
-        const tickerItems = tickers.map(formatTickerItem);
-        const usHolidayItem = formatHolidayItem('US HOLIDAY', data && data.us_holiday, DEFAULT_US_HOLIDAY);
-        const worldObservanceItem = formatHolidayItem('WORLD OBSERVANCE', data && data.world_observance, DEFAULT_WORLD_OBSERVANCE);
-        return [...tickerItems, usHolidayItem, worldObservanceItem];
-      }
-
-      async function loadCorpBarData() {
-        try {
-          const response = await fetch(CORP_BAR_URL + '?t=' + Date.now(), { cache: 'no-store' });
-          if (!response.ok) throw new Error('HTTP ' + response.status);
-          return normalizeCorpBar(await response.json());
-        } catch (err) {
-          return null;
-        }
-      }
-
-      async function initCorpTicker() {
-        if (!corpTag || !corpTagTrack) return;
-        const data = await loadCorpBarData();
-        const items = buildCorpTickerItems(data);
-        const segmentHtml = items.map((item) => `${item}<span class="corp-tag-sep">///</span>`).join('');
-        corpTagTrack.innerHTML =
-          `<span class="corp-tag-segment">${segmentHtml}</span>` +
-          `<span class="corp-tag-segment">${segmentHtml}</span>`;
-        corpTag.classList.remove('scrolling');
-        setTimeout(() => corpTag.classList.add('scrolling'), 5000);
-      }
-
-      function updateTimer() {
-        const minutes = Math.floor(timeLeft / 60);
-        const seconds = timeLeft % 60;
-        timerEl.textContent = `NEXT_SYNC: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-      }
-
-      function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-      }
-
-      function autoScroll() {
-        window.scrollTo({
-          top: document.documentElement.scrollHeight || document.body.scrollHeight,
-          behavior: 'smooth'
-        });
-      }
-
-      async function typeText(el, text, delay = TYPE_DELAY) {
-        el.textContent = '';
-        for (const ch of text) {
-          el.textContent += ch;
-          await sleep(delay);
-        }
-      }
-
-      async function typeLine(text, className = 'status-line') {
-        const el = document.createElement('div');
-        el.className = className;
-        output.appendChild(el);
-        autoScroll();
-        await typeText(el, text);
-        autoScroll();
-        await sleep(LINE_DELAY);
-        return el;
-      }
-
-      async function revealLine(text, className = 'startup-line', delay = STARTUP_LINE_DELAY) {
-        const el = document.createElement('div');
-        el.className = className;
-        output.appendChild(el);
-        autoScroll();
-        el.textContent = text;
-        autoScroll();
-        await sleep(delay);
-        return el;
-      }
-
-      async function typeCategory(text) {
-        const el = document.createElement('div');
-        el.className = 'category';
-        output.appendChild(el);
-        autoScroll();
-        await typeText(el, text);
-        autoScroll();
-        await sleep(LINE_DELAY);
-        return el;
-      }
-
       async function typeFeedItem(item) {
         const row = document.createElement('div');
         row.className = 'feed-item';
+
         const a = document.createElement('a');
         a.href = item.link || '#';
         a.target = '_blank';
         a.rel = 'noopener noreferrer';
         row.appendChild(a);
+
         feedOutput.appendChild(row);
         autoScrollFeeds();
+
         await typeText(a, '+ ' + (item.title || 'UNTITLED REPORT'));
 
         const stamp = formatHeadlineTimestamp(item.published_at);
@@ -558,16 +546,48 @@
         return data;
       }
 
+      function startStatusCycle(data) {
+        if (statusCycleInterval) clearInterval(statusCycleInterval);
+
+        const lines = [
+          { text: '...INITIALIZING PROTOCOL 5150/1984', className: 'status-line startup-line' },
+          { text: '...ESTABLISHING SECURE COMM-LINK', className: 'status-line startup-line' },
+          { text: '...UPLINK TARGET: ICE STATION ZEBRA', className: 'status-line startup-line' },
+          { text: '...STATUS: ONLINE', className: 'status-line startup-line', blink: true },
+          {
+            text: '...LAST_SYNC: ' + (
+              data.generated_at
+                ? data.generated_at.replace('T', ' ').replace('Z', ' UTC')
+                : 'UNKNOWN'
+            ),
+            className: 'meta-line startup-meta'
+          }
+        ];
+
+        const holder = document.createElement('div');
+        statusOutput.innerHTML = '';
+        statusOutput.appendChild(holder);
+
+        let i = 0;
+        const showLine = () => {
+          const line = lines[i];
+          holder.className = line.className;
+          holder.textContent = line.text;
+          holder.style.animation = line.blink ? 'blink .34s steps(1) infinite' : 'none';
+          i = (i + 1) % lines.length;
+        };
+
+        showLine();
+        statusCycleInterval = setInterval(showLine, STATUS_CYCLE_DELAY);
+      }
+
       async function render(data) {
-        output.innerHTML = '';
-        await revealLine('...INITIALIZING PROTOCOL 5150/1984', 'status-line startup-line');
-        await revealLine('...ESTABLISHING SECURE COMM-LINK', 'status-line startup-line');
-        await revealLine('...UPLINK TARGET: ICE STATION ZEBRA', 'status-line startup-line');
-        const statusLine = await revealLine('...STATUS: ONLINE', 'status-line startup-line');
-        statusLine.classList.add('slow-blink');
-        if (data.generated_at) {
-          await revealLine('...LAST_SYNC: ' + data.generated_at.replace('T', ' ').replace('Z', ' UTC'), 'meta-line startup-meta');
-        }
+        removeCursor();
+        feedOutput.innerHTML = '';
+        startStatusCycle(data);
+
+        await sleep(STARTUP_LINE_DELAY);
+
         for (const section of data.categories) {
           await typeCategory(`[SEC: ${section.name}]`);
           const items = Array.isArray(section.items) ? section.items.slice(0, MAX_ITEMS) : [];
@@ -579,17 +599,17 @@
             await typeFeedItem(item);
           }
         }
-        const monitorLine = await revealLine('[SYSTEM STATUS: MONITORING ACTIVE]', 'meta-line startup-meta');
-        monitorLine.classList.add('slow-blink');
       }
 
       async function fail(err) {
-        output.innerHTML = '';
-        await revealLine('...INITIALIZING PROTOCOL 5150/1984', 'status-line startup-line');
-        await revealLine('...ESTABLISHING SECURE COMM-LINK', 'status-line startup-line');
-        await revealLine('...UPLINK TARGET: ICE STATION ZEBRA', 'status-line startup-line');
-        await revealLine('...STATUS: SIGNAL LOSS', 'status-line startup-line');
-        await revealLine('...ERROR: ' + String(err && err.message ? err.message : err), 'meta-line startup-meta');
+        if (statusCycleInterval) clearInterval(statusCycleInterval);
+        removeCursor();
+        statusOutput.innerHTML = '';
+        feedOutput.innerHTML = '';
+        const el = document.createElement('div');
+        el.className = 'meta-line startup-meta';
+        el.textContent = '...ERROR: ' + String(err && err.message ? err.message : err);
+        statusOutput.appendChild(el);
       }
 
       async function loadFeeds() {
@@ -609,7 +629,6 @@
         updateTimer();
       }, 1000);
 
-      initCorpTicker();
       loadFeeds().catch(fail);
     })();
   </script>
