@@ -216,7 +216,7 @@ jobs:
 
           with open("feeds.json", "w", encoding="utf-8") as fh:
               json.dump(payload, fh, indent=2, ensure_ascii=False)
-              fh.write("\\n")
+              fh.write("\n")
           PY
 
       - name: Commit updated feeds.json
