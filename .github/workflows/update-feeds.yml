@@ -90,11 +90,9 @@ jobs:
               (
                   "LOCAL NEWS",
                   (
-                      '("Belle Vernon" OR Rostraver OR Donora OR Monongahela OR Charleroi OR '
+                      '"Belle Vernon" OR Rostraver OR Donora OR Monongahela OR Charleroi OR '
                       '"West Newton" OR "Westmoreland County" OR "Fayette County" OR '
-                      '"Washington County" OR Pittsburgh) '
-                      '(allinurl:triblive.com OR allinurl:observer-reporter.com OR '
-                      'allinurl:heraldstandard.com OR allinurl:wpxi.com OR allinurl:wtae.com) '
+                      '"Washington County" OR "Mon Valley" OR Pittsburgh '
                       '-source:cnn -allinurl:nytimes.com -allinurl:pbs.org -allinurl:npr.org '
                       '-allinurl:politico.com -allinurl:cbsnews.com -allinurl:usnews.com'
                   )
@@ -104,10 +102,8 @@ jobs:
                   (
                       '("Belle Vernon" OR Rostraver OR Donora OR Monongahela OR Charleroi OR '
                       '"Westmoreland County" OR "Fayette County" OR "Washington County" OR '
-                      '"Allegheny County") '
-                      '(crime OR police OR shooting OR arrest OR charges OR investigation) '
-                      '(allinurl:triblive.com OR allinurl:observer-reporter.com OR '
-                      'allinurl:heraldstandard.com OR allinurl:wpxi.com OR allinurl:wtae.com) '
+                      '"Allegheny County" OR "Mon Valley" OR Pittsburgh) '
+                      '(crime OR police OR shooting OR arrest OR charges OR investigation OR court OR sheriff) '
                       '-source:cnn -allinurl:nytimes.com -allinurl:pbs.org -allinurl:npr.org '
                       '-allinurl:politico.com -allinurl:cbsnews.com -allinurl:usnews.com'
                   )
