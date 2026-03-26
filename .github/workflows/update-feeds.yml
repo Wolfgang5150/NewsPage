@@ -27,54 +27,113 @@ jobs:
           from email.utils import parsedate_to_datetime
 
           FEEDS = [
-              ('WORLD', 'world news'),
-              ('TECH', 'technology news'),
-              ('US_NEWS', 'united states news'),
-              ('GAMES', 'video game news'),
-              ('MUSIC', 'music news'),
-              ('STRANGE_NEWS', 'odd news OR strange news OR weird news')
+              ("WORLD", "world news"),
+              ("NATIONAL", "United States news OR U.S. news"),
+              ("BUSINESS", "business news OR economy OR markets"),
+              ("TECHNOLOGY", "technology news OR artificial intelligence OR cybersecurity"),
+              ("SCIENCE", "science news OR research OR space"),
+              ("HEALTH", "health news OR medicine OR public health"),
+              ("INVESTIGATIVE", "investigation OR watchdog OR corruption OR indictment OR exposed"),
+              ("ENTERTAINMENT", "entertainment news OR movies OR television OR celebrities"),
+              (
+                  "LIFESTYLE",
+                  (
+                      "\"Belle Vernon\" OR Rostraver OR Monongahela OR Charleroi OR "
+                      "\"Westmoreland County\" OR "\"Fayette County\" OR Pittsburgh "
+                      "lifestyle OR dining OR events OR food OR travel OR home"
+                  )
+              ),
+              (
+                  "MUSIC",
+                  (
+                      "\"rock music\" OR metal OR synthwave OR guitar OR "
+                      "\"classic rock\" OR "\"hard rock\" OR "\"80s music\" "
+                      "-country -rap -hip-hop"
+                  )
+              ),
+              (
+                  "LOCAL NEWS",
+                  (
+                      "\"Belle Vernon\" OR Rostraver OR Donora OR Monongahela OR Charleroi OR "
+                      "\"West Newton\" OR "\"Westmoreland County\" OR "\"Fayette County\" OR "
+                      "\"Washington County\" OR Pittsburgh local news"
+                  )
+              ),
+              (
+                  "CRIME",
+                  (
+                      "\"Belle Vernon\" OR Rostraver OR Donora OR Monongahela OR Charleroi OR "
+                      "\"Westmoreland County\" OR "\"Fayette County\" OR "\"Washington County\" OR "
+                      "\"Allegheny County\" crime OR police OR shooting OR arrest OR charges OR investigation"
+                  )
+              ),
+              (
+                  "ODDITIES",
+                  (
+                      "\"odd news\" OR "\"weird news\" OR bizarre OR strange OR unusual OR oddities OR "
+                      "\"news of the weird\" OR unbelievable OR quirky OR offbeat"
+                  )
+              ),
           ]
 
           HEADERS = {
-              'User-Agent': 'Mozilla/5.0 (compatible; NewsPageBot/1.0; +https://github.com/)'
+              "User-Agent": "Mozilla/5.0 (compatible; NewsPageBot/1.0; +https://github.com/)"
           }
 
           def build_url(query: str) -> str:
               return (
-                  'https://news.google.com/rss/search?q='
+                  "https://news.google.com/rss/search?q="
                   + urllib.parse.quote(query)
-                  + '&hl=en-US&gl=US&ceid=US:en'
+                  + "&hl=en-US&gl=US&ceid=US:en"
               )
 
           def clean_google_link(link: str) -> str:
               if not link:
-                  return '#'
+                  return "#"
               parsed = urllib.parse.urlparse(link)
               query = urllib.parse.parse_qs(parsed.query)
-              if 'url' in query and query['url']:
-                  return query['url'][0]
+              if "url" in query and query["url"]:
+                  return query["url"][0]
               return link
 
           def parse_items(xml_bytes: bytes):
               root = ET.fromstring(xml_bytes)
-              items = root.findall('./channel/item')
+              items = root.findall("./channel/item")
               results = []
-              for item in items[:10]:
-                  title = (item.findtext('title') or '').strip()
-                  link = clean_google_link((item.findtext('link') or '').strip())
-                  pub_date = (item.findtext('pubDate') or '').strip()
-                  iso_date = ''
+              seen_titles = set()
+
+              for item in items:
+                  title = (item.findtext("title") or "").strip()
+                  if not title:
+                      continue
+                  if title in seen_titles:
+                      continue
+                  seen_titles.add(title)
+
+                  link = clean_google_link((item.findtext("link") or "").strip())
+                  pub_date = (item.findtext("pubDate") or "").strip()
+                  iso_date = ""
+
                   if pub_date:
                       try:
-                          iso_date = parsedate_to_datetime(pub_date).astimezone(timezone.utc).isoformat().replace('+00:00', 'Z')
+                          iso_date = (
+                              parsedate_to_datetime(pub_date)
+                              .astimezone(timezone.utc)
+                              .isoformat()
+                              .replace("+00:00", "Z")
+                          )
                       except Exception:
-                          iso_date = ''
-                  if title:
-                      results.append({
-                          'title': title,
-                          'link': link,
-                          'published_at': iso_date
-                      })
+                          iso_date = ""
+
+                  results.append({
+                      "title": title,
+                      "link": link,
+                      "published_at": iso_date
+                  })
+
+                  if len(results) >= 15:
+                      break
+
               return results
 
           categories = []
@@ -84,21 +143,34 @@ jobs:
                   request = urllib.request.Request(url, headers=HEADERS)
                   with urllib.request.urlopen(request, timeout=30) as response:
                       xml_bytes = response.read()
+
                   items = parse_items(xml_bytes)
                   if not items:
-                      items = [{'title': 'NO HEADLINES RETURNED', 'link': '#', 'published_at': ''}]
+                      items = [{
+                          "title": "NO HEADLINES RETURNED",
+                          "link": "#",
+                          "published_at": ""
+                      }]
               except Exception as exc:
-                  items = [{'title': f'SIGNAL LOSS: {exc}', 'link': '#', 'published_at': ''}]
-              categories.append({'name': name, 'items': items})
+                  items = [{
+                      "title": f"SIGNAL LOSS: {exc}",
+                      "link": "#",
+                      "published_at": ""
+                  }]
+
+              categories.append({
+                  "name": name,
+                  "items": items
+              })
 
           payload = {
-              'generated_at': datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
-              'categories': categories
+              "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+              "categories": categories
           }
 
-          with open('feeds.json', 'w', encoding='utf-8') as fh:
+          with open("feeds.json", "w", encoding="utf-8") as fh:
               json.dump(payload, fh, indent=2, ensure_ascii=False)
-              fh.write('\n')
+              fh.write("\n")
           PY
 
       - name: Commit updated feeds.json
