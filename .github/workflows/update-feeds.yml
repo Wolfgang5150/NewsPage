@@ -38,40 +38,40 @@ jobs:
               (
                   "LIFESTYLE",
                   (
-                      "\"Belle Vernon\" OR Rostraver OR Monongahela OR Charleroi OR "
-                      "\"Westmoreland County\" OR "\"Fayette County\" OR Pittsburgh "
-                      "lifestyle OR dining OR events OR food OR travel OR home"
+                      '"Belle Vernon" OR Rostraver OR Monongahela OR Charleroi OR '
+                      '"Westmoreland County" OR "Fayette County" OR Pittsburgh '
+                      'lifestyle OR dining OR events OR food OR travel OR home'
                   )
               ),
               (
                   "MUSIC",
                   (
-                      "\"rock music\" OR metal OR synthwave OR guitar OR "
-                      "\"classic rock\" OR "\"hard rock\" OR "\"80s music\" "
-                      "-country -rap -hip-hop"
+                      '"rock music" OR metal OR synthwave OR guitar OR '
+                      '"classic rock" OR "hard rock" OR "80s music" '
+                      '-country -rap -hip-hop'
                   )
               ),
               (
                   "LOCAL NEWS",
                   (
-                      "\"Belle Vernon\" OR Rostraver OR Donora OR Monongahela OR Charleroi OR "
-                      "\"West Newton\" OR "\"Westmoreland County\" OR "\"Fayette County\" OR "
-                      "\"Washington County\" OR Pittsburgh local news"
+                      '"Belle Vernon" OR Rostraver OR Donora OR Monongahela OR Charleroi OR '
+                      '"West Newton" OR "Westmoreland County" OR "Fayette County" OR '
+                      '"Washington County" OR Pittsburgh local news'
                   )
               ),
               (
                   "CRIME",
                   (
-                      "\"Belle Vernon\" OR Rostraver OR Donora OR Monongahela OR Charleroi OR "
-                      "\"Westmoreland County\" OR "\"Fayette County\" OR "\"Washington County\" OR "
-                      "\"Allegheny County\" crime OR police OR shooting OR arrest OR charges OR investigation"
+                      '"Belle Vernon" OR Rostraver OR Donora OR Monongahela OR Charleroi OR '
+                      '"Westmoreland County" OR "Fayette County" OR "Washington County" OR '
+                      '"Allegheny County" crime OR police OR shooting OR arrest OR charges OR investigation'
                   )
               ),
               (
                   "ODDITIES",
                   (
-                      "\"odd news\" OR "\"weird news\" OR bizarre OR strange OR unusual OR oddities OR "
-                      "\"news of the weird\" OR unbelievable OR quirky OR offbeat"
+                      '"odd news" OR "weird news" OR bizarre OR strange OR unusual OR oddities OR '
+                      '"news of the weird" OR unbelievable OR quirky OR offbeat'
                   )
               ),
           ]
@@ -106,6 +106,7 @@ jobs:
                   title = (item.findtext("title") or "").strip()
                   if not title:
                       continue
+
                   if title in seen_titles:
                       continue
                   seen_titles.add(title)
