@@ -27,51 +27,96 @@ jobs:
           from email.utils import parsedate_to_datetime
 
           FEEDS = [
-              ("WORLD", "world news"),
-              ("NATIONAL", "United States news OR U.S. news"),
-              ("BUSINESS", "business news OR economy OR markets"),
+              (
+                  "WORLD",
+                  (
+                      '(world news OR geopolitics OR international affairs) '
+                      '(source:reuters OR source:fox_news OR allinurl:wsj.com OR allinurl:nypost.com OR '
+                      'allinurl:washingtonexaminer.com OR allinurl:nationalreview.com) '
+                      '-source:cnn -allinurl:nytimes.com -allinurl:pbs.org -allinurl:npr.org '
+                      '-allinurl:politico.com -allinurl:cbsnews.com -allinurl:usnews.com'
+                  )
+              ),
+              (
+                  "NATIONAL",
+                  (
+                      '("United States" news OR U.S. politics OR Washington OR Congress OR White House) '
+                      '(source:reuters OR source:fox_news OR allinurl:wsj.com OR allinurl:nypost.com OR '
+                      'allinurl:washingtonexaminer.com OR allinurl:nationalreview.com) '
+                      '-source:cnn -allinurl:nytimes.com -allinurl:pbs.org -allinurl:npr.org '
+                      '-allinurl:politico.com -allinurl:cbsnews.com -allinurl:usnews.com'
+                  )
+              ),
+              (
+                  "BUSINESS",
+                  (
+                      '(business news OR economy OR markets OR inflation OR jobs) '
+                      '(source:reuters OR allinurl:wsj.com OR allinurl:foxbusiness.com OR '
+                      'allinurl:nypost.com OR allinurl:washingtonexaminer.com) '
+                      '-source:cnn -allinurl:nytimes.com -allinurl:pbs.org -allinurl:npr.org '
+                      '-allinurl:politico.com -allinurl:cbsnews.com -allinurl:usnews.com'
+                  )
+              ),
               ("TECHNOLOGY", "technology news OR artificial intelligence OR cybersecurity"),
               ("SCIENCE", "science news OR research OR space"),
               ("HEALTH", "health news OR medicine OR public health"),
-              ("INVESTIGATIVE", "investigation OR watchdog OR corruption OR indictment OR exposed"),
+              (
+                  "INVESTIGATIVE",
+                  (
+                      '(investigation OR watchdog OR corruption OR indictment OR exposed OR probe) '
+                      '(source:reuters OR source:fox_news OR allinurl:wsj.com OR allinurl:nypost.com OR '
+                      'allinurl:washingtonexaminer.com OR allinurl:nationalreview.com) '
+                      '-source:cnn -allinurl:nytimes.com -allinurl:pbs.org -allinurl:npr.org '
+                      '-allinurl:politico.com -allinurl:cbsnews.com -allinurl:usnews.com'
+                  )
+              ),
               ("ENTERTAINMENT", "entertainment news OR movies OR television OR celebrities"),
               (
                   "LIFESTYLE",
                   (
-                      "\"Belle Vernon\" OR Rostraver OR Monongahela OR Charleroi OR "
-                      "\"Westmoreland County\" OR "\"Fayette County\" OR Pittsburgh "
-                      "lifestyle OR dining OR events OR food OR travel OR home"
+                      '"Belle Vernon" OR Rostraver OR Monongahela OR Charleroi OR '
+                      '"Westmoreland County" OR "Fayette County" OR Pittsburgh '
+                      'lifestyle OR dining OR events OR food OR travel OR home'
                   )
               ),
               (
                   "MUSIC",
                   (
-                      "\"rock music\" OR metal OR synthwave OR guitar OR "
-                      "\"classic rock\" OR "\"hard rock\" OR "\"80s music\" "
-                      "-country -rap -hip-hop"
+                      '"rock music" OR metal OR synthwave OR guitar OR '
+                      '"classic rock" OR "hard rock" OR "80s music" '
+                      '-country -rap -hip-hop'
                   )
               ),
               (
                   "LOCAL NEWS",
                   (
-                      "\"Belle Vernon\" OR Rostraver OR Donora OR Monongahela OR Charleroi OR "
-                      "\"West Newton\" OR "\"Westmoreland County\" OR "\"Fayette County\" OR "
-                      "\"Washington County\" OR Pittsburgh local news"
+                      '("Belle Vernon" OR Rostraver OR Donora OR Monongahela OR Charleroi OR '
+                      '"West Newton" OR "Westmoreland County" OR "Fayette County" OR '
+                      '"Washington County" OR Pittsburgh) '
+                      '(allinurl:triblive.com OR allinurl:observer-reporter.com OR '
+                      'allinurl:heraldstandard.com OR allinurl:wpxi.com OR allinurl:wtae.com) '
+                      '-source:cnn -allinurl:nytimes.com -allinurl:pbs.org -allinurl:npr.org '
+                      '-allinurl:politico.com -allinurl:cbsnews.com -allinurl:usnews.com'
                   )
               ),
               (
                   "CRIME",
                   (
-                      "\"Belle Vernon\" OR Rostraver OR Donora OR Monongahela OR Charleroi OR "
-                      "\"Westmoreland County\" OR "\"Fayette County\" OR "\"Washington County\" OR "
-                      "\"Allegheny County\" crime OR police OR shooting OR arrest OR charges OR investigation"
+                      '("Belle Vernon" OR Rostraver OR Donora OR Monongahela OR Charleroi OR '
+                      '"Westmoreland County" OR "Fayette County" OR "Washington County" OR '
+                      '"Allegheny County") '
+                      '(crime OR police OR shooting OR arrest OR charges OR investigation) '
+                      '(allinurl:triblive.com OR allinurl:observer-reporter.com OR '
+                      'allinurl:heraldstandard.com OR allinurl:wpxi.com OR allinurl:wtae.com) '
+                      '-source:cnn -allinurl:nytimes.com -allinurl:pbs.org -allinurl:npr.org '
+                      '-allinurl:politico.com -allinurl:cbsnews.com -allinurl:usnews.com'
                   )
               ),
               (
                   "ODDITIES",
                   (
-                      "\"odd news\" OR "\"weird news\" OR bizarre OR strange OR unusual OR oddities OR "
-                      "\"news of the weird\" OR unbelievable OR quirky OR offbeat"
+                      '"odd news" OR "weird news" OR bizarre OR strange OR unusual OR oddities OR '
+                      '"news of the weird" OR unbelievable OR quirky OR offbeat'
                   )
               ),
           ]
@@ -106,6 +151,7 @@ jobs:
                   title = (item.findtext("title") or "").strip()
                   if not title:
                       continue
+
                   if title in seen_titles:
                       continue
                   seen_titles.add(title)
@@ -170,7 +216,7 @@ jobs:
 
           with open("feeds.json", "w", encoding="utf-8") as fh:
               json.dump(payload, fh, indent=2, ensure_ascii=False)
-              fh.write("\n")
+              fh.write("\\n")
           PY
 
       - name: Commit updated feeds.json
