@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-03-26T17:56:05.467409-04:00",
+  "as_of": "2026-03-27T11:41:39.321030-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "252.8900",
       "change_percent": "0.1069%",
-      "as_of": "2026-03-26T17:56:05.467409-04:00",
+      "as_of": "2026-03-27T11:41:39.321030-04:00",
       "latest_trading_day": "2026-03-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.6250",
-      "change_percent": "-3.7247%",
-      "as_of": "2026-03-26T17:56:05.467409-04:00",
+      "price": "7.6200",
+      "change_percent": "-3.7879%",
+      "as_of": "2026-03-27T11:41:39.321030-04:00",
       "latest_trading_day": "2026-03-26",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "207.5400",
       "change_percent": "-1.9697%",
-      "as_of": "2026-03-26T17:56:05.467409-04:00",
+      "as_of": "2026-03-27T11:41:39.321030-04:00",
       "latest_trading_day": "2026-03-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "280.9200",
       "change_percent": "-3.4407%",
-      "as_of": "2026-03-26T17:56:05.467409-04:00",
+      "as_of": "2026-03-27T11:41:39.321030-04:00",
       "latest_trading_day": "2026-03-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "547.5400",
       "change_percent": "-7.9595%",
-      "as_of": "2026-03-26T17:56:05.467409-04:00",
+      "as_of": "2026-03-27T11:41:39.321030-04:00",
       "latest_trading_day": "2026-03-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Make Up Your Own Holiday Day",
+    "name": "International Whisky Day",
     "region": "US",
-    "date": "2026-03-26",
-    "link": "https://www.checkiday.com/bccb6b0aab1ad87cc42b7cb2515e1f59/national-make-up-your-own-holiday-day",
+    "date": "2026-03-27",
+    "link": "https://www.checkiday.com/366c7d1ccdaa0747cda7a28abf3eb041/international-whisky-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Legal Assistants Day",
+    "name": "International Whisky Day",
     "region": "WORLD",
-    "date": "2026-03-26",
-    "link": "https://www.checkiday.com/638814fd52a531b33c81b65cf407a2b3/legal-assistants-day",
+    "date": "2026-03-27",
+    "link": "https://www.checkiday.com/366c7d1ccdaa0747cda7a28abf3eb041/international-whisky-day",
     "source": "Checkiday"
   }
 }
