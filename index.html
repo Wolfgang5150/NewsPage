@@ -219,6 +219,7 @@
       text-align: center;
       box-shadow: 0 0 20px rgba(55,255,99,.56), inset 0 0 12px rgba(255,255,255,.10);
       white-space: nowrap;
+      min-height: 0;
       overflow: hidden;
       text-overflow: clip;
     }
@@ -260,6 +261,7 @@
       display: flex;
       align-items: center;
       white-space: nowrap;
+      min-height: 0;
       width: max-content;
       min-width: max-content;
       will-change: transform;
@@ -276,6 +278,7 @@
       display: flex;
       align-items: center;
       white-space: nowrap;
+      min-height: 0;
       flex: 0 0 auto;
       transform: translateZ(0);
       -webkit-transform: translateZ(0);
@@ -314,6 +317,7 @@
       font-size: .75em;
       line-height: 1;
       white-space: nowrap;
+      min-height: 0;
     }
 
     .corp-tag-sep {
@@ -444,6 +448,7 @@
         0 0 10px rgba(55,255,99,.10);
       filter: brightness(.78);
       white-space: nowrap;
+      min-height: 0;
     }
 
 .next-up {
@@ -460,6 +465,7 @@
         0 0 10px rgba(55,255,99,.10);
       filter: brightness(.78);
       white-space: nowrap;
+      min-height: 0;
       animation: blink .34s steps(1) infinite;
     }
 
@@ -473,19 +479,24 @@
       height: 100%;
     }
 
+    .feed-scroll.radar-mode > * {
+      flex: 0 0 auto;
+    }
+
     .feed-scroll.radar-mode .category,
     .feed-scroll.radar-mode .next-up {
       flex: 0 0 auto;
     }
 
     .radar-section {
-      margin: 12px 0 8px;
+      margin: 8px 0 4px;
       border: 2px solid rgba(55,255,99,.55);
       background:
         linear-gradient(to bottom, rgba(0,16,0,.28), rgba(0,8,0,.42));
       box-shadow:
         inset 0 0 20px rgba(55,255,99,.14),
         0 0 12px rgba(55,255,99,.14);
+      width: 100%;
       overflow: hidden;
       position: relative;
       flex: 1 1 auto;
@@ -522,7 +533,7 @@
       display: flex;
       justify-content: space-between;
       gap: 8px;
-      padding: 7px 10px 6px;
+      padding: 6px 8px 5px;
       font-size: 8px;
       line-height: 1.18;
       opacity: .40;
@@ -533,6 +544,7 @@
         0 0 10px rgba(55,255,99,.10);
       filter: brightness(.78);
       white-space: nowrap;
+      min-height: 0;
     }
 
     .radar-viewport {
@@ -568,9 +580,9 @@
       position: absolute;
       inset: 0;
       pointer-events: none;
-      background: var(--green);
-      mix-blend-mode: multiply;
-      opacity: 1;
+      background: linear-gradient(to bottom, rgba(55,255,99,.38), rgba(55,255,99,.22));
+      mix-blend-mode: screen;
+      opacity: .95;
       z-index: 1;
     }
 
@@ -580,18 +592,45 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
+      object-position: center center;
       display: block;
       image-rendering: auto;
       filter:
         grayscale(1)
-        contrast(1.35)
-        brightness(1.05);
-      opacity: .98;
-      mix-blend-mode: multiply;
+        contrast(1.55)
+        brightness(1.2);
+      opacity: .96;
+      mix-blend-mode: screen;
       transform: translateZ(0);
       -webkit-transform: translateZ(0);
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
+    }
+
+    .radar-placeholder {
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      text-align: center;
+      font-size: 10px;
+      line-height: 1.35;
+      color: var(--green);
+      background: rgba(0, 0, 0, .72);
+      text-shadow:
+        0 0 2px rgba(55,255,99,1),
+        0 0 10px rgba(55,255,99,.55);
+    }
+
+    .radar-placeholder a {
+      color: inherit;
+    }
+
+    .radar-error .radar-image {
+      opacity: .22;
     }
 
     .radar-grid {
@@ -603,7 +642,7 @@
         linear-gradient(rgba(55,255,99,.07), rgba(55,255,99,.07)) center/100% 1px no-repeat,
         radial-gradient(circle at center, rgba(55,255,99,.07) 0 1px, transparent 1px 100%);
       mix-blend-mode: screen;
-      opacity: .26;
+      opacity: .22;
       z-index: 2;
     }
 
@@ -781,8 +820,9 @@
       const DEFAULT_US_HOLIDAY = { name: 'US HOLIDAY DATA LINK OFFLINE', region: 'US', date: '', link: '#', source: 'LOCAL FALLBACK' };
       const DEFAULT_WORLD_OBSERVANCE = { name: 'WORLD OBSERVANCE DATA LINK OFFLINE', region: 'WORLD', date: '', link: '#', source: 'LOCAL FALLBACK' };
       const RADAR_SECTION_NAME = 'LOCAL WEATHER RADAR';
-      const RADAR_INSERT_AFTER = 'LOCAL NEWS';
+      const RADAR_INSERT_AFTER = null;
       const RADAR_LOOP_URL = 'https://radar.weather.gov/ridge/standard/KPBZ_loop.gif';
+      const RADAR_FALLBACK_URL = 'https://radar.weather.gov/station/kpbz/standard';
       let timeLeft = REFRESH_SECONDS;
       const TIMER_STEP_MS = 10;
       let activeCursor = null;
@@ -1017,10 +1057,10 @@
         const insertAfterIndex = sections.findIndex(
           s => String((s && s.name) || '').toUpperCase() === RADAR_INSERT_AFTER
         );
-        if (insertAfterIndex >= 0) {
+          if (insertAfterIndex >= 0) {
           sections.splice(insertAfterIndex + 1, 0, radarSection);
         } else {
-          sections.push(radarSection);
+          sections.unshift(radarSection);
         }
         return sections;
       }
@@ -1050,8 +1090,7 @@
           </div>
           <div class="radar-viewport">
             <div class="radar-stage">
-              <img class="radar-image" alt="Live animated weather radar for the Pittsburgh region"
-                   src="${RADAR_LOOP_URL}?t=${Date.now()}">
+              <img class="radar-image" alt="Live animated weather radar for the Pittsburgh region">
               <div class="radar-grid"></div>
               <div class="radar-ring"></div>
               <div class="radar-ring r2"></div>
@@ -1064,6 +1103,31 @@
           </div>
         `;
         feedOutput.appendChild(wrapper);
+
+        const stage = wrapper.querySelector('.radar-stage');
+        const radarImage = wrapper.querySelector('.radar-image');
+
+        const showRadarError = (message) => {
+          if (wrapper.querySelector('.radar-placeholder')) return;
+          wrapper.classList.add('radar-error');
+          const placeholder = document.createElement('div');
+          placeholder.className = 'radar-placeholder';
+          placeholder.innerHTML = `${esc(message)}<br><br><a href="${esc(RADAR_FALLBACK_URL)}" target="_blank" rel="noopener noreferrer">OPEN NWS RADAR PAGE</a>`;
+          stage.appendChild(placeholder);
+        };
+
+        radarImage.addEventListener('load', () => {
+          wrapper.classList.remove('radar-error');
+          const placeholder = wrapper.querySelector('.radar-placeholder');
+          if (placeholder) placeholder.remove();
+        }, { once: true });
+
+        radarImage.addEventListener('error', () => {
+          showRadarError('RADAR LOOP FAILED TO LOAD FROM NWS SOURCE.');
+        }, { once: true });
+
+        radarImage.src = `${RADAR_LOOP_URL}?t=${Date.now()}`;
+
         autoScrollFeeds();
         await sleep(LINE_DELAY);
 
