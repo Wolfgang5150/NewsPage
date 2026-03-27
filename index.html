@@ -463,6 +463,114 @@
       animation: blink .34s steps(1) infinite;
     }
 
+
+    .radar-section {
+      margin: 18px 0 8px;
+      border: 2px solid rgba(55,255,99,.65);
+      background:
+        linear-gradient(to bottom, rgba(0,18,0,.32), rgba(0,8,0,.54));
+      box-shadow:
+        inset 0 0 26px rgba(55,255,99,.18),
+        0 0 16px rgba(55,255,99,.18);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .radar-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        repeating-linear-gradient(
+          to bottom,
+          rgba(110,255,150,.10) 0px,
+          rgba(110,255,150,.10) 1px,
+          rgba(0,0,0,.20) 1px,
+          rgba(0,0,0,.20) 3px,
+          transparent 3px,
+          transparent 6px
+        );
+      mix-blend-mode: screen;
+      opacity: .8;
+      z-index: 2;
+    }
+
+    .radar-header,
+    .radar-footer {
+      position: relative;
+      z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 7px 10px 6px;
+      font-size: 8px;
+      line-height: 1.18;
+      opacity: .40;
+      color: var(--green);
+      text-shadow:
+        0 0 1px rgba(55,255,99,.45),
+        0 0 5px rgba(55,255,99,.22),
+        0 0 10px rgba(55,255,99,.10);
+      filter: brightness(.78);
+      white-space: nowrap;
+    }
+
+    .radar-viewport {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background: #000;
+      overflow: hidden;
+      border-top: 1px solid rgba(55,255,99,.28);
+      border-bottom: 1px solid rgba(55,255,99,.28);
+    }
+
+    .radar-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      image-rendering: auto;
+      filter:
+        grayscale(1)
+        contrast(1.45)
+        brightness(.62)
+        sepia(1)
+        saturate(9)
+        hue-rotate(48deg);
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .radar-grid {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(rgba(55,255,99,.10), rgba(55,255,99,.10)) center/1px 100% no-repeat,
+        linear-gradient(rgba(55,255,99,.10), rgba(55,255,99,.10)) center/100% 1px no-repeat,
+        radial-gradient(circle at center, rgba(55,255,99,.12) 0 1px, transparent 1px 100%);
+      mix-blend-mode: screen;
+      opacity: .55;
+      z-index: 2;
+    }
+
+    .radar-ring {
+      position: absolute;
+      inset: 10% 10%;
+      border: 1px solid rgba(55,255,99,.18);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .radar-ring.r2 { inset: 24% 24%; }
+    .radar-ring.r3 { inset: 38% 38%; }
+
     .cursor {
       display: inline-block;
       width: 12px;
@@ -620,6 +728,9 @@
       ];
       const DEFAULT_US_HOLIDAY = { name: 'US HOLIDAY DATA LINK OFFLINE', region: 'US', date: '', link: '#', source: 'LOCAL FALLBACK' };
       const DEFAULT_WORLD_OBSERVANCE = { name: 'WORLD OBSERVANCE DATA LINK OFFLINE', region: 'WORLD', date: '', link: '#', source: 'LOCAL FALLBACK' };
+      const RADAR_SECTION_NAME = 'LOCAL WEATHER RADAR';
+      const RADAR_INSERT_AFTER = 'LOCAL NEWS';
+      const RADAR_LOOP_URL = 'https://radar.weather.gov/ridge/standard/KPBZ_loop.gif';
       let timeLeft = REFRESH_SECONDS;
       const TIMER_STEP_MS = 10;
       let activeCursor = null;
@@ -848,6 +959,60 @@
         return el;
       }
 
+      function buildSectionSequence(data) {
+        const sections = Array.isArray(data.categories) ? [...data.categories] : [];
+        const radarSection = { name: RADAR_SECTION_NAME, isRadar: true, items: [] };
+        const insertAfterIndex = sections.findIndex(
+          s => String((s && s.name) || '').toUpperCase() === RADAR_INSERT_AFTER
+        );
+        if (insertAfterIndex >= 0) {
+          sections.splice(insertAfterIndex + 1, 0, radarSection);
+        } else {
+          sections.push(radarSection);
+        }
+        return sections;
+      }
+
+      function formatDisplayTimestamp(dateObj = new Date()) {
+        const yyyy = dateObj.getUTCFullYear();
+        const mm = String(dateObj.getUTCMonth() + 1).padStart(2, '0');
+        const dd = String(dateObj.getUTCDate()).padStart(2, '0');
+        const hh = String(dateObj.getUTCHours()).padStart(2, '0');
+        const min = String(dateObj.getUTCMinutes()).padStart(2, '0');
+        return `${yyyy}-${mm}-${dd} ${hh}:${min} UTC`;
+      }
+
+      async function renderRadarSection() {
+        removeCursor();
+        feedOutput.innerHTML = '';
+
+        await typeCategory(`[SEC: ${RADAR_SECTION_NAME}]`);
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'radar-section';
+        wrapper.innerHTML = `
+          <div class="radar-header">
+            <span>KPBZ NEXRAD / PITTSBURGH CELL</span>
+            <span>REGION: BELLE VERNON / MON VALLEY</span>
+          </div>
+          <div class="radar-viewport">
+            <img class="radar-image" alt="Live animated weather radar for the Pittsburgh region"
+                 src="${RADAR_LOOP_URL}?t=${Date.now()}">
+            <div class="radar-grid"></div>
+            <div class="radar-ring"></div>
+            <div class="radar-ring r2"></div>
+            <div class="radar-ring r3"></div>
+          </div>
+          <div class="radar-footer">
+            <span>LIVE PRECIPITATION LOOP</span>
+            <span>UPLINK: ${formatDisplayTimestamp()}</span>
+          </div>
+        `;
+        feedOutput.appendChild(wrapper);
+        autoScrollFeeds();
+        await sleep(LINE_DELAY);
+      }
+
       function normalize(data) {
         if (!data || !Array.isArray(data.categories)) {
           throw new Error('INVALID_FEEDS_JSON');
@@ -914,7 +1079,7 @@
       async function runSections(data) {
         startStatusCycle(data);
 
-        const sections = Array.isArray(data.categories) ? data.categories : [];
+        const sections = buildSectionSequence(data);
         if (!sections.length) {
           feedOutput.innerHTML = '';
           await typeLine('> [NO_TRANSMISSIONS_RECEIVED]', 'feed-item');
@@ -930,7 +1095,16 @@
           const nextName = currentSectionIndex < sections.length - 1
             ? sections[currentSectionIndex + 1].name
             : null;
-          await renderSection(sections[currentSectionIndex], nextName);
+          if (sections[currentSectionIndex] && sections[currentSectionIndex].isRadar) {
+            await renderRadarSection();
+            if (nextName) {
+              await typeNextUp(`.....BUFFERING INCOMING DATA SEQUENCE: ${nextName}`);
+            } else {
+              await typeNextUp('.....BUFFERING INCOMING DATA SEQUENCE: SYSTEM RELOAD / RETURN TO FIRST SECTION');
+            }
+          } else {
+            await renderSection(sections[currentSectionIndex], nextName);
+          }
           timeLeft = REFRESH_SECONDS;
           updateTimer();
           transitionInProgress = false;
