@@ -982,7 +982,7 @@
         return `${yyyy}-${mm}-${dd} ${hh}:${min} UTC`;
       }
 
-      async function renderRadarSection() {
+      async function renderRadarSection(nextSectionName) {
         removeCursor();
         feedOutput.innerHTML = '';
 
@@ -1011,6 +1011,12 @@
         feedOutput.appendChild(wrapper);
         autoScrollFeeds();
         await sleep(LINE_DELAY);
+
+        if (nextSectionName) {
+          await typeNextUp(`.....BUFFERING INCOMING DATA SEQUENCE: ${nextSectionName}`);
+        } else {
+          await typeNextUp('.....BUFFERING INCOMING DATA SEQUENCE: SYSTEM RELOAD / RETURN TO FIRST SECTION');
+        }
       }
 
       function normalize(data) {
@@ -1095,16 +1101,13 @@
           const nextName = currentSectionIndex < sections.length - 1
             ? sections[currentSectionIndex + 1].name
             : null;
+
           if (sections[currentSectionIndex] && sections[currentSectionIndex].isRadar) {
-            await renderRadarSection();
-            if (nextName) {
-              await typeNextUp(`.....BUFFERING INCOMING DATA SEQUENCE: ${nextName}`);
-            } else {
-              await typeNextUp('.....BUFFERING INCOMING DATA SEQUENCE: SYSTEM RELOAD / RETURN TO FIRST SECTION');
-            }
+            await renderRadarSection(nextName);
           } else {
             await renderSection(sections[currentSectionIndex], nextName);
           }
+
           timeLeft = REFRESH_SECONDS;
           updateTimer();
           transitionInProgress = false;
@@ -1130,7 +1133,13 @@
             const nextName = currentSectionIndex < sections.length - 1
               ? sections[currentSectionIndex + 1].name
               : null;
-            await renderSection(sections[currentSectionIndex], nextName);
+
+            if (sections[currentSectionIndex] && sections[currentSectionIndex].isRadar) {
+              await renderRadarSection(nextName);
+            } else {
+              await renderSection(sections[currentSectionIndex], nextName);
+            }
+
             timeLeft = REFRESH_SECONDS;
             updateTimer();
             transitionInProgress = false;
