@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-03-30T15:59:41.036139-04:00",
+  "as_of": "2026-03-30T18:59:58.763241-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "248.8000",
       "change_percent": "-1.6173%",
-      "as_of": "2026-03-30T15:59:41.036139-04:00",
+      "as_of": "2026-03-30T18:59:58.763241-04:00",
       "latest_trading_day": "2026-03-27",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "7.0800",
       "change_percent": "-7.0866%",
-      "as_of": "2026-03-30T15:59:41.036139-04:00",
+      "as_of": "2026-03-30T18:59:58.763241-04:00",
       "latest_trading_day": "2026-03-27",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,26 +23,26 @@
       "symbol": "AMZN",
       "price": "199.3400",
       "change_percent": "-3.9510%",
-      "as_of": "2026-03-30T15:59:41.036139-04:00",
+      "as_of": "2026-03-30T18:59:58.763241-04:00",
       "latest_trading_day": "2026-03-27",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "274.3400",
-      "change_percent": "-2.3423%",
-      "as_of": "2026-03-30T15:59:41.036139-04:00",
-      "latest_trading_day": "2026-03-27",
+      "price": "273.5000",
+      "change_percent": "-0.3062%",
+      "as_of": "2026-03-30T18:59:58.763241-04:00",
+      "latest_trading_day": "2026-03-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "525.7200",
-      "change_percent": "-3.9851%",
-      "as_of": "2026-03-30T15:59:41.036139-04:00",
-      "latest_trading_day": "2026-03-27",
+      "price": "536.3800",
+      "change_percent": "2.0277%",
+      "as_of": "2026-03-30T18:59:58.763241-04:00",
+      "latest_trading_day": "2026-03-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
