@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-03-27T18:00:19.563858-04:00",
+  "as_of": "2026-03-30T12:14:50.893010-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "248.8000",
       "change_percent": "-1.6173%",
-      "as_of": "2026-03-27T18:00:19.563858-04:00",
+      "as_of": "2026-03-30T12:14:50.893010-04:00",
       "latest_trading_day": "2026-03-27",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.0850",
-      "change_percent": "-7.0210%",
-      "as_of": "2026-03-27T18:00:19.563858-04:00",
+      "price": "7.0800",
+      "change_percent": "-7.0866%",
+      "as_of": "2026-03-30T12:14:50.893010-04:00",
       "latest_trading_day": "2026-03-27",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "199.3400",
       "change_percent": "-3.9510%",
-      "as_of": "2026-03-27T18:00:19.563858-04:00",
+      "as_of": "2026-03-30T12:14:50.893010-04:00",
       "latest_trading_day": "2026-03-27",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "274.3400",
       "change_percent": "-2.3423%",
-      "as_of": "2026-03-27T18:00:19.563858-04:00",
+      "as_of": "2026-03-30T12:14:50.893010-04:00",
       "latest_trading_day": "2026-03-27",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "525.7200",
       "change_percent": "-3.9851%",
-      "as_of": "2026-03-27T18:00:19.563858-04:00",
+      "as_of": "2026-03-30T12:14:50.893010-04:00",
       "latest_trading_day": "2026-03-27",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Whisky Day",
+    "name": "National Doctors Day",
     "region": "US",
-    "date": "2026-03-27",
-    "link": "https://www.checkiday.com/366c7d1ccdaa0747cda7a28abf3eb041/international-whisky-day",
+    "date": "2026-03-30",
+    "link": "https://www.checkiday.com/1d2d7c0fa29498b5700bf4fa1a8ae74a/national-doctors-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Whisky Day",
+    "name": "World Bipolar Day",
     "region": "WORLD",
-    "date": "2026-03-27",
-    "link": "https://www.checkiday.com/366c7d1ccdaa0747cda7a28abf3eb041/international-whisky-day",
+    "date": "2026-03-30",
+    "link": "https://www.checkiday.com/560687e9cae3fdd65111917612ba3aad/world-bipolar-day",
     "source": "Checkiday"
   }
 }
