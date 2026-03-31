@@ -1,30 +1,30 @@
 {
-  "as_of": "2026-03-30T18:59:58.763241-04:00",
+  "as_of": "2026-03-31T12:35:38.461161-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "248.8000",
-      "change_percent": "-1.6173%",
-      "as_of": "2026-03-30T18:59:58.763241-04:00",
-      "latest_trading_day": "2026-03-27",
+      "price": "246.6300",
+      "change_percent": "-0.8722%",
+      "as_of": "2026-03-31T12:35:38.461161-04:00",
+      "latest_trading_day": "2026-03-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.0800",
-      "change_percent": "-7.0866%",
-      "as_of": "2026-03-30T18:59:58.763241-04:00",
-      "latest_trading_day": "2026-03-27",
+      "price": "6.8400",
+      "change_percent": "-3.3898%",
+      "as_of": "2026-03-31T12:35:38.461161-04:00",
+      "latest_trading_day": "2026-03-30",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "199.3400",
-      "change_percent": "-3.9510%",
-      "as_of": "2026-03-30T18:59:58.763241-04:00",
-      "latest_trading_day": "2026-03-27",
+      "price": "200.9500",
+      "change_percent": "0.8077%",
+      "as_of": "2026-03-31T12:35:38.461161-04:00",
+      "latest_trading_day": "2026-03-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "273.5000",
       "change_percent": "-0.3062%",
-      "as_of": "2026-03-30T18:59:58.763241-04:00",
+      "as_of": "2026-03-31T12:35:38.461161-04:00",
       "latest_trading_day": "2026-03-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "536.3800",
       "change_percent": "2.0277%",
-      "as_of": "2026-03-30T18:59:58.763241-04:00",
+      "as_of": "2026-03-31T12:35:38.461161-04:00",
       "latest_trading_day": "2026-03-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Doctors Day",
+    "name": "International Taco Day",
     "region": "US",
-    "date": "2026-03-30",
-    "link": "https://www.checkiday.com/1d2d7c0fa29498b5700bf4fa1a8ae74a/national-doctors-day",
+    "date": "2026-03-31",
+    "link": "https://www.checkiday.com/ac656e3d9f94427dbe4f39cc1c92a24b/international-taco-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Bipolar Day",
+    "name": "International Taco Day",
     "region": "WORLD",
-    "date": "2026-03-30",
-    "link": "https://www.checkiday.com/560687e9cae3fdd65111917612ba3aad/world-bipolar-day",
+    "date": "2026-03-31",
+    "link": "https://www.checkiday.com/ac656e3d9f94427dbe4f39cc1c92a24b/international-taco-day",
     "source": "Checkiday"
   }
 }
