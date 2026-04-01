@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-03-31T18:53:56.437215-04:00",
+  "as_of": "2026-04-01T12:15:01.966344-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "253.7900",
       "change_percent": "2.9031%",
-      "as_of": "2026-03-31T18:53:56.437215-04:00",
+      "as_of": "2026-04-01T12:15:01.966344-04:00",
       "latest_trading_day": "2026-03-31",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "7.3100",
       "change_percent": "6.8713%",
-      "as_of": "2026-03-31T18:53:56.437215-04:00",
+      "as_of": "2026-04-01T12:15:01.966344-04:00",
       "latest_trading_day": "2026-03-31",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "208.2700",
       "change_percent": "3.6427%",
-      "as_of": "2026-03-31T18:53:56.437215-04:00",
+      "as_of": "2026-04-01T12:15:01.966344-04:00",
       "latest_trading_day": "2026-03-31",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "287.5600",
       "change_percent": "5.1408%",
-      "as_of": "2026-03-31T18:53:56.437215-04:00",
+      "as_of": "2026-04-01T12:15:01.966344-04:00",
       "latest_trading_day": "2026-03-31",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "572.1300",
       "change_percent": "6.6651%",
-      "as_of": "2026-03-31T18:53:56.437215-04:00",
+      "as_of": "2026-04-01T12:15:01.966344-04:00",
       "latest_trading_day": "2026-03-31",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Taco Day",
+    "name": "Boomer Bonus Day",
     "region": "US",
-    "date": "2026-03-31",
-    "link": "https://www.checkiday.com/ac656e3d9f94427dbe4f39cc1c92a24b/international-taco-day",
+    "date": "2026-04-01",
+    "link": "https://www.checkiday.com/1d0ee445dcf6d869b3af90774372371e/boomer-bonus-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Taco Day",
+    "name": "Global Day of the Engineer",
     "region": "WORLD",
-    "date": "2026-03-31",
-    "link": "https://www.checkiday.com/ac656e3d9f94427dbe4f39cc1c92a24b/international-taco-day",
+    "date": "2026-04-01",
+    "link": "https://www.checkiday.com/54305bccf25646558dabc645310b3df2/global-day-of-the-engineer",
     "source": "Checkiday"
   }
 }
