@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-04-01T19:03:14.995869-04:00",
+  "as_of": "2026-04-02T12:13:42.617278-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "255.6300",
       "change_percent": "0.7250%",
-      "as_of": "2026-04-01T19:03:14.995869-04:00",
+      "as_of": "2026-04-02T12:13:42.617278-04:00",
       "latest_trading_day": "2026-04-01",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "7.1800",
       "change_percent": "-1.7784%",
-      "as_of": "2026-04-01T19:03:14.995869-04:00",
+      "as_of": "2026-04-02T12:13:42.617278-04:00",
       "latest_trading_day": "2026-04-01",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "210.5700",
       "change_percent": "1.1043%",
-      "as_of": "2026-04-01T19:03:14.995869-04:00",
+      "as_of": "2026-04-02T12:13:42.617278-04:00",
       "latest_trading_day": "2026-04-01",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "297.3900",
       "change_percent": "3.4184%",
-      "as_of": "2026-04-01T19:03:14.995869-04:00",
+      "as_of": "2026-04-02T12:13:42.617278-04:00",
       "latest_trading_day": "2026-04-01",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "579.2300",
       "change_percent": "1.2410%",
-      "as_of": "2026-04-01T19:03:14.995869-04:00",
+      "as_of": "2026-04-02T12:13:42.617278-04:00",
       "latest_trading_day": "2026-04-01",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "Boomer Bonus Day",
+    "name": "International Children's Book Day",
     "region": "US",
-    "date": "2026-04-01",
-    "link": "https://www.checkiday.com/1d0ee445dcf6d869b3af90774372371e/boomer-bonus-day",
+    "date": "2026-04-02",
+    "link": "https://www.checkiday.com/9fd0706d79424393130c58670d056b0a/international-childrens-book-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Global Day of the Engineer",
+    "name": "International Children's Book Day",
     "region": "WORLD",
-    "date": "2026-04-01",
-    "link": "https://www.checkiday.com/54305bccf25646558dabc645310b3df2/global-day-of-the-engineer",
+    "date": "2026-04-02",
+    "link": "https://www.checkiday.com/9fd0706d79424393130c58670d056b0a/international-childrens-book-day",
     "source": "Checkiday"
   }
 }
