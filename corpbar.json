@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-04-02T18:53:17.310601-04:00",
+  "as_of": "2026-04-03T11:28:38.862082-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "255.9200",
       "change_percent": "0.1134%",
-      "as_of": "2026-04-02T18:53:17.310601-04:00",
+      "as_of": "2026-04-03T11:28:38.862082-04:00",
       "latest_trading_day": "2026-04-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "7.0700",
       "change_percent": "-1.5320%",
-      "as_of": "2026-04-02T18:53:17.310601-04:00",
+      "as_of": "2026-04-03T11:28:38.862082-04:00",
       "latest_trading_day": "2026-04-02",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "209.7700",
       "change_percent": "-0.3799%",
-      "as_of": "2026-04-02T18:53:17.310601-04:00",
+      "as_of": "2026-04-03T11:28:38.862082-04:00",
       "latest_trading_day": "2026-04-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "295.7700",
       "change_percent": "-0.5447%",
-      "as_of": "2026-04-02T18:53:17.310601-04:00",
+      "as_of": "2026-04-03T11:28:38.862082-04:00",
       "latest_trading_day": "2026-04-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "574.4600",
       "change_percent": "-0.8235%",
-      "as_of": "2026-04-02T18:53:17.310601-04:00",
+      "as_of": "2026-04-03T11:28:38.862082-04:00",
       "latest_trading_day": "2026-04-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Children's Book Day",
+    "name": "Good Friday",
     "region": "US",
-    "date": "2026-04-02",
-    "link": "https://www.checkiday.com/9fd0706d79424393130c58670d056b0a/international-childrens-book-day",
-    "source": "Checkiday"
+    "date": "2026-04-03",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   },
   "world_observance": {
-    "name": "International Children's Book Day",
-    "region": "WORLD",
-    "date": "2026-04-02",
-    "link": "https://www.checkiday.com/9fd0706d79424393130c58670d056b0a/international-childrens-book-day",
-    "source": "Checkiday"
+    "name": "Good Friday",
+    "region": "United Kingdom",
+    "date": "2026-04-03",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
