@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-04-06T18:05:12.758360-04:00",
+  "as_of": "2026-04-07T12:36:14.274390-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "258.8600",
       "change_percent": "1.1488%",
-      "as_of": "2026-04-06T18:05:12.758360-04:00",
+      "as_of": "2026-04-07T12:36:14.274390-04:00",
       "latest_trading_day": "2026-04-06",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "6.8000",
       "change_percent": "-3.8190%",
-      "as_of": "2026-04-06T18:05:12.758360-04:00",
+      "as_of": "2026-04-07T12:36:14.274390-04:00",
       "latest_trading_day": "2026-04-06",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "212.7900",
       "change_percent": "1.4397%",
-      "as_of": "2026-04-06T18:05:12.758360-04:00",
+      "as_of": "2026-04-07T12:36:14.274390-04:00",
       "latest_trading_day": "2026-04-06",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "299.9900",
       "change_percent": "1.4268%",
-      "as_of": "2026-04-06T18:05:12.758360-04:00",
+      "as_of": "2026-04-07T12:36:14.274390-04:00",
       "latest_trading_day": "2026-04-06",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "573.0200",
       "change_percent": "-0.2507%",
-      "as_of": "2026-04-06T18:05:12.758360-04:00",
+      "as_of": "2026-04-07T12:36:14.274390-04:00",
       "latest_trading_day": "2026-04-06",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "Church of Jesus Christ of Latter-day Saints Day",
+    "name": "International Beaver Day",
     "region": "US",
-    "date": "2026-04-06",
-    "link": "https://www.checkiday.com/613ab23a90aaf485f8a384f0d937b66d/church-of-jesus-christ-of-latter-day-saints-day",
+    "date": "2026-04-07",
+    "link": "https://www.checkiday.com/a7596caf90778f2670886c052ec2fc53/international-beaver-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Easter Monday",
-    "region": "United Kingdom",
-    "date": "2026-04-06",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "International Beaver Day",
+    "region": "WORLD",
+    "date": "2026-04-07",
+    "link": "https://www.checkiday.com/a7596caf90778f2670886c052ec2fc53/international-beaver-day",
+    "source": "Checkiday"
   }
 }
