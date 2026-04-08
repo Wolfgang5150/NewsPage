@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-04-07T19:06:16.798658-04:00",
+  "as_of": "2026-04-08T12:44:02.594272-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "253.5000",
       "change_percent": "-2.0706%",
-      "as_of": "2026-04-07T19:06:16.798658-04:00",
+      "as_of": "2026-04-08T12:44:02.594272-04:00",
       "latest_trading_day": "2026-04-07",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "6.6800",
       "change_percent": "-1.7647%",
-      "as_of": "2026-04-07T19:06:16.798658-04:00",
+      "as_of": "2026-04-08T12:44:02.594272-04:00",
       "latest_trading_day": "2026-04-07",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "213.7700",
       "change_percent": "0.4605%",
-      "as_of": "2026-04-07T19:06:16.798658-04:00",
+      "as_of": "2026-04-08T12:44:02.594272-04:00",
       "latest_trading_day": "2026-04-07",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "305.4600",
       "change_percent": "1.8234%",
-      "as_of": "2026-04-07T19:06:16.798658-04:00",
+      "as_of": "2026-04-08T12:44:02.594272-04:00",
       "latest_trading_day": "2026-04-07",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "575.0500",
       "change_percent": "0.3543%",
-      "as_of": "2026-04-07T19:06:16.798658-04:00",
+      "as_of": "2026-04-08T12:44:02.594272-04:00",
       "latest_trading_day": "2026-04-07",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Beaver Day",
+    "name": "International Day of Pink",
     "region": "US",
-    "date": "2026-04-07",
-    "link": "https://www.checkiday.com/a7596caf90778f2670886c052ec2fc53/international-beaver-day",
+    "date": "2026-04-08",
+    "link": "https://www.checkiday.com/6da4e1fdbe307316aab0f14bf161f063/international-day-of-pink",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Beaver Day",
+    "name": "International Day of Pink",
     "region": "WORLD",
-    "date": "2026-04-07",
-    "link": "https://www.checkiday.com/a7596caf90778f2670886c052ec2fc53/international-beaver-day",
+    "date": "2026-04-08",
+    "link": "https://www.checkiday.com/6da4e1fdbe307316aab0f14bf161f063/international-day-of-pink",
     "source": "Checkiday"
   }
 }
