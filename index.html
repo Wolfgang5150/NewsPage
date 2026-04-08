@@ -704,6 +704,89 @@
       animation: purge-pulse 3.6s ease-in-out infinite;
     }
 
+    .topic-nav-shell {
+      flex: 0 0 auto;
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 100%;
+      border-top: 1px solid rgba(55,255,99,.18);
+      padding-top: 8px;
+      min-height: 0;
+    }
+
+    .topic-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 4px 2px 2px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(55,255,99,.42) rgba(0,0,0,.16);
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .topic-nav::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .topic-nav::-webkit-scrollbar-track {
+      background: rgba(0,0,0,.16);
+    }
+
+    .topic-nav::-webkit-scrollbar-thumb {
+      background: rgba(55,255,99,.42);
+      box-shadow: 0 0 8px rgba(55,255,99,.22);
+    }
+
+    .topic-chip {
+      flex: 0 0 auto;
+      border: 1px solid rgba(55,255,99,.44);
+      background:
+        linear-gradient(to bottom, rgba(0,34,0,.44), rgba(0,14,0,.52));
+      color: var(--green);
+      padding: 7px 12px 6px;
+      font-size: 10px;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      cursor: pointer;
+      box-shadow:
+        inset 0 0 10px rgba(55,255,99,.08),
+        0 0 10px rgba(55,255,99,.10);
+      text-shadow:
+        0 0 2px rgba(55,255,99,.92),
+        0 0 10px rgba(55,255,99,.42);
+      white-space: nowrap;
+      transition: background .15s ease, box-shadow .15s ease, color .15s ease, border-color .15s ease, transform .15s ease;
+    }
+
+    .topic-chip:hover {
+      border-color: rgba(55,255,99,.72);
+      box-shadow:
+        inset 0 0 12px rgba(55,255,99,.14),
+        0 0 14px rgba(55,255,99,.18);
+      transform: translateY(-1px);
+    }
+
+    .topic-chip[aria-current="true"] {
+      background:
+        repeating-linear-gradient(to bottom, rgba(255,255,255,.14) 0 1px, rgba(0,0,0,.14) 1px 3px, rgba(16,58,20,.14) 3px 5px),
+        rgba(55,255,99,.98);
+      color: #061006;
+      border-color: rgba(55,255,99,.98);
+      box-shadow:
+        0 0 18px rgba(55,255,99,.44),
+        inset 0 0 10px rgba(255,255,255,.10);
+      text-shadow: none;
+    }
+
+    .topic-chip:focus-visible {
+      outline: 1px solid rgba(55,255,99,.98);
+      outline-offset: 2px;
+    }
+
     @keyframes blink { 50% { opacity: 0; } }
     @keyframes noise-jitter {
       0% { transform: translate(0,0); }
@@ -788,6 +871,14 @@
         transform: translateZ(0) scale(1.03);
         -webkit-transform: translateZ(0) scale(1.03);
       }
+      .topic-nav {
+        gap: 6px;
+        padding-top: 2px;
+      }
+      .topic-chip {
+        font-size: 9px;
+        padding: 6px 10px 5px;
+      }
       #sync-timer { font-size: 12px; max-width: calc(100vw - 36px); }
     }
   </style>
@@ -818,6 +909,10 @@
     <section class="feed-shell">
       <div id="feed-output" class="feed-scroll"></div>
     </section>
+
+    <section class="topic-nav-shell" aria-label="News feed navigation">
+      <div id="topic-nav" class="topic-nav" role="tablist" aria-label="Feed topics"></div>
+    </section>
   </div>
 
   <script>
@@ -834,6 +929,7 @@
       const feedOutput = document.getElementById('feed-output');
       const corpTag = document.getElementById('corp-tag');
       const corpTagTrack = document.getElementById('corp-tag-track');
+      const topicNav = document.getElementById('topic-nav');
 
       const CORP_BAR_URL = './corpbar.json';
       const DEFAULT_TICKERS = [
@@ -853,6 +949,11 @@
       const TIMER_STEP_MS = 10;
       let activeCursor = null;
       let statusCycleInterval = null;
+      let sectionsState = [];
+      let currentSectionIndex = 0;
+      let transitionInProgress = false;
+      let cycleInterval = null;
+      let loadCurrentSection = async () => {};
 
       function normalizeCorpBar(data) {
         if (!data || typeof data !== 'object') return null;
@@ -953,6 +1054,55 @@
         const fractionalPrimary = Math.floor((totalHundredths % 100) / 10);
         const fractionalSecondary = totalHundredths % 10;
         timerEl.textContent = `PURGE_CYCLE: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}:${String(fractionalPrimary).padStart(2, '0')}:${String(fractionalSecondary).padStart(2, '0')}`;
+      }
+
+      function buildTopicNav(sectionList) {
+        if (!topicNav) return;
+        topicNav.innerHTML = '';
+        sectionList.forEach((section, index) => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'topic-chip';
+          button.setAttribute('role', 'tab');
+          button.setAttribute('aria-selected', 'false');
+          button.setAttribute('aria-current', 'false');
+          button.dataset.index = String(index);
+          button.textContent = section && section.name ? section.name : `SECTION ${index + 1}`;
+          topicNav.appendChild(button);
+        });
+      }
+
+      function updateTopicNav() {
+        if (!topicNav) return;
+        const buttons = topicNav.querySelectorAll('.topic-chip');
+        buttons.forEach((button, index) => {
+          const isActive = index === currentSectionIndex;
+          button.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          button.setAttribute('aria-current', isActive ? 'true' : 'false');
+        });
+
+        const activeButton = topicNav.querySelector(`.topic-chip[data-index="${currentSectionIndex}"]`);
+        if (activeButton && typeof activeButton.scrollIntoView === 'function') {
+          activeButton.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        }
+      }
+
+      async function jumpToSection(index) {
+        if (transitionInProgress) return;
+        if (!Array.isArray(sectionsState) || !sectionsState.length) return;
+        if (Number.isNaN(index) || index < 0 || index >= sectionsState.length) return;
+
+        currentSectionIndex = index;
+        await loadCurrentSection();
+      }
+
+      if (topicNav) {
+        topicNav.addEventListener('click', async (event) => {
+          const button = event.target.closest('.topic-chip');
+          if (!button) return;
+          const index = Number(button.dataset.index);
+          await jumpToSection(index);
+        });
       }
 
       function sleep(ms) {
@@ -1230,31 +1380,38 @@
       async function runSections(data) {
         startStatusCycle(data);
 
-        const sections = buildSectionSequence(data);
-        if (!sections.length) {
+        if (cycleInterval) {
+          clearInterval(cycleInterval);
+          cycleInterval = null;
+        }
+
+        sectionsState = buildSectionSequence(data);
+        if (!sectionsState.length) {
           feedOutput.innerHTML = '';
           await typeLine('> [NO_TRANSMISSIONS_RECEIVED]', 'feed-item');
           return;
         }
 
-        let currentSectionIndex = 0;
-        let transitionInProgress = false;
-        let cycleInterval = null;
+        currentSectionIndex = 0;
+        buildTopicNav(sectionsState);
 
-        const loadCurrentSection = async () => {
+        loadCurrentSection = async () => {
           transitionInProgress = true;
-          const nextName = currentSectionIndex < sections.length - 1
-            ? sections[currentSectionIndex + 1].name
+          updateTopicNav();
+
+          const nextName = currentSectionIndex < sectionsState.length - 1
+            ? sectionsState[currentSectionIndex + 1].name
             : null;
 
-          if (sections[currentSectionIndex] && sections[currentSectionIndex].isRadar) {
+          if (sectionsState[currentSectionIndex] && sectionsState[currentSectionIndex].isRadar) {
             await renderRadarSection(nextName);
           } else {
-            await renderSection(sections[currentSectionIndex], nextName);
+            await renderSection(sectionsState[currentSectionIndex], nextName);
           }
 
           timeLeft = REFRESH_SECONDS;
           updateTimer();
+          updateTopicNav();
           transitionInProgress = false;
         };
 
@@ -1268,26 +1425,14 @@
           if (timeLeft <= 0) {
             transitionInProgress = true;
 
-            if (currentSectionIndex >= sections.length - 1) {
+            if (currentSectionIndex >= sectionsState.length - 1) {
               clearInterval(cycleInterval);
               window.location.reload();
               return;
             }
 
             currentSectionIndex += 1;
-            const nextName = currentSectionIndex < sections.length - 1
-              ? sections[currentSectionIndex + 1].name
-              : null;
-
-            if (sections[currentSectionIndex] && sections[currentSectionIndex].isRadar) {
-              await renderRadarSection(nextName);
-            } else {
-              await renderSection(sections[currentSectionIndex], nextName);
-            }
-
-            timeLeft = REFRESH_SECONDS;
-            updateTimer();
-            transitionInProgress = false;
+            await loadCurrentSection();
             return;
           }
 
