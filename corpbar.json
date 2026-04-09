@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-04-08T19:09:29.086611-04:00",
+  "as_of": "2026-04-09T12:52:41.503025-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "258.9000",
       "change_percent": "2.1302%",
-      "as_of": "2026-04-08T19:09:29.086611-04:00",
+      "as_of": "2026-04-09T12:52:41.503025-04:00",
       "latest_trading_day": "2026-04-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "7.4400",
       "change_percent": "11.3772%",
-      "as_of": "2026-04-08T19:09:29.086611-04:00",
+      "as_of": "2026-04-09T12:52:41.503025-04:00",
       "latest_trading_day": "2026-04-08",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "221.2500",
       "change_percent": "3.4991%",
-      "as_of": "2026-04-08T19:09:29.086611-04:00",
+      "as_of": "2026-04-09T12:52:41.503025-04:00",
       "latest_trading_day": "2026-04-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "317.3200",
       "change_percent": "3.8827%",
-      "as_of": "2026-04-08T19:09:29.086611-04:00",
+      "as_of": "2026-04-09T12:52:41.503025-04:00",
       "latest_trading_day": "2026-04-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "612.4200",
       "change_percent": "6.4986%",
-      "as_of": "2026-04-08T19:09:29.086611-04:00",
+      "as_of": "2026-04-09T12:52:41.503025-04:00",
       "latest_trading_day": "2026-04-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Day of Pink",
+    "name": "International ASMR Day",
     "region": "US",
-    "date": "2026-04-08",
-    "link": "https://www.checkiday.com/6da4e1fdbe307316aab0f14bf161f063/international-day-of-pink",
+    "date": "2026-04-09",
+    "link": "https://www.checkiday.com/0f59cb904b0b58ee49eef8b4940f91e1/international-asmr-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Day of Pink",
+    "name": "International ASMR Day",
     "region": "WORLD",
-    "date": "2026-04-08",
-    "link": "https://www.checkiday.com/6da4e1fdbe307316aab0f14bf161f063/international-day-of-pink",
+    "date": "2026-04-09",
+    "link": "https://www.checkiday.com/0f59cb904b0b58ee49eef8b4940f91e1/international-asmr-day",
     "source": "Checkiday"
   }
 }
