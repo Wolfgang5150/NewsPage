@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-04-09T19:25:32.491648-04:00",
+  "as_of": "2026-04-10T11:37:11.446017-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "260.4900",
       "change_percent": "0.6141%",
-      "as_of": "2026-04-09T19:25:32.491648-04:00",
+      "as_of": "2026-04-10T11:37:11.446017-04:00",
       "latest_trading_day": "2026-04-09",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "7.2300",
       "change_percent": "-2.8226%",
-      "as_of": "2026-04-09T19:25:32.491648-04:00",
+      "as_of": "2026-04-10T11:37:11.446017-04:00",
       "latest_trading_day": "2026-04-09",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "233.6500",
       "change_percent": "5.6045%",
-      "as_of": "2026-04-09T19:25:32.491648-04:00",
+      "as_of": "2026-04-10T11:37:11.446017-04:00",
       "latest_trading_day": "2026-04-09",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "318.4900",
       "change_percent": "0.3687%",
-      "as_of": "2026-04-09T19:25:32.491648-04:00",
+      "as_of": "2026-04-10T11:37:11.446017-04:00",
       "latest_trading_day": "2026-04-09",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "628.3900",
       "change_percent": "2.6077%",
-      "as_of": "2026-04-09T19:25:32.491648-04:00",
+      "as_of": "2026-04-10T11:37:11.446017-04:00",
       "latest_trading_day": "2026-04-09",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International ASMR Day",
+    "name": "American Society for the Prevention of Cruelty to Animals Day",
     "region": "US",
-    "date": "2026-04-09",
-    "link": "https://www.checkiday.com/0f59cb904b0b58ee49eef8b4940f91e1/international-asmr-day",
+    "date": "2026-04-10",
+    "link": "https://www.checkiday.com/3ade96178e123a6e8c3ff4ef802d4f72/american-society-for-the-prevention-of-cruelty-to-animals-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International ASMR Day",
+    "name": "Global Work From Home Day",
     "region": "WORLD",
-    "date": "2026-04-09",
-    "link": "https://www.checkiday.com/0f59cb904b0b58ee49eef8b4940f91e1/international-asmr-day",
+    "date": "2026-04-10",
+    "link": "https://www.checkiday.com/f7d132f3feb45235e8b2e7ec376a88ad/global-work-from-home-day",
     "source": "Checkiday"
   }
 }
