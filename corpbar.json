@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-04-10T18:59:44.943640-04:00",
+  "as_of": "2026-04-13T12:45:53.050206-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "260.4800",
       "change_percent": "-0.0038%",
-      "as_of": "2026-04-10T18:59:44.943640-04:00",
+      "as_of": "2026-04-13T12:45:53.050206-04:00",
       "latest_trading_day": "2026-04-10",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "7.1400",
       "change_percent": "-1.2448%",
-      "as_of": "2026-04-10T18:59:44.943640-04:00",
+      "as_of": "2026-04-13T12:45:53.050206-04:00",
       "latest_trading_day": "2026-04-10",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "238.3800",
       "change_percent": "2.0244%",
-      "as_of": "2026-04-10T18:59:44.943640-04:00",
+      "as_of": "2026-04-13T12:45:53.050206-04:00",
       "latest_trading_day": "2026-04-10",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "317.2400",
       "change_percent": "-0.3925%",
-      "as_of": "2026-04-10T18:59:44.943640-04:00",
+      "as_of": "2026-04-13T12:45:53.050206-04:00",
       "latest_trading_day": "2026-04-10",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "629.8600",
       "change_percent": "0.2339%",
-      "as_of": "2026-04-10T18:59:44.943640-04:00",
+      "as_of": "2026-04-13T12:45:53.050206-04:00",
       "latest_trading_day": "2026-04-10",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "American Society for the Prevention of Cruelty to Animals Day",
+    "name": "International FND Awareness Day",
     "region": "US",
-    "date": "2026-04-10",
-    "link": "https://www.checkiday.com/3ade96178e123a6e8c3ff4ef802d4f72/american-society-for-the-prevention-of-cruelty-to-animals-day",
+    "date": "2026-04-13",
+    "link": "https://www.checkiday.com/1f0dee87830dff6a9859bcf808c149ec/international-fnd-awareness-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Global Work From Home Day",
+    "name": "International FND Awareness Day",
     "region": "WORLD",
-    "date": "2026-04-10",
-    "link": "https://www.checkiday.com/f7d132f3feb45235e8b2e7ec376a88ad/global-work-from-home-day",
+    "date": "2026-04-13",
+    "link": "https://www.checkiday.com/1f0dee87830dff6a9859bcf808c149ec/international-fnd-awareness-day",
     "source": "Checkiday"
   }
 }
