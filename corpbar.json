@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-04-13T19:29:11.462084-04:00",
+  "as_of": "2026-04-14T12:45:10.970878-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "259.2000",
       "change_percent": "-0.4914%",
-      "as_of": "2026-04-13T19:29:11.462084-04:00",
+      "as_of": "2026-04-14T12:45:10.970878-04:00",
       "latest_trading_day": "2026-04-13",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "7.1300",
       "change_percent": "-0.1401%",
-      "as_of": "2026-04-13T19:29:11.462084-04:00",
+      "as_of": "2026-04-14T12:45:10.970878-04:00",
       "latest_trading_day": "2026-04-13",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "239.8900",
       "change_percent": "0.6334%",
-      "as_of": "2026-04-13T19:29:11.462084-04:00",
+      "as_of": "2026-04-14T12:45:10.970878-04:00",
       "latest_trading_day": "2026-04-13",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "321.3100",
       "change_percent": "1.2829%",
-      "as_of": "2026-04-13T19:29:11.462084-04:00",
+      "as_of": "2026-04-14T12:45:10.970878-04:00",
       "latest_trading_day": "2026-04-13",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "634.5300",
       "change_percent": "0.7414%",
-      "as_of": "2026-04-13T19:29:11.462084-04:00",
+      "as_of": "2026-04-14T12:45:10.970878-04:00",
       "latest_trading_day": "2026-04-13",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International FND Awareness Day",
+    "name": "International Be Kind To Lawyers Day",
     "region": "US",
-    "date": "2026-04-13",
-    "link": "https://www.checkiday.com/1f0dee87830dff6a9859bcf808c149ec/international-fnd-awareness-day",
+    "date": "2026-04-14",
+    "link": "https://www.checkiday.com/214e2cfbaf57b8e93418b2e5209064cc/international-be-kind-to-lawyers-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International FND Awareness Day",
+    "name": "International Be Kind To Lawyers Day",
     "region": "WORLD",
-    "date": "2026-04-13",
-    "link": "https://www.checkiday.com/1f0dee87830dff6a9859bcf808c149ec/international-fnd-awareness-day",
+    "date": "2026-04-14",
+    "link": "https://www.checkiday.com/214e2cfbaf57b8e93418b2e5209064cc/international-be-kind-to-lawyers-day",
     "source": "Checkiday"
   }
 }
