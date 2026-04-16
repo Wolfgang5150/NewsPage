@@ -796,31 +796,31 @@
 
     .topic-chip-edit {
       flex: 0 0 auto;
-      border: 1px solid rgba(55,255,99,.30);
+      border: 1px solid rgba(55,255,99,.44);
       background:
-        linear-gradient(to bottom, rgba(0,28,0,.42), rgba(0,10,0,.54));
+        linear-gradient(to bottom, rgba(0,34,0,.44), rgba(0,14,0,.52));
       color: var(--green);
-      padding: 7px 9px 6px;
+      padding: 7px 10px 6px;
       font-size: 9px;
       line-height: 1;
       text-transform: uppercase;
-      letter-spacing: .05em;
+      letter-spacing: .04em;
       cursor: pointer;
-      white-space: nowrap;
       box-shadow:
-        inset 0 0 10px rgba(55,255,99,.06),
-        0 0 8px rgba(55,255,99,.08);
+        inset 0 0 10px rgba(55,255,99,.08),
+        0 0 10px rgba(55,255,99,.10);
       text-shadow:
-        0 0 2px rgba(55,255,99,.82),
-        0 0 8px rgba(55,255,99,.30);
-      transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+        0 0 2px rgba(55,255,99,.92),
+        0 0 10px rgba(55,255,99,.42);
+      white-space: nowrap;
+      transition: background .15s ease, box-shadow .15s ease, color .15s ease, border-color .15s ease, transform .15s ease;
     }
 
     .topic-chip-edit:hover {
-      border-color: rgba(55,255,99,.62);
+      border-color: rgba(55,255,99,.72);
       box-shadow:
-        inset 0 0 12px rgba(55,255,99,.10),
-        0 0 12px rgba(55,255,99,.14);
+        inset 0 0 12px rgba(55,255,99,.14),
+        0 0 14px rgba(55,255,99,.18);
       transform: translateY(-1px);
     }
 
@@ -839,28 +839,14 @@
       background: #000;
       filter:
         grayscale(1)
-        contrast(1.28)
-        brightness(.78)
-        sepia(1)
-        hue-rotate(32deg)
-        saturate(1600%);
-      opacity: .96;
-      transform: translateZ(0) scale(1.02);
-      -webkit-transform: translateZ(0) scale(1.02);
+        contrast(2.35)
+        brightness(.68);
+      opacity: 1;
+      mix-blend-mode: multiply;
+      transform: translateZ(0) scale(1.08);
+      -webkit-transform: translateZ(0) scale(1.08);
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
-    }
-
-    .radar-map-mask {
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      background:
-        linear-gradient(to bottom, rgba(0,0,0,.08), rgba(0,0,0,.14)),
-        radial-gradient(circle at center, rgba(255,255,255,.05), rgba(0,0,0,0) 62%);
-      mix-blend-mode: multiply;
-      opacity: .55;
-      z-index: 2;
     }
 
     @keyframes blink { 50% { opacity: 0; } }
@@ -1097,7 +1083,7 @@
         if (section && section.isRadar) {
           return `${RADAR_SECTION_NAME} ZIP ${weatherZip}`;
         }
-        return section && section.name ? section.name : 'SECTION';
+        return section && section.name ? section.name : `SECTION`;
       }
 
       function normalizeCorpBar(data) {
@@ -1219,13 +1205,13 @@
           wrap.appendChild(button);
 
           if (section && section.isRadar) {
-            const edit = document.createElement('button');
-            edit.type = 'button';
-            edit.className = 'topic-chip-edit';
-            edit.dataset.action = 'edit-weather-zip';
-            edit.textContent = 'EDIT ZIP';
-            edit.setAttribute('aria-label', `Edit weather ZIP code, current ZIP ${weatherZip}`);
-            wrap.appendChild(edit);
+            const editButton = document.createElement('button');
+            editButton.type = 'button';
+            editButton.className = 'topic-chip-edit';
+            editButton.dataset.action = 'edit-weather-zip';
+            editButton.dataset.index = String(index);
+            editButton.textContent = 'EDIT ZIP';
+            wrap.appendChild(editButton);
           }
 
           topicNav.appendChild(wrap);
@@ -1453,7 +1439,6 @@
                 referrerpolicy="no-referrer-when-downgrade"
                 src="${esc(buildWeatherEmbedUrl())}">
               </iframe>
-              <div class="radar-map-mask"></div>
               <div class="radar-grid"></div>
               <div class="radar-ring"></div>
               <div class="radar-ring r2"></div>
