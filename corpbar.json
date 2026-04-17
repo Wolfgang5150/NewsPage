@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-04-16T19:11:16.093727-04:00",
+  "as_of": "2026-04-17T12:15:41.518654-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-04-16T19:11:16.093727-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "263.4000",
+      "change_percent": "-1.1373%",
+      "as_of": "2026-04-17T12:15:41.518654-04:00",
+      "latest_trading_day": "2026-04-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-04-16T19:11:16.093727-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "7.3000",
+      "change_percent": "0.2747%",
+      "as_of": "2026-04-17T12:15:41.518654-04:00",
+      "latest_trading_day": "2026-04-16",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-04-16T19:11:16.093727-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "249.7000",
+      "change_percent": "0.4829%",
+      "as_of": "2026-04-17T12:15:41.518654-04:00",
+      "latest_trading_day": "2026-04-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-04-16T19:11:16.093727-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "336.0200",
+      "change_percent": "-0.3263%",
+      "as_of": "2026-04-17T12:15:41.518654-04:00",
+      "latest_trading_day": "2026-04-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-04-16T19:11:16.093727-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "676.8700",
+      "change_percent": "0.7877%",
+      "as_of": "2026-04-17T12:15:41.518654-04:00",
+      "latest_trading_day": "2026-04-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Pizza Cake Day",
+    "name": "International Ford Mustang Day",
     "region": "US",
-    "date": "2026-04-16",
-    "link": "https://www.checkiday.com/679a229eb80fa26523bd03857c6684c9/international-pizza-cake-day",
+    "date": "2026-04-17",
+    "link": "https://www.checkiday.com/c3b887994452a84c11ac49320a808727/international-ford-mustang-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Pizza Cake Day",
+    "name": "International Ford Mustang Day",
     "region": "WORLD",
-    "date": "2026-04-16",
-    "link": "https://www.checkiday.com/679a229eb80fa26523bd03857c6684c9/international-pizza-cake-day",
+    "date": "2026-04-17",
+    "link": "https://www.checkiday.com/c3b887994452a84c11ac49320a808727/international-ford-mustang-day",
     "source": "Checkiday"
   }
 }
