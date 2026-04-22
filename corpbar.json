@@ -1,48 +1,48 @@
 {
-  "as_of": "2026-04-22T16:14:22.611724-04:00",
+  "as_of": "2026-04-22T19:34:23.989380-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "266.1700",
-      "change_percent": "-2.5197%",
-      "as_of": "2026-04-22T16:14:22.611724-04:00",
-      "latest_trading_day": "2026-04-21",
+      "price": "273.1700",
+      "change_percent": "2.6299%",
+      "as_of": "2026-04-22T19:34:23.989380-04:00",
+      "latest_trading_day": "2026-04-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.8300",
-      "change_percent": "-3.0941%",
-      "as_of": "2026-04-22T16:14:22.611724-04:00",
-      "latest_trading_day": "2026-04-21",
+      "price": "7.9100",
+      "change_percent": "1.0217%",
+      "as_of": "2026-04-22T19:34:23.989380-04:00",
+      "latest_trading_day": "2026-04-22",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "249.9100",
-      "change_percent": "0.6565%",
-      "as_of": "2026-04-22T16:14:22.611724-04:00",
-      "latest_trading_day": "2026-04-21",
+      "price": "255.3600",
+      "change_percent": "2.1808%",
+      "as_of": "2026-04-22T19:34:23.989380-04:00",
+      "latest_trading_day": "2026-04-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "332.2900",
-      "change_percent": "-1.5204%",
-      "as_of": "2026-04-22T16:14:22.611724-04:00",
-      "latest_trading_day": "2026-04-21",
+      "price": "339.3200",
+      "change_percent": "2.1156%",
+      "as_of": "2026-04-22T19:34:23.989380-04:00",
+      "latest_trading_day": "2026-04-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "668.8400",
-      "change_percent": "-0.3085%",
-      "as_of": "2026-04-22T16:14:22.611724-04:00",
-      "latest_trading_day": "2026-04-21",
+      "price": "674.7200",
+      "change_percent": "0.8791%",
+      "as_of": "2026-04-22T19:34:23.989380-04:00",
+      "latest_trading_day": "2026-04-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
