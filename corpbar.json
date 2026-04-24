@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-04-23T17:33:31.821562-04:00",
+  "as_of": "2026-04-24T10:43:02.026945-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "273.4300",
       "change_percent": "0.0952%",
-      "as_of": "2026-04-23T17:33:31.821562-04:00",
+      "as_of": "2026-04-24T10:43:02.026945-04:00",
       "latest_trading_day": "2026-04-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.7950",
-      "change_percent": "-1.4539%",
-      "as_of": "2026-04-23T17:33:31.821562-04:00",
+      "price": "7.7900",
+      "change_percent": "-1.5171%",
+      "as_of": "2026-04-24T10:43:02.026945-04:00",
       "latest_trading_day": "2026-04-23",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "255.0800",
       "change_percent": "-0.1096%",
-      "as_of": "2026-04-23T17:33:31.821562-04:00",
+      "as_of": "2026-04-24T10:43:02.026945-04:00",
       "latest_trading_day": "2026-04-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "338.8900",
       "change_percent": "-0.1267%",
-      "as_of": "2026-04-23T17:33:31.821562-04:00",
+      "as_of": "2026-04-24T10:43:02.026945-04:00",
       "latest_trading_day": "2026-04-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "659.1500",
       "change_percent": "-2.3076%",
-      "as_of": "2026-04-23T17:33:31.821562-04:00",
+      "as_of": "2026-04-24T10:43:02.026945-04:00",
       "latest_trading_day": "2026-04-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Creator Day",
+    "name": "National Arbor Day",
     "region": "US",
-    "date": "2026-04-23",
-    "link": "https://www.checkiday.com/4b698351d072141fc7162c63da4b022a/international-creator-day",
+    "date": "2026-04-24",
+    "link": "https://www.checkiday.com/d0f9b4b9a2d0fbe0b16203996729ff94/national-arbor-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Saint George's Day",
-    "region": "Canada",
-    "date": "2026-04-23",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "World Day for Laboratory Animals",
+    "region": "WORLD",
+    "date": "2026-04-24",
+    "link": "https://www.checkiday.com/c766cc3e6c6a4bbcc71bb3ea05f92327/world-day-for-laboratory-animals",
+    "source": "Checkiday"
   }
 }
