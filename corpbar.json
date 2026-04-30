@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-04-29T17:55:11.194698-04:00",
+  "as_of": "2026-04-30T11:04:03.388944-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "270.1700",
       "change_percent": "-0.1995%",
-      "as_of": "2026-04-29T17:55:11.194698-04:00",
+      "as_of": "2026-04-30T11:04:03.388944-04:00",
       "latest_trading_day": "2026-04-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.6150",
-      "change_percent": "-3.4854%",
-      "as_of": "2026-04-29T17:55:11.194698-04:00",
+      "price": "7.6200",
+      "change_percent": "-3.4221%",
+      "as_of": "2026-04-30T11:04:03.388944-04:00",
       "latest_trading_day": "2026-04-29",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "263.0400",
       "change_percent": "1.2861%",
-      "as_of": "2026-04-29T17:55:11.194698-04:00",
+      "as_of": "2026-04-30T11:04:03.388944-04:00",
       "latest_trading_day": "2026-04-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "349.9400",
       "change_percent": "0.0457%",
-      "as_of": "2026-04-29T17:55:11.194698-04:00",
+      "as_of": "2026-04-30T11:04:03.388944-04:00",
       "latest_trading_day": "2026-04-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "669.1200",
       "change_percent": "-0.3307%",
-      "as_of": "2026-04-29T17:55:11.194698-04:00",
+      "as_of": "2026-04-30T11:04:03.388944-04:00",
       "latest_trading_day": "2026-04-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Dance Day",
+    "name": "International Jazz Day",
     "region": "US",
-    "date": "2026-04-29",
-    "link": "https://www.checkiday.com/c51879bc2500e8757a13bad8fdb55d0a/international-dance-day",
+    "date": "2026-04-30",
+    "link": "https://www.checkiday.com/72a78052d1b7d5c2a6e9e74b934ef1df/international-jazz-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "昭和の日",
-    "region": "Japan",
-    "date": "2026-04-29",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "International Jazz Day",
+    "region": "WORLD",
+    "date": "2026-04-30",
+    "link": "https://www.checkiday.com/72a78052d1b7d5c2a6e9e74b934ef1df/international-jazz-day",
+    "source": "Checkiday"
   }
 }
