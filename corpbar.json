@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-04-30T17:52:43.075635-04:00",
+  "as_of": "2026-05-01T10:17:54.958928-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "271.3500",
       "change_percent": "0.4368%",
-      "as_of": "2026-04-30T17:52:43.075635-04:00",
+      "as_of": "2026-05-01T10:17:54.958928-04:00",
       "latest_trading_day": "2026-04-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "7.5700",
       "change_percent": "-0.6562%",
-      "as_of": "2026-04-30T17:52:43.075635-04:00",
+      "as_of": "2026-05-01T10:17:54.958928-04:00",
       "latest_trading_day": "2026-04-30",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "265.0600",
       "change_percent": "0.7679%",
-      "as_of": "2026-04-30T17:52:43.075635-04:00",
+      "as_of": "2026-05-01T10:17:54.958928-04:00",
       "latest_trading_day": "2026-04-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "384.8000",
       "change_percent": "9.9617%",
-      "as_of": "2026-04-30T17:52:43.075635-04:00",
+      "as_of": "2026-05-01T10:17:54.958928-04:00",
       "latest_trading_day": "2026-04-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "611.9100",
       "change_percent": "-8.5500%",
-      "as_of": "2026-04-30T17:52:43.075635-04:00",
+      "as_of": "2026-05-01T10:17:54.958928-04:00",
       "latest_trading_day": "2026-04-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Jazz Day",
+    "name": "International Sauvignon Blanc Day",
     "region": "US",
-    "date": "2026-04-30",
-    "link": "https://www.checkiday.com/72a78052d1b7d5c2a6e9e74b934ef1df/international-jazz-day",
+    "date": "2026-05-01",
+    "link": "https://www.checkiday.com/7a7d43ce2e4c1c67b1d0d3692cb03ab1/international-sauvignon-blanc-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Jazz Day",
-    "region": "WORLD",
-    "date": "2026-04-30",
-    "link": "https://www.checkiday.com/72a78052d1b7d5c2a6e9e74b934ef1df/international-jazz-day",
-    "source": "Checkiday"
+    "name": "Tag der Arbeit",
+    "region": "Germany",
+    "date": "2026-05-01",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
