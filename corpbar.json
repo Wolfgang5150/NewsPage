@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-05-01T17:47:39.640533-04:00",
+  "as_of": "2026-05-04T11:07:47.885193-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "280.1400",
       "change_percent": "3.2394%",
-      "as_of": "2026-05-01T17:47:39.640533-04:00",
+      "as_of": "2026-05-04T11:07:47.885193-04:00",
       "latest_trading_day": "2026-05-01",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.3850",
-      "change_percent": "-2.4439%",
-      "as_of": "2026-05-01T17:47:39.640533-04:00",
+      "price": "7.3900",
+      "change_percent": "-2.3778%",
+      "as_of": "2026-05-04T11:07:47.885193-04:00",
       "latest_trading_day": "2026-05-01",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "268.2600",
       "change_percent": "1.2073%",
-      "as_of": "2026-05-01T17:47:39.640533-04:00",
+      "as_of": "2026-05-04T11:07:47.885193-04:00",
       "latest_trading_day": "2026-05-01",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "385.6900",
       "change_percent": "0.2313%",
-      "as_of": "2026-05-01T17:47:39.640533-04:00",
+      "as_of": "2026-05-04T11:07:47.885193-04:00",
       "latest_trading_day": "2026-05-01",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,23 +41,23 @@
       "symbol": "META",
       "price": "608.7450",
       "change_percent": "-0.5172%",
-      "as_of": "2026-05-01T17:47:39.640533-04:00",
+      "as_of": "2026-05-04T11:07:47.885193-04:00",
       "latest_trading_day": "2026-05-01",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Sauvignon Blanc Day",
+    "name": "International Firefighters' Day",
     "region": "US",
-    "date": "2026-05-01",
-    "link": "https://www.checkiday.com/7a7d43ce2e4c1c67b1d0d3692cb03ab1/international-sauvignon-blanc-day",
+    "date": "2026-05-04",
+    "link": "https://www.checkiday.com/b74f7e9b702ec1fa8d05487e7c9f5f6c/international-firefighters-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Tag der Arbeit",
-    "region": "Germany",
-    "date": "2026-05-01",
+    "name": "Early May Bank Holiday",
+    "region": "United Kingdom",
+    "date": "2026-05-04",
     "link": "https://date.nager.at/",
     "source": "Nager.Date"
   }
