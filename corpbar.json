@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-05-04T17:55:40.801085-04:00",
+  "as_of": "2026-05-05T14:07:09.625239-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "276.8300",
       "change_percent": "-1.1816%",
-      "as_of": "2026-05-04T17:55:40.801085-04:00",
+      "as_of": "2026-05-05T14:07:09.625239-04:00",
       "latest_trading_day": "2026-05-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.0700",
-      "change_percent": "-4.3302%",
-      "as_of": "2026-05-04T17:55:40.801085-04:00",
+      "price": "7.0600",
+      "change_percent": "-4.4655%",
+      "as_of": "2026-05-05T14:07:09.625239-04:00",
       "latest_trading_day": "2026-05-04",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "272.0500",
       "change_percent": "1.4128%",
-      "as_of": "2026-05-04T17:55:40.801085-04:00",
+      "as_of": "2026-05-05T14:07:09.625239-04:00",
       "latest_trading_day": "2026-05-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "383.2500",
       "change_percent": "-0.6326%",
-      "as_of": "2026-05-04T17:55:40.801085-04:00",
+      "as_of": "2026-05-05T14:07:09.625239-04:00",
       "latest_trading_day": "2026-05-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,23 +41,23 @@
       "symbol": "META",
       "price": "610.4100",
       "change_percent": "0.2735%",
-      "as_of": "2026-05-04T17:55:40.801085-04:00",
+      "as_of": "2026-05-05T14:07:09.625239-04:00",
       "latest_trading_day": "2026-05-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Firefighters' Day",
+    "name": "International Midwives Day",
     "region": "US",
-    "date": "2026-05-04",
-    "link": "https://www.checkiday.com/b74f7e9b702ec1fa8d05487e7c9f5f6c/international-firefighters-day",
+    "date": "2026-05-05",
+    "link": "https://www.checkiday.com/e9258b31f41dcc720471c343476a2142/international-midwives-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Early May Bank Holiday",
-    "region": "United Kingdom",
-    "date": "2026-05-04",
+    "name": "こどもの日",
+    "region": "Japan",
+    "date": "2026-05-05",
     "link": "https://date.nager.at/",
     "source": "Nager.Date"
   }
