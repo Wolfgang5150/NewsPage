@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-05-05T17:57:20.237012-04:00",
+  "as_of": "2026-05-06T11:25:10.202530-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "284.1800",
       "change_percent": "2.6551%",
-      "as_of": "2026-05-05T17:57:20.237012-04:00",
+      "as_of": "2026-05-06T11:25:10.202530-04:00",
       "latest_trading_day": "2026-05-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.2500",
-      "change_percent": "2.6912%",
-      "as_of": "2026-05-05T17:57:20.237012-04:00",
+      "price": "7.2600",
+      "change_percent": "2.8329%",
+      "as_of": "2026-05-06T11:25:10.202530-04:00",
       "latest_trading_day": "2026-05-05",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "273.5500",
       "change_percent": "0.5514%",
-      "as_of": "2026-05-05T17:57:20.237012-04:00",
+      "as_of": "2026-05-06T11:25:10.202530-04:00",
       "latest_trading_day": "2026-05-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "388.4300",
       "change_percent": "1.3516%",
-      "as_of": "2026-05-05T17:57:20.237012-04:00",
+      "as_of": "2026-05-06T11:25:10.202530-04:00",
       "latest_trading_day": "2026-05-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,23 +41,23 @@
       "symbol": "META",
       "price": "604.9600",
       "change_percent": "-0.8928%",
-      "as_of": "2026-05-05T17:57:20.237012-04:00",
+      "as_of": "2026-05-06T11:25:10.202530-04:00",
       "latest_trading_day": "2026-05-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Midwives Day",
+    "name": "Great American Grump Out",
     "region": "US",
-    "date": "2026-05-05",
-    "link": "https://www.checkiday.com/e9258b31f41dcc720471c343476a2142/international-midwives-day",
+    "date": "2026-05-06",
+    "link": "https://www.checkiday.com/2cf9cb898133c899c9f4aad05f24cfaf/great-american-grump-out",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "こどもの日",
+    "name": "憲法記念日",
     "region": "Japan",
-    "date": "2026-05-05",
+    "date": "2026-05-06",
     "link": "https://date.nager.at/",
     "source": "Nager.Date"
   }
