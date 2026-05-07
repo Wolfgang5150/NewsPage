@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-05-06T17:52:23.483933-04:00",
+  "as_of": "2026-05-07T11:26:07.660130-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "287.5100",
       "change_percent": "1.1718%",
-      "as_of": "2026-05-06T17:52:23.483933-04:00",
+      "as_of": "2026-05-07T11:26:07.660130-04:00",
       "latest_trading_day": "2026-05-06",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.2350",
-      "change_percent": "27.2039%",
-      "as_of": "2026-05-06T17:52:23.483933-04:00",
+      "price": "9.2400",
+      "change_percent": "27.2727%",
+      "as_of": "2026-05-07T11:26:07.660130-04:00",
       "latest_trading_day": "2026-05-06",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "274.9900",
       "change_percent": "0.5264%",
-      "as_of": "2026-05-06T17:52:23.483933-04:00",
+      "as_of": "2026-05-07T11:26:07.660130-04:00",
       "latest_trading_day": "2026-05-06",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "398.0400",
       "change_percent": "2.4741%",
-      "as_of": "2026-05-06T17:52:23.483933-04:00",
+      "as_of": "2026-05-07T11:26:07.660130-04:00",
       "latest_trading_day": "2026-05-06",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "612.8800",
       "change_percent": "1.3092%",
-      "as_of": "2026-05-06T17:52:23.483933-04:00",
+      "as_of": "2026-05-07T11:26:07.660130-04:00",
       "latest_trading_day": "2026-05-06",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "Great American Grump Out",
+    "name": "National Barrier Awareness Day",
     "region": "US",
-    "date": "2026-05-06",
-    "link": "https://www.checkiday.com/2cf9cb898133c899c9f4aad05f24cfaf/great-american-grump-out",
+    "date": "2026-05-07",
+    "link": "https://www.checkiday.com/ed5f888f5cf8d62188ec1c37e467b5ed/national-barrier-awareness-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "憲法記念日",
-    "region": "Japan",
-    "date": "2026-05-06",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "World Password Day",
+    "region": "WORLD",
+    "date": "2026-05-07",
+    "link": "https://www.checkiday.com/a701f0d032c7f606f958b7143ba6e972/world-password-day",
+    "source": "Checkiday"
   }
 }
