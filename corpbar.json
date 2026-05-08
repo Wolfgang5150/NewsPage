@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-05-07T17:52:11.690658-04:00",
+  "as_of": "2026-05-08T10:48:02.041028-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "287.4400",
       "change_percent": "-0.0243%",
-      "as_of": "2026-05-07T17:52:11.690658-04:00",
+      "as_of": "2026-05-08T10:48:02.041028-04:00",
       "latest_trading_day": "2026-05-07",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "8.7500",
-      "change_percent": "-5.3030%",
-      "as_of": "2026-05-07T17:52:11.690658-04:00",
+      "price": "8.7400",
+      "change_percent": "-5.4113%",
+      "as_of": "2026-05-08T10:48:02.041028-04:00",
       "latest_trading_day": "2026-05-07",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "271.1700",
       "change_percent": "-1.3891%",
-      "as_of": "2026-05-07T17:52:11.690658-04:00",
+      "as_of": "2026-05-08T10:48:02.041028-04:00",
       "latest_trading_day": "2026-05-07",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "397.9900",
       "change_percent": "-0.0126%",
-      "as_of": "2026-05-07T17:52:11.690658-04:00",
+      "as_of": "2026-05-08T10:48:02.041028-04:00",
       "latest_trading_day": "2026-05-07",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "616.8100",
       "change_percent": "0.6412%",
-      "as_of": "2026-05-07T17:52:11.690658-04:00",
+      "as_of": "2026-05-08T10:48:02.041028-04:00",
       "latest_trading_day": "2026-05-07",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Barrier Awareness Day",
+    "name": "Truman Day",
     "region": "US",
-    "date": "2026-05-07",
-    "link": "https://www.checkiday.com/ed5f888f5cf8d62188ec1c37e467b5ed/national-barrier-awareness-day",
-    "source": "Checkiday"
+    "date": "2026-05-08",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   },
   "world_observance": {
-    "name": "World Password Day",
+    "name": "Time of Remembrance and Reconciliation for Those Who Lost Their Lives during the Second World War",
     "region": "WORLD",
-    "date": "2026-05-07",
-    "link": "https://www.checkiday.com/a701f0d032c7f606f958b7143ba6e972/world-password-day",
+    "date": "2026-05-08",
+    "link": "https://www.checkiday.com/8941d9a5a81afa4a6fc0efbf7d4c9362/time-of-remembrance-and-reconciliation-for-those-who-lost-their-lives-during-the-second-world-war",
     "source": "Checkiday"
   }
 }
