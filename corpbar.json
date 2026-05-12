@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-05-11T18:02:02.988066-04:00",
+  "as_of": "2026-05-12T11:37:14.265627-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "292.6800",
-      "change_percent": "-0.2182%",
-      "as_of": "2026-05-11T18:02:02.988066-04:00",
+      "change_percent": "-0.1261%",
+      "as_of": "2026-05-12T11:37:14.265627-04:00",
       "latest_trading_day": "2026-05-11",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "8.7550",
-      "change_percent": "0.4014%",
-      "as_of": "2026-05-11T18:02:02.988066-04:00",
+      "price": "8.7600",
+      "change_percent": "0.4587%",
+      "as_of": "2026-05-12T11:37:14.265627-04:00",
       "latest_trading_day": "2026-05-11",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "268.9900",
       "change_percent": "-1.3532%",
-      "as_of": "2026-05-11T18:02:02.988066-04:00",
+      "as_of": "2026-05-12T11:37:14.265627-04:00",
       "latest_trading_day": "2026-05-11",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "388.6400",
       "change_percent": "-3.0339%",
-      "as_of": "2026-05-11T18:02:02.988066-04:00",
+      "as_of": "2026-05-12T11:37:14.265627-04:00",
       "latest_trading_day": "2026-05-11",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "598.8600",
       "change_percent": "-1.7666%",
-      "as_of": "2026-05-11T18:02:02.988066-04:00",
+      "as_of": "2026-05-12T11:37:14.265627-04:00",
       "latest_trading_day": "2026-05-11",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Mocha Torte Day",
+    "name": "International Awareness Day",
     "region": "US",
-    "date": "2026-05-11",
-    "link": "https://www.checkiday.com/bdec5daeb68d7869ca96ebec56a73d74/national-mocha-torte-day",
+    "date": "2026-05-12",
+    "link": "https://www.checkiday.com/52849270b6c08cde39602d1432989357/international-awareness-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Ego Awareness Day",
+    "name": "International Awareness Day",
     "region": "WORLD",
-    "date": "2026-05-11",
-    "link": "https://www.checkiday.com/92148ffeba2585d84fc836baf3d98856/world-ego-awareness-day",
+    "date": "2026-05-12",
+    "link": "https://www.checkiday.com/52849270b6c08cde39602d1432989357/international-awareness-day",
     "source": "Checkiday"
   }
 }
