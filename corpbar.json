@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-05-13T11:40:19.117666-04:00",
+  "as_of": "2026-05-13T14:53:45.388782-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "294.8000",
       "change_percent": "0.7243%",
-      "as_of": "2026-05-13T11:40:19.117666-04:00",
+      "as_of": "2026-05-13T14:53:45.388782-04:00",
       "latest_trading_day": "2026-05-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "8.3600",
       "change_percent": "-4.5662%",
-      "as_of": "2026-05-13T11:40:19.117666-04:00",
+      "as_of": "2026-05-13T14:53:45.388782-04:00",
       "latest_trading_day": "2026-05-12",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "265.8200",
       "change_percent": "-1.1785%",
-      "as_of": "2026-05-13T11:40:19.117666-04:00",
+      "as_of": "2026-05-13T14:53:45.388782-04:00",
       "latest_trading_day": "2026-05-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "387.3500",
       "change_percent": "-0.3319%",
-      "as_of": "2026-05-13T11:40:19.117666-04:00",
+      "as_of": "2026-05-13T14:53:45.388782-04:00",
       "latest_trading_day": "2026-05-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,7 +41,7 @@
       "symbol": "META",
       "price": "603.0000",
       "change_percent": "0.6913%",
-      "as_of": "2026-05-13T11:40:19.117666-04:00",
+      "as_of": "2026-05-13T14:53:45.388782-04:00",
       "latest_trading_day": "2026-05-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
