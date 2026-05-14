@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-05-13T18:05:44.504167-04:00",
+  "as_of": "2026-05-14T11:14:49.897152-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "298.8700",
       "change_percent": "1.3806%",
-      "as_of": "2026-05-13T18:05:44.504167-04:00",
+      "as_of": "2026-05-14T11:14:49.897152-04:00",
       "latest_trading_day": "2026-05-13",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "8.1150",
-      "change_percent": "-2.9306%",
-      "as_of": "2026-05-13T18:05:44.504167-04:00",
+      "price": "8.1200",
+      "change_percent": "-2.8708%",
+      "as_of": "2026-05-14T11:14:49.897152-04:00",
       "latest_trading_day": "2026-05-13",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "270.1300",
       "change_percent": "1.6214%",
-      "as_of": "2026-05-13T18:05:44.504167-04:00",
+      "as_of": "2026-05-14T11:14:49.897152-04:00",
       "latest_trading_day": "2026-05-13",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "402.6200",
       "change_percent": "3.9422%",
-      "as_of": "2026-05-13T18:05:44.504167-04:00",
+      "as_of": "2026-05-14T11:14:49.897152-04:00",
       "latest_trading_day": "2026-05-13",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "616.6300",
       "change_percent": "2.2604%",
-      "as_of": "2026-05-13T18:05:44.504167-04:00",
+      "as_of": "2026-05-14T11:14:49.897152-04:00",
       "latest_trading_day": "2026-05-13",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Hummus Day",
+    "name": "International Dylan Thomas Day",
     "region": "US",
-    "date": "2026-05-13",
-    "link": "https://www.checkiday.com/7ba6e2d4de608580109fc4bf9e89e9bc/international-hummus-day",
+    "date": "2026-05-14",
+    "link": "https://www.checkiday.com/ba4441129a1f5f91c864ca16a3af4b67/international-dylan-thomas-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Hummus Day",
-    "region": "WORLD",
-    "date": "2026-05-13",
-    "link": "https://www.checkiday.com/7ba6e2d4de608580109fc4bf9e89e9bc/international-hummus-day",
-    "source": "Checkiday"
+    "name": "Christi Himmelfahrt",
+    "region": "Germany",
+    "date": "2026-05-14",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
