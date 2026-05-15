@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-05-14T18:05:00.187551-04:00",
+  "as_of": "2026-05-15T11:10:41.597295-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "298.2100",
       "change_percent": "-0.2208%",
-      "as_of": "2026-05-14T18:05:00.187551-04:00",
+      "as_of": "2026-05-15T11:10:41.597295-04:00",
       "latest_trading_day": "2026-05-14",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.7550",
-      "change_percent": "-4.4951%",
-      "as_of": "2026-05-14T18:05:00.187551-04:00",
+      "price": "7.7500",
+      "change_percent": "-4.5567%",
+      "as_of": "2026-05-15T11:10:41.597295-04:00",
       "latest_trading_day": "2026-05-14",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "267.2200",
       "change_percent": "-1.0773%",
-      "as_of": "2026-05-14T18:05:00.187551-04:00",
+      "as_of": "2026-05-15T11:10:41.597295-04:00",
       "latest_trading_day": "2026-05-14",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "401.0700",
       "change_percent": "-0.3850%",
-      "as_of": "2026-05-14T18:05:00.187551-04:00",
+      "as_of": "2026-05-15T11:10:41.597295-04:00",
       "latest_trading_day": "2026-05-14",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "618.4300",
       "change_percent": "0.2919%",
-      "as_of": "2026-05-14T18:05:00.187551-04:00",
+      "as_of": "2026-05-15T11:10:41.597295-04:00",
       "latest_trading_day": "2026-05-14",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Dylan Thomas Day",
+    "name": "International Conscientious Objectors Day",
     "region": "US",
-    "date": "2026-05-14",
-    "link": "https://www.checkiday.com/ba4441129a1f5f91c864ca16a3af4b67/international-dylan-thomas-day",
+    "date": "2026-05-15",
+    "link": "https://www.checkiday.com/3118102c35cea143f623bffb13a7c469/international-conscientious-objectors-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Christi Himmelfahrt",
-    "region": "Germany",
-    "date": "2026-05-14",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "International Conscientious Objectors Day",
+    "region": "WORLD",
+    "date": "2026-05-15",
+    "link": "https://www.checkiday.com/3118102c35cea143f623bffb13a7c469/international-conscientious-objectors-day",
+    "source": "Checkiday"
   }
 }
