@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-05-18T17:59:09.669896-04:00",
+  "as_of": "2026-05-19T12:15:11.004247-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "297.8400",
       "change_percent": "-0.7961%",
-      "as_of": "2026-05-18T17:59:09.669896-04:00",
+      "as_of": "2026-05-19T12:15:11.004247-04:00",
       "latest_trading_day": "2026-05-18",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "7.9100",
       "change_percent": "0.3807%",
-      "as_of": "2026-05-18T17:59:09.669896-04:00",
+      "as_of": "2026-05-19T12:15:11.004247-04:00",
       "latest_trading_day": "2026-05-18",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "264.8600",
       "change_percent": "0.2726%",
-      "as_of": "2026-05-18T17:59:09.669896-04:00",
+      "as_of": "2026-05-19T12:15:11.004247-04:00",
       "latest_trading_day": "2026-05-18",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "396.9400",
       "change_percent": "0.0403%",
-      "as_of": "2026-05-18T17:59:09.669896-04:00",
+      "as_of": "2026-05-19T12:15:11.004247-04:00",
       "latest_trading_day": "2026-05-18",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "611.2100",
       "change_percent": "-0.4917%",
-      "as_of": "2026-05-18T17:59:09.669896-04:00",
+      "as_of": "2026-05-19T12:15:11.004247-04:00",
       "latest_trading_day": "2026-05-18",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Museum Day",
+    "name": "National Asian and Pacific Islander HIV/AIDS Awareness Day",
     "region": "US",
-    "date": "2026-05-18",
-    "link": "https://www.checkiday.com/17756f0dbf2dab16168ec2e5f7a3a757/international-museum-day",
+    "date": "2026-05-19",
+    "link": "https://www.checkiday.com/898d69181d7d45b4a9e024bbf21d8473/national-asian-and-pacific-islander-hiv-aids-awareness-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "National Patriots' Day",
-    "region": "Canada",
-    "date": "2026-05-18",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "World Family Doctor Day",
+    "region": "WORLD",
+    "date": "2026-05-19",
+    "link": "https://www.checkiday.com/4f8a67abfef471b79756a79a3338da00/world-family-doctor-day",
+    "source": "Checkiday"
   }
 }
