@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-05-21T18:16:11.260580-04:00",
+  "as_of": "2026-05-22T11:46:03.612599-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-05-21T18:16:11.260580-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "304.9900",
+      "change_percent": "0.9065%",
+      "as_of": "2026-05-22T11:46:03.612599-04:00",
+      "latest_trading_day": "2026-05-21",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-05-21T18:16:11.260580-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "8.4700",
+      "change_percent": "1.5588%",
+      "as_of": "2026-05-22T11:46:03.612599-04:00",
+      "latest_trading_day": "2026-05-21",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-05-21T18:16:11.260580-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "268.4600",
+      "change_percent": "1.3018%",
+      "as_of": "2026-05-22T11:46:03.612599-04:00",
+      "latest_trading_day": "2026-05-21",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-05-21T18:16:11.260580-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "387.6600",
+      "change_percent": "-0.3214%",
+      "as_of": "2026-05-22T11:46:03.612599-04:00",
+      "latest_trading_day": "2026-05-21",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-05-21T18:16:11.260580-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "607.3800",
+      "change_percent": "0.3834%",
+      "as_of": "2026-05-22T11:46:03.612599-04:00",
+      "latest_trading_day": "2026-05-21",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "American Red Cross Founder's Day",
+    "name": "International Being You Day",
     "region": "US",
-    "date": "2026-05-21",
-    "link": "https://www.checkiday.com/1124cc360731512bf26c53555cd4478e/american-red-cross-founders-day",
+    "date": "2026-05-22",
+    "link": "https://www.checkiday.com/21879d876b9f9984e52bd92d9f738213/international-being-you-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Global Accessibility Awareness Day",
+    "name": "International Being You Day",
     "region": "WORLD",
-    "date": "2026-05-21",
-    "link": "https://www.checkiday.com/437b13854a4600faf8a95b6020b238a6/global-accessibility-awareness-day",
+    "date": "2026-05-22",
+    "link": "https://www.checkiday.com/21879d876b9f9984e52bd92d9f738213/international-being-you-day",
     "source": "Checkiday"
   }
 }
