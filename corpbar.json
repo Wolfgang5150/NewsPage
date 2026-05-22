@@ -1,48 +1,48 @@
 {
-  "as_of": "2026-05-22T14:50:49.659195-04:00",
+  "as_of": "2026-05-22T16:40:26.010500-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "304.9900",
-      "change_percent": "0.9065%",
-      "as_of": "2026-05-22T14:50:49.659195-04:00",
-      "latest_trading_day": "2026-05-21",
+      "price": "308.8200",
+      "change_percent": "1.2558%",
+      "as_of": "2026-05-22T16:40:26.010500-04:00",
+      "latest_trading_day": "2026-05-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "8.4700",
-      "change_percent": "1.5588%",
-      "as_of": "2026-05-22T14:50:49.659195-04:00",
-      "latest_trading_day": "2026-05-21",
+      "price": "8.4100",
+      "change_percent": "-0.7084%",
+      "as_of": "2026-05-22T16:40:26.010500-04:00",
+      "latest_trading_day": "2026-05-22",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "268.4600",
-      "change_percent": "1.3018%",
-      "as_of": "2026-05-22T14:50:49.659195-04:00",
-      "latest_trading_day": "2026-05-21",
+      "price": "266.3200",
+      "change_percent": "-0.7971%",
+      "as_of": "2026-05-22T16:40:26.010500-04:00",
+      "latest_trading_day": "2026-05-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "387.6600",
-      "change_percent": "-0.3214%",
-      "as_of": "2026-05-22T14:50:49.659195-04:00",
-      "latest_trading_day": "2026-05-21",
+      "price": "N/A",
+      "change_percent": "",
+      "as_of": "2026-05-22T16:40:26.010500-04:00",
+      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "607.3800",
-      "change_percent": "0.3834%",
-      "as_of": "2026-05-22T14:50:49.659195-04:00",
-      "latest_trading_day": "2026-05-21",
+      "price": "N/A",
+      "change_percent": "",
+      "as_of": "2026-05-22T16:40:26.010500-04:00",
+      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
