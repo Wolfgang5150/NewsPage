@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-05-22T18:03:04.114638-04:00",
+  "as_of": "2026-05-25T11:45:47.237075-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-05-22T18:03:04.114638-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "308.8200",
+      "change_percent": "1.2558%",
+      "as_of": "2026-05-25T11:45:47.237075-04:00",
+      "latest_trading_day": "2026-05-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-05-22T18:03:04.114638-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "8.4000",
+      "change_percent": "-0.8264%",
+      "as_of": "2026-05-25T11:45:47.237075-04:00",
+      "latest_trading_day": "2026-05-22",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-05-22T18:03:04.114638-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "266.3200",
+      "change_percent": "-0.7971%",
+      "as_of": "2026-05-25T11:45:47.237075-04:00",
+      "latest_trading_day": "2026-05-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-05-22T18:03:04.114638-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "382.9700",
+      "change_percent": "-1.2098%",
+      "as_of": "2026-05-25T11:45:47.237075-04:00",
+      "latest_trading_day": "2026-05-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-05-22T18:03:04.114638-04:00",
-      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
+      "price": "610.2600",
+      "change_percent": "0.4742%",
+      "as_of": "2026-05-25T11:45:47.237075-04:00",
+      "latest_trading_day": "2026-05-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Being You Day",
+    "name": "Memorial Day",
     "region": "US",
-    "date": "2026-05-22",
-    "link": "https://www.checkiday.com/21879d876b9f9984e52bd92d9f738213/international-being-you-day",
-    "source": "Checkiday"
+    "date": "2026-05-25",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   },
   "world_observance": {
-    "name": "International Being You Day",
-    "region": "WORLD",
-    "date": "2026-05-22",
-    "link": "https://www.checkiday.com/21879d876b9f9984e52bd92d9f738213/international-being-you-day",
-    "source": "Checkiday"
+    "name": "Spring Bank Holiday",
+    "region": "United Kingdom",
+    "date": "2026-05-25",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
