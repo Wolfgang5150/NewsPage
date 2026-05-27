@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-05-26T18:16:50.244621-04:00",
+  "as_of": "2026-05-27T12:34:04.402980-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "308.3300",
       "change_percent": "-0.1587%",
-      "as_of": "2026-05-26T18:16:50.244621-04:00",
+      "as_of": "2026-05-27T12:34:04.402980-04:00",
       "latest_trading_day": "2026-05-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "8.3000",
       "change_percent": "-1.1905%",
-      "as_of": "2026-05-26T18:16:50.244621-04:00",
+      "as_of": "2026-05-27T12:34:04.402980-04:00",
       "latest_trading_day": "2026-05-26",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "265.2900",
       "change_percent": "-0.3868%",
-      "as_of": "2026-05-26T18:16:50.244621-04:00",
+      "as_of": "2026-05-27T12:34:04.402980-04:00",
       "latest_trading_day": "2026-05-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "388.8800",
       "change_percent": "1.5432%",
-      "as_of": "2026-05-26T18:16:50.244621-04:00",
+      "as_of": "2026-05-27T12:34:04.402980-04:00",
       "latest_trading_day": "2026-05-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "612.3400",
       "change_percent": "0.3408%",
-      "as_of": "2026-05-26T18:16:50.244621-04:00",
+      "as_of": "2026-05-27T12:34:04.402980-04:00",
       "latest_trading_day": "2026-05-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Blueberry Cheesecake Day",
+    "name": "National Grape Popsicle Day",
     "region": "US",
-    "date": "2026-05-26",
-    "link": "https://www.checkiday.com/52e464a5ecefa8f6f90bbe4ad565eb21/national-blueberry-cheesecake-day",
+    "date": "2026-05-27",
+    "link": "https://www.checkiday.com/8a4ecd82510fa880314531801fbc142e/national-grape-popsicle-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Dracula Day",
+    "name": "Cellophane Tape Day",
     "region": "WORLD",
-    "date": "2026-05-26",
-    "link": "https://www.checkiday.com/8891e5b3263ba67140e704208a32afc5/world-dracula-day",
+    "date": "2026-05-27",
+    "link": "https://www.checkiday.com/6c8cde895dcbbd1ccee13ab0ea2a41cd/cellophane-tape-day",
     "source": "Checkiday"
   }
 }
