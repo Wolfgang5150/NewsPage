@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-02T17:44:16.226254-04:00",
+  "as_of": "2026-06-03T13:57:46.444379-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "315.2000",
       "change_percent": "2.9023%",
-      "as_of": "2026-06-02T17:44:16.226254-04:00",
+      "as_of": "2026-06-03T13:57:46.444379-04:00",
       "latest_trading_day": "2026-06-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "8.6200",
-      "change_percent": "2.0118%",
-      "as_of": "2026-06-02T17:44:16.226254-04:00",
+      "price": "8.6300",
+      "change_percent": "2.1302%",
+      "as_of": "2026-06-03T13:57:46.444379-04:00",
       "latest_trading_day": "2026-06-02",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "256.5200",
       "change_percent": "-1.8143%",
-      "as_of": "2026-06-02T17:44:16.226254-04:00",
+      "as_of": "2026-06-03T13:57:46.444379-04:00",
       "latest_trading_day": "2026-06-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "361.8500",
       "change_percent": "-3.8579%",
-      "as_of": "2026-06-02T17:44:16.226254-04:00",
+      "as_of": "2026-06-03T13:57:46.444379-04:00",
       "latest_trading_day": "2026-06-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "597.6300",
       "change_percent": "-0.4730%",
-      "as_of": "2026-06-02T17:44:16.226254-04:00",
+      "as_of": "2026-06-03T13:57:46.444379-04:00",
       "latest_trading_day": "2026-06-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "American Indian Citizenship Day",
+    "name": "National Chocolate Macaroon Day",
     "region": "US",
-    "date": "2026-06-02",
-    "link": "https://www.checkiday.com/721749b7c18f1ea19ec256faf22cfbdb/american-indian-citizenship-day",
+    "date": "2026-06-03",
+    "link": "https://www.checkiday.com/cd9c204befb4c2c9cf38d6d943144fe6/national-chocolate-macaroon-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "American Indian Citizenship Day",
+    "name": "Global Running Day",
     "region": "WORLD",
-    "date": "2026-06-02",
-    "link": "https://www.checkiday.com/721749b7c18f1ea19ec256faf22cfbdb/american-indian-citizenship-day",
+    "date": "2026-06-03",
+    "link": "https://www.checkiday.com/8507c9f9ecac6b7c0f063f1bfe753a85/global-running-day",
     "source": "Checkiday"
   }
 }
