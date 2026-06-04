@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-03T17:44:54.411736-04:00",
+  "as_of": "2026-06-04T12:18:01.959218-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "310.2600",
       "change_percent": "-1.5673%",
-      "as_of": "2026-06-03T17:44:54.411736-04:00",
+      "as_of": "2026-06-04T12:18:01.959218-04:00",
       "latest_trading_day": "2026-06-03",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.6000",
-      "change_percent": "-11.9351%",
-      "as_of": "2026-06-03T17:44:54.411736-04:00",
+      "price": "7.6100",
+      "change_percent": "-11.8192%",
+      "as_of": "2026-06-04T12:18:01.959218-04:00",
       "latest_trading_day": "2026-06-03",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "250.0200",
       "change_percent": "-2.5339%",
-      "as_of": "2026-06-03T17:44:54.411736-04:00",
+      "as_of": "2026-06-04T12:18:01.959218-04:00",
       "latest_trading_day": "2026-06-03",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "358.9900",
       "change_percent": "-0.7904%",
-      "as_of": "2026-06-03T17:44:54.411736-04:00",
+      "as_of": "2026-06-04T12:18:01.959218-04:00",
       "latest_trading_day": "2026-06-03",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "622.9800",
       "change_percent": "4.2418%",
-      "as_of": "2026-06-03T17:44:54.411736-04:00",
+      "as_of": "2026-06-04T12:18:01.959218-04:00",
       "latest_trading_day": "2026-06-03",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Chocolate Macaroon Day",
+    "name": "Corpus Christi",
     "region": "US",
-    "date": "2026-06-03",
-    "link": "https://www.checkiday.com/cd9c204befb4c2c9cf38d6d943144fe6/national-chocolate-macaroon-day",
+    "date": "2026-06-04",
+    "link": "https://www.checkiday.com/d3231dcecab729d74a885335a813b738/corpus-christi",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Global Running Day",
-    "region": "WORLD",
-    "date": "2026-06-03",
-    "link": "https://www.checkiday.com/8507c9f9ecac6b7c0f063f1bfe753a85/global-running-day",
-    "source": "Checkiday"
+    "name": "Fronleichnam",
+    "region": "Germany",
+    "date": "2026-06-04",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
