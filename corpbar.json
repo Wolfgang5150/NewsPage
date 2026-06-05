@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-04T18:17:04.711411-04:00",
+  "as_of": "2026-06-05T11:49:23.694294-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "311.2300",
       "change_percent": "0.3126%",
-      "as_of": "2026-06-04T18:17:04.711411-04:00",
+      "as_of": "2026-06-05T11:49:23.694294-04:00",
       "latest_trading_day": "2026-06-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.8750",
-      "change_percent": "3.4823%",
-      "as_of": "2026-06-04T18:17:04.711411-04:00",
+      "price": "7.8800",
+      "change_percent": "3.5480%",
+      "as_of": "2026-06-05T11:49:23.694294-04:00",
       "latest_trading_day": "2026-06-04",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "253.7900",
       "change_percent": "1.5079%",
-      "as_of": "2026-06-04T18:17:04.711411-04:00",
+      "as_of": "2026-06-05T11:49:23.694294-04:00",
       "latest_trading_day": "2026-06-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "372.1900",
       "change_percent": "3.6770%",
-      "as_of": "2026-06-04T18:17:04.711411-04:00",
+      "as_of": "2026-06-05T11:49:23.694294-04:00",
       "latest_trading_day": "2026-06-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "627.5700",
       "change_percent": "0.7368%",
-      "as_of": "2026-06-04T18:17:04.711411-04:00",
+      "as_of": "2026-06-05T11:49:23.694294-04:00",
       "latest_trading_day": "2026-06-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "Corpus Christi",
+    "name": "National Attitude Day",
     "region": "US",
-    "date": "2026-06-04",
-    "link": "https://www.checkiday.com/d3231dcecab729d74a885335a813b738/corpus-christi",
+    "date": "2026-06-05",
+    "link": "https://www.checkiday.com/171e02cf25e6d475b99a78cc5136c6fc/national-attitude-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Fronleichnam",
-    "region": "Germany",
-    "date": "2026-06-04",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "World Environment Day",
+    "region": "WORLD",
+    "date": "2026-06-05",
+    "link": "https://www.checkiday.com/5bc1515a07a041a71a89583baa6fb966/world-environment-day",
+    "source": "Checkiday"
   }
 }
