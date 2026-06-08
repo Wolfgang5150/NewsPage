@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-05T18:11:48.183880-04:00",
+  "as_of": "2026-06-08T12:44:58.377995-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "307.3400",
       "change_percent": "-1.2499%",
-      "as_of": "2026-06-05T18:11:48.183880-04:00",
+      "as_of": "2026-06-08T12:44:58.377995-04:00",
       "latest_trading_day": "2026-06-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.7000",
-      "change_percent": "-2.2843%",
-      "as_of": "2026-06-05T18:11:48.183880-04:00",
+      "price": "7.7100",
+      "change_percent": "-2.1574%",
+      "as_of": "2026-06-08T12:44:58.377995-04:00",
       "latest_trading_day": "2026-06-05",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "246.0300",
       "change_percent": "-3.0576%",
-      "as_of": "2026-06-05T18:11:48.183880-04:00",
+      "as_of": "2026-06-08T12:44:58.377995-04:00",
       "latest_trading_day": "2026-06-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "368.5300",
       "change_percent": "-0.9834%",
-      "as_of": "2026-06-05T18:11:48.183880-04:00",
+      "as_of": "2026-06-08T12:44:58.377995-04:00",
       "latest_trading_day": "2026-06-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "593.0000",
       "change_percent": "-5.5085%",
-      "as_of": "2026-06-05T18:11:48.183880-04:00",
+      "as_of": "2026-06-08T12:44:58.377995-04:00",
       "latest_trading_day": "2026-06-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Attitude Day",
+    "name": "National Caribbean American HIV/AIDS Awareness Day",
     "region": "US",
-    "date": "2026-06-05",
-    "link": "https://www.checkiday.com/171e02cf25e6d475b99a78cc5136c6fc/national-attitude-day",
+    "date": "2026-06-08",
+    "link": "https://www.checkiday.com/07822b132bda508b55dba05ff0f59ee1/national-caribbean-american-hiv-aids-awareness-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Environment Day",
-    "region": "WORLD",
-    "date": "2026-06-05",
-    "link": "https://www.checkiday.com/5bc1515a07a041a71a89583baa6fb966/world-environment-day",
-    "source": "Checkiday"
+    "name": "King's Birthday",
+    "region": "Australia",
+    "date": "2026-06-08",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
