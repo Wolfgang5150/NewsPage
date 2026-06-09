@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-08T18:21:42.994527-04:00",
+  "as_of": "2026-06-09T11:49:59.951484-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "307.3400",
-      "change_percent": "-1.2499%",
-      "as_of": "2026-06-08T18:21:42.994527-04:00",
-      "latest_trading_day": "2026-06-05",
+      "price": "301.5400",
+      "change_percent": "-1.8872%",
+      "as_of": "2026-06-09T11:49:59.951484-04:00",
+      "latest_trading_day": "2026-06-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "7.5700",
-      "change_percent": "-1.8158%",
-      "as_of": "2026-06-08T18:21:42.994527-04:00",
+      "price": "7.5800",
+      "change_percent": "-1.6861%",
+      "as_of": "2026-06-09T11:49:59.951484-04:00",
       "latest_trading_day": "2026-06-08",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "245.2200",
       "change_percent": "-0.3292%",
-      "as_of": "2026-06-08T18:21:42.994527-04:00",
+      "as_of": "2026-06-09T11:49:59.951484-04:00",
       "latest_trading_day": "2026-06-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -31,8 +31,8 @@
     {
       "symbol": "GOOGL",
       "price": "363.3100",
-      "change_percent": "-1.4164%",
-      "as_of": "2026-06-08T18:21:42.994527-04:00",
+      "change_percent": "-1.3567%",
+      "as_of": "2026-06-09T11:49:59.951484-04:00",
       "latest_trading_day": "2026-06-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "585.3900",
       "change_percent": "-1.2833%",
-      "as_of": "2026-06-08T18:21:42.994527-04:00",
+      "as_of": "2026-06-09T11:49:59.951484-04:00",
       "latest_trading_day": "2026-06-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Caribbean American HIV/AIDS Awareness Day",
+    "name": "International Dark 'n Stormy Day",
     "region": "US",
-    "date": "2026-06-08",
-    "link": "https://www.checkiday.com/07822b132bda508b55dba05ff0f59ee1/national-caribbean-american-hiv-aids-awareness-day",
+    "date": "2026-06-09",
+    "link": "https://www.checkiday.com/1fa24cbdcd2a85dd5e520b5282808af7/international-dark-n-stormy-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "King's Birthday",
-    "region": "Australia",
-    "date": "2026-06-08",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "International Dark 'n Stormy Day",
+    "region": "WORLD",
+    "date": "2026-06-09",
+    "link": "https://www.checkiday.com/1fa24cbdcd2a85dd5e520b5282808af7/international-dark-n-stormy-day",
+    "source": "Checkiday"
   }
 }
