@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-06-11T18:47:54.844652-04:00",
+  "as_of": "2026-06-12T12:12:55.600731-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "295.6300",
       "change_percent": "1.3890%",
-      "as_of": "2026-06-11T18:47:54.844652-04:00",
+      "as_of": "2026-06-12T12:12:55.600731-04:00",
       "latest_trading_day": "2026-06-11",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "8.4500",
       "change_percent": "6.8268%",
-      "as_of": "2026-06-11T18:47:54.844652-04:00",
+      "as_of": "2026-06-12T12:12:55.600731-04:00",
       "latest_trading_day": "2026-06-11",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "241.5100",
       "change_percent": "1.4748%",
-      "as_of": "2026-06-11T18:47:54.844652-04:00",
+      "as_of": "2026-06-12T12:12:55.600731-04:00",
       "latest_trading_day": "2026-06-11",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "357.7700",
       "change_percent": "0.3900%",
-      "as_of": "2026-06-11T18:47:54.844652-04:00",
+      "as_of": "2026-06-12T12:12:55.600731-04:00",
       "latest_trading_day": "2026-06-11",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "568.4300",
       "change_percent": "-0.4466%",
-      "as_of": "2026-06-11T18:47:54.844652-04:00",
+      "as_of": "2026-06-12T12:12:55.600731-04:00",
       "latest_trading_day": "2026-06-11",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National German Chocolate Cake Day",
+    "name": "International Cachaça Day",
     "region": "US",
-    "date": "2026-06-11",
-    "link": "https://www.checkiday.com/bc0acba78cf472cc6c414393bcb4518a/national-german-chocolate-cake-day",
+    "date": "2026-06-12",
+    "link": "https://www.checkiday.com/0adc4ed3dbfbd4a21b275cdd68566c79/international-cachaca-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Corn on the Cob Day",
+    "name": "International Cachaça Day",
     "region": "WORLD",
-    "date": "2026-06-11",
-    "link": "https://www.checkiday.com/4f0a8bc69a6036fd17f65b607f740170/corn-on-the-cob-day",
+    "date": "2026-06-12",
+    "link": "https://www.checkiday.com/0adc4ed3dbfbd4a21b275cdd68566c79/international-cachaca-day",
     "source": "Checkiday"
   }
 }
