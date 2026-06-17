@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-16T17:38:33.228030-04:00",
+  "as_of": "2026-06-17T12:34:37.481911-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "299.2400",
       "change_percent": "0.9514%",
-      "as_of": "2026-06-16T17:38:33.228030-04:00",
+      "as_of": "2026-06-17T12:34:37.481911-04:00",
       "latest_trading_day": "2026-06-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.4300",
-      "change_percent": "3.1729%",
-      "as_of": "2026-06-16T17:38:33.228030-04:00",
+      "price": "9.4200",
+      "change_percent": "3.0635%",
+      "as_of": "2026-06-17T12:34:37.481911-04:00",
       "latest_trading_day": "2026-06-16",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "246.0000",
       "change_percent": "-0.0081%",
-      "as_of": "2026-06-16T17:38:33.228030-04:00",
+      "as_of": "2026-06-17T12:34:37.481911-04:00",
       "latest_trading_day": "2026-06-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "373.2500",
       "change_percent": "1.0559%",
-      "as_of": "2026-06-16T17:38:33.228030-04:00",
+      "as_of": "2026-06-17T12:34:37.481911-04:00",
       "latest_trading_day": "2026-06-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "600.2100",
       "change_percent": "1.1340%",
-      "as_of": "2026-06-16T17:38:33.228030-04:00",
+      "as_of": "2026-06-17T12:34:37.481911-04:00",
       "latest_trading_day": "2026-06-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Day of the African Child",
+    "name": "National Apple Strudel Day",
     "region": "US",
-    "date": "2026-06-16",
-    "link": "https://www.checkiday.com/1fcb91ba86598da719b5e8b18b4f289e/international-day-of-the-african-child",
+    "date": "2026-06-17",
+    "link": "https://www.checkiday.com/3dcc4c207becd31d40f1f36e3bd4fb7b/national-apple-strudel-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Day of the African Child",
+    "name": "Global Garbage Man Day",
     "region": "WORLD",
-    "date": "2026-06-16",
-    "link": "https://www.checkiday.com/1fcb91ba86598da719b5e8b18b4f289e/international-day-of-the-african-child",
+    "date": "2026-06-17",
+    "link": "https://www.checkiday.com/68a8f31b492560bf0a2d21589f31b233/global-garbage-man-day",
     "source": "Checkiday"
   }
 }
