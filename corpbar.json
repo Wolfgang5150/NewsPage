@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-06-17T18:42:43.438899-04:00",
+  "as_of": "2026-06-18T12:23:46.481908-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "295.9500",
       "change_percent": "-1.0995%",
-      "as_of": "2026-06-17T18:42:43.438899-04:00",
+      "as_of": "2026-06-18T12:23:46.481908-04:00",
       "latest_trading_day": "2026-06-17",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "9.4000",
       "change_percent": "-0.2123%",
-      "as_of": "2026-06-17T18:42:43.438899-04:00",
+      "as_of": "2026-06-18T12:23:46.481908-04:00",
       "latest_trading_day": "2026-06-17",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "237.5000",
       "change_percent": "-3.4553%",
-      "as_of": "2026-06-17T18:42:43.438899-04:00",
+      "as_of": "2026-06-18T12:23:46.481908-04:00",
       "latest_trading_day": "2026-06-17",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "363.7900",
       "change_percent": "-2.5345%",
-      "as_of": "2026-06-17T18:42:43.438899-04:00",
+      "as_of": "2026-06-18T12:23:46.481908-04:00",
       "latest_trading_day": "2026-06-17",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "567.5800",
       "change_percent": "-5.4364%",
-      "as_of": "2026-06-17T18:42:43.438899-04:00",
+      "as_of": "2026-06-18T12:23:46.481908-04:00",
       "latest_trading_day": "2026-06-17",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Apple Strudel Day",
+    "name": "International Panic Day",
     "region": "US",
-    "date": "2026-06-17",
-    "link": "https://www.checkiday.com/3dcc4c207becd31d40f1f36e3bd4fb7b/national-apple-strudel-day",
+    "date": "2026-06-18",
+    "link": "https://www.checkiday.com/46fe895383a60e6f92fe62ad1cdb88d2/international-panic-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Global Garbage Man Day",
+    "name": "International Panic Day",
     "region": "WORLD",
-    "date": "2026-06-17",
-    "link": "https://www.checkiday.com/68a8f31b492560bf0a2d21589f31b233/global-garbage-man-day",
+    "date": "2026-06-18",
+    "link": "https://www.checkiday.com/46fe895383a60e6f92fe62ad1cdb88d2/international-panic-day",
     "source": "Checkiday"
   }
 }
