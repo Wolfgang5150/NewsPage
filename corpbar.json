@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-22T17:29:16.843932-04:00",
+  "as_of": "2026-06-23T11:44:10.814819-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "297.0100",
       "change_percent": "-0.3356%",
-      "as_of": "2026-06-22T17:29:16.843932-04:00",
+      "as_of": "2026-06-23T11:44:10.814819-04:00",
       "latest_trading_day": "2026-06-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.7650",
-      "change_percent": "-2.4476%",
-      "as_of": "2026-06-22T17:29:16.843932-04:00",
+      "price": "9.7800",
+      "change_percent": "-2.2977%",
+      "as_of": "2026-06-23T11:44:10.814819-04:00",
       "latest_trading_day": "2026-06-22",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "232.7900",
       "change_percent": "-4.7465%",
-      "as_of": "2026-06-22T17:29:16.843932-04:00",
+      "as_of": "2026-06-23T11:44:10.814819-04:00",
       "latest_trading_day": "2026-06-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "349.6800",
       "change_percent": "-4.9860%",
-      "as_of": "2026-06-22T17:29:16.843932-04:00",
+      "as_of": "2026-06-23T11:44:10.814819-04:00",
       "latest_trading_day": "2026-06-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "563.8500",
       "change_percent": "-2.3163%",
-      "as_of": "2026-06-22T17:29:16.843932-04:00",
+      "as_of": "2026-06-23T11:44:10.814819-04:00",
       "latest_trading_day": "2026-06-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Chocolate Éclair Day",
+    "name": "International Widows' Day",
     "region": "US",
-    "date": "2026-06-22",
-    "link": "https://www.checkiday.com/553cd1efbe4a9ffc0c3fa4c7f06a9dc9/national-chocolate-eclair-day",
+    "date": "2026-06-23",
+    "link": "https://www.checkiday.com/45a101c61ed3471fc34880fbc3e25534/international-widows-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Rainforest Day",
+    "name": "International Widows' Day",
     "region": "WORLD",
-    "date": "2026-06-22",
-    "link": "https://www.checkiday.com/b874463bd4748cf8fc5acd803a662702/world-rainforest-day",
+    "date": "2026-06-23",
+    "link": "https://www.checkiday.com/45a101c61ed3471fc34880fbc3e25534/international-widows-day",
     "source": "Checkiday"
   }
 }
