@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-23T18:08:24.699655-04:00",
+  "as_of": "2026-06-24T11:30:48.237605-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "294.3000",
       "change_percent": "-0.9124%",
-      "as_of": "2026-06-23T18:08:24.699655-04:00",
+      "as_of": "2026-06-24T11:30:48.237605-04:00",
       "latest_trading_day": "2026-06-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.8800",
-      "change_percent": "1.0225%",
-      "as_of": "2026-06-23T18:08:24.699655-04:00",
+      "price": "9.8900",
+      "change_percent": "1.1247%",
+      "as_of": "2026-06-24T11:30:48.237605-04:00",
       "latest_trading_day": "2026-06-23",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "234.1100",
       "change_percent": "0.5670%",
-      "as_of": "2026-06-23T18:08:24.699655-04:00",
+      "as_of": "2026-06-24T11:30:48.237605-04:00",
       "latest_trading_day": "2026-06-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "346.1300",
       "change_percent": "-1.0152%",
-      "as_of": "2026-06-23T18:08:24.699655-04:00",
+      "as_of": "2026-06-24T11:30:48.237605-04:00",
       "latest_trading_day": "2026-06-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "562.2000",
       "change_percent": "-0.2926%",
-      "as_of": "2026-06-23T18:08:24.699655-04:00",
+      "as_of": "2026-06-24T11:30:48.237605-04:00",
       "latest_trading_day": "2026-06-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Widows' Day",
+    "name": "International Fairy Day",
     "region": "US",
-    "date": "2026-06-23",
-    "link": "https://www.checkiday.com/45a101c61ed3471fc34880fbc3e25534/international-widows-day",
+    "date": "2026-06-24",
+    "link": "https://www.checkiday.com/6d6de9e18f4a093a6f2693748510f84c/international-fairy-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Widows' Day",
-    "region": "WORLD",
-    "date": "2026-06-23",
-    "link": "https://www.checkiday.com/45a101c61ed3471fc34880fbc3e25534/international-widows-day",
-    "source": "Checkiday"
+    "name": "Discovery Day",
+    "region": "Canada",
+    "date": "2026-06-24",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
