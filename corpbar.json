@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-24T18:11:32.707648-04:00",
+  "as_of": "2026-06-25T11:37:03.995148-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "293.0800",
       "change_percent": "-0.4145%",
-      "as_of": "2026-06-24T18:11:32.707648-04:00",
+      "as_of": "2026-06-25T11:37:03.995148-04:00",
       "latest_trading_day": "2026-06-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "10.6450",
-      "change_percent": "7.6340%",
-      "as_of": "2026-06-24T18:11:32.707648-04:00",
+      "price": "10.6500",
+      "change_percent": "7.6845%",
+      "as_of": "2026-06-25T11:37:03.995148-04:00",
       "latest_trading_day": "2026-06-24",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "234.2700",
       "change_percent": "0.0683%",
-      "as_of": "2026-06-24T18:11:32.707648-04:00",
+      "as_of": "2026-06-25T11:37:03.995148-04:00",
       "latest_trading_day": "2026-06-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "345.2900",
       "change_percent": "-0.2427%",
-      "as_of": "2026-06-24T18:11:32.707648-04:00",
+      "as_of": "2026-06-25T11:37:03.995148-04:00",
       "latest_trading_day": "2026-06-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "557.6700",
       "change_percent": "-0.8058%",
-      "as_of": "2026-06-24T18:11:32.707648-04:00",
+      "as_of": "2026-06-25T11:37:03.995148-04:00",
       "latest_trading_day": "2026-06-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Fairy Day",
+    "name": "National Bomb Pop Day",
     "region": "US",
-    "date": "2026-06-24",
-    "link": "https://www.checkiday.com/6d6de9e18f4a093a6f2693748510f84c/international-fairy-day",
+    "date": "2026-06-25",
+    "link": "https://www.checkiday.com/91cdc4d69a7318abd7e73ca4a7024b32/national-bomb-pop-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Discovery Day",
-    "region": "Canada",
-    "date": "2026-06-24",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "Global Beatles Day",
+    "region": "WORLD",
+    "date": "2026-06-25",
+    "link": "https://www.checkiday.com/ab0a7a277601556a261cdf7525474414/global-beatles-day",
+    "source": "Checkiday"
   }
 }
