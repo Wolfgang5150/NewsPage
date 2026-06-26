@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-25T18:17:08.356223-04:00",
+  "as_of": "2026-06-26T11:20:47.885315-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "275.1500",
       "change_percent": "-6.1178%",
-      "as_of": "2026-06-25T18:17:08.356223-04:00",
+      "as_of": "2026-06-26T11:20:47.885315-04:00",
       "latest_trading_day": "2026-06-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.0450",
-      "change_percent": "3.7089%",
-      "as_of": "2026-06-25T18:17:08.356223-04:00",
+      "price": "11.0500",
+      "change_percent": "3.7559%",
+      "as_of": "2026-06-26T11:20:47.885315-04:00",
       "latest_trading_day": "2026-06-25",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "227.0100",
       "change_percent": "-3.0990%",
-      "as_of": "2026-06-25T18:17:08.356223-04:00",
+      "as_of": "2026-06-26T11:20:47.885315-04:00",
       "latest_trading_day": "2026-06-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "343.7100",
       "change_percent": "-0.4576%",
-      "as_of": "2026-06-25T18:17:08.356223-04:00",
+      "as_of": "2026-06-26T11:20:47.885315-04:00",
       "latest_trading_day": "2026-06-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "542.8700",
       "change_percent": "-2.6539%",
-      "as_of": "2026-06-25T18:17:08.356223-04:00",
+      "as_of": "2026-06-26T11:20:47.885315-04:00",
       "latest_trading_day": "2026-06-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Bomb Pop Day",
+    "name": "International Day in Support of Victims of Torture",
     "region": "US",
-    "date": "2026-06-25",
-    "link": "https://www.checkiday.com/91cdc4d69a7318abd7e73ca4a7024b32/national-bomb-pop-day",
+    "date": "2026-06-26",
+    "link": "https://www.checkiday.com/b32930f32e5b6ff7766c73facd33f290/international-day-in-support-of-victims-of-torture",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Global Beatles Day",
+    "name": "International Day in Support of Victims of Torture",
     "region": "WORLD",
-    "date": "2026-06-25",
-    "link": "https://www.checkiday.com/ab0a7a277601556a261cdf7525474414/global-beatles-day",
+    "date": "2026-06-26",
+    "link": "https://www.checkiday.com/b32930f32e5b6ff7766c73facd33f290/international-day-in-support-of-victims-of-torture",
     "source": "Checkiday"
   }
 }
