@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-26T18:07:06.007001-04:00",
+  "as_of": "2026-06-29T12:35:31.338414-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "283.7800",
       "change_percent": "3.1365%",
-      "as_of": "2026-06-26T18:07:06.007001-04:00",
+      "as_of": "2026-06-29T12:35:31.338414-04:00",
       "latest_trading_day": "2026-06-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.3900",
-      "change_percent": "3.0769%",
-      "as_of": "2026-06-26T18:07:06.007001-04:00",
+      "price": "11.4000",
+      "change_percent": "3.1674%",
+      "as_of": "2026-06-29T12:35:31.338414-04:00",
       "latest_trading_day": "2026-06-26",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "232.6900",
       "change_percent": "2.5021%",
-      "as_of": "2026-06-26T18:07:06.007001-04:00",
+      "as_of": "2026-06-29T12:35:31.338414-04:00",
       "latest_trading_day": "2026-06-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "337.3900",
       "change_percent": "-1.8388%",
-      "as_of": "2026-06-26T18:07:06.007001-04:00",
+      "as_of": "2026-06-29T12:35:31.338414-04:00",
       "latest_trading_day": "2026-06-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "550.2500",
       "change_percent": "1.3594%",
-      "as_of": "2026-06-26T18:07:06.007001-04:00",
+      "as_of": "2026-06-29T12:35:31.338414-04:00",
       "latest_trading_day": "2026-06-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Day in Support of Victims of Torture",
+    "name": "National Almond Buttercrunch Day",
     "region": "US",
-    "date": "2026-06-26",
-    "link": "https://www.checkiday.com/b32930f32e5b6ff7766c73facd33f290/international-day-in-support-of-victims-of-torture",
+    "date": "2026-06-29",
+    "link": "https://www.checkiday.com/00fad6f89c881094f86ba36d98ce4587/national-almond-buttercrunch-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Day in Support of Victims of Torture",
+    "name": "World Scleroderma Awareness Day",
     "region": "WORLD",
-    "date": "2026-06-26",
-    "link": "https://www.checkiday.com/b32930f32e5b6ff7766c73facd33f290/international-day-in-support-of-victims-of-torture",
+    "date": "2026-06-29",
+    "link": "https://www.checkiday.com/2b6770d2c6e0455bc69b20cc9849ca91/world-scleroderma-awareness-day",
     "source": "Checkiday"
   }
 }
