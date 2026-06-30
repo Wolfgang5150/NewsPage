@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-29T18:05:43.990116-04:00",
+  "as_of": "2026-06-30T11:23:14.230996-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "281.7400",
       "change_percent": "-0.7189%",
-      "as_of": "2026-06-29T18:05:43.990116-04:00",
+      "as_of": "2026-06-30T11:23:14.230996-04:00",
       "latest_trading_day": "2026-06-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.9950",
-      "change_percent": "5.2193%",
-      "as_of": "2026-06-29T18:05:43.990116-04:00",
+      "price": "12.0000",
+      "change_percent": "5.2632%",
+      "as_of": "2026-06-30T11:23:14.230996-04:00",
       "latest_trading_day": "2026-06-29",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "240.1400",
       "change_percent": "3.2017%",
-      "as_of": "2026-06-29T18:05:43.990116-04:00",
+      "as_of": "2026-06-30T11:23:14.230996-04:00",
       "latest_trading_day": "2026-06-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "353.6500",
       "change_percent": "4.8193%",
-      "as_of": "2026-06-29T18:05:43.990116-04:00",
+      "as_of": "2026-06-30T11:23:14.230996-04:00",
       "latest_trading_day": "2026-06-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "562.6000",
       "change_percent": "2.2444%",
-      "as_of": "2026-06-29T18:05:43.990116-04:00",
+      "as_of": "2026-06-30T11:23:14.230996-04:00",
       "latest_trading_day": "2026-06-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Almond Buttercrunch Day",
+    "name": "International Asteroid Day",
     "region": "US",
-    "date": "2026-06-29",
-    "link": "https://www.checkiday.com/00fad6f89c881094f86ba36d98ce4587/national-almond-buttercrunch-day",
+    "date": "2026-06-30",
+    "link": "https://www.checkiday.com/34f1121d7fe8cfcba734b0116c2a439b/international-asteroid-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Scleroderma Awareness Day",
+    "name": "International Asteroid Day",
     "region": "WORLD",
-    "date": "2026-06-29",
-    "link": "https://www.checkiday.com/2b6770d2c6e0455bc69b20cc9849ca91/world-scleroderma-awareness-day",
+    "date": "2026-06-30",
+    "link": "https://www.checkiday.com/34f1121d7fe8cfcba734b0116c2a439b/international-asteroid-day",
     "source": "Checkiday"
   }
 }
