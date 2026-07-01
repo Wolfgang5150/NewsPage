@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-06-30T18:12:40.511773-04:00",
+  "as_of": "2026-07-01T11:37:22.020172-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "289.3600",
       "change_percent": "2.7046%",
-      "as_of": "2026-06-30T18:12:40.511773-04:00",
+      "as_of": "2026-07-01T11:37:22.020172-04:00",
       "latest_trading_day": "2026-06-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "12.3250",
-      "change_percent": "2.7083%",
-      "as_of": "2026-06-30T18:12:40.511773-04:00",
+      "price": "12.3300",
+      "change_percent": "2.7500%",
+      "as_of": "2026-07-01T11:37:22.020172-04:00",
       "latest_trading_day": "2026-06-30",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "238.3400",
       "change_percent": "-0.7496%",
-      "as_of": "2026-06-30T18:12:40.511773-04:00",
+      "as_of": "2026-07-01T11:37:22.020172-04:00",
       "latest_trading_day": "2026-06-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "357.3700",
       "change_percent": "1.0519%",
-      "as_of": "2026-06-30T18:12:40.511773-04:00",
+      "as_of": "2026-07-01T11:37:22.020172-04:00",
       "latest_trading_day": "2026-06-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "563.2900",
       "change_percent": "0.1226%",
-      "as_of": "2026-06-30T18:12:40.511773-04:00",
+      "as_of": "2026-07-01T11:37:22.020172-04:00",
       "latest_trading_day": "2026-06-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Asteroid Day",
+    "name": "American Zoo Day",
     "region": "US",
-    "date": "2026-06-30",
-    "link": "https://www.checkiday.com/34f1121d7fe8cfcba734b0116c2a439b/international-asteroid-day",
+    "date": "2026-07-01",
+    "link": "https://www.checkiday.com/67bcad8a52511e40c8fe99dbd825d896/american-zoo-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Asteroid Day",
-    "region": "WORLD",
-    "date": "2026-06-30",
-    "link": "https://www.checkiday.com/34f1121d7fe8cfcba734b0116c2a439b/international-asteroid-day",
-    "source": "Checkiday"
+    "name": "Canada Day",
+    "region": "Canada",
+    "date": "2026-07-01",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
