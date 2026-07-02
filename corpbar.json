@@ -1,21 +1,21 @@
 {
-  "as_of": "2026-07-02T16:15:32.074171-04:00",
+  "as_of": "2026-07-02T18:02:08.139011-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "294.3800",
-      "change_percent": "1.7349%",
-      "as_of": "2026-07-02T16:15:32.074171-04:00",
-      "latest_trading_day": "2026-07-01",
+      "price": "308.6300",
+      "change_percent": "4.8407%",
+      "as_of": "2026-07-02T18:02:08.139011-04:00",
+      "latest_trading_day": "2026-07-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "12.5500",
-      "change_percent": "1.7843%",
-      "as_of": "2026-07-02T16:15:32.074171-04:00",
-      "latest_trading_day": "2026-07-01",
+      "price": "12.6200",
+      "change_percent": "0.5578%",
+      "as_of": "2026-07-02T18:02:08.139011-04:00",
+      "latest_trading_day": "2026-07-02",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "242.6700",
       "change_percent": "0.4013%",
-      "as_of": "2026-07-02T16:15:32.074171-04:00",
+      "as_of": "2026-07-02T18:02:08.139011-04:00",
       "latest_trading_day": "2026-07-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "359.9100",
       "change_percent": "-0.3599%",
-      "as_of": "2026-07-02T16:15:32.074171-04:00",
+      "as_of": "2026-07-02T18:02:08.139011-04:00",
       "latest_trading_day": "2026-07-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,7 +41,7 @@
       "symbol": "META",
       "price": "582.9000",
       "change_percent": "-4.8963%",
-      "as_of": "2026-07-02T16:15:32.074171-04:00",
+      "as_of": "2026-07-02T18:02:08.139011-04:00",
       "latest_trading_day": "2026-07-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
