@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-07-02T18:02:08.139011-04:00",
+  "as_of": "2026-07-03T11:05:16.730306-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "308.6300",
       "change_percent": "4.8407%",
-      "as_of": "2026-07-02T18:02:08.139011-04:00",
+      "as_of": "2026-07-03T11:05:16.730306-04:00",
       "latest_trading_day": "2026-07-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "12.6200",
       "change_percent": "0.5578%",
-      "as_of": "2026-07-02T18:02:08.139011-04:00",
+      "as_of": "2026-07-03T11:05:16.730306-04:00",
       "latest_trading_day": "2026-07-02",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "242.6700",
       "change_percent": "0.4013%",
-      "as_of": "2026-07-02T18:02:08.139011-04:00",
+      "as_of": "2026-07-03T11:05:16.730306-04:00",
       "latest_trading_day": "2026-07-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "359.9100",
       "change_percent": "-0.3599%",
-      "as_of": "2026-07-02T18:02:08.139011-04:00",
+      "as_of": "2026-07-03T11:05:16.730306-04:00",
       "latest_trading_day": "2026-07-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "582.9000",
       "change_percent": "-4.8963%",
-      "as_of": "2026-07-02T18:02:08.139011-04:00",
+      "as_of": "2026-07-03T11:05:16.730306-04:00",
       "latest_trading_day": "2026-07-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "Made in the USA Day",
+    "name": "Independence Day",
     "region": "US",
-    "date": "2026-07-02",
-    "link": "https://www.checkiday.com/79893609718e2d80665086187bfda4dd/made-in-the-usa-day",
-    "source": "Checkiday"
+    "date": "2026-07-03",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   },
   "world_observance": {
-    "name": "World Sports Journalists Day",
+    "name": "American Redneck Day",
     "region": "WORLD",
-    "date": "2026-07-02",
-    "link": "https://www.checkiday.com/21262f247ac5be9f343ab5637c4830fd/world-sports-journalists-day",
+    "date": "2026-07-03",
+    "link": "https://www.checkiday.com/bc22cef0631674ebedef357f89fd29e8/american-redneck-day",
     "source": "Checkiday"
   }
 }
