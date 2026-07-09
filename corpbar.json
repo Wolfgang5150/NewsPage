@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-07-08T18:00:54.896533-04:00",
+  "as_of": "2026-07-09T11:53:41.026562-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "313.3900",
       "change_percent": "0.8788%",
-      "as_of": "2026-07-08T18:00:54.896533-04:00",
+      "as_of": "2026-07-09T11:53:41.026562-04:00",
       "latest_trading_day": "2026-07-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.3150",
-      "change_percent": "-4.7559%",
-      "as_of": "2026-07-08T18:00:54.896533-04:00",
+      "price": "11.3200",
+      "change_percent": "-4.7138%",
+      "as_of": "2026-07-09T11:53:41.026562-04:00",
       "latest_trading_day": "2026-07-08",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "243.6200",
       "change_percent": "-0.9594%",
-      "as_of": "2026-07-08T18:00:54.896533-04:00",
+      "as_of": "2026-07-09T11:53:41.026562-04:00",
       "latest_trading_day": "2026-07-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "361.9200",
       "change_percent": "-1.3923%",
-      "as_of": "2026-07-08T18:00:54.896533-04:00",
+      "as_of": "2026-07-09T11:53:41.026562-04:00",
       "latest_trading_day": "2026-07-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "603.1200",
       "change_percent": "-2.0241%",
-      "as_of": "2026-07-08T18:00:54.896533-04:00",
+      "as_of": "2026-07-09T11:53:41.026562-04:00",
       "latest_trading_day": "2026-07-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Blueberry Day",
+    "name": "National Don't Put all your Eggs in One Omelet Day",
     "region": "US",
-    "date": "2026-07-08",
-    "link": "https://www.checkiday.com/42860d815a585029a8bfa945459ae3f4/national-blueberry-day",
+    "date": "2026-07-09",
+    "link": "https://www.checkiday.com/239f28d6d8033629f2bff988671b97fe/national-dont-put-all-your-eggs-in-one-omelet-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Be a Kid Again Day",
+    "name": "Call of the Horizon Day",
     "region": "WORLD",
-    "date": "2026-07-08",
-    "link": "https://www.checkiday.com/645ddd47f25517bb3ddac75f29d751b4/be-a-kid-again-day",
+    "date": "2026-07-09",
+    "link": "https://www.checkiday.com/888d8d8d807bba30e5f9aae69d3c44a5/call-of-the-horizon-day",
     "source": "Checkiday"
   }
 }
