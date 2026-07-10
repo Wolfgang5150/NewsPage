@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-07-09T18:16:15.545507-04:00",
+  "as_of": "2026-07-10T11:27:44.757218-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "316.2200",
       "change_percent": "0.9030%",
-      "as_of": "2026-07-09T18:16:15.545507-04:00",
+      "as_of": "2026-07-10T11:27:44.757218-04:00",
       "latest_trading_day": "2026-07-09",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.9300",
-      "change_percent": "5.3887%",
-      "as_of": "2026-07-09T18:16:15.545507-04:00",
+      "price": "11.9200",
+      "change_percent": "5.3004%",
+      "as_of": "2026-07-10T11:27:44.757218-04:00",
       "latest_trading_day": "2026-07-09",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "247.0400",
       "change_percent": "1.4038%",
-      "as_of": "2026-07-09T18:16:15.545507-04:00",
+      "as_of": "2026-07-10T11:27:44.757218-04:00",
       "latest_trading_day": "2026-07-09",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "358.8900",
       "change_percent": "-0.8372%",
-      "as_of": "2026-07-09T18:16:15.545507-04:00",
+      "as_of": "2026-07-10T11:27:44.757218-04:00",
       "latest_trading_day": "2026-07-09",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "631.4800",
       "change_percent": "4.7022%",
-      "as_of": "2026-07-09T18:16:15.545507-04:00",
+      "as_of": "2026-07-10T11:27:44.757218-04:00",
       "latest_trading_day": "2026-07-09",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Don't Put all your Eggs in One Omelet Day",
+    "name": "National Kitten Day",
     "region": "US",
-    "date": "2026-07-09",
-    "link": "https://www.checkiday.com/239f28d6d8033629f2bff988671b97fe/national-dont-put-all-your-eggs-in-one-omelet-day",
+    "date": "2026-07-10",
+    "link": "https://www.checkiday.com/e8ef9a6ff661d8a785a8550000e920d9/national-kitten-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Call of the Horizon Day",
+    "name": "World Kebab Day",
     "region": "WORLD",
-    "date": "2026-07-09",
-    "link": "https://www.checkiday.com/888d8d8d807bba30e5f9aae69d3c44a5/call-of-the-horizon-day",
+    "date": "2026-07-10",
+    "link": "https://www.checkiday.com/afb701f1880dae1e00b94cbd4f65cfe4/world-kebab-day",
     "source": "Checkiday"
   }
 }
