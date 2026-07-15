@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-07-14T17:52:46.164476-04:00",
+  "as_of": "2026-07-15T10:43:50.352806-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "314.8600",
       "change_percent": "-0.7721%",
-      "as_of": "2026-07-14T17:52:46.164476-04:00",
+      "as_of": "2026-07-15T10:43:50.352806-04:00",
       "latest_trading_day": "2026-07-14",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.6700",
-      "change_percent": "1.4783%",
-      "as_of": "2026-07-14T17:52:46.164476-04:00",
+      "price": "11.6800",
+      "change_percent": "1.5652%",
+      "as_of": "2026-07-15T10:43:50.352806-04:00",
       "latest_trading_day": "2026-07-14",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "247.4900",
       "change_percent": "0.0728%",
-      "as_of": "2026-07-14T17:52:46.164476-04:00",
+      "as_of": "2026-07-15T10:43:50.352806-04:00",
       "latest_trading_day": "2026-07-14",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "359.5100",
       "change_percent": "1.9858%",
-      "as_of": "2026-07-14T17:52:46.164476-04:00",
+      "as_of": "2026-07-15T10:43:50.352806-04:00",
       "latest_trading_day": "2026-07-14",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "661.0400",
       "change_percent": "0.6563%",
-      "as_of": "2026-07-14T17:52:46.164476-04:00",
+      "as_of": "2026-07-15T10:43:50.352806-04:00",
       "latest_trading_day": "2026-07-14",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Non-Binary People's Day",
+    "name": "National Be a Dork Day",
     "region": "US",
-    "date": "2026-07-14",
-    "link": "https://www.checkiday.com/325b9dfcb55ae05cf1805280b5a4aed8/international-non-binary-peoples-day",
+    "date": "2026-07-15",
+    "link": "https://www.checkiday.com/ecfa7955f68ad47adcfb5fb954a6b5bc/national-be-a-dork-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Non-Binary People's Day",
+    "name": "Gummi Worm Day",
     "region": "WORLD",
-    "date": "2026-07-14",
-    "link": "https://www.checkiday.com/325b9dfcb55ae05cf1805280b5a4aed8/international-non-binary-peoples-day",
+    "date": "2026-07-15",
+    "link": "https://www.checkiday.com/f9386561c761e20a8e2840262552fd79/gummi-worm-day",
     "source": "Checkiday"
   }
 }
