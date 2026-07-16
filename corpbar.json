@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-07-15T17:53:11.876584-04:00",
+  "as_of": "2026-07-16T10:55:05.432901-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "327.5000",
       "change_percent": "4.0145%",
-      "as_of": "2026-07-15T17:53:11.876584-04:00",
+      "as_of": "2026-07-16T10:55:05.432901-04:00",
       "latest_trading_day": "2026-07-15",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "12.6500",
       "change_percent": "8.3048%",
-      "as_of": "2026-07-15T17:53:11.876584-04:00",
+      "as_of": "2026-07-16T10:55:05.432901-04:00",
       "latest_trading_day": "2026-07-15",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "254.9600",
       "change_percent": "3.0183%",
-      "as_of": "2026-07-15T17:53:11.876584-04:00",
+      "as_of": "2026-07-16T10:55:05.432901-04:00",
       "latest_trading_day": "2026-07-15",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "370.9200",
       "change_percent": "3.1738%",
-      "as_of": "2026-07-15T17:53:11.876584-04:00",
+      "as_of": "2026-07-16T10:55:05.432901-04:00",
       "latest_trading_day": "2026-07-15",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "681.3100",
       "change_percent": "3.0664%",
-      "as_of": "2026-07-15T17:53:11.876584-04:00",
+      "as_of": "2026-07-16T10:55:05.432901-04:00",
       "latest_trading_day": "2026-07-15",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Be a Dork Day",
+    "name": "National Atomic Veterans Day",
     "region": "US",
-    "date": "2026-07-15",
-    "link": "https://www.checkiday.com/ecfa7955f68ad47adcfb5fb954a6b5bc/national-be-a-dork-day",
+    "date": "2026-07-16",
+    "link": "https://www.checkiday.com/b99556564fabc2f39e1b97c9a40e1e15/national-atomic-veterans-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Gummi Worm Day",
+    "name": "World Snake Day",
     "region": "WORLD",
-    "date": "2026-07-15",
-    "link": "https://www.checkiday.com/f9386561c761e20a8e2840262552fd79/gummi-worm-day",
+    "date": "2026-07-16",
+    "link": "https://www.checkiday.com/f5879846d84fb4c6129f556b5884844f/world-snake-day",
     "source": "Checkiday"
   }
 }
