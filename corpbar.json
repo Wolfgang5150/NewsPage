@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-07-17T17:45:21.860577-04:00",
+  "as_of": "2026-07-20T11:05:43.047794-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "333.7400",
       "change_percent": "0.1440%",
-      "as_of": "2026-07-17T17:45:21.860577-04:00",
+      "as_of": "2026-07-20T11:05:43.047794-04:00",
       "latest_trading_day": "2026-07-17",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "12.0100",
-      "change_percent": "-1.3957%",
-      "as_of": "2026-07-17T17:45:21.860577-04:00",
+      "price": "12.0000",
+      "change_percent": "-1.4778%",
+      "as_of": "2026-07-20T11:05:43.047794-04:00",
       "latest_trading_day": "2026-07-17",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "247.2300",
       "change_percent": "-1.0645%",
-      "as_of": "2026-07-17T17:45:21.860577-04:00",
+      "as_of": "2026-07-20T11:05:43.047794-04:00",
       "latest_trading_day": "2026-07-17",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "346.7700",
       "change_percent": "-2.1695%",
-      "as_of": "2026-07-17T17:45:21.860577-04:00",
+      "as_of": "2026-07-20T11:05:43.047794-04:00",
       "latest_trading_day": "2026-07-17",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "646.0100",
       "change_percent": "-2.7884%",
-      "as_of": "2026-07-17T17:45:21.860577-04:00",
+      "as_of": "2026-07-20T11:05:43.047794-04:00",
       "latest_trading_day": "2026-07-17",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Peach Ice Cream Day",
+    "name": "International Chess Day",
     "region": "US",
-    "date": "2026-07-17",
-    "link": "https://www.checkiday.com/35326e44c13602c6d1e0f2caf63c03b8/national-peach-ice-cream-day",
+    "date": "2026-07-20",
+    "link": "https://www.checkiday.com/1140d6f5c583039e62c2dca46f208af5/international-chess-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Day for International Justice",
-    "region": "WORLD",
-    "date": "2026-07-17",
-    "link": "https://www.checkiday.com/43a7935d55f89e28a29f7be8138eb0cb/world-day-for-international-justice",
-    "source": "Checkiday"
+    "name": "海の日",
+    "region": "Japan",
+    "date": "2026-07-20",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
