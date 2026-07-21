@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-07-20T17:56:28.878676-04:00",
+  "as_of": "2026-07-21T10:59:43.546297-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "326.5900",
       "change_percent": "-2.1424%",
-      "as_of": "2026-07-20T17:56:28.878676-04:00",
+      "as_of": "2026-07-21T10:59:43.546297-04:00",
       "latest_trading_day": "2026-07-20",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.7450",
-      "change_percent": "-2.1250%",
-      "as_of": "2026-07-20T17:56:28.878676-04:00",
+      "price": "11.7400",
+      "change_percent": "-2.1667%",
+      "as_of": "2026-07-21T10:59:43.546297-04:00",
       "latest_trading_day": "2026-07-20",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "249.9900",
       "change_percent": "1.1164%",
-      "as_of": "2026-07-20T17:56:28.878676-04:00",
+      "as_of": "2026-07-21T10:59:43.546297-04:00",
       "latest_trading_day": "2026-07-20",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "351.9900",
       "change_percent": "1.5053%",
-      "as_of": "2026-07-20T17:56:28.878676-04:00",
+      "as_of": "2026-07-21T10:59:43.546297-04:00",
       "latest_trading_day": "2026-07-20",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "645.8500",
       "change_percent": "-0.0248%",
-      "as_of": "2026-07-20T17:56:28.878676-04:00",
+      "as_of": "2026-07-21T10:59:43.546297-04:00",
       "latest_trading_day": "2026-07-20",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Chess Day",
+    "name": "National Be Someone Day",
     "region": "US",
-    "date": "2026-07-20",
-    "link": "https://www.checkiday.com/1140d6f5c583039e62c2dca46f208af5/international-chess-day",
+    "date": "2026-07-21",
+    "link": "https://www.checkiday.com/cd12f64da72a80bb5d9e7c3e2a4c6cd0/national-be-someone-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "海の日",
-    "region": "Japan",
-    "date": "2026-07-20",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "Black Women's Equal Pay Day",
+    "region": "WORLD",
+    "date": "2026-07-21",
+    "link": "https://www.checkiday.com/72cced8d528299f5524064cfdce9a115/black-womens-equal-pay-day",
+    "source": "Checkiday"
   }
 }
