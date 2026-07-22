@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-07-21T17:59:33.262889-04:00",
+  "as_of": "2026-07-22T10:59:55.464333-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "327.7400",
       "change_percent": "0.3521%",
-      "as_of": "2026-07-21T17:59:33.262889-04:00",
+      "as_of": "2026-07-22T10:59:55.464333-04:00",
       "latest_trading_day": "2026-07-21",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.4250",
-      "change_percent": "-2.6831%",
-      "as_of": "2026-07-21T17:59:33.262889-04:00",
+      "price": "11.4200",
+      "change_percent": "-2.7257%",
+      "as_of": "2026-07-22T10:59:55.464333-04:00",
       "latest_trading_day": "2026-07-21",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "247.5500",
       "change_percent": "-0.9760%",
-      "as_of": "2026-07-21T17:59:33.262889-04:00",
+      "as_of": "2026-07-22T10:59:55.464333-04:00",
       "latest_trading_day": "2026-07-21",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "347.1500",
       "change_percent": "-1.3750%",
-      "as_of": "2026-07-21T17:59:33.262889-04:00",
+      "as_of": "2026-07-22T10:59:55.464333-04:00",
       "latest_trading_day": "2026-07-21",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "643.8100",
       "change_percent": "-0.3159%",
-      "as_of": "2026-07-21T17:59:33.262889-04:00",
+      "as_of": "2026-07-22T10:59:55.464333-04:00",
       "latest_trading_day": "2026-07-21",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Be Someone Day",
+    "name": "National BLT Sandwich Day",
     "region": "US",
-    "date": "2026-07-21",
-    "link": "https://www.checkiday.com/cd12f64da72a80bb5d9e7c3e2a4c6cd0/national-be-someone-day",
+    "date": "2026-07-22",
+    "link": "https://www.checkiday.com/4868278a8df35fcee7bf6994dda03824/national-blt-sandwich-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Black Women's Equal Pay Day",
+    "name": "Hammock Day",
     "region": "WORLD",
-    "date": "2026-07-21",
-    "link": "https://www.checkiday.com/72cced8d528299f5524064cfdce9a115/black-womens-equal-pay-day",
+    "date": "2026-07-22",
+    "link": "https://www.checkiday.com/94f661376a9238549f919eab1f1812ab/hammock-day",
     "source": "Checkiday"
   }
 }
