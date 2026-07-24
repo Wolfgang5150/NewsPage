@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-07-23T18:00:04.993332-04:00",
+  "as_of": "2026-07-24T10:49:27.965867-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "321.6600",
       "change_percent": "-1.2980%",
-      "as_of": "2026-07-23T18:00:04.993332-04:00",
+      "as_of": "2026-07-24T10:49:27.965867-04:00",
       "latest_trading_day": "2026-07-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "10.7850",
-      "change_percent": "-4.2185%",
-      "as_of": "2026-07-23T18:00:04.993332-04:00",
+      "price": "10.7800",
+      "change_percent": "-4.2629%",
+      "as_of": "2026-07-24T10:49:27.965867-04:00",
       "latest_trading_day": "2026-07-23",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "233.6600",
       "change_percent": "-4.5701%",
-      "as_of": "2026-07-23T18:00:04.993332-04:00",
+      "as_of": "2026-07-24T10:49:27.965867-04:00",
       "latest_trading_day": "2026-07-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "317.6900",
       "change_percent": "-7.1326%",
-      "as_of": "2026-07-23T18:00:04.993332-04:00",
+      "as_of": "2026-07-24T10:49:27.965867-04:00",
       "latest_trading_day": "2026-07-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "606.1000",
       "change_percent": "-3.3595%",
-      "as_of": "2026-07-23T18:00:04.993332-04:00",
+      "as_of": "2026-07-24T10:49:27.965867-04:00",
       "latest_trading_day": "2026-07-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "Gorgeous Grandma Day",
+    "name": "National Drive-Thru Day",
     "region": "US",
-    "date": "2026-07-23",
-    "link": "https://www.checkiday.com/dd0c1a6f2e09b7d8b53e18eaa2a16275/gorgeous-grandma-day",
+    "date": "2026-07-24",
+    "link": "https://www.checkiday.com/7a89615df1260c679b118906413187c4/national-drive-thru-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Sjögren's Day",
+    "name": "Amelia Earhart Day",
     "region": "WORLD",
-    "date": "2026-07-23",
-    "link": "https://www.checkiday.com/9e6eeb9d181cd15fc4511d8f0af8bef8/world-sjogrens-day",
+    "date": "2026-07-24",
+    "link": "https://www.checkiday.com/b2c69239878c6ee19a06a9654b412d04/amelia-earhart-day",
     "source": "Checkiday"
   }
 }
