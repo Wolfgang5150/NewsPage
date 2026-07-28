@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-07-27T18:00:09.217445-04:00",
+  "as_of": "2026-07-28T11:14:42.457394-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "336.9100",
       "change_percent": "1.1681%",
-      "as_of": "2026-07-27T18:00:09.217445-04:00",
+      "as_of": "2026-07-28T11:14:42.457394-04:00",
       "latest_trading_day": "2026-07-27",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.8050",
-      "change_percent": "6.6396%",
-      "as_of": "2026-07-27T18:00:09.217445-04:00",
+      "price": "11.8000",
+      "change_percent": "6.5944%",
+      "as_of": "2026-07-28T11:14:42.457394-04:00",
       "latest_trading_day": "2026-07-27",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "231.3900",
       "change_percent": "-0.3102%",
-      "as_of": "2026-07-27T18:00:09.217445-04:00",
+      "as_of": "2026-07-28T11:14:42.457394-04:00",
       "latest_trading_day": "2026-07-27",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "326.5600",
       "change_percent": "2.1330%",
-      "as_of": "2026-07-27T18:00:09.217445-04:00",
+      "as_of": "2026-07-28T11:14:42.457394-04:00",
       "latest_trading_day": "2026-07-27",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "593.8700",
       "change_percent": "-0.2218%",
-      "as_of": "2026-07-27T18:00:09.217445-04:00",
+      "as_of": "2026-07-28T11:14:42.457394-04:00",
       "latest_trading_day": "2026-07-27",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Chicken Finger Day",
+    "name": "National Hamburger Day",
     "region": "US",
-    "date": "2026-07-27",
-    "link": "https://www.checkiday.com/3dbf92e5e46ae60416ff52a73ef8836f/national-chicken-finger-day",
+    "date": "2026-07-28",
+    "link": "https://www.checkiday.com/bbdd9e9703c8efc45079a7f9c427e49b/national-hamburger-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Bagpipe Appreciation Day",
+    "name": "World Hepatitis Day",
     "region": "WORLD",
-    "date": "2026-07-27",
-    "link": "https://www.checkiday.com/a37959b9ba479eaf8695264d9a5e9202/bagpipe-appreciation-day",
+    "date": "2026-07-28",
+    "link": "https://www.checkiday.com/6e7c36f99c932463fcbdbcb72216f6e9/world-hepatitis-day",
     "source": "Checkiday"
   }
 }
