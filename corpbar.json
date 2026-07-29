@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-07-28T17:57:42.424575-04:00",
+  "as_of": "2026-07-29T11:05:49.501237-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "340.0800",
       "change_percent": "0.9409%",
-      "as_of": "2026-07-28T17:57:42.424575-04:00",
+      "as_of": "2026-07-29T11:05:49.501237-04:00",
       "latest_trading_day": "2026-07-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.8950",
-      "change_percent": "0.8051%",
-      "as_of": "2026-07-28T17:57:42.424575-04:00",
+      "price": "11.8800",
+      "change_percent": "0.6780%",
+      "as_of": "2026-07-29T11:05:49.501237-04:00",
       "latest_trading_day": "2026-07-28",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "230.8600",
       "change_percent": "-0.2291%",
-      "as_of": "2026-07-28T17:57:42.424575-04:00",
+      "as_of": "2026-07-29T11:05:49.501237-04:00",
       "latest_trading_day": "2026-07-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "333.7100",
       "change_percent": "2.1895%",
-      "as_of": "2026-07-28T17:57:42.424575-04:00",
+      "as_of": "2026-07-29T11:05:49.501237-04:00",
       "latest_trading_day": "2026-07-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "593.4100",
       "change_percent": "-0.0775%",
-      "as_of": "2026-07-28T17:57:42.424575-04:00",
+      "as_of": "2026-07-29T11:05:49.501237-04:00",
       "latest_trading_day": "2026-07-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Hamburger Day",
+    "name": "International Tiger Day",
     "region": "US",
-    "date": "2026-07-28",
-    "link": "https://www.checkiday.com/bbdd9e9703c8efc45079a7f9c427e49b/national-hamburger-day",
+    "date": "2026-07-29",
+    "link": "https://www.checkiday.com/d1ba6721da68b8c29df39112a76bab34/international-tiger-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Hepatitis Day",
+    "name": "International Tiger Day",
     "region": "WORLD",
-    "date": "2026-07-28",
-    "link": "https://www.checkiday.com/6e7c36f99c932463fcbdbcb72216f6e9/world-hepatitis-day",
+    "date": "2026-07-29",
+    "link": "https://www.checkiday.com/d1ba6721da68b8c29df39112a76bab34/international-tiger-day",
     "source": "Checkiday"
   }
 }
