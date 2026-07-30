@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-07-29T17:54:31.137341-04:00",
+  "as_of": "2026-07-30T11:06:24.172528-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "338.1900",
       "change_percent": "-0.5558%",
-      "as_of": "2026-07-29T17:54:31.137341-04:00",
+      "as_of": "2026-07-30T11:06:24.172528-04:00",
       "latest_trading_day": "2026-07-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.6200",
-      "change_percent": "-2.1886%",
-      "as_of": "2026-07-29T17:54:31.137341-04:00",
+      "price": "11.6100",
+      "change_percent": "-2.2727%",
+      "as_of": "2026-07-30T11:06:24.172528-04:00",
       "latest_trading_day": "2026-07-29",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "226.6500",
       "change_percent": "-1.8236%",
-      "as_of": "2026-07-29T17:54:31.137341-04:00",
+      "as_of": "2026-07-30T11:06:24.172528-04:00",
       "latest_trading_day": "2026-07-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "336.7100",
       "change_percent": "0.8990%",
-      "as_of": "2026-07-29T17:54:31.137341-04:00",
+      "as_of": "2026-07-30T11:06:24.172528-04:00",
       "latest_trading_day": "2026-07-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "585.6100",
       "change_percent": "-1.3144%",
-      "as_of": "2026-07-29T17:54:31.137341-04:00",
+      "as_of": "2026-07-30T11:06:24.172528-04:00",
       "latest_trading_day": "2026-07-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Tiger Day",
+    "name": "Daily Observance",
     "region": "US",
-    "date": "2026-07-29",
-    "link": "https://www.checkiday.com/d1ba6721da68b8c29df39112a76bab34/international-tiger-day",
-    "source": "Checkiday"
+    "date": "2026-07-30",
+    "link": "https://www.checkiday.com",
+    "source": "Static Fallback"
   },
   "world_observance": {
-    "name": "International Tiger Day",
+    "name": "Daily World Observance",
     "region": "WORLD",
-    "date": "2026-07-29",
-    "link": "https://www.checkiday.com/d1ba6721da68b8c29df39112a76bab34/international-tiger-day",
-    "source": "Checkiday"
+    "date": "2026-07-30",
+    "link": "https://www.checkiday.com",
+    "source": "Static Fallback"
   }
 }
