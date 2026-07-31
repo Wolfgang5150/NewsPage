@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-07-30T18:07:40.771509-04:00",
+  "as_of": "2026-07-31T11:14:07.475733-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "333.4300",
       "change_percent": "-1.4075%",
-      "as_of": "2026-07-30T18:07:40.771509-04:00",
+      "as_of": "2026-07-31T11:14:07.475733-04:00",
       "latest_trading_day": "2026-07-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.4550",
-      "change_percent": "-1.3351%",
-      "as_of": "2026-07-30T18:07:40.771509-04:00",
+      "price": "11.4600",
+      "change_percent": "-1.2920%",
+      "as_of": "2026-07-31T11:14:07.475733-04:00",
       "latest_trading_day": "2026-07-30",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "235.5000",
       "change_percent": "3.9047%",
-      "as_of": "2026-07-30T18:07:40.771509-04:00",
+      "as_of": "2026-07-31T11:14:07.475733-04:00",
       "latest_trading_day": "2026-07-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "333.6600",
       "change_percent": "-0.9058%",
-      "as_of": "2026-07-30T18:07:40.771509-04:00",
+      "as_of": "2026-07-31T11:14:07.475733-04:00",
       "latest_trading_day": "2026-07-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "539.0300",
       "change_percent": "-7.9541%",
-      "as_of": "2026-07-30T18:07:40.771509-04:00",
+      "as_of": "2026-07-31T11:14:07.475733-04:00",
       "latest_trading_day": "2026-07-30",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Day of Friendship",
+    "name": "National Avocado Day",
     "region": "US",
-    "date": "2026-07-30",
-    "link": "https://www.checkiday.com/799b6dbe636b5d4271a8420130f3cdba/international-day-of-friendship",
+    "date": "2026-07-31",
+    "link": "https://www.checkiday.com/965569015a69f3728d353780b566bc22/national-avocado-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Day of Friendship",
+    "name": "World Ranger Day",
     "region": "WORLD",
-    "date": "2026-07-30",
-    "link": "https://www.checkiday.com/799b6dbe636b5d4271a8420130f3cdba/international-day-of-friendship",
+    "date": "2026-07-31",
+    "link": "https://www.checkiday.com/1a878c24e67c493dfd95eb5fba049e74/world-ranger-day",
     "source": "Checkiday"
   }
 }
