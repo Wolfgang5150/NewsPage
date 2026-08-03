@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-07-31T17:59:23.872566-04:00",
+  "as_of": "2026-08-03T11:39:18.441127-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "308.9100",
       "change_percent": "-7.3539%",
-      "as_of": "2026-07-31T17:59:23.872566-04:00",
+      "as_of": "2026-08-03T11:39:18.441127-04:00",
       "latest_trading_day": "2026-07-31",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.3800",
-      "change_percent": "-0.6981%",
-      "as_of": "2026-07-31T17:59:23.872566-04:00",
+      "price": "11.3900",
+      "change_percent": "-0.6108%",
+      "as_of": "2026-08-03T11:39:18.441127-04:00",
       "latest_trading_day": "2026-07-31",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "271.5800",
       "change_percent": "15.3206%",
-      "as_of": "2026-07-31T17:59:23.872566-04:00",
+      "as_of": "2026-08-03T11:39:18.441127-04:00",
       "latest_trading_day": "2026-07-31",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "356.1300",
       "change_percent": "6.7344%",
-      "as_of": "2026-07-31T17:59:23.872566-04:00",
+      "as_of": "2026-08-03T11:39:18.441127-04:00",
       "latest_trading_day": "2026-07-31",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "556.7100",
       "change_percent": "3.2800%",
-      "as_of": "2026-07-31T17:59:23.872566-04:00",
+      "as_of": "2026-08-03T11:39:18.441127-04:00",
       "latest_trading_day": "2026-07-31",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Avocado Day",
+    "name": "National Watermelon Day",
     "region": "US",
-    "date": "2026-07-31",
-    "link": "https://www.checkiday.com/965569015a69f3728d353780b566bc22/national-avocado-day",
+    "date": "2026-08-03",
+    "link": "https://www.checkiday.com/6b0d36b1c8fe376fe20d8f0c83fb1500/national-watermelon-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Ranger Day",
-    "region": "WORLD",
-    "date": "2026-07-31",
-    "link": "https://www.checkiday.com/1a878c24e67c493dfd95eb5fba049e74/world-ranger-day",
-    "source": "Checkiday"
+    "name": "Summer Bank Holiday",
+    "region": "United Kingdom",
+    "date": "2026-08-03",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
