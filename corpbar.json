@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-08-04T18:06:23.528977-04:00",
+  "as_of": "2026-08-05T11:09:57.177258-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "309.3800",
       "change_percent": "1.9643%",
-      "as_of": "2026-08-04T18:06:23.528977-04:00",
+      "as_of": "2026-08-05T11:09:57.177258-04:00",
       "latest_trading_day": "2026-08-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "12.0200",
-      "change_percent": "2.2979%",
-      "as_of": "2026-08-04T18:06:23.528977-04:00",
+      "price": "12.0000",
+      "change_percent": "2.1277%",
+      "as_of": "2026-08-05T11:09:57.177258-04:00",
       "latest_trading_day": "2026-08-04",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "277.4200",
       "change_percent": "-2.3238%",
-      "as_of": "2026-08-04T18:06:23.528977-04:00",
+      "as_of": "2026-08-05T11:09:57.177258-04:00",
       "latest_trading_day": "2026-08-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "377.6500",
       "change_percent": "1.1084%",
-      "as_of": "2026-08-04T18:06:23.528977-04:00",
+      "as_of": "2026-08-05T11:09:57.177258-04:00",
       "latest_trading_day": "2026-08-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "587.9400",
       "change_percent": "-0.3897%",
-      "as_of": "2026-08-04T18:06:23.528977-04:00",
+      "as_of": "2026-08-05T11:09:57.177258-04:00",
       "latest_trading_day": "2026-08-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Chocolate Chip Cookie Day",
+    "name": "International Traffic Light Day",
     "region": "US",
-    "date": "2026-08-04",
-    "link": "https://www.checkiday.com/e578221054ff7b158be86b01ab3d7798/national-chocolate-chip-cookie-day",
+    "date": "2026-08-05",
+    "link": "https://www.checkiday.com/02d05e76d8b7fd065b5fe4396a0a8b0e/international-traffic-light-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Assistance Dog Day",
+    "name": "International Traffic Light Day",
     "region": "WORLD",
-    "date": "2026-08-04",
-    "link": "https://www.checkiday.com/416a7170233dc4b3af93603e7a57e870/assistance-dog-day",
+    "date": "2026-08-05",
+    "link": "https://www.checkiday.com/02d05e76d8b7fd065b5fe4396a0a8b0e/international-traffic-light-day",
     "source": "Checkiday"
   }
 }
