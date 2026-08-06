@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-08-05T18:07:07.138157-04:00",
+  "as_of": "2026-08-06T11:13:19.627553-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "311.0000",
       "change_percent": "0.5236%",
-      "as_of": "2026-08-05T18:07:07.138157-04:00",
+      "as_of": "2026-08-06T11:13:19.627553-04:00",
       "latest_trading_day": "2026-08-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "12.8500",
-      "change_percent": "7.0833%",
-      "as_of": "2026-08-05T18:07:07.138157-04:00",
+      "price": "12.8300",
+      "change_percent": "6.9167%",
+      "as_of": "2026-08-06T11:13:19.627553-04:00",
       "latest_trading_day": "2026-08-05",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "272.6500",
       "change_percent": "-1.7194%",
-      "as_of": "2026-08-05T18:07:07.138157-04:00",
+      "as_of": "2026-08-06T11:13:19.627553-04:00",
       "latest_trading_day": "2026-08-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "362.4300",
       "change_percent": "-4.0302%",
-      "as_of": "2026-08-05T18:07:07.138157-04:00",
+      "as_of": "2026-08-06T11:13:19.627553-04:00",
       "latest_trading_day": "2026-08-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "588.7700",
       "change_percent": "0.1412%",
-      "as_of": "2026-08-05T18:07:07.138157-04:00",
+      "as_of": "2026-08-06T11:13:19.627553-04:00",
       "latest_trading_day": "2026-08-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Traffic Light Day",
+    "name": "National Fresh Breath Day",
     "region": "US",
-    "date": "2026-08-05",
-    "link": "https://www.checkiday.com/02d05e76d8b7fd065b5fe4396a0a8b0e/international-traffic-light-day",
+    "date": "2026-08-06",
+    "link": "https://www.checkiday.com/6e9dc3d113a1117d08280a6c5041ab2b/national-fresh-breath-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Traffic Light Day",
+    "name": "Balloons to Heaven Day",
     "region": "WORLD",
-    "date": "2026-08-05",
-    "link": "https://www.checkiday.com/02d05e76d8b7fd065b5fe4396a0a8b0e/international-traffic-light-day",
+    "date": "2026-08-06",
+    "link": "https://www.checkiday.com/7de5c2984086ff9e739aa0984b87f478/balloons-to-heaven-day",
     "source": "Checkiday"
   }
 }
