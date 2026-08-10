@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-08-07T17:32:43.681186-04:00",
+  "as_of": "2026-08-10T10:16:45.765457-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "313.3300",
-      "change_percent": "0.2945%",
-      "as_of": "2026-08-07T17:32:43.681186-04:00",
-      "latest_trading_day": "2026-08-07",
+      "price": "N/A",
+      "change_percent": "",
+      "as_of": "2026-08-10T10:16:45.765457-04:00",
+      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "12.5800",
-      "change_percent": "0.0000%",
-      "as_of": "2026-08-07T17:32:43.681186-04:00",
-      "latest_trading_day": "2026-08-07",
+      "price": "N/A",
+      "change_percent": "",
+      "as_of": "2026-08-10T10:16:45.765457-04:00",
+      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "274.4800",
-      "change_percent": "0.8154%",
-      "as_of": "2026-08-07T17:32:43.681186-04:00",
-      "latest_trading_day": "2026-08-07",
+      "price": "N/A",
+      "change_percent": "",
+      "as_of": "2026-08-10T10:16:45.765457-04:00",
+      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "354.3000",
-      "change_percent": "-0.9644%",
-      "as_of": "2026-08-07T17:32:43.681186-04:00",
-      "latest_trading_day": "2026-08-07",
+      "price": "N/A",
+      "change_percent": "",
+      "as_of": "2026-08-10T10:16:45.765457-04:00",
+      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "592.1000",
-      "change_percent": "0.3729%",
-      "as_of": "2026-08-07T17:32:43.681186-04:00",
-      "latest_trading_day": "2026-08-07",
+      "price": "N/A",
+      "change_percent": "",
+      "as_of": "2026-08-10T10:16:45.765457-04:00",
+      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Beer Day",
+    "name": "International Vlogging Day",
     "region": "US",
-    "date": "2026-08-07",
-    "link": "https://www.checkiday.com/afcdd60019f02b22c0216030268ee648/international-beer-day",
+    "date": "2026-08-10",
+    "link": "https://www.checkiday.com/9266cb90078dd90c60473c0c0d2b5c46/international-vlogging-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Beer Day",
+    "name": "International Vlogging Day",
     "region": "WORLD",
-    "date": "2026-08-07",
-    "link": "https://www.checkiday.com/afcdd60019f02b22c0216030268ee648/international-beer-day",
+    "date": "2026-08-10",
+    "link": "https://www.checkiday.com/9266cb90078dd90c60473c0c0d2b5c46/international-vlogging-day",
     "source": "Checkiday"
   }
 }
