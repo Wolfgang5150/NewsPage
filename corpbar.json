@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-08-10T17:35:05.410970-04:00",
+  "as_of": "2026-08-11T10:15:19.470703-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "308.2600",
-      "change_percent": "-1.6181%",
-      "as_of": "2026-08-10T17:35:05.410970-04:00",
+      "change_percent": "-1.5319%",
+      "as_of": "2026-08-11T10:15:19.470703-04:00",
       "latest_trading_day": "2026-08-10",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "12.3850",
-      "change_percent": "-1.5501%",
-      "as_of": "2026-08-10T17:35:05.410970-04:00",
+      "price": "12.4000",
+      "change_percent": "-1.4308%",
+      "as_of": "2026-08-11T10:15:19.470703-04:00",
       "latest_trading_day": "2026-08-10",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "278.0900",
       "change_percent": "1.3152%",
-      "as_of": "2026-08-10T17:35:05.410970-04:00",
+      "as_of": "2026-08-11T10:15:19.470703-04:00",
       "latest_trading_day": "2026-08-10",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "357.5200",
       "change_percent": "0.9088%",
-      "as_of": "2026-08-10T17:35:05.410970-04:00",
+      "as_of": "2026-08-11T10:15:19.470703-04:00",
       "latest_trading_day": "2026-08-10",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "594.9200",
       "change_percent": "0.4763%",
-      "as_of": "2026-08-10T17:35:05.410970-04:00",
+      "as_of": "2026-08-11T10:15:19.470703-04:00",
       "latest_trading_day": "2026-08-10",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Vlogging Day",
+    "name": "National Panini Day",
     "region": "US",
-    "date": "2026-08-10",
-    "link": "https://www.checkiday.com/9266cb90078dd90c60473c0c0d2b5c46/international-vlogging-day",
+    "date": "2026-08-11",
+    "link": "https://www.checkiday.com/8851f327c4239747f6e5c9d084995fd8/national-panini-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Vlogging Day",
-    "region": "WORLD",
-    "date": "2026-08-10",
-    "link": "https://www.checkiday.com/9266cb90078dd90c60473c0c0d2b5c46/international-vlogging-day",
-    "source": "Checkiday"
+    "name": "山の日",
+    "region": "Japan",
+    "date": "2026-08-11",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
