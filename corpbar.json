@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-08-12T17:38:29.141907-04:00",
+  "as_of": "2026-08-13T10:19:16.605417-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "302.2500",
       "change_percent": "-0.8724%",
-      "as_of": "2026-08-12T17:38:29.141907-04:00",
+      "as_of": "2026-08-13T10:19:16.605417-04:00",
       "latest_trading_day": "2026-08-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "12.7250",
-      "change_percent": "0.2758%",
-      "as_of": "2026-08-12T17:38:29.141907-04:00",
+      "price": "12.7300",
+      "change_percent": "0.3152%",
+      "as_of": "2026-08-13T10:19:16.605417-04:00",
       "latest_trading_day": "2026-08-12",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "267.2800",
       "change_percent": "-1.8327%",
-      "as_of": "2026-08-12T17:38:29.141907-04:00",
+      "as_of": "2026-08-13T10:19:16.605417-04:00",
       "latest_trading_day": "2026-08-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "343.5400",
       "change_percent": "-0.0756%",
-      "as_of": "2026-08-12T17:38:29.141907-04:00",
+      "as_of": "2026-08-13T10:19:16.605417-04:00",
       "latest_trading_day": "2026-08-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "578.8500",
       "change_percent": "-3.3833%",
-      "as_of": "2026-08-12T17:38:29.141907-04:00",
+      "as_of": "2026-08-13T10:19:16.605417-04:00",
       "latest_trading_day": "2026-08-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Youth Day",
+    "name": "International Left-Handers Day",
     "region": "US",
-    "date": "2026-08-12",
-    "link": "https://www.checkiday.com/58ebd9e22a156a5a927069ca3077b619/international-youth-day",
+    "date": "2026-08-13",
+    "link": "https://www.checkiday.com/50638796280acffd26922b31baddbb6f/international-left-handers-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Youth Day",
+    "name": "International Left-Handers Day",
     "region": "WORLD",
-    "date": "2026-08-12",
-    "link": "https://www.checkiday.com/58ebd9e22a156a5a927069ca3077b619/international-youth-day",
+    "date": "2026-08-13",
+    "link": "https://www.checkiday.com/50638796280acffd26922b31baddbb6f/international-left-handers-day",
     "source": "Checkiday"
   }
 }
