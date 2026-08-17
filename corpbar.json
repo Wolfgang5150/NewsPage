@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-08-14T17:18:54.450485-04:00",
+  "as_of": "2026-08-17T09:34:22.932414-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "305.9300",
       "change_percent": "0.2195%",
-      "as_of": "2026-08-14T17:18:54.450485-04:00",
+      "as_of": "2026-08-17T09:34:22.932414-04:00",
       "latest_trading_day": "2026-08-14",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "13.0150",
-      "change_percent": "-2.5094%",
-      "as_of": "2026-08-14T17:18:54.450485-04:00",
+      "price": "13.0200",
+      "change_percent": "-2.4719%",
+      "as_of": "2026-08-17T09:34:22.932414-04:00",
       "latest_trading_day": "2026-08-14",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "262.6500",
       "change_percent": "-0.9354%",
-      "as_of": "2026-08-14T17:18:54.450485-04:00",
+      "as_of": "2026-08-17T09:34:22.932414-04:00",
       "latest_trading_day": "2026-08-14",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "345.9000",
       "change_percent": "-0.1328%",
-      "as_of": "2026-08-14T17:18:54.450485-04:00",
+      "as_of": "2026-08-17T09:34:22.932414-04:00",
       "latest_trading_day": "2026-08-14",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "589.8500",
       "change_percent": "-0.8605%",
-      "as_of": "2026-08-14T17:18:54.450485-04:00",
+      "as_of": "2026-08-17T09:34:22.932414-04:00",
       "latest_trading_day": "2026-08-14",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Creamsicle Day",
+    "name": "National #2 Pencil Day",
     "region": "US",
-    "date": "2026-08-14",
-    "link": "https://www.checkiday.com/0146cb61cb5de11f4280868badd2a127/national-creamsicle-day",
+    "date": "2026-08-17",
+    "link": "https://www.checkiday.com/7322f3be837fddaed7e1cb68cf25e82a/national-2-pencil-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Color Book Day",
-    "region": "WORLD",
-    "date": "2026-08-14",
-    "link": "https://www.checkiday.com/485e0b6d25c95e99c230f4086fd22d77/color-book-day",
-    "source": "Checkiday"
+    "name": "Gold Cup Parade Day",
+    "region": "Canada",
+    "date": "2026-08-17",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
