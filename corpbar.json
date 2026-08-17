@@ -1,48 +1,48 @@
 {
-  "as_of": "2026-08-17T13:21:03.559008-04:00",
+  "as_of": "2026-08-17T15:22:00.499360-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "305.9300",
-      "change_percent": "0.2195%",
-      "as_of": "2026-08-17T13:21:03.559008-04:00",
-      "latest_trading_day": "2026-08-14",
+      "price": "N/A",
+      "change_percent": "",
+      "as_of": "2026-08-17T15:22:00.499360-04:00",
+      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "13.0200",
-      "change_percent": "-2.4719%",
-      "as_of": "2026-08-17T13:21:03.559008-04:00",
-      "latest_trading_day": "2026-08-14",
+      "price": "N/A",
+      "change_percent": "",
+      "as_of": "2026-08-17T15:22:00.499360-04:00",
+      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "262.6500",
-      "change_percent": "-0.9354%",
-      "as_of": "2026-08-17T13:21:03.559008-04:00",
-      "latest_trading_day": "2026-08-14",
+      "price": "N/A",
+      "change_percent": "",
+      "as_of": "2026-08-17T15:22:00.499360-04:00",
+      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "345.9000",
-      "change_percent": "-0.1328%",
-      "as_of": "2026-08-17T13:21:03.559008-04:00",
-      "latest_trading_day": "2026-08-14",
+      "price": "N/A",
+      "change_percent": "",
+      "as_of": "2026-08-17T15:22:00.499360-04:00",
+      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "589.8500",
-      "change_percent": "-0.8605%",
-      "as_of": "2026-08-17T13:21:03.559008-04:00",
-      "latest_trading_day": "2026-08-14",
+      "price": "N/A",
+      "change_percent": "",
+      "as_of": "2026-08-17T15:22:00.499360-04:00",
+      "note": "We have detected your API key as A272OVWFL3R8T7JA and our standard API rate limi",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
