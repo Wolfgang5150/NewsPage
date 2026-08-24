@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-08-21T17:17:28.715802-04:00",
+  "as_of": "2026-08-24T09:44:38.472540-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "309.3500",
       "change_percent": "-0.6264%",
-      "as_of": "2026-08-21T17:17:28.715802-04:00",
+      "as_of": "2026-08-24T09:44:38.472540-04:00",
       "latest_trading_day": "2026-08-21",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "11.7500",
       "change_percent": "-1.4262%",
-      "as_of": "2026-08-21T17:17:28.715802-04:00",
+      "as_of": "2026-08-24T09:44:38.472540-04:00",
       "latest_trading_day": "2026-08-21",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "258.6300",
       "change_percent": "-0.5690%",
-      "as_of": "2026-08-21T17:17:28.715802-04:00",
+      "as_of": "2026-08-24T09:44:38.472540-04:00",
       "latest_trading_day": "2026-08-21",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "344.8200",
       "change_percent": "1.2182%",
-      "as_of": "2026-08-21T17:17:28.715802-04:00",
+      "as_of": "2026-08-24T09:44:38.472540-04:00",
       "latest_trading_day": "2026-08-21",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "549.9000",
       "change_percent": "0.7457%",
-      "as_of": "2026-08-21T17:17:28.715802-04:00",
+      "as_of": "2026-08-24T09:44:38.472540-04:00",
       "latest_trading_day": "2026-08-21",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Brazilian Blowout Day",
+    "name": "International Day Against Intolerance, Discrimination and Violence Based on Musical Preferences, Lifestyle and Dress Code",
     "region": "US",
-    "date": "2026-08-21",
-    "link": "https://www.checkiday.com/af41c1d9585297e601bdcde5404a37c8/national-brazilian-blowout-day",
+    "date": "2026-08-24",
+    "link": "https://www.checkiday.com/70907a4679ffea9f934aa9bfef577c67/international-day-against-intolerance-discrimination-and-violence-based-on-musical-preferences-lifestyle-and-dress-code",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "National Brazilian Blowout Day",
+    "name": "International Day Against Intolerance, Discrimination and Violence Based on Musical Preferences, Lifestyle and Dress Code",
     "region": "WORLD",
-    "date": "2026-08-21",
-    "link": "https://www.checkiday.com/af41c1d9585297e601bdcde5404a37c8/national-brazilian-blowout-day",
+    "date": "2026-08-24",
+    "link": "https://www.checkiday.com/70907a4679ffea9f934aa9bfef577c67/international-day-against-intolerance-discrimination-and-violence-based-on-musical-preferences-lifestyle-and-dress-code",
     "source": "Checkiday"
   }
 }
