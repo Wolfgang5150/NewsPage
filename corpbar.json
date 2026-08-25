@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-08-24T17:22:01.193500-04:00",
+  "as_of": "2026-08-25T09:42:59.357344-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "310.3400",
       "change_percent": "0.3200%",
-      "as_of": "2026-08-24T17:22:01.193500-04:00",
+      "as_of": "2026-08-25T09:42:59.357344-04:00",
       "latest_trading_day": "2026-08-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "11.5500",
       "change_percent": "-1.7021%",
-      "as_of": "2026-08-24T17:22:01.193500-04:00",
+      "as_of": "2026-08-25T09:42:59.357344-04:00",
       "latest_trading_day": "2026-08-24",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "262.0700",
       "change_percent": "1.3301%",
-      "as_of": "2026-08-24T17:22:01.193500-04:00",
+      "as_of": "2026-08-25T09:42:59.357344-04:00",
       "latest_trading_day": "2026-08-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "348.0600",
       "change_percent": "0.9396%",
-      "as_of": "2026-08-24T17:22:01.193500-04:00",
+      "as_of": "2026-08-25T09:42:59.357344-04:00",
       "latest_trading_day": "2026-08-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "559.0200",
       "change_percent": "1.6585%",
-      "as_of": "2026-08-24T17:22:01.193500-04:00",
+      "as_of": "2026-08-25T09:42:59.357344-04:00",
       "latest_trading_day": "2026-08-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Day Against Intolerance, Discrimination and Violence Based on Musical Preferences, Lifestyle and Dress Code",
+    "name": "National Banana Split Day",
     "region": "US",
-    "date": "2026-08-24",
-    "link": "https://www.checkiday.com/70907a4679ffea9f934aa9bfef577c67/international-day-against-intolerance-discrimination-and-violence-based-on-musical-preferences-lifestyle-and-dress-code",
+    "date": "2026-08-25",
+    "link": "https://www.checkiday.com/a3a4e112df97a159b3d9170811394742/national-banana-split-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Day Against Intolerance, Discrimination and Violence Based on Musical Preferences, Lifestyle and Dress Code",
+    "name": "Instant Ramen Day (Japan)",
     "region": "WORLD",
-    "date": "2026-08-24",
-    "link": "https://www.checkiday.com/70907a4679ffea9f934aa9bfef577c67/international-day-against-intolerance-discrimination-and-violence-based-on-musical-preferences-lifestyle-and-dress-code",
+    "date": "2026-08-25",
+    "link": "https://www.checkiday.com/bddae326d979a08a8736afad5c4d7a8f/instant-ramen-day-japan",
     "source": "Checkiday"
   }
 }
