@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-08-25T17:20:55.412139-04:00",
+  "as_of": "2026-08-26T09:49:39.094602-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "309.9000",
       "change_percent": "-0.1418%",
-      "as_of": "2026-08-25T17:20:55.412139-04:00",
+      "as_of": "2026-08-26T09:49:39.094602-04:00",
       "latest_trading_day": "2026-08-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.8150",
-      "change_percent": "2.2944%",
-      "as_of": "2026-08-25T17:20:55.412139-04:00",
+      "price": "11.8000",
+      "change_percent": "2.1645%",
+      "as_of": "2026-08-26T09:49:39.094602-04:00",
       "latest_trading_day": "2026-08-25",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "261.0600",
       "change_percent": "-0.3854%",
-      "as_of": "2026-08-25T17:20:55.412139-04:00",
+      "as_of": "2026-08-26T09:49:39.094602-04:00",
       "latest_trading_day": "2026-08-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "346.9600",
       "change_percent": "-0.3160%",
-      "as_of": "2026-08-25T17:20:55.412139-04:00",
+      "as_of": "2026-08-26T09:49:39.094602-04:00",
       "latest_trading_day": "2026-08-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "570.0500",
       "change_percent": "1.9731%",
-      "as_of": "2026-08-25T17:20:55.412139-04:00",
+      "as_of": "2026-08-26T09:49:39.094602-04:00",
       "latest_trading_day": "2026-08-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Banana Split Day",
+    "name": "National Cherry Popsicle Day",
     "region": "US",
-    "date": "2026-08-25",
-    "link": "https://www.checkiday.com/a3a4e112df97a159b3d9170811394742/national-banana-split-day",
+    "date": "2026-08-26",
+    "link": "https://www.checkiday.com/b24318ffe4263a9709490a274b739376/national-cherry-popsicle-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Instant Ramen Day (Japan)",
+    "name": "Make Your Own Luck Day",
     "region": "WORLD",
-    "date": "2026-08-25",
-    "link": "https://www.checkiday.com/bddae326d979a08a8736afad5c4d7a8f/instant-ramen-day-japan",
+    "date": "2026-08-26",
+    "link": "https://www.checkiday.com/0af14592c25ce6dd2967978d32a1eba1/make-your-own-luck-day",
     "source": "Checkiday"
   }
 }
