@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-08-27T18:43:22.608891-04:00",
+  "as_of": "2026-08-28T18:50:24.652188-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "314.5800",
-      "change_percent": "0.3605%",
-      "as_of": "2026-08-27T18:43:22.608891-04:00",
-      "latest_trading_day": "2026-08-27",
+      "price": "319.7000",
+      "change_percent": "1.6276%",
+      "as_of": "2026-08-28T18:50:24.652188-04:00",
+      "latest_trading_day": "2026-08-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "11.1000",
-      "change_percent": "-2.4605%",
-      "as_of": "2026-08-27T18:43:22.608891-04:00",
-      "latest_trading_day": "2026-08-27",
+      "price": "10.9700",
+      "change_percent": "-1.1712%",
+      "as_of": "2026-08-28T18:50:24.652188-04:00",
+      "latest_trading_day": "2026-08-28",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "256.2600",
-      "change_percent": "-1.5445%",
-      "as_of": "2026-08-27T18:43:22.608891-04:00",
-      "latest_trading_day": "2026-08-27",
+      "price": "266.4300",
+      "change_percent": "3.9686%",
+      "as_of": "2026-08-28T18:50:24.652188-04:00",
+      "latest_trading_day": "2026-08-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "340.6500",
-      "change_percent": "-0.3947%",
-      "as_of": "2026-08-27T18:43:22.608891-04:00",
-      "latest_trading_day": "2026-08-27",
+      "price": "346.5900",
+      "change_percent": "1.7437%",
+      "as_of": "2026-08-28T18:50:24.652188-04:00",
+      "latest_trading_day": "2026-08-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "571.1000",
-      "change_percent": "-0.8748%",
-      "as_of": "2026-08-27T18:43:22.608891-04:00",
-      "latest_trading_day": "2026-08-27",
+      "price": "578.0200",
+      "change_percent": "1.2117%",
+      "as_of": "2026-08-28T18:50:24.652188-04:00",
+      "latest_trading_day": "2026-08-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Banana Lovers Day",
+    "name": "International Read Comics in Public Day",
     "region": "US",
-    "date": "2026-08-27",
-    "link": "https://www.checkiday.com/a35050cb3019063f177f04fdccfde3e6/national-banana-lovers-day",
+    "date": "2026-08-28",
+    "link": "https://www.checkiday.com/7e0abbbbf9fdc352de3d146b6739b916/international-read-comics-in-public-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Rock Paper Scissors Day",
+    "name": "International Read Comics in Public Day",
     "region": "WORLD",
-    "date": "2026-08-27",
-    "link": "https://www.checkiday.com/061b3aed1540e84bc22d44ef33f04d6f/world-rock-paper-scissors-day",
+    "date": "2026-08-28",
+    "link": "https://www.checkiday.com/7e0abbbbf9fdc352de3d146b6739b916/international-read-comics-in-public-day",
     "source": "Checkiday"
   }
 }
