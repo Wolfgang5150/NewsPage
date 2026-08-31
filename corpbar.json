@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-08-28T18:50:24.652188-04:00",
+  "as_of": "2026-08-31T15:20:18.322984-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "319.7000",
       "change_percent": "1.6276%",
-      "as_of": "2026-08-28T18:50:24.652188-04:00",
+      "as_of": "2026-08-31T15:20:18.322984-04:00",
       "latest_trading_day": "2026-08-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "10.9700",
       "change_percent": "-1.1712%",
-      "as_of": "2026-08-28T18:50:24.652188-04:00",
+      "as_of": "2026-08-31T15:20:18.322984-04:00",
       "latest_trading_day": "2026-08-28",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "266.4300",
       "change_percent": "3.9686%",
-      "as_of": "2026-08-28T18:50:24.652188-04:00",
+      "as_of": "2026-08-31T15:20:18.322984-04:00",
       "latest_trading_day": "2026-08-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "346.5900",
       "change_percent": "1.7437%",
-      "as_of": "2026-08-28T18:50:24.652188-04:00",
+      "as_of": "2026-08-31T15:20:18.322984-04:00",
       "latest_trading_day": "2026-08-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "578.0200",
       "change_percent": "1.2117%",
-      "as_of": "2026-08-28T18:50:24.652188-04:00",
+      "as_of": "2026-08-31T15:20:18.322984-04:00",
       "latest_trading_day": "2026-08-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Read Comics in Public Day",
+    "name": "National Diatomaceous Earth Day",
     "region": "US",
-    "date": "2026-08-28",
-    "link": "https://www.checkiday.com/7e0abbbbf9fdc352de3d146b6739b916/international-read-comics-in-public-day",
+    "date": "2026-08-31",
+    "link": "https://www.checkiday.com/0455dd1b7f259f444c31bc4cadfed7be/national-diatomaceous-earth-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Read Comics in Public Day",
-    "region": "WORLD",
-    "date": "2026-08-28",
-    "link": "https://www.checkiday.com/7e0abbbbf9fdc352de3d146b6739b916/international-read-comics-in-public-day",
-    "source": "Checkiday"
+    "name": "Summer Bank Holiday",
+    "region": "United Kingdom",
+    "date": "2026-08-31",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
