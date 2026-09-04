@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-09-03T18:55:43.687804-04:00",
+  "as_of": "2026-09-04T12:41:11.890068-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "328.2100",
       "change_percent": "1.0001%",
-      "as_of": "2026-09-03T18:55:43.687804-04:00",
+      "as_of": "2026-09-04T12:41:11.890068-04:00",
       "latest_trading_day": "2026-09-03",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "11.0600",
       "change_percent": "4.4381%",
-      "as_of": "2026-09-03T18:55:43.687804-04:00",
+      "as_of": "2026-09-04T12:41:11.890068-04:00",
       "latest_trading_day": "2026-09-03",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "258.9000",
       "change_percent": "1.5374%",
-      "as_of": "2026-09-03T18:55:43.687804-04:00",
+      "as_of": "2026-09-04T12:41:11.890068-04:00",
       "latest_trading_day": "2026-09-03",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "342.4800",
       "change_percent": "1.5899%",
-      "as_of": "2026-09-03T18:55:43.687804-04:00",
+      "as_of": "2026-09-04T12:41:11.890068-04:00",
       "latest_trading_day": "2026-09-03",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "610.6800",
       "change_percent": "3.0075%",
-      "as_of": "2026-09-03T18:55:43.687804-04:00",
+      "as_of": "2026-09-04T12:41:11.890068-04:00",
       "latest_trading_day": "2026-09-03",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Cabernet Sauvignon Day",
+    "name": "National Chianti Day",
     "region": "US",
-    "date": "2026-09-03",
-    "link": "https://www.checkiday.com/5c75a03370391851e47e0f975e68d1c6/international-cabernet-sauvignon-day",
+    "date": "2026-09-04",
+    "link": "https://www.checkiday.com/e0d85e829d1b4fe884676d507c50cfc2/national-chianti-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Cabernet Sauvignon Day",
+    "name": "Bring Your Manners to Work Day",
     "region": "WORLD",
-    "date": "2026-09-03",
-    "link": "https://www.checkiday.com/5c75a03370391851e47e0f975e68d1c6/international-cabernet-sauvignon-day",
+    "date": "2026-09-04",
+    "link": "https://www.checkiday.com/8bc36258fe09f693a3e4a759ad57ce17/bring-your-manners-to-work-day",
     "source": "Checkiday"
   }
 }
