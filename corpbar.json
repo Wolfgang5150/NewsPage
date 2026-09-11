@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-09-10T18:53:25.703636-04:00",
+  "as_of": "2026-09-11T12:50:37.926064-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "326.5700",
       "change_percent": "3.5612%",
-      "as_of": "2026-09-10T18:53:25.703636-04:00",
+      "as_of": "2026-09-11T12:50:37.926064-04:00",
       "latest_trading_day": "2026-09-10",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "10.1300",
       "change_percent": "-5.1498%",
-      "as_of": "2026-09-10T18:53:25.703636-04:00",
+      "as_of": "2026-09-11T12:50:37.926064-04:00",
       "latest_trading_day": "2026-09-10",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "251.8900",
       "change_percent": "-0.2021%",
-      "as_of": "2026-09-10T18:53:25.703636-04:00",
+      "as_of": "2026-09-11T12:50:37.926064-04:00",
       "latest_trading_day": "2026-09-10",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "332.6000",
       "change_percent": "0.5897%",
-      "as_of": "2026-09-10T18:53:25.703636-04:00",
+      "as_of": "2026-09-11T12:50:37.926064-04:00",
       "latest_trading_day": "2026-09-10",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "644.3800",
       "change_percent": "-1.4242%",
-      "as_of": "2026-09-10T18:53:25.703636-04:00",
+      "as_of": "2026-09-11T12:50:37.926064-04:00",
       "latest_trading_day": "2026-09-10",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Creepy Boston Dynamics Robotic Horse Day",
+    "name": "National 401(k) Day",
     "region": "US",
-    "date": "2026-09-10",
-    "link": "https://www.checkiday.com/00202309767358469c7f548edd31f7d8/international-creepy-boston-dynamics-robotic-horse-day",
+    "date": "2026-09-11",
+    "link": "https://www.checkiday.com/331220433a9c36b2919c57b9e37e6b2e/national-401k-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Creepy Boston Dynamics Robotic Horse Day",
+    "name": "\"I Want to Start My Own Business\" Day",
     "region": "WORLD",
-    "date": "2026-09-10",
-    "link": "https://www.checkiday.com/00202309767358469c7f548edd31f7d8/international-creepy-boston-dynamics-robotic-horse-day",
+    "date": "2026-09-11",
+    "link": "https://www.checkiday.com/20b669e6a77130c88b84cdfd3a6c67aa/i-want-to-start-my-own-business-day",
     "source": "Checkiday"
   }
 }
