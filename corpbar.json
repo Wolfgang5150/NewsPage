@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-09-11T18:55:58.327276-04:00",
+  "as_of": "2026-09-14T14:18:01.364807-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "332.2700",
       "change_percent": "1.7454%",
-      "as_of": "2026-09-11T18:55:58.327276-04:00",
+      "as_of": "2026-09-14T14:18:01.364807-04:00",
       "latest_trading_day": "2026-09-11",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "10.5100",
       "change_percent": "3.7512%",
-      "as_of": "2026-09-11T18:55:58.327276-04:00",
+      "as_of": "2026-09-14T14:18:01.364807-04:00",
       "latest_trading_day": "2026-09-11",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "256.7800",
       "change_percent": "1.9413%",
-      "as_of": "2026-09-11T18:55:58.327276-04:00",
+      "as_of": "2026-09-14T14:18:01.364807-04:00",
       "latest_trading_day": "2026-09-11",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "338.5000",
       "change_percent": "1.7739%",
-      "as_of": "2026-09-11T18:55:58.327276-04:00",
+      "as_of": "2026-09-14T14:18:01.364807-04:00",
       "latest_trading_day": "2026-09-11",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "648.0300",
       "change_percent": "0.5664%",
-      "as_of": "2026-09-11T18:55:58.327276-04:00",
+      "as_of": "2026-09-14T14:18:01.364807-04:00",
       "latest_trading_day": "2026-09-11",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National 401(k) Day",
+    "name": "National Black and White Cookie Day",
     "region": "US",
-    "date": "2026-09-11",
-    "link": "https://www.checkiday.com/331220433a9c36b2919c57b9e37e6b2e/national-401k-day",
+    "date": "2026-09-14",
+    "link": "https://www.checkiday.com/49c27ceb201f2105fe5fd0b1490397c6/national-black-and-white-cookie-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "\"I Want to Start My Own Business\" Day",
+    "name": "Eat a Hoagie Day",
     "region": "WORLD",
-    "date": "2026-09-11",
-    "link": "https://www.checkiday.com/20b669e6a77130c88b84cdfd3a6c67aa/i-want-to-start-my-own-business-day",
+    "date": "2026-09-14",
+    "link": "https://www.checkiday.com/933877fd945037252c2cf36988a460c2/eat-a-hoagie-day",
     "source": "Checkiday"
   }
 }
