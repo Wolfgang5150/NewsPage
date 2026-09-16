@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-09-15T17:52:54.356078-04:00",
+  "as_of": "2026-09-16T13:25:47.594900-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "331.3400",
       "change_percent": "-0.5224%",
-      "as_of": "2026-09-15T17:52:54.356078-04:00",
+      "as_of": "2026-09-16T13:25:47.594900-04:00",
       "latest_trading_day": "2026-09-15",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "10.3550",
-      "change_percent": "-2.7700%",
-      "as_of": "2026-09-15T17:52:54.356078-04:00",
+      "price": "10.3600",
+      "change_percent": "-2.7230%",
+      "as_of": "2026-09-16T13:25:47.594900-04:00",
       "latest_trading_day": "2026-09-15",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "248.4200",
       "change_percent": "-2.0194%",
-      "as_of": "2026-09-15T17:52:54.356078-04:00",
+      "as_of": "2026-09-16T13:25:47.594900-04:00",
       "latest_trading_day": "2026-09-15",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "344.9800",
       "change_percent": "-1.2622%",
-      "as_of": "2026-09-15T17:52:54.356078-04:00",
+      "as_of": "2026-09-16T13:25:47.594900-04:00",
       "latest_trading_day": "2026-09-15",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "670.2400",
       "change_percent": "0.6971%",
-      "as_of": "2026-09-15T17:52:54.356078-04:00",
+      "as_of": "2026-09-16T13:25:47.594900-04:00",
       "latest_trading_day": "2026-09-15",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Day of Democracy",
+    "name": "International Day for the Preservation of the Ozone Layer",
     "region": "US",
-    "date": "2026-09-15",
-    "link": "https://www.checkiday.com/10d44fa21c4c5646df2c7baca8957a4b/international-day-of-democracy",
+    "date": "2026-09-16",
+    "link": "https://www.checkiday.com/f9b915843a53941a4538aea008020f87/international-day-for-the-preservation-of-the-ozone-layer",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Day of Democracy",
+    "name": "International Day for the Preservation of the Ozone Layer",
     "region": "WORLD",
-    "date": "2026-09-15",
-    "link": "https://www.checkiday.com/10d44fa21c4c5646df2c7baca8957a4b/international-day-of-democracy",
+    "date": "2026-09-16",
+    "link": "https://www.checkiday.com/f9b915843a53941a4538aea008020f87/international-day-for-the-preservation-of-the-ozone-layer",
     "source": "Checkiday"
   }
 }
