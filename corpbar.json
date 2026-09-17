@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-09-16T17:50:37.598852-04:00",
+  "as_of": "2026-09-17T13:24:41.954224-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "332.4100",
       "change_percent": "0.3229%",
-      "as_of": "2026-09-16T17:50:37.598852-04:00",
+      "as_of": "2026-09-17T13:24:41.954224-04:00",
       "latest_trading_day": "2026-09-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "10.3350",
-      "change_percent": "-0.2413%",
-      "as_of": "2026-09-16T17:50:37.598852-04:00",
+      "price": "10.3300",
+      "change_percent": "-0.2896%",
+      "as_of": "2026-09-17T13:24:41.954224-04:00",
       "latest_trading_day": "2026-09-16",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "245.9600",
       "change_percent": "-0.9903%",
-      "as_of": "2026-09-16T17:50:37.598852-04:00",
+      "as_of": "2026-09-17T13:24:41.954224-04:00",
       "latest_trading_day": "2026-09-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "342.8700",
       "change_percent": "-0.6116%",
-      "as_of": "2026-09-16T17:50:37.598852-04:00",
+      "as_of": "2026-09-17T13:24:41.954224-04:00",
       "latest_trading_day": "2026-09-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "673.3100",
       "change_percent": "0.4580%",
-      "as_of": "2026-09-16T17:50:37.598852-04:00",
+      "as_of": "2026-09-17T13:24:41.954224-04:00",
       "latest_trading_day": "2026-09-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Day for the Preservation of the Ozone Layer",
+    "name": "National Apple Dumpling Day",
     "region": "US",
-    "date": "2026-09-16",
-    "link": "https://www.checkiday.com/f9b915843a53941a4538aea008020f87/international-day-for-the-preservation-of-the-ozone-layer",
+    "date": "2026-09-17",
+    "link": "https://www.checkiday.com/01d84fca3498e8c67319ec21185eeddb/national-apple-dumpling-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Day for the Preservation of the Ozone Layer",
+    "name": "World Patient Safety Day",
     "region": "WORLD",
-    "date": "2026-09-16",
-    "link": "https://www.checkiday.com/f9b915843a53941a4538aea008020f87/international-day-for-the-preservation-of-the-ozone-layer",
+    "date": "2026-09-17",
+    "link": "https://www.checkiday.com/6180837d9b87e6374061cec5e5778322/world-patient-safety-day",
     "source": "Checkiday"
   }
 }
