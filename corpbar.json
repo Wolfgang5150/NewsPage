@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-09-22T17:44:38.397999-04:00",
+  "as_of": "2026-09-23T13:38:29.610854-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "339.7500",
       "change_percent": "0.2272%",
-      "as_of": "2026-09-22T17:44:38.397999-04:00",
+      "as_of": "2026-09-23T13:38:29.610854-04:00",
       "latest_trading_day": "2026-09-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "9.6700",
       "change_percent": "-4.5410%",
-      "as_of": "2026-09-22T17:44:38.397999-04:00",
+      "as_of": "2026-09-23T13:38:29.610854-04:00",
       "latest_trading_day": "2026-09-22",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "254.9800",
       "change_percent": "-1.3426%",
-      "as_of": "2026-09-22T17:44:38.397999-04:00",
+      "as_of": "2026-09-23T13:38:29.610854-04:00",
       "latest_trading_day": "2026-09-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "351.1600",
       "change_percent": "-1.0733%",
-      "as_of": "2026-09-22T17:44:38.397999-04:00",
+      "as_of": "2026-09-23T13:38:29.610854-04:00",
       "latest_trading_day": "2026-09-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "736.5950",
       "change_percent": "-0.6273%",
-      "as_of": "2026-09-22T17:44:38.397999-04:00",
+      "as_of": "2026-09-23T13:38:29.610854-04:00",
       "latest_trading_day": "2026-09-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Day of Radiant Peace",
+    "name": "International Day of Sign Languages",
     "region": "US",
-    "date": "2026-09-22",
-    "link": "https://www.checkiday.com/6d0c7f86393ae21b5231f91263d8db48/international-day-of-radiant-peace",
+    "date": "2026-09-23",
+    "link": "https://www.checkiday.com/c838733079606f85a1457d1aea8d5b9e/international-day-of-sign-languages",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Day of Radiant Peace",
-    "region": "WORLD",
-    "date": "2026-09-22",
-    "link": "https://www.checkiday.com/6d0c7f86393ae21b5231f91263d8db48/international-day-of-radiant-peace",
-    "source": "Checkiday"
+    "name": "秋分の日",
+    "region": "Japan",
+    "date": "2026-09-23",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
