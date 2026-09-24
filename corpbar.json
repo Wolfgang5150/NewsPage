@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-09-23T17:57:10.523798-04:00",
+  "as_of": "2026-09-24T13:41:47.897866-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "337.0200",
       "change_percent": "-0.8035%",
-      "as_of": "2026-09-23T17:57:10.523798-04:00",
+      "as_of": "2026-09-24T13:41:47.897866-04:00",
       "latest_trading_day": "2026-09-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.1700",
-      "change_percent": "-5.1706%",
-      "as_of": "2026-09-23T17:57:10.523798-04:00",
+      "price": "9.1600",
+      "change_percent": "-5.2740%",
+      "as_of": "2026-09-24T13:41:47.897866-04:00",
       "latest_trading_day": "2026-09-23",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "249.2700",
       "change_percent": "-2.2394%",
-      "as_of": "2026-09-23T17:57:10.523798-04:00",
+      "as_of": "2026-09-24T13:41:47.897866-04:00",
       "latest_trading_day": "2026-09-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "337.8300",
       "change_percent": "-3.7960%",
-      "as_of": "2026-09-23T17:57:10.523798-04:00",
+      "as_of": "2026-09-24T13:41:47.897866-04:00",
       "latest_trading_day": "2026-09-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "744.1000",
       "change_percent": "1.0189%",
-      "as_of": "2026-09-23T17:57:10.523798-04:00",
+      "as_of": "2026-09-24T13:41:47.897866-04:00",
       "latest_trading_day": "2026-09-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Day of Sign Languages",
+    "name": "National Bluebird of Happiness Day",
     "region": "US",
-    "date": "2026-09-23",
-    "link": "https://www.checkiday.com/c838733079606f85a1457d1aea8d5b9e/international-day-of-sign-languages",
+    "date": "2026-09-24",
+    "link": "https://www.checkiday.com/60b69e3c72c83f38beb987e4cf068feb/national-bluebird-of-happiness-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "秋分の日",
-    "region": "Japan",
-    "date": "2026-09-23",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "World Maritime Day",
+    "region": "WORLD",
+    "date": "2026-09-24",
+    "link": "https://www.checkiday.com/3b6ab18e7fe361dc1a096154b0d46f10/world-maritime-day",
+    "source": "Checkiday"
   }
 }
