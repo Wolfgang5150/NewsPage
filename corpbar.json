@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-09-24T17:54:54.452121-04:00",
+  "as_of": "2026-09-25T13:43:14.029396-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "335.9200",
       "change_percent": "-0.3264%",
-      "as_of": "2026-09-24T17:54:54.452121-04:00",
+      "as_of": "2026-09-25T13:43:14.029396-04:00",
       "latest_trading_day": "2026-09-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.3000",
-      "change_percent": "1.5284%",
-      "as_of": "2026-09-24T17:54:54.452121-04:00",
+      "price": "9.2900",
+      "change_percent": "1.4192%",
+      "as_of": "2026-09-25T13:43:14.029396-04:00",
       "latest_trading_day": "2026-09-24",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "249.3800",
       "change_percent": "0.0441%",
-      "as_of": "2026-09-24T17:54:54.452121-04:00",
+      "as_of": "2026-09-25T13:43:14.029396-04:00",
       "latest_trading_day": "2026-09-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "342.3600",
       "change_percent": "1.3409%",
-      "as_of": "2026-09-24T17:54:54.452121-04:00",
+      "as_of": "2026-09-25T13:43:14.029396-04:00",
       "latest_trading_day": "2026-09-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "777.5900",
       "change_percent": "4.5007%",
-      "as_of": "2026-09-24T17:54:54.452121-04:00",
+      "as_of": "2026-09-25T13:43:14.029396-04:00",
       "latest_trading_day": "2026-09-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Bluebird of Happiness Day",
+    "name": "International Ataxia Awareness Day",
     "region": "US",
-    "date": "2026-09-24",
-    "link": "https://www.checkiday.com/60b69e3c72c83f38beb987e4cf068feb/national-bluebird-of-happiness-day",
+    "date": "2026-09-25",
+    "link": "https://www.checkiday.com/5374080086ea97cee1e50687c95f79c9/international-ataxia-awareness-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Maritime Day",
-    "region": "WORLD",
-    "date": "2026-09-24",
-    "link": "https://www.checkiday.com/3b6ab18e7fe361dc1a096154b0d46f10/world-maritime-day",
-    "source": "Checkiday"
+    "name": "Friday before AFL Grand Final",
+    "region": "Australia",
+    "date": "2026-09-25",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
