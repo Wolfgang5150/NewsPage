@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-09-25T17:55:42.616686-04:00",
+  "as_of": "2026-09-28T15:57:03.561554-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "341.0700",
       "change_percent": "1.5331%",
-      "as_of": "2026-09-25T17:55:42.616686-04:00",
+      "as_of": "2026-09-28T15:57:03.561554-04:00",
       "latest_trading_day": "2026-09-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.3850",
-      "change_percent": "1.0226%",
-      "as_of": "2026-09-25T17:55:42.616686-04:00",
+      "price": "9.3800",
+      "change_percent": "0.9688%",
+      "as_of": "2026-09-28T15:57:03.561554-04:00",
       "latest_trading_day": "2026-09-25",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "249.6700",
       "change_percent": "0.1163%",
-      "as_of": "2026-09-25T17:55:42.616686-04:00",
+      "as_of": "2026-09-28T15:57:03.561554-04:00",
       "latest_trading_day": "2026-09-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "343.9200",
       "change_percent": "0.4557%",
-      "as_of": "2026-09-25T17:55:42.616686-04:00",
+      "as_of": "2026-09-28T15:57:03.561554-04:00",
       "latest_trading_day": "2026-09-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,23 +41,23 @@
       "symbol": "META",
       "price": "751.6600",
       "change_percent": "-3.3347%",
-      "as_of": "2026-09-25T17:55:42.616686-04:00",
+      "as_of": "2026-09-28T15:57:03.561554-04:00",
       "latest_trading_day": "2026-09-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Ataxia Awareness Day",
+    "name": "International Right to Know Day",
     "region": "US",
-    "date": "2026-09-25",
-    "link": "https://www.checkiday.com/5374080086ea97cee1e50687c95f79c9/international-ataxia-awareness-day",
+    "date": "2026-09-28",
+    "link": "https://www.checkiday.com/6f14d6596304a84032a860420133ccbf/international-right-to-know-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Friday before AFL Grand Final",
+    "name": "King's Birthday",
     "region": "Australia",
-    "date": "2026-09-25",
+    "date": "2026-09-28",
     "link": "https://date.nager.at/",
     "source": "Nager.Date"
   }
