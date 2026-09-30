@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-09-29T18:47:34.097457-04:00",
+  "as_of": "2026-09-30T14:14:02.357305-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "329.4000",
       "change_percent": "-2.6596%",
-      "as_of": "2026-09-29T18:47:34.097457-04:00",
+      "as_of": "2026-09-30T14:14:02.357305-04:00",
       "latest_trading_day": "2026-09-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "9.0100",
       "change_percent": "-0.9890%",
-      "as_of": "2026-09-29T18:47:34.097457-04:00",
+      "as_of": "2026-09-30T14:14:02.357305-04:00",
       "latest_trading_day": "2026-09-29",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "246.6700",
       "change_percent": "0.2113%",
-      "as_of": "2026-09-29T18:47:34.097457-04:00",
+      "as_of": "2026-09-30T14:14:02.357305-04:00",
       "latest_trading_day": "2026-09-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "340.9200",
       "change_percent": "-0.5339%",
-      "as_of": "2026-09-29T18:47:34.097457-04:00",
+      "as_of": "2026-09-30T14:14:02.357305-04:00",
       "latest_trading_day": "2026-09-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "738.7900",
       "change_percent": "3.2378%",
-      "as_of": "2026-09-29T18:47:34.097457-04:00",
+      "as_of": "2026-09-30T14:14:02.357305-04:00",
       "latest_trading_day": "2026-09-29",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "Confucius Day",
+    "name": "International Blasphemy Rights Day",
     "region": "US",
-    "date": "2026-09-29",
-    "link": "https://www.checkiday.com/ef09f3121229d83fa4b55f92672db97c/confucius-day",
+    "date": "2026-09-30",
+    "link": "https://www.checkiday.com/9acb74c7fa208fed333a00d17166d914/international-blasphemy-rights-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Day of Awareness of Food Loss and Waste",
-    "region": "WORLD",
-    "date": "2026-09-29",
-    "link": "https://www.checkiday.com/5383db4437e684050e9e4c11f37fa6ca/international-day-of-awareness-of-food-loss-and-waste",
-    "source": "Checkiday"
+    "name": "National Day for Truth and Reconciliation",
+    "region": "Canada",
+    "date": "2026-09-30",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
