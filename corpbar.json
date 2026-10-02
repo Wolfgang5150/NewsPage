@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-10-01T18:58:00.689094-04:00",
+  "as_of": "2026-10-02T14:09:30.018733-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "330.3200",
       "change_percent": "-0.8108%",
-      "as_of": "2026-10-01T18:58:00.689094-04:00",
+      "as_of": "2026-10-02T14:09:30.018733-04:00",
       "latest_trading_day": "2026-10-01",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "9.1200",
       "change_percent": "2.7027%",
-      "as_of": "2026-10-01T18:58:00.689094-04:00",
+      "as_of": "2026-10-02T14:09:30.018733-04:00",
       "latest_trading_day": "2026-10-01",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "248.2300",
       "change_percent": "-0.3693%",
-      "as_of": "2026-10-01T18:58:00.689094-04:00",
+      "as_of": "2026-10-02T14:09:30.018733-04:00",
       "latest_trading_day": "2026-10-01",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "338.2400",
       "change_percent": "-1.6973%",
-      "as_of": "2026-10-01T18:58:00.689094-04:00",
+      "as_of": "2026-10-02T14:09:30.018733-04:00",
       "latest_trading_day": "2026-10-01",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "725.9300",
       "change_percent": "0.1034%",
-      "as_of": "2026-10-01T18:58:00.689094-04:00",
+      "as_of": "2026-10-02T14:09:30.018733-04:00",
       "latest_trading_day": "2026-10-01",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Coffee Day",
+    "name": "International Day of Non-Violence",
     "region": "US",
-    "date": "2026-10-01",
-    "link": "https://www.checkiday.com/2ad4ec18092b00d29992b9d6085adbf4/international-coffee-day",
+    "date": "2026-10-02",
+    "link": "https://www.checkiday.com/5901c81a957e560ccb10e09490c0d5b3/international-day-of-non-violence",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Coffee Day",
+    "name": "International Day of Non-Violence",
     "region": "WORLD",
-    "date": "2026-10-01",
-    "link": "https://www.checkiday.com/2ad4ec18092b00d29992b9d6085adbf4/international-coffee-day",
+    "date": "2026-10-02",
+    "link": "https://www.checkiday.com/5901c81a957e560ccb10e09490c0d5b3/international-day-of-non-violence",
     "source": "Checkiday"
   }
 }
