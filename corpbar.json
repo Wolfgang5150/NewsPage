@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-10-02T18:45:20.524496-04:00",
+  "as_of": "2026-10-05T21:37:35.354978-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "333.6900",
-      "change_percent": "1.0202%",
-      "as_of": "2026-10-02T18:45:20.524496-04:00",
-      "latest_trading_day": "2026-10-02",
+      "price": "332.8900",
+      "change_percent": "-0.2397%",
+      "as_of": "2026-10-05T21:37:35.354978-04:00",
+      "latest_trading_day": "2026-10-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.2200",
-      "change_percent": "1.0965%",
-      "as_of": "2026-10-02T18:45:20.524496-04:00",
-      "latest_trading_day": "2026-10-02",
+      "price": "9.2900",
+      "change_percent": "0.7592%",
+      "as_of": "2026-10-05T21:37:35.354978-04:00",
+      "latest_trading_day": "2026-10-05",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "251.5200",
-      "change_percent": "1.3254%",
-      "as_of": "2026-10-02T18:45:20.524496-04:00",
-      "latest_trading_day": "2026-10-02",
+      "price": "251.4000",
+      "change_percent": "-0.0477%",
+      "as_of": "2026-10-05T21:37:35.354978-04:00",
+      "latest_trading_day": "2026-10-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "343.5000",
-      "change_percent": "1.5551%",
-      "as_of": "2026-10-02T18:45:20.524496-04:00",
-      "latest_trading_day": "2026-10-02",
+      "price": "346.4700",
+      "change_percent": "0.8646%",
+      "as_of": "2026-10-05T21:37:35.354978-04:00",
+      "latest_trading_day": "2026-10-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "728.0800",
-      "change_percent": "0.2962%",
-      "as_of": "2026-10-02T18:45:20.524496-04:00",
-      "latest_trading_day": "2026-10-02",
+      "price": "741.9000",
+      "change_percent": "1.8981%",
+      "as_of": "2026-10-05T21:37:35.354978-04:00",
+      "latest_trading_day": "2026-10-05",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Day of Non-Violence",
+    "name": "National Apple Betty Day",
     "region": "US",
-    "date": "2026-10-02",
-    "link": "https://www.checkiday.com/5901c81a957e560ccb10e09490c0d5b3/international-day-of-non-violence",
+    "date": "2026-10-05",
+    "link": "https://www.checkiday.com/05f5e47c3e718a413fc458cb0de23e39/national-apple-betty-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Day of Non-Violence",
-    "region": "WORLD",
-    "date": "2026-10-02",
-    "link": "https://www.checkiday.com/5901c81a957e560ccb10e09490c0d5b3/international-day-of-non-violence",
-    "source": "Checkiday"
+    "name": "Labour Day",
+    "region": "Australia",
+    "date": "2026-10-05",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
