@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-10-06T18:51:52.954103-04:00",
+  "as_of": "2026-10-07T15:09:49.801442-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "333.6300",
       "change_percent": "0.2223%",
-      "as_of": "2026-10-06T18:51:52.954103-04:00",
+      "as_of": "2026-10-07T15:09:49.801442-04:00",
       "latest_trading_day": "2026-10-06",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "9.2900",
       "change_percent": "0.0000%",
-      "as_of": "2026-10-06T18:51:52.954103-04:00",
+      "as_of": "2026-10-07T15:09:49.801442-04:00",
       "latest_trading_day": "2026-10-06",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "256.2900",
       "change_percent": "1.9451%",
-      "as_of": "2026-10-06T18:51:52.954103-04:00",
+      "as_of": "2026-10-07T15:09:49.801442-04:00",
       "latest_trading_day": "2026-10-06",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "347.6800",
       "change_percent": "0.3492%",
-      "as_of": "2026-10-06T18:51:52.954103-04:00",
+      "as_of": "2026-10-07T15:09:49.801442-04:00",
       "latest_trading_day": "2026-10-06",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "738.8800",
       "change_percent": "-0.4071%",
-      "as_of": "2026-10-06T18:51:52.954103-04:00",
+      "as_of": "2026-10-07T15:09:49.801442-04:00",
       "latest_trading_day": "2026-10-06",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Badger Day",
+    "name": "International Walk to School Day",
     "region": "US",
-    "date": "2026-10-06",
-    "link": "https://www.checkiday.com/9704d85aeaa66e88dd4352768f4085f0/national-badger-day",
+    "date": "2026-10-07",
+    "link": "https://www.checkiday.com/7c40d9cc9950346f64bdde4719438637/international-walk-to-school-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Cerebral Palsy Day",
+    "name": "Balloons Around the World Day",
     "region": "WORLD",
-    "date": "2026-10-06",
-    "link": "https://www.checkiday.com/2e4c7b9382ae7385eb5340229631be90/world-cerebral-palsy-day",
+    "date": "2026-10-07",
+    "link": "https://www.checkiday.com/1fc88d41a74279b9b39bbb89997adc99/balloons-around-the-world-day",
     "source": "Checkiday"
   }
 }
