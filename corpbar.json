@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-10-07T20:39:29.196667-04:00",
+  "as_of": "2026-10-08T15:06:13.285612-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "336.6700",
       "change_percent": "0.9112%",
-      "as_of": "2026-10-07T20:39:29.196667-04:00",
+      "as_of": "2026-10-08T15:06:13.285612-04:00",
       "latest_trading_day": "2026-10-07",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,17 +14,17 @@
       "symbol": "COMP",
       "price": "9.1900",
       "change_percent": "-1.0764%",
-      "as_of": "2026-10-07T20:39:29.196667-04:00",
+      "as_of": "2026-10-08T15:06:13.285612-04:00",
       "latest_trading_day": "2026-10-07",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "N/A",
-      "change_percent": "",
-      "as_of": "2026-10-07T20:39:29.196667-04:00",
-      "note": "NO DATA",
+      "price": "259.9200",
+      "change_percent": "1.4164%",
+      "as_of": "2026-10-08T15:06:13.285612-04:00",
+      "latest_trading_day": "2026-10-07",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "350.5000",
       "change_percent": "0.8111%",
-      "as_of": "2026-10-07T20:39:29.196667-04:00",
+      "as_of": "2026-10-08T15:06:13.285612-04:00",
       "latest_trading_day": "2026-10-07",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "721.3100",
       "change_percent": "-2.3779%",
-      "as_of": "2026-10-07T20:39:29.196667-04:00",
+      "as_of": "2026-10-08T15:06:13.285612-04:00",
       "latest_trading_day": "2026-10-07",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Walk to School Day",
+    "name": "American Touch Tag Day",
     "region": "US",
-    "date": "2026-10-07",
-    "link": "https://www.checkiday.com/7c40d9cc9950346f64bdde4719438637/international-walk-to-school-day",
+    "date": "2026-10-08",
+    "link": "https://www.checkiday.com/1116f4488cf253c041c7129892e67fbb/american-touch-tag-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Balloons Around the World Day",
+    "name": "International Lesbian Day",
     "region": "WORLD",
-    "date": "2026-10-07",
-    "link": "https://www.checkiday.com/1fc88d41a74279b9b39bbb89997adc99/balloons-around-the-world-day",
+    "date": "2026-10-08",
+    "link": "https://www.checkiday.com/7bc3ed3e2f471e91bc22313d3a6e569d/international-lesbian-day",
     "source": "Checkiday"
   }
 }
