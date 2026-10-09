@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-10-08T20:55:11.827817-04:00",
+  "as_of": "2026-10-09T14:36:48.594665-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "340.4200",
       "change_percent": "1.1139%",
-      "as_of": "2026-10-08T20:55:11.827817-04:00",
+      "as_of": "2026-10-09T14:36:48.594665-04:00",
       "latest_trading_day": "2026-10-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "9.5200",
       "change_percent": "3.5909%",
-      "as_of": "2026-10-08T20:55:11.827817-04:00",
+      "as_of": "2026-10-09T14:36:48.594665-04:00",
       "latest_trading_day": "2026-10-08",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "254.0600",
       "change_percent": "-2.2545%",
-      "as_of": "2026-10-08T20:55:11.827817-04:00",
+      "as_of": "2026-10-09T14:36:48.594665-04:00",
       "latest_trading_day": "2026-10-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "348.2900",
       "change_percent": "-0.6305%",
-      "as_of": "2026-10-08T20:55:11.827817-04:00",
+      "as_of": "2026-10-09T14:36:48.594665-04:00",
       "latest_trading_day": "2026-10-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "720.8900",
       "change_percent": "-0.0582%",
-      "as_of": "2026-10-08T20:55:11.827817-04:00",
+      "as_of": "2026-10-09T14:36:48.594665-04:00",
       "latest_trading_day": "2026-10-08",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "American Touch Tag Day",
+    "name": "Curious Events Day",
     "region": "US",
-    "date": "2026-10-08",
-    "link": "https://www.checkiday.com/1116f4488cf253c041c7129892e67fbb/american-touch-tag-day",
+    "date": "2026-10-09",
+    "link": "https://www.checkiday.com/743dc2df38df3dc59cc6ea1db846feca/curious-events-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Lesbian Day",
+    "name": "International Beer and Pizza Day",
     "region": "WORLD",
-    "date": "2026-10-08",
-    "link": "https://www.checkiday.com/7bc3ed3e2f471e91bc22313d3a6e569d/international-lesbian-day",
+    "date": "2026-10-09",
+    "link": "https://www.checkiday.com/4b2d69b119a3f30ff78c9911864cf8fd/international-beer-and-pizza-day",
     "source": "Checkiday"
   }
 }
