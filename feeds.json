@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-10-09T20:53:14.846063Z",
+  "generated_at": "2026-10-10T00:49:20.398392Z",
   "categories": [
     {
       "name": "WORLD",
       "items": [
         {
-          "title": "US, China security experts propose nuclear-style safeguards for AI risks - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNd01DQXNsMmI1M3p2T1pRSjlGNEdjZHJHVGRPSE5lS2lNXzZYWi0wTmxCNUthU0ZmX1NQUklKeHZOWkZyZDVWMjNlTlBlOGl6NVFEclVyNFdJbmppMG13VkdWOXlfUXR3WnM1d3M0Y19xYWhuTTNxMGhIbGo2ek1OVU0xbXZuWnJOT29SazNfLXF4VF9IRC1ZVThUeXBWUTUyYzluVFBUa3NzQVhSMGExeEdxb1dKdw?oc=5",
-          "published_at": "2026-09-16T07:00:00Z"
-        },
-        {
           "title": "Statement on missing ICIJ journalist Micah Reddy - International Consortium of Investigative Journalists - ICIJ",
           "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNR2hEOUUxd2d6eEkycUx0b2pfT3h2Y3FQUmcyZW1CWW5QN3U5bjROMmk3S1JESS03WmlCUElGZC1hNzQ2OHdLRjlHVXc4VUdwRnZzeFo5LUR1M2lmdDIzV0FKWFRFR3FtQk44TmlMTm1KenR2bHlIeTdlOEpSRmlfUkgzUmM1SGhpdi1N?oc=5",
           "published_at": "2026-09-20T07:00:00Z"
-        },
-        {
-          "title": "Overview and key findings of the 2026 Digital News Report - reutersinstitute.politics.ox.ac.uk",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORDZEN09rZHF0VHg4S0xxNkxFaGs0MUdUSzlScXp5UTlTY0FHTGlYWloyWE94VGJFVnh6YU5RYWo1czRUV3J4Wk1wLWVaNW9HSUVCYVJDTUlIVlhEYjJKSnR4WDFfTlB0Y0hlc3lqQTMwVm9vYjEzalYya2cyT1BQNXVkWWpZWnZEb1VjX2lHVUhxYlE?oc=5",
-          "published_at": "2026-06-16T07:00:00Z"
         },
         {
           "title": "US Postal Service defends plan to require states to disclose mail voting lists - Reuters",
@@ -25,14 +15,19 @@
           "published_at": "2026-06-24T07:00:00Z"
         },
         {
-          "title": "President Tinubu’s economic reforms: Nigeria’s struggle to turn sacrifice into progress - Latest news from Azerbaijan",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPM1ZLZWZOUThoU3hJNk5iVzF3MlBlajN1WEhzZ1RYWU5tMDJobE1QYTQ5YzZ2ME5mSkJPOVYzekM0UVdOdFZPOElORENxWHVzT2ptc2t2YzhkQ2Q5Z3BnUEplaGdTVE1vNC1YRGRhODN6bmJrUjVlaDBhTGJkQmxsRXI4S0dxTkRRZzZZMEtlRUQxVjE1U2w2S25XZWV1bTRPQjFQT0VVZ2w?oc=5",
-          "published_at": "2026-08-31T07:00:00Z"
+          "title": "Overview and key findings of the 2026 Digital News Report - reutersinstitute.politics.ox.ac.uk",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORDZEN09rZHF0VHg4S0xxNkxFaGs0MUdUSzlScXp5UTlTY0FHTGlYWloyWE94VGJFVnh6YU5RYWo1czRUV3J4Wk1wLWVaNW9HSUVCYVJDTUlIVlhEYjJKSnR4WDFfTlB0Y0hlc3lqQTMwVm9vYjEzalYya2cyT1BQNXVkWWpZWnZEb1VjX2lHVUhxYlE?oc=5",
+          "published_at": "2026-06-16T07:00:00Z"
         },
         {
           "title": "Indonesia's Anak Krakatau eruption halts flights, schools, fishing - The Standard (HK)",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMG1WTjBPLWJmelk1ck9ZRXdtTnRfc1VXQ3lCYTVnR2NONFN1aFMyRWFkOENWVlhGRkw2QmdhM1M4LUstZ3dqV0c3Z3E3Vl9ocUdiZkROWWNqdTJOdGlzNHd6U01qN0h5VXVrdG5TNTBKbmFLejlDNVFsUnJqWnUwR0hFdzhBUFF0NnV4cGhiYVhiVDg3WVdsZFVhMHdhTTZnYVhqWkZMMGwwc3NOVko4Q0xKS3QyQQ?oc=5",
           "published_at": "2026-09-06T07:00:00Z"
+        },
+        {
+          "title": "President Tinubu’s economic reforms: Nigeria’s struggle to turn sacrifice into progress - Latest news from Azerbaijan",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPM1ZLZWZOUThoU3hJNk5iVzF3MlBlajN1WEhzZ1RYWU5tMDJobE1QYTQ5YzZ2ME5mSkJPOVYzekM0UVdOdFZPOElORENxWHVzT2ptc2t2YzhkQ2Q5Z3BnUEplaGdTVE1vNC1YRGRhODN6bmJrUjVlaDBhTGJkQmxsRXI4S0dxTkRRZzZZMEtlRUQxVjE1U2w2S25XZWV1bTRPQjFQT0VVZ2w?oc=5",
+          "published_at": "2026-08-31T07:00:00Z"
         },
         {
           "title": "Social Media Overtakes Traditional Media as Top News Source, Reuters Study Finds - NewsGram",
@@ -45,9 +40,9 @@
           "published_at": "2026-07-20T07:00:00Z"
         },
         {
-          "title": "Singapore minister resigns over 'interactions with a woman', local media reports - The Standard (HK)",
-          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSk8wemtPZjZCRTA2eDI1OV9tZ1JJaE5BYUJOVDFCMU9wTDZMajBvSW1Md1RrVlFhZXJUMGc0UFdJNVlaT0pKNzJ5YUlVc2k1SjVoNXZSSjZYTDhZbDBzVTR2blZuMDh1QTJUdno4WlJ2MS01b08tbF9ZUG9ETm9WeUo0WG9CYTcyUXpfNk1MUDAxUk85QzZEQk9pVlJOQVY4N0lnYS1rNE95NVpsbmVSTzZXc0k1NzNrNGprNEJYcHlFS2x4UHF1Ng?oc=5",
-          "published_at": "2026-07-20T07:00:00Z"
+          "title": "Somalia's South West state says it has severed ties with the federal government - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTkw1RjVNY1VwaVFxSnRRTTcxN2N0SHdyU3dzbF81VlZPank0Qi1ldVJvNXc1cTlCeU9HRUtwSjNqUnVYckljZkZIdHkxODNsTWhxSFcwR3E1OVNxbGlMTTlnUDkyeUNscVJpNjFGNlRlU0xBMTFCRGtXRVJfVEFVZVl4QklvVkVEZV9zSG0yMXZoNC1TbVljZWdrdUpZcHlELUhISXJ1WUFYa29GN1FuUGRVOTNOOVRETGt6Z3RON0o?oc=5",
+          "published_at": "2026-03-17T07:00:00Z"
         },
         {
           "title": "Does China Prefer Harris or Trump? - Foreign Affairs",
@@ -65,9 +60,9 @@
           "published_at": "2025-11-05T08:00:00Z"
         },
         {
-          "title": "Somalia's South West state says it has severed ties with the federal government - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTkw1RjVNY1VwaVFxSnRRTTcxN2N0SHdyU3dzbF81VlZPank0Qi1ldVJvNXc1cTlCeU9HRUtwSjNqUnVYckljZkZIdHkxODNsTWhxSFcwR3E1OVNxbGlMTTlnUDkyeUNscVJpNjFGNlRlU0xBMTFCRGtXRVJfVEFVZVl4QklvVkVEZV9zSG0yMXZoNC1TbVljZWdrdUpZcHlELUhISXJ1WUFYa29GN1FuUGRVOTNOOVRETGt6Z3RON0o?oc=5",
-          "published_at": "2026-03-17T07:00:00Z"
+          "title": "Trump walks back on 83,000 Veteran Affairs job cuts after public outcry, exodus - Firstpost",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbTQ0bEVkN2NpTTNaZ3lFaVJXV3FfV0d4RWRjWGs2OVVDSzFPRlZGLTBaTHF0R25XUGttc2Z0b09IdnRsUnBCMUJUSmZ0dGxnSUI0WG5rWVBUbFVoOXRmWkFvbVp6eHQ0Q3FPWWdRZkhaNm5TQUtpVXBjeGRhT2ttWXQ4T2pyRG1OOHlUc1lOcVFMaExwREpWTUdJbDRQeGVjbUdmRzctNnEzSUFLdW05LTZ6Z2R2cWpONnlHQkc0UlnSAcYBQVVfeXFMUGYzSVpuVHpvaENZM3I5aHBobWRpUkdCeVpJbmRsVUlieTY2T19WUzZzbkVnbUFhMTFRVlczMkg2Nm5KdnU1dWlMMzlkTXlsdlZMMnQxNHhoYjloZFI0SXRfcGthcmdRQkZ0R3J1ckd1Q2Yzc2tieGJsTERNYlpjWXgwOGJxWUVwLWx2NUkzeWllTTJkZjBvdXF2Q2hqcnlZS1pIY2RMZENpMUVOWVVreV8zSHBwVTdkNVdUTUpnVFZlLUVUOG1B?oc=5",
+          "published_at": "2025-07-08T07:00:00Z"
         },
         {
           "title": "Overview and key findings of the 2025 Digital News Report - reutersinstitute.politics.ox.ac.uk",
@@ -75,9 +70,14 @@
           "published_at": "2025-06-17T07:00:00Z"
         },
         {
-          "title": "Xi Jinping’s Costly Inheritance: How His Father’s Travails Defined China’s Leader—and the Country He Rules - Foreign Affairs",
-          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9sS2ZKWDZRMXBoMUh5aHB3UDlJa0xwQ2dRWEFwN0pPeC11cURoSFEzeG53cmlDUENDSk5YMmNfWWlWbERTVml4MmR1TmJyZktsbF9OSGt2VnlXc0IycWFMQW9IY29JVlR1VHVteFhvRHF0ZnE5Nnc?oc=5",
-          "published_at": "2025-06-23T07:00:00Z"
+          "title": "Influencers overtaking journalists as a news source: Reuters Report - Forbes India",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNmNpMXJPak9pTVp2YU5JVS1OOFlpeUlhWGFZSHNQczlJM1dXUXVQZkw5UldUTEZ6Ym4zZWFqbDJHMS1PaW55M2FUY05vOG1OWWJubnNBNzkwdm4td3ZHZjhpTFZKbmhUM1gtRllKN1ZzNE5UaU9nV3V5V01GMzF1cjJxMHhCRGtMR3BuWXFvSGZDZkxaQjRTMElfQVJoSFZaa1BHVXItNFRjNG5TeDFhWXFnTk45eU3SAbwBQVVfeXFMT3BWc1RGOXpYVmtaMXRETlFaLWZtUjZYbU1mdmhSa2RzaTRfdklrLW1HNlN1NUVwZGxGQXdVQWRtNXlteHlxcW8wU1FYN1BlR3VqeVVPNnQ4ZXNfdFhhME9GQWR0Z3cwaDFBSnE5cVRwNlg2cEliazZab19BWjAwaDFfdEtJeExlZ1Q4ZWx2TFVxclVaM2Z1T3dwMlJ0QkRmUHdraU9qcGhqOWhEVDd6THNMVHh5WXFkY0ZUWTE?oc=5",
+          "published_at": "2023-06-15T07:00:00Z"
+        },
+        {
+          "title": "Mamdani’s New York victory exposes fault lines in Jewish Democratic politics - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYjdnOWluS19BLUMwRFBNdERZVTJ0MjllaTF3Yk5SY29FSlFBa3VhX0MyR2l6em9xR3lCNENwOGlKVFdEMUJQMWZxU0FIRFBGQVh4LXdzZWxtOXdtMFpfdzljNkdreWRFVHMzQ3BXTjV1MV9jbm5KTUgxUGhBRmluYVE1MTM3NWwxeHp4VVdPWWNCSmtHdFRiRjhFRll5WTdCNDFFV2I3SUJzZTFmVy0zcGRUR2NTWDBY?oc=5",
+          "published_at": "2025-11-09T08:00:00Z"
         }
       ]
     },
@@ -85,19 +85,14 @@
       "name": "NATIONAL",
       "items": [
         {
-          "title": "NEWSLETTER: Trump’s diplomatic blitz may offer little election relief - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYnY0WXZtT3E4cF80TVZ2TEtGR1JYazdpMjUxSkc2NFhwcHU2MDIzWG1pU2JuWi01MlhNYmZBNDQ4aThmZE42aUtsQ1FFNEh4UmVFSE1MT1dGaVpGc3NwM0FVdjd4UVRIb25hRDk3TjVHa0hiSUtvbHFnQ1FtOGNVOFhtMWg0T2hrbFUxR1ZLRktoVWliMEVBbTkwQko0cGlUVW00?oc=5",
-          "published_at": "2026-09-25T07:00:00Z"
+          "title": "COMMENTARY: Trump may not see another rate cut as president - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRmhpZjd0OXp0VTFXb2tTdlVJMnRoeTNEb2Nfa1FqQXB0ckR1X0c1el9wUFlrdjZwRWc3ekwtdFBVQVZXR2hsWkhQemZpM1pRNUdKOHJGNXV6YnVXR0Z3d2E5eEhvR0RhYXI4clZxeWdPbDd6cm5SVjMzYVFIcDJ4aU91MG1SQjRzRjNFT0lrX2o2TWFpd3RQVzA2YnZodm4yeWV3c1BTaWQ1Rk5pRXk0Q1FkNXpoNUhrOXM2RV9wNA?oc=5",
+          "published_at": "2026-09-17T07:00:00Z"
         },
         {
           "title": "U.S. Taiwan policy unchanged after Trump-Xi talks: Envoy - Focus Taiwan - CNA English News",
           "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5GUExDcGhBaVZ3UngwelJNNzFxRnM0YWdEb0pPWU5aVWk2NWpFWFIxT2JiRi1kT0RRMFA4ZVZSYXRhWVlZSUNsMTljaXdHNDljalZHajByQQ?oc=5",
           "published_at": "2026-09-26T07:00:00Z"
-        },
-        {
-          "title": "COMMENTARY: Trump may not see another rate cut as president - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRmhpZjd0OXp0VTFXb2tTdlVJMnRoeTNEb2Nfa1FqQXB0ckR1X0c1el9wUFlrdjZwRWc3ekwtdFBVQVZXR2hsWkhQemZpM1pRNUdKOHJGNXV6YnVXR0Z3d2E5eEhvR0RhYXI4clZxeWdPbDd6cm5SVjMzYVFIcDJ4aU91MG1SQjRzRjNFT0lrX2o2TWFpd3RQVzA2YnZodm4yeWV3c1BTaWQ1Rk5pRXk0Q1FkNXpoNUhrOXM2RV9wNA?oc=5",
-          "published_at": "2026-09-17T07:00:00Z"
         },
         {
           "title": "Judge Lifts Trump's White House Ban on CNN, MS Now and Politico - Deccan Chronicle",
@@ -120,19 +115,24 @@
           "published_at": "2026-07-16T07:00:00Z"
         },
         {
-          "title": "Trump says Xi will visit US on Sept 24, World News - AsiaOne",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdXFTaS1xYmVISzZCRzVMZFBOd2o5dmpkalVjS2hJdVg4Qk5QSjhPaWs5cnA4Q3gtWVprZ2pkWUxfT2ZoZjBmQ2V5ZkxOZmxoMzhWS0JMUnNOd3o2bHFKczNQakN3MGw3bTVUTEFoYTlRYk83RnFvRzBZRXZZb010a0N5OFR5bjQ?oc=5",
-          "published_at": "2026-07-23T07:00:00Z"
-        },
-        {
           "title": "Trump turns economic speech into attack on Democrats after Michigan results - Reuters",
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQM2twUTlsWms4ZlBCb19sRFp4ZFJ1SGRHY25RMFpUcHA0LXFLeHpoWjlzVzIxWjdmcG5mamNQMExmTXhjaTlQVWo3TWx0Ti1FcG9FWS1MbU84RThyT0ZPVjRMQTQ2UGZlMkJnNDZ6aXoxY1VPU3JRbVlYQ0hWUkdxdWx6SzgzMEtXYXdwVmtqRHVELUY5WVhsUUkwcWdjSTc0MVhNSklhbFhnYU9aVFdRYQ?oc=5",
           "published_at": "2026-08-06T07:00:00Z"
         },
         {
+          "title": "Trump says Xi will visit US on Sept 24, World News - AsiaOne",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdXFTaS1xYmVISzZCRzVMZFBOd2o5dmpkalVjS2hJdVg4Qk5QSjhPaWs5cnA4Q3gtWVprZ2pkWUxfT2ZoZjBmQ2V5ZkxOZmxoMzhWS0JMUnNOd3o2bHFKczNQakN3MGw3bTVUTEFoYTlRYk83RnFvRzBZRXZZb010a0N5OFR5bjQ?oc=5",
+          "published_at": "2026-07-23T07:00:00Z"
+        },
+        {
           "title": "America the Fearful: Visions of Decline Are a Self-Fulfilling Prophecy - The Washington Institute",
           "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQnNvU1hGNm5IX3Z1bjE5UUpZWkczOXk4N3BhOHBYRXB3R01mUVpoUVF3N3ZUUG1RSHkxeG1rSnVfS3pCVlZYelVLZzZRUFpMNHZtVXlrQW14anR6MDdvTUxhY0p5ang0eWtSVkVtUEM4aWxfVnlTTEU5b3pOc1dac0xxdHJwTmt1RFphZ2xuWHR3dlM2SXVxa2l6akt6VWhwWlZzaUpQZ240eXlvdGxvWFd3?oc=5",
           "published_at": "2026-02-11T08:00:00Z"
+        },
+        {
+          "title": "US Postal Service defends plan to require states to disclose mail voting lists - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMUFHc0M3cUtSbDJPdzNEQTFhR01DR3J5Z1A1MDNoUV9iUFBROHl2TmtrMXgtNDA0X0hIcGJ4NXAwckx1amhJSlNsQVVUelFVNmsyUUJDMEZHNnNKdEpvZlJKTG5OQXV3cTcycUtRN2g0Y3lNTHdvcEZhd1lDUnhUcFd1a1pRTllpODBXcFIzMnJ2ZUdRVkhmcVE0dG5kZ3lYNzlIejFNNE5TWlNzN2N3bGtNZW4?oc=5",
+          "published_at": "2026-06-24T07:00:00Z"
         },
         {
           "title": "Trump invites Xi to White House on September 24, World News - AsiaOne",
@@ -150,14 +150,14 @@
           "published_at": "2026-01-05T08:00:00Z"
         },
         {
-          "title": "US Postal Service defends plan to require states to disclose mail voting lists - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMUFHc0M3cUtSbDJPdzNEQTFhR01DR3J5Z1A1MDNoUV9iUFBROHl2TmtrMXgtNDA0X0hIcGJ4NXAwckx1amhJSlNsQVVUelFVNmsyUUJDMEZHNnNKdEpvZlJKTG5OQXV3cTcycUtRN2g0Y3lNTHdvcEZhd1lDUnhUcFd1a1pRTllpODBXcFIzMnJ2ZUdRVkhmcVE0dG5kZ3lYNzlIejFNNE5TWlNzN2N3bGtNZW4?oc=5",
-          "published_at": "2026-06-24T07:00:00Z"
-        },
-        {
           "title": "Assessing Israel-U.S. Alignment on the Gaza Framework - The Washington Institute",
           "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOT01BeTJXd1p2QkF0WUI0Snkyektvd19TRGRKNWg1Mng4V3JqUTltT01CTWQyU01DRWpxQkFuUUtmY29PdGNnVy05NzdsNXNTbjVRQXFHclItWmltb2p5ZXFtc2xtTDNSb2tCaVR6ZTR4VDlvOXphNjBTWG1JMjg0ZXU1dmxiTU51V2J5NUthSTlDNVNfTTB5MXdfcHA?oc=5",
           "published_at": "2025-09-29T07:00:00Z"
+        },
+        {
+          "title": "Trump, Xi likely to discuss Taiwan next week, US says, World News - AsiaOne",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOb29tOTFnTkt5d184S1kzUl90TFdqTFY3bk9yaXlKdklSZU5LZTZSTlh6cTVRQ3RONDhBU0JpZEF3Nkl6SVZ4enl0dU8xX0tUODZuelFJTEZfX3FRbGhyMEg4ZFBGVFFBdF9GZHM3cElBQnNKMGs4N2JGMjRqbDQyMGhXMzc?oc=5",
+          "published_at": "2026-05-05T07:00:00Z"
         }
       ]
     },
@@ -190,6 +190,21 @@
           "published_at": "2026-06-17T07:00:00Z"
         },
         {
+          "title": "Bond selloff pressures stocks as oil crosses $91 a barrel - Bizcommunity",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSDFJV3RLbGl4NWxZY3kxVEs4V0Uza3ZVcnRkRFJYTUVVanNtTDBsblh3U3AtTmtfV05wOHZTMm5meTFYcTlFOXJpUllmaVdtcENFMGZmOTFseUVqTEY5S3BQbFgzZ0lKZVNwaV9jMWVxcHBfTG1PSnBSUGhxRXdPbmNmVFhzcUdHM3RqMG5fbVpLLS1RNHdpUl8ySEluTmtsakYw?oc=5",
+          "published_at": "2026-09-01T06:30:44Z"
+        },
+        {
+          "title": "Fed's Goolsbee says strong demand may be adding to US inflation - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZ0hYN2ZsV3h2enhYZkdSaVlTUFRLQnFaNnRmYVJ6LTZxdGN1SGowVDdHUUNRR3pCdXExRG9MdGFRN0dlWEdnWTVfd0NaWnRDRFo5T0pZSnZmRnJWdWxqdEljUVV3LUItRjdjbF9uUzBucjNUeWNBdlZXMDdWbE42elpySFJ6eURzTm02S0xqQWQ3bVFrVU4xLUp4MlpicnN6c19Qc1JTQzVUc1ZBVkVYV2wwS3BwRHNyZXZsZw?oc=5",
+          "published_at": "2026-09-21T07:00:00Z"
+        },
+        {
+          "title": "CNA is Singapore's most trusted, widely used online news source: Reuters Institute report - CNA",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNc0NEQml4VGQ5SmZyMjhuQXRITmd2Y0lRRklDVGlUc3F1WGliUzU1OFlOUmdCbU03Nm04Z3phdmIteGV4bnRwYUpSanZ1WHktMUZHTjlfTG5lRDYtbHM5bm1YNWk0azZ0b01GbVZRTWlaUXBJM09WaE1ORVpncENwamxwZ214THh5V2FGMkoydjFiOUYxSGF0UmVlc2tPSk1JelpOYkVtQU9LQURpaGpucDBoR1o5Smt0MXZJZUZLaXdZekFjTURFYmRRaFI2Z0ZR?oc=5",
+          "published_at": "2026-06-16T07:00:00Z"
+        },
+        {
           "title": "Saudi Arabia resumes Yanbu oil loading after pipeline restart - Reuters",
           "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNE80QTVVd2tvbHZWR1VLTzh5enAxOUZGMUVGNnQxcXhHeVJiYzU2S2NaZWVReFdmaF83cjJ1dGFVRGREalh4aWFtaWxuR1hLUFdtSTRmb0dsM0ZDQkVOX1RxdG1FNDItMlN0Y0lPN1JlSTAxdXRncndISmxYc3hnaWZKekpVVDZ5RlJOLTNQS3RJSXFhY29RV2psazdPOTlpajFJVVVUc09hZw?oc=5",
           "published_at": "2026-09-29T07:00:00Z"
@@ -198,11 +213,6 @@
           "title": "Reserve Bank surprises with rate hold at 7% - Bizcommunity",
           "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWmdfa0NQd2pKU0JybEE1OFpoNjhVcFM0dGxyZmhKZkJmb0tSdVgxazNtMlM2d2w0Wm1yQ0FLWXh3UEpvelRaci1ZcFBiOXhkMWhub3BUem9qbEpHM1hLSjdHdUs3cjB6ckxiOFdteENsVHdJM3JuR25URHdyTlZOWndtejU3VkZMTlhRNDR4UnNNVFE?oc=5",
           "published_at": "2026-07-23T17:21:31Z"
-        },
-        {
-          "title": "CNA is Singapore's most trusted, widely used online news source: Reuters Institute report - CNA",
-          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNc0NEQml4VGQ5SmZyMjhuQXRITmd2Y0lRRklDVGlUc3F1WGliUzU1OFlOUmdCbU03Nm04Z3phdmIteGV4bnRwYUpSanZ1WHktMUZHTjlfTG5lRDYtbHM5bm1YNWk0azZ0b01GbVZRTWlaUXBJM09WaE1ORVpncENwamxwZ214THh5V2FGMkoydjFiOUYxSGF0UmVlc2tPSk1JelpOYkVtQU9LQURpaGpucDBoR1o5Smt0MXZJZUZLaXdZekFjTURFYmRRaFI2Z0ZR?oc=5",
-          "published_at": "2026-06-16T07:00:00Z"
         },
         {
           "title": "Emirates NBD Bank to acquire retail banking business of HSBC Egypt - Bizcommunity",
@@ -228,16 +238,6 @@
           "title": "Rand steadies as South Africa awaits inflation data - Bizcommunity",
           "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdkdldDJSbnhRTUdnWGkzMTkzWTZhcEppNy1KRlZhbUt2djVZRE5CLTFsUGNmaTBpOUxlc1NEREpjSkhOODhRMk1IRnNfUlcwLWxvQWFWNzJBUUNZN08xS2NiN2lrOTd0cGhYbV9JcGliYVkzOTZWZmhnU3VJdW1rbzdLczdLdU5QRHJLMldYMklEWjRuYjlHVUFtRHA?oc=5",
           "published_at": "2026-08-19T08:28:37Z"
-        },
-        {
-          "title": "US service sector fuels acceleration in business activity, S&P Global says - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRVBzVy1yLUVWTXVyYzJzOW9wZHFDZGZHU0RyNzY2Mk5UZ0FKMUR0WEoyNGM1YUlSQmdOUnZRSTJ5UUJFSkNtcHhiZmdQd3dOM0NpbUFndjhOenRzZTRRamtVQUEtQVVvbmhDZWJOV1JRcklpQ2tfX3FqdHRhRTlpdXpQM05KS1Y4ZHUyeGNuUy1GbE9GWEFQSld3eXJ0Wk5xeklPRHhJS05tVXA1Vjh2YVNVcDU?oc=5",
-          "published_at": "2026-08-21T07:00:00Z"
-        },
-        {
-          "title": "Standard Chartered bank says reforms win back investors to Africa - Bizcommunity",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMUUtM0FKRXJuYzF0MkhrZkZGQ0J6OUZWWnoxbTZLTmJEYzJkTzF5Ui1sLWdVb3AwZ29malVGemc1UGFqTFZ4SVdQWkpDc1V3WUowSF9pZnhXY2FWUGZqRDdmbkE4a2pLbEZRY2FsaTVRTDkxeFg2cTQzTUx6d3VYUW80aDlMRmFhQ1dycXlkQWY3SkZYSXN4Vks5Skt5NnJka1lxdzVXOXZ5cWVLYjVR?oc=5",
-          "published_at": "2026-06-11T07:28:04Z"
         }
       ]
     },
@@ -245,14 +245,14 @@
       "name": "TECHNOLOGY",
       "items": [
         {
+          "title": "Artificial Intelligence - ABC News - Breaking News, Latest News and Videos",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBHQWNlSHQzMUlJUTg1elY2MnlhM0JMRDkyUlMtYUdwNDFYYmF2cktZZzg2X3pDMVluRVhBS01LY0VnRVI0bnk2eElyWkczd0dLdktiOFMybWl5STktVHc?oc=5",
+          "published_at": "2026-10-09T11:06:05Z"
+        },
+        {
           "title": "Cybersecurity, AI, and the Future of Technology: A Q&A with Professor Jose Martinez - Felician University",
           "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE40UkFqNHJDdHNVNDRmdC1YT2pwMHJ5cHNzeVBNUGhXSmJBWi0tTTh2cWNLNF9oWVEwcjFHVkdndkg4OGRUNzJ5NFBlWExJZnIyanppd2hBOElFNXdxRGZJZmRjQ2xQNWNFSWc?oc=5",
           "published_at": "2026-10-09T20:18:33Z"
-        },
-        {
-          "title": "Cyber Leaders Exchange 2026: Panel says future cyber workforce hinges on continuous training, talent pipelines - Federal News Network",
-          "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOQnJySVF4RFo1QTFhWnRIdE5mZ0h5MFRWLXFINE9MaUd4Z09uVU5YZmJ2WWNKM2lJOUVkN3VPT0JEbWhRUFBNazlsUUxWUE1Scml5RnNsMzUxTWVMYzZDWDdwVi12TkJud2xXeVROZi0xbEVhY3Y1ZlY0SlJNU21NTkM3Z01GSUdhaFNFai1IdGtNSUhoU05faVNRQV9NZkVOMEJVbWtnU3FNM056S1h1aVllcE5JYmFlTWJfdDdIXy1lbGE3VDROZFNZMkRSUURsSGhPaVNob3gtZVFscnRacGZCR0Nab3pyNGhORXJXdGFNQm9u?oc=5",
-          "published_at": "2026-10-09T18:47:13Z"
         },
         {
           "title": "Georgia Tech Announces New Online Master’s Degree in Artificial Intelligence - Georgia Tech News Center",
@@ -260,9 +260,19 @@
           "published_at": "2026-10-06T19:32:43Z"
         },
         {
+          "title": "Cyber Leaders Exchange 2026: Panel says future cyber workforce hinges on continuous training, talent pipelines - Federal News Network",
+          "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOQnJySVF4RFo1QTFhWnRIdE5mZ0h5MFRWLXFINE9MaUd4Z09uVU5YZmJ2WWNKM2lJOUVkN3VPT0JEbWhRUFBNazlsUUxWUE1Scml5RnNsMzUxTWVMYzZDWDdwVi12TkJud2xXeVROZi0xbEVhY3Y1ZlY0SlJNU21NTkM3Z01GSUdhaFNFai1IdGtNSUhoU05faVNRQV9NZkVOMEJVbWtnU3FNM056S1h1aVllcE5JYmFlTWJfdDdIXy1lbGE3VDROZFNZMkRSUURsSGhPaVNob3gtZVFscnRacGZCR0Nab3pyNGhORXJXdGFNQm9u?oc=5",
+          "published_at": "2026-10-09T19:02:30Z"
+        },
+        {
           "title": "“Consensus Truth” in the Age of AI - City Journal",
           "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUTgzNUpOOG00UzJlNzlCOXRUbkkyNkt0TUc2QnNoMVZlWHJpMVJhdy1oSnhreGFJVDRpZjFaT1dmNmFPd0E1RVl1alZRc3VzandUUHJZV1pMN2VJNk00aTRGZ19vVWx3aFlKanpfTHkyd2lCdHdURVNvQTdPNl83M2V5ZVlHcWd3eVV4Yg?oc=5",
           "published_at": "2026-10-09T15:07:39Z"
+        },
+        {
+          "title": "Are Americans Who Use the Term ‘Artificial Intelligence’ the Enemy? - The Times of Israel",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWmE4aU8yLUt2MGVCUEZoWVFwdkxNOFp3TzhobVl0ZGlXbGI1by1MN0k3UVZwRUlEMTlrWGlnV2N2Szd6VlB2dW5Xck1GQ2ktUTlvZzhLeTZsb3dIdVl4SFVjYTlpQ2JyeFpqQktHcERMM25qaVpNQjlxU0JLQnozSWJNRUxVQjRyeFloR0FIMjI4ZTZCYmZtSi1XZ2Y2QQ?oc=5",
+          "published_at": "2026-10-09T22:32:00Z"
         },
         {
           "title": "Cobb County Honored for Cybersecurity Modernization at 2026 Technology Innovation Showcase - Cobb County (.gov)",
@@ -270,19 +280,29 @@
           "published_at": "2026-10-09T07:20:30Z"
         },
         {
+          "title": "Cybersecurity Fair to Focus on Protecting Personal Information, Data in Age of AI - Cal Poly Pomona",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPN1lqRUxQUjZxWlRoeU5QdkJyRjI1QlAwSnVfTlM4V1c4YUhBUXNLTEs0ZDIyT2xkSWhxd0NaLTBoUmJfaXZJUkg3dHhRdDNDbG5EOVFWN3hQMktaZHd1MVpPS0trVmVNZVpDTm84ellQQ1Fpc1QzTVQ5eTZlcFJlaXJXU3JnT3hZM3h4SDhaVUkzX0cxeFQ2V0J1RWhneXdPYVpHNnVDcTJrXzFFLW11Ml9GR0Nod2JjYnA3NUstNmN0eVUwSHVLRF9CRzJDUQ?oc=5",
+          "published_at": "2026-10-07T07:00:00Z"
+        },
+        {
+          "title": "Here are 10 terms you need to know to understand artificial intelligence - New York Post",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUWd4c1dYOURVTjB0aFNpTGVyek9GNVFuVlc5S1R5aHBUMENkRHIwU0t2aFI5eUtycnRydDU1ZjBOSVFtYzVrUE5yZmNtZks5ZGFfVl9vc1hVaEpnWllWc0I1NGVvTWFjTENwdGxTQTZFSTdXRktKTjJFTGhMN0hBWVoydlhZWUE3UWcxUnNNMzl1ajNMS0JCdm5KLUdGaGhvQUM1YVU5cUNGV19PaFFMVXJn?oc=5",
+          "published_at": "2026-10-09T20:32:00Z"
+        },
+        {
+          "title": "SecureLayer7 helps businesses find cybersecurity vulnerabilities before attackers do - Community Impact Newspaper",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYnBIbjk3ZHJPUV9EZ1FpNjBERUFza1QxNGhSRTBjaWZ2QS1XeHYtV0RvdjdqY0JiSElaM0xuZVJnM2ZSajVtTkp3VTFZYXlqdkQzalhKTlNmRGRndGFXNDVtbExpQ3RUT3FjWHlMMEtjR2E1QTRock9JVVp3NVNaaThzU3VaLVQ5WUxqS0VuSkJnT2FDblkxRnE1UWE0TUhDOWI5YjBQRVVjUHZYcnlJWUt6dXJVeWt2aGdSUzZlNUs?oc=5",
+          "published_at": "2026-10-09T21:44:38Z"
+        },
+        {
+          "title": "Palm Desert Considers Citywide Policy for Artificial Intelligence Use at City Hall - NBC Palm Springs",
+          "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOLW8ta2RaU2JMV2N3U2FyQURDeW1IYVFsSko3NElvM2Z0Z2VnVWg3aEtNWmRxbE5Wak1PTnJreF9QU1RzVEN4T3hnZ3NuTFl0QjZSWjhLSV9YYkUtYjdtYWx5MVVsZWZRQUZMN0JzMFBsNzBIeTlaeEE5RE9BMzB0RG90M0dTVUsycVVXenIxdDEwZ1RMUnowTTA4eFNrY0VwOTVsMmFoSXJuRW9qdzZIcTlmci1wZzhLZ3R2NFRTZjF6ZUVBQlhZMkdSc29yWVljSk9CRXFhc0xCaXZ4OEwyWXVSMGI?oc=5",
+          "published_at": "2026-10-09T17:35:00Z"
+        },
+        {
           "title": "Video: Opinion | Intelligence Isn’t Power - The New York Times",
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUlRJanlaZ3A0NzhVeTlqd3ZFM255NlNGbmI2Nk12ZGpHOTJHbFZUdVo1OGtIRUx4M1N1NGJMYWZYTVNvaS1HYjJVQ3VfbGJrajdFQVdhbHl2QXJjYkgwMEtETVFOLW53ZXN2MUdWRU53WlBjdmR3V3FTR1p5WkNBdUVMak1mcUcwcXpuelcxaTk1T1RCM0VBeFN1WGxzUQ?oc=5",
           "published_at": "2026-10-09T09:01:36Z"
-        },
-        {
-          "title": "Technology showcase helps local businesses protect data, boost online visibility - WTOV",
-          "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQR2RXNWp2ZjNVS3ZsQVBMZUFDYkdxcXFMVUtGTjNzc1NjUGlyaTZwdGdXUVdvZUp6VE9WVjd3cTc4UEpQbHY4Rnh6QWVTczFIU0UxVjQtTlNicHZ1Nk9vU3FBVlpJb0d2SHk3aVdEajN1dzE2b3dkU1RwS1BtZnFZZ1RhdkpkU2JnSEgyWG9UUE93YkRIUUZWX19NeVBNNkR1SVlvNXV4a0tQdUx6eC13M1RaQ0NzekpUdnRXb2NRU3lsZFJ3Nmd0c3o0NDZfeXlUaXlPY0lNdXFGU0c5S0JINW8xZ0ZoYVpkcExCVmJLZzl5dlJjQ2hxRk56OWlXLXVtVzVHSWIwa09KeWlpeExkbjBEU0pERTFCM2lZNUh0TQ?oc=5",
-          "published_at": "2026-10-09T03:18:04Z"
-        },
-        {
-          "title": "Author or artificial intelligence? Literature in crisis - DW.com",
-          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQkdqcDg5b1o3ZEVsRTFnWXFZM3JXanliOHhWR1BmbzgzUmRlS2MtUlpkaU9UdjhIazBEUVp4bTRxaE1XUW4yVVRVeUxyLWRYWWVFLU95Z3J5cXYyckRBakY0WDlHb082TjVNZDBkcE9RYkRrQ2NpZjZ4S0JiR05td2J4a2Y0aURKdm5HOWhVc0TSAZABQVVfeXFMT1Nwbnk4TS1EWWowZTFUdy04Yi16M1lDN1ZLT3dGRlJoazBIUldaaW10aFlRZmNCOVB6bGpqUWFfNTFqMXlsaVBvSXlZUFM1U2N4dWFKQXhyeTBVWWMtaUZyOEFKSGlweWhwYjVReGZ4UkpKT2RQblFtcnBNS1dBb0o5VzVULVpxQ1hvbVc1U19Q?oc=5",
-          "published_at": "2026-10-09T15:09:25Z"
         },
         {
           "title": "AI Is Not ‘Super Intelligence.’ Why No One Should Use Trump’s Term - CNET",
@@ -290,34 +310,14 @@
           "published_at": "2026-10-09T11:00:03Z"
         },
         {
-          "title": "Cybersecurity Fair to Focus on Protecting Personal Information, Data in Age of AI - Cal Poly Pomona",
-          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPN1lqRUxQUjZxWlRoeU5QdkJyRjI1QlAwSnVfTlM4V1c4YUhBUXNLTEs0ZDIyT2xkSWhxd0NaLTBoUmJfaXZJUkg3dHhRdDNDbG5EOVFWN3hQMktaZHd1MVpPS0trVmVNZVpDTm84ellQQ1Fpc1QzTVQ5eTZlcFJlaXJXU3JnT3hZM3h4SDhaVUkzX0cxeFQ2V0J1RWhneXdPYVpHNnVDcTJrXzFFLW11Ml9GR0Nod2JjYnA3NUstNmN0eVUwSHVLRF9CRzJDUQ?oc=5",
-          "published_at": "2026-10-07T07:00:00Z"
-        },
-        {
-          "title": "Resurrect Bio Uses Artificial Intelligence to Protect Crops - Agroempresario",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNanhUTUVmRnNNdjVQUENKeHJUYWZNMnZuZXQwNjk1UUIwWVFXZEkxc2VmSHAyeHdNYi10NmNCYXA0am0yX29NVG5TV0JLYklDcDMwQ3NqNFczdVZPUUZ0UTNhbUdGWjlidFllWGVZODkzRnNzTkgzbUZxLTJPNnJXY1VLTUdRY0JBdXBLaW4ydUd4cENrUnplWjhwbVJOVWhuS3pSQzdjczk5dw?oc=5",
-          "published_at": "2026-10-09T19:01:47Z"
-        },
-        {
-          "title": "SecureLayer7 helps businesses find cybersecurity vulnerabilities before attackers do - Community Impact Newspaper",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYnBIbjk3ZHJPUV9EZ1FpNjBERUFza1QxNGhSRTBjaWZ2QS1XeHYtV0RvdjdqY0JiSElaM0xuZVJnM2ZSajVtTkp3VTFZYXlqdkQzalhKTlNmRGRndGFXNDVtbExpQ3RUT3FjWHlMMEtjR2E1QTRock9JVVp3NVNaaThzU3VaLVQ5WUxqS0VuSkJnT2FDblkxRnE1UWE0TUhDOWI5YjBQRVVjUHZYcnlJWUt6dXJVeWt2aGdSUzZlNUs?oc=5",
-          "published_at": "2026-10-09T16:49:29Z"
+          "title": "Author or artificial intelligence? Literature in crisis - DW.com",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQkdqcDg5b1o3ZEVsRTFnWXFZM3JXanliOHhWR1BmbzgzUmRlS2MtUlpkaU9UdjhIazBEUVp4bTRxaE1XUW4yVVRVeUxyLWRYWWVFLU95Z3J5cXYyckRBakY0WDlHb082TjVNZDBkcE9RYkRrQ2NpZjZ4S0JiR05td2J4a2Y0aURKdm5HOWhVc0TSAZABQVVfeXFMT1Nwbnk4TS1EWWowZTFUdy04Yi16M1lDN1ZLT3dGRlJoazBIUldaaW10aFlRZmNCOVB6bGpqUWFfNTFqMXlsaVBvSXlZUFM1U2N4dWFKQXhyeTBVWWMtaUZyOEFKSGlweWhwYjVReGZ4UkpKT2RQblFtcnBNS1dBb0o5VzVULVpxQ1hvbVc1U19Q?oc=5",
+          "published_at": "2026-10-09T15:09:25Z"
         },
         {
           "title": "Trump renamed AI ‘super intelligence.’ But that term already means something else. - Poynter",
           "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQWttbWhqOXJoWFVqVHN5WjczWDVKaWgydXhGWWRGNW5lbWxwUURyZUs2N0hUOVlqNnBhS2pkd21TTW1mTmNsLUh2ajkxMWVqc245Q1NaQWplYXZaM3V1TlBMUHRSOTRuSkxHZFJyUXl5RkxxQWh6a0RYZ081WUo1VEJDbUE0WHJwc3NjNFRxVQ?oc=5",
           "published_at": "2026-10-08T10:38:45Z"
-        },
-        {
-          "title": "Better Artificial Intelligence Stock: ASML vs. QUALCOMM - The Motley Fool",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRllOdC1FaVA3QnNoY3hvQkI5RjRDZW1hczJPNlc5azZ2V1lOOURuWXhlWG1PdnYxdVV4TFRBVGJaOGtWaUltUEN1Wi1fYXFtWTZxTGtudEJydTN1RHJmcmVQTjdHR1BNeDJMX2I2LUJrSVVDeTRvY2dTdmdzejhLT0JHUFJ6b0JBbWxQbk84bzdKQVQ5NmxhMkpVeHdJVHY1dUxrTmZuTzBrdw?oc=5",
-          "published_at": "2026-10-09T19:04:22Z"
-        },
-        {
-          "title": "Report: Convergence of AI, Quantum Risks Impacting Cybersecurity - Campus Technology",
-          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQV2RZUjdKTHM1QlBldWRRRjdDb3hGZUV2WXFnWW0wdTlKcEswUVNwM1dKbFNiM3hvblJvMlhwcWwyQW1PbGVsbmdRRXNpYXhnckF3d3VETS13N3M4RFZDZ3BneS10Nm1jbDhFQTFtNGtMekQyU2hhQ3ljQlpNS3F4UHlvaFpPODBMX2FXRWFBM2hjVHdIS2N5RGtFczBrVWludjZqaTNvaGlndUJSWkRSQXBkTFV5bUU?oc=5",
-          "published_at": "2026-10-09T17:28:12Z"
         }
       ]
     },
@@ -328,6 +328,11 @@
           "title": "Here’s a look at the Nobel Prizes for science - Science News",
           "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5tWHdaQmxrYVFxT1YtbzlEUWstcDB5cnI3VG1yeGlQc1hCVVpha0FIT0laaEJ3Umw1bThQQnl0STlSdWtUNF9fX253bkdFSWxZbkRtVjA2dzlkeXBqVnNsYUcyaGdWV1FSS014b2JURnF4cll1b0JKVTlHWlVoUQ?oc=5",
           "published_at": "2026-10-09T13:00:00Z"
+        },
+        {
+          "title": "Before Computer Science Became a Boys’ Club, Margaret Hamilton Wrote the Code - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMFR2ZlpwRkYtTDJmOGFnc0ZPY1VzOTZ2bWZXV25PRkxMMTdrMXJkUHdXVmlzLURJV29DTmZIdlNUVXFVZ2hDcU1rblVUczBLdm1Xb3NLWFcwdHNjTmR0Slc2U0MxY2NKN2J6TmZIaG43d29fSk5fTDZJSUNUbWlwOUtDc2YzeVJWb1hSMHlaaE5QUQ?oc=5",
+          "published_at": "2026-10-09T14:11:00Z"
         },
         {
           "title": "A Summer of Science: High School Students Tackle Research at Hofstra - Hofstra University News",
@@ -345,14 +350,14 @@
           "published_at": "2026-10-08T14:54:20Z"
         },
         {
-          "title": "Museum of Science opens another immersive venue for live events - WBUR",
-          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVG0xNWxYOU0yamxZbXF4RENlUVdmWllSZ2lSSmx4d1J2VExjczRrUksydEl3Um9KZGhDRFNnbmFpZFAyR1Naa1pfSnZVN0V0cnNZWFJNR2ZkbnoyWW40cjhoTnExSXpkSHhyTW4xTHNPcXdTQmVid1pkUVQwdUJiMUp3?oc=5",
-          "published_at": "2026-10-09T15:18:05Z"
-        },
-        {
           "title": "Trump awards SpaceX founder Elon Musk National Medal of Science - Space",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNaXlNamwwdUVIMXFWNExBVG9kRnZ2eHhmSWtFQVNybU5HNkFBeXR2RW8teENzODF6VHRSUkQxdjNGMUJqTmp2ckhoX0dvTUJsS0F0NFNfUm9GaTRzTmNHMXBybjNIVXc3WUo4b0FKS1puU2lDV1YyWkZzOFV3dUxjQjloV3hZTXRpQVN3a05iUElKN3VNcC0zbUZuNDdjLW5Na28zdGFB?oc=5",
           "published_at": "2026-10-09T13:00:00Z"
+        },
+        {
+          "title": "Museum of Science opens another immersive venue for live events - WBUR",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVG0xNWxYOU0yamxZbXF4RENlUVdmWllSZ2lSSmx4d1J2VExjczRrUksydEl3Um9KZGhDRFNnbmFpZFAyR1Naa1pfSnZVN0V0cnNZWFJNR2ZkbnoyWW40cjhoTnExSXpkSHhyTW4xTHNPcXdTQmVid1pkUVQwdUJiMUp3?oc=5",
+          "published_at": "2026-10-09T15:18:05Z"
         },
         {
           "title": "STEM space in Upper Marlboro encourages kids to enter science careers - NBC4 Washington",
@@ -365,9 +370,9 @@
           "published_at": "2026-10-09T06:04:00Z"
         },
         {
-          "title": "National Quantum Computing Leader James Misewich Joins Rensselaer Polytechnic Institute from Brookhaven National Laboratory | News - Rensselaer Polytechnic Institute (RPI)",
-          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZW9kTVVUOG9KQUVTQnk0R3o5X1RHOVFPOHliM01MTWNKeUxVWGt5WFEyNVFaSVE1WF9INXFCdVE5LWdydW00aWh6R1hwcS1Vb2VoY3lHY3Y2WV9hdzZZQnlZZ1BNTXcxZGFwSjE5cFR1Z0dQR1BCbmZlVlJwc0p0cnpycEtYRmNBa2tyV1c1cHhRQ1JNQ0VGYmI0VWdFdlo1YmJIMjBwdmpNTkhFVlRxZnNfdXhXTWF4Ukxz?oc=5",
-          "published_at": "2026-10-09T13:42:57Z"
+          "title": "NVIDIA Commits $1 Billion to Advance US Science Over the Next Five Years - NVIDIA Newsroom",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWV9LdlNrOEhZeWpWaHNwSUlhSllPWFo3Y05sckNRbXBIeVZ5NElkNDdJbHlOR0pvZHRfRk9CMEI3U0xmNlU5RndtMkx3TWFRVk5oLWxIRktoeS0wMGxZMEpkN2hEVWZQa0JuWk85RUpZRVAxVGkwdnkxa1dxR0cxdFdXVlpQQUk3dGYzM21IVDdwZjJCNjFPamRib2FfdHhsWF9Ma2VFNVZmUQ?oc=5",
+          "published_at": "2026-10-08T17:19:04Z"
         },
         {
           "title": "50 years ago, my colleagues and I pursued basic research science that became revolutionary - STAT",
@@ -375,29 +380,24 @@
           "published_at": "2026-10-09T08:33:15Z"
         },
         {
-          "title": "NVIDIA Commits $1 Billion to Advance US Science Over the Next Five Years - NVIDIA Newsroom",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWV9LdlNrOEhZeWpWaHNwSUlhSllPWFo3Y05sckNRbXBIeVZ5NElkNDdJbHlOR0pvZHRfRk9CMEI3U0xmNlU5RndtMkx3TWFRVk5oLWxIRktoeS0wMGxZMEpkN2hEVWZQa0JuWk85RUpZRVAxVGkwdnkxa1dxR0cxdFdXVlpQQUk3dGYzM21IVDdwZjJCNjFPamRib2FfdHhsWF9Ma2VFNVZmUQ?oc=5",
-          "published_at": "2026-10-08T17:19:04Z"
+          "title": "National Quantum Computing Leader James Misewich Joins Rensselaer Polytechnic Institute from Brookhaven National Laboratory | News - Rensselaer Polytechnic Institute (RPI)",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZW9kTVVUOG9KQUVTQnk0R3o5X1RHOVFPOHliM01MTWNKeUxVWGt5WFEyNVFaSVE1WF9INXFCdVE5LWdydW00aWh6R1hwcS1Vb2VoY3lHY3Y2WV9hdzZZQnlZZ1BNTXcxZGFwSjE5cFR1Z0dQR1BCbmZlVlJwc0p0cnpycEtYRmNBa2tyV1c1cHhRQ1JNQ0VGYmI0VWdFdlo1YmJIMjBwdmpNTkhFVlRxZnNfdXhXTWF4Ukxz?oc=5",
+          "published_at": "2026-10-09T13:42:57Z"
         },
         {
-          "title": "A-State receives $2.2 million National Science Foundation grant - Talk Business & Politics",
-          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTXZCUDIyek01LXZhWkFNQVY5NndYMUY0UUpHcG0xczNFcFpNalZmZmZneTBjdkpkT0Fhb1hHWFpvLTFhS3h5VHhxZURxYXNWZDFXRW4wT21lU3B6dUtaX2lIcENUTXJ5MkVXbWFCODYzcXJmX3llR1FsR1NiZGcxY3d0elZudC1UMEFfMkxYRExJcjlEZVZ5bllYR0w?oc=5",
-          "published_at": "2026-10-09T11:52:51Z"
+          "title": "American Physical Society honors Argonne scientist and chief communications officer as 2026 fellows - Newswise",
+          "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPU2dxWnZEdnpfSm5LM0JBTE05WjdwUVNPa2NZSkdWUFF6VWM5eUJ4MUdSSU5FbzYxWW9zamNOck01Wms3NmdNcDc0QjJJM0pmTjd6YjhMTEVfTXJ4MWV0RS0zMU5qWHJGSzFlbE00a1ZVd0lrTGVPaXY5WGNSTGVRLWsxemFHaGU1ZzYyTHgwTFM3R3FBZmMxRjJCTHpONUU5LXY4YzZaSzFVaDF6M1hfRzF2Y2dpYXB6MnV5bzdfandrN29BYU5iZXQ2RFZQSW5qNTR1ZDdja1k1SGZHY1J5UVNKZlBUTkRESGfSAeoBQVVfeXFMT1NncVp2RHZ6X0puSzNCQUxNOVo3cFFTT2tjWUpHVlBRelVjOXlCeDFHUklORW82MVlvc2pjTnJNNVprNzZnTXA3NEIySTNKZk43emI4TExFX01yeDFldEUtMzFOalhyRksxZWxNNGtWVXdJa0xlT2l2OVhjUkxlUS1rMXphR2hlNWc2Mkx4MExTN0dxQWZjMUYyQkx6TjVFOS12OGM2WksxVWgxejNYX0cxdmNnaWFwejJ1eW83X2p3azdvQWFOYmV0NkRWUEluajU0dWQ3Y2tZNUhmR2NSeVFTSmZQVE5EREhn?oc=5",
+          "published_at": "2026-10-09T22:00:00Z"
         },
         {
-          "title": "Santa Barbara Museum of Natural History Celebrates National Earth Science Week - News Channel 3-12",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOX1hCNmRWUXotcHQ3NXdINlB1eEdFZi10Z3drc3FQY29POTA2X3NSS21NYmVPX0o5NTMxa2VfQWdhOGNBQjFTcTl2RDYyS3hjdG9CMWpjOXJOeHN2WkpiQ2VKeS1VVXpva1Vtb0tvUG1JY0ZBTGpjR0xGa2IxcDdfc0dEWFJMVG4xOXc1TDM4WUxTT3NjOTN0SGxPbDBsdEVTNkhkcjU3NExYdmhEUzJfczdn?oc=5",
-          "published_at": "2026-10-09T18:51:42Z"
+          "title": "Why We Must Invest in Scientists, Not Just Science - Time Magazine",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONndleThsbmVWTlpmdHF3TzJpYlI1cG50MGo0VnpQbkx2N1BpZmdudGRhUHROSjdnZDMxS2tQRXNzUk1rSE9weGlhYXN0MjIzRnVxQ0ROWWh2bmpiT01LT09hTHRlZWxWQWpXcnIxTDlCOEdjWGpmMXpSRjJTak5oanNVRWhqNWxzS25mR2lIZw?oc=5",
+          "published_at": "2026-10-09T09:00:04Z"
         },
         {
-          "title": "The Science Behind Why Dietary Changes Rarely Stick - Mega Doctor News",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQaWx6RjVYRkNzLUVtVm10WURZNDRFYlpJWWVDeXF6OG56RjZwbHBxM2h0V0NJNlAzczdMdEFFdF9MQ1V0d1U2cGxCTjR4TFVvbW9fUlZ0eTR4bGxBc0t0MkJ3WU5ZbDlNYWtIekh5R20zUjNoNDZWY3A4WlpvSDBZN0F6NFI1dw?oc=5",
-          "published_at": "2026-10-09T18:47:15Z"
-        },
-        {
-          "title": "How the Grand Canyon could have lost 1 billion years of geologic history - Science News",
-          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Va0VUSWdxM25jckYwcXdsTFNVOEFORnZ4dlhfX2ZoakV6TU1RZHZjRWlwTC1DVXlyc2JwR1pIUnZvTFFzTndTeDBzR3hjaUVPc3AzTHF5T01kU1gzZkk5a0ZvRndFaGdmOFV5Zl9teVlDblBBQUsxVjVEYVlxdw?oc=5",
-          "published_at": "2026-10-09T15:00:00Z"
+          "title": "An extinct crocodilian was found among rocks that built the Great Sphinx - Science News",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBNMU5HaG9XbUFPSUZnSVVTd0lMT0JoaFNTNUdLZG5Bb3gwbWszcTN4MVR1bGlYa3FGdkZWSFBYRkpVN19jUi1WSlZOVnhPRUl5amhOd1pkeENYaFRCUmw5Z1dJOTJuUWE5WUxaOGxZNlYySmpVQUtFMU9PZ1FLMUk?oc=5",
+          "published_at": "2026-10-06T23:05:00Z"
         }
       ]
     },
@@ -410,14 +410,19 @@
           "published_at": "2026-10-09T19:12:57Z"
         },
         {
-          "title": "Pharmaceutical innovation: A strategic investment in health and growth - IFPMA",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOck5NeldTNk1udHhEQlpKNjk3ZGVBQW0wblhvek1Bc3dZbG9TbDhTSkFLRTJRWmp2ZjA2ck5NUVZzSWMzWGtGaEVubzlhRUE4SXdvNU1OMXRTSXhhUk5MYkpoZWlfa2lQNmk4SmhjVmE0VlROQTRQOGRQWWRwdEUtRnQ0a1dOY2pIXy1Sb1BRSnNvcjBKclZVWnRKSW5rRjUzVUNj?oc=5",
-          "published_at": "2026-10-09T14:50:22Z"
+          "title": "NC sues state’s biggest hospital chain, extends enrollment deadline for State Health Plan - WRAL",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQenFKdmNrUXN1VmlTQURsWTVXSmpOVnl0YmNHODBtT0hGQVVtV3MtRVU4M044bzQ5dzhqRG1vS3JSU2pvNFlYY2xSSTJhSlVBSHI0QjdlUmtlai0zUHRxamVxV1VkT0VTWVBwLVRFOE9DT1dLUDRGdWpmNzgtTzJnWHFlV1ZLeF9PdlgySUxfeVJldEZGSnRCRThQd3FnWjlIMUpGd2dQeTVKUGREZWtsMlVPcXpLRzhrZHBFVVZjdEdYbllD?oc=5",
+          "published_at": "2026-10-09T19:27:38Z"
         },
         {
-          "title": "Dartmouth Health Unveils New Home-Based Care Initiative - Hospice News",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMXRTaC1vNWRqZ1JQN0ZXYUExX2gxOHZacmZmeHpiMFRuYmp3Wk01OHJVNEVCdjZaYmlFcXl3V0FSb3Q3ajN2RFZnaXN4RElFU0hFN2R2ZkxSLWVFRUg3OURQcmpGLS15V0xQbG10cDN1d0dicVVVNVhNM013RjJVODlnQzEySXpUVm1XSFlVd2F0bnJwTWc?oc=5",
-          "published_at": "2026-10-09T11:37:03Z"
+          "title": "NYC Health + Hospitals/Elmhurst Again Recognized as Center of Excellence by Go2 for Lung Cancer - NYC Health + Hospitals",
+          "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQNFNVSnh4a21ERFBoTHhEcW5BdjJJNWhzUFVIZWtkUzFoLXJvYmNaUnFIRHd2OVpkOWZuSnB3R2ZkSGpNbUJZM2l3MWNianlSVklJdnNYc0g3UEx6dGRnSThya3ZlTnNDeWR4VnZZYWNUX1hQSHpsLUFXYXNWSDFSWWVoRnV5Ul9fRFpCVnlJZHRjWTlTdThSN3E0ZHdWdXRTa2o4b2RSSy1ldEltbzJibHJ2Y1ZQVFBUbHkydkJTUDZfSnlsUnJOSENsalhSMm5rMmxHX0I3aTVQazZpdUE?oc=5",
+          "published_at": "2026-10-09T20:18:27Z"
+        },
+        {
+          "title": "Task force ditches Wyoming-run health insurance plan idea, mulls unorthodox service models - Cap City News",
+          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNWlHc2RKWllLc1lqaEIxVjY1TTF1dmplSHdib0JQcDEyMmx3OGpIdmVQZWlfTWttMTB1RHF5d2p3YUdHZ3ZPenozckZKMkdkc3JGX1gyd0U3eVBybkkzcU4zX1ZlcFp2WnJoMHo0NDJhLUpsZWp2R1RXUGdXUDc3blZpdHpNeHBjSGhiN284YWRhZDVCaGtVc3NaNU80alZ4SzZiX0UwM3JzUnU1b2MydmJmY2lHZ2RTMmRia0RIRWU0bFRmWWhaZjdrcXp4Uy1kRVlHQ2RB?oc=5",
+          "published_at": "2026-10-09T21:45:00Z"
         },
         {
           "title": "One World Community Health Center hosts free health fair in Omaha - Nebraska Public Media",
@@ -425,9 +430,9 @@
           "published_at": "2026-10-09T16:15:01Z"
         },
         {
-          "title": "NYC Health + Hospitals/Elmhurst Again Recognized as Center of Excellence by Go2 for Lung Cancer - NYC Health + Hospitals",
-          "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQNFNVSnh4a21ERFBoTHhEcW5BdjJJNWhzUFVIZWtkUzFoLXJvYmNaUnFIRHd2OVpkOWZuSnB3R2ZkSGpNbUJZM2l3MWNianlSVklJdnNYc0g3UEx6dGRnSThya3ZlTnNDeWR4VnZZYWNUX1hQSHpsLUFXYXNWSDFSWWVoRnV5Ul9fRFpCVnlJZHRjWTlTdThSN3E0ZHdWdXRTa2o4b2RSSy1ldEltbzJibHJ2Y1ZQVFBUbHkydkJTUDZfSnlsUnJOSENsalhSMm5rMmxHX0I3aTVQazZpdUE?oc=5",
-          "published_at": "2026-10-09T19:49:36Z"
+          "title": "ASU partners with St. Vincent de Paul on new East Valley health clinic - ASU News",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSlJLQUlNZHNNQ3drVHRBcDIxTDY1aFlTTWdBcDVzeGpkRzBTQlJ5cTJzeS1NTzRtMloxRGZ1U1pwNVRrdzFfWUZNbXd1Y2wtaFprTlF5TGFTSGJ3WWxJNmEtQTZCcVFPSGtFQU5yLVphTUotOWpUMFEwamV1al9ITzZsUFZsbnMtTWs5MVo3dzVULUFpdmVpc0hRdkpxTDhxZ3R0ellwSW9qbUFBUTkwWQ?oc=5",
+          "published_at": "2026-10-09T20:27:38Z"
         },
         {
           "title": "Mayor Mamdani Launches NYC Mental Health Connect, Helping New Yorkers Find and Access Local Mental Health Services - NYC.gov",
@@ -440,19 +445,19 @@
           "published_at": "2026-10-09T13:05:51Z"
         },
         {
-          "title": "Food as Medicine Symposium Explores Nutrition, Health and Community - Stony Brook Matters",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYW9rNTJCeHpickk5Y25IWDNPREt4QjdLRDhod05fOF9PN3huQ3hSbDJmMlctb0xsOUZJMHM5YzF4alhKT1JGR1RjWjZ4WTdZaUVuS3ZzNWRFX2d0Z2p1ZTNCdzZKRDRpUUJCeF9nMmdPTTc1dXh6eEF5TGY2R0M2Yk5BcmpqUlVjWEdmMVFwUDhRSHJhOXM1MGZGTGhyejQ1Tmc?oc=5",
-          "published_at": "2026-10-09T13:30:47Z"
+          "title": "Project ECHO helps primary care providers tackle treatment-resistant depression - Penn State Health News",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMy1ENEZrelBKd1ZjQ2drWDE5S3B5cDgxM250ak1vZ3ZDNnN3eWJjTXFjSmN5WkhTVUFsT0RwdnVwZGhQSGhwblJOMnJIRWdaUERvU05qemdrLWNkX09saWduaTB6MC1uN2JSeFRQa2tfZy1OeEVxQ190NXJpdlFDbDJ2bHc5bnRRWEE5b19rb3RuZUZsZG1vbVplS1VTM2ExamhyOEVJVlRTSFBmMmhZbVo4YmpwaDN2SmpuMg?oc=5",
+          "published_at": "2026-10-09T14:56:28Z"
         },
         {
-          "title": "SLO County Public Health Confirms First Measles Case of 2026 - County of San Luis Obispo (.gov)",
-          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxONjAwVEQxTF9uNTFidmQ0cjRkSldKQkZDY1RwWHVSNHQxcnVXWUFNY0hlMXcxMmllZVhaOWhIM09jZXF5bDdEdFhoc0FsdjlNUDlvX0NDdzlCeklYdlNWbFN3dzJYcTNDYW1GZjBDNXZURVp0VzREczhtNFFwTFhtV2U0eGJQZERWZUZBTWZORUhKNUpGcnU3TG9kLVlzcmtkelVuZEpYcGp5QXBtWkk2U2xmMXFzcVN4aVNpTW03LUQ4N1ExX1k2UTdpQlVTcnZLMkZRUnA3ZXhyUQ?oc=5",
-          "published_at": "2026-10-08T23:39:44Z"
+          "title": "Chest pain symposium educates women about heart health risks - Vanderbilt Health News",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaU9FN2xIaG9Od1MtWGtSTjRGY1kwQS1VYlRrZFE0Zk9vMDlGNzhoUmxZSkJVSkNpLVdlMTZTRUlqSTEwYUU0MXhTSlpPR1RXdjQ3Ulp5bEFVNEFUQ0JqLUU0Z0stTWV4TkNPSWgxNjhXNmt5dkhaSWgxWG81S3dBd1Z6dGlHSEdiR1RUeV9mcktvVHBwN1VmX0Rn?oc=5",
+          "published_at": "2026-10-09T15:55:53Z"
         },
         {
-          "title": "Cooper Green Mercy Health Services gives back to community partners on Serve Day - The University of Alabama at Birmingham",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMjhEakdneFdJWWlWd0pXM25KM0M0Qk5aTHhHdFlINTFTbUxDTUJUdFNrVC03SGN5aGo0b2NrNEl5TlgxSmI3UUJrU20yaGJtaGNwblplZ2ptczFSMTVCVFF1bkR5SFZXM2UzbVFaMC1HMllkMEhUaFpUWjFEV3BBdWpheXNMNlMwS190bzVzamZ2M2tJaDBiUmJnTm9IVmNHdEJsYmh4VjdacmJOMndqZEhrUUd3VVRLeWxZdlJ1VQ?oc=5",
-          "published_at": "2026-10-09T19:33:37Z"
+          "title": "Current and Historical Public Opinion on Medicare-for-All and Other National Health Plan Proposals - KFF",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxORWRtYTRCZjVfZXRLMFhRa2lVNDlJczlDRDhxeDlTQ3VLcERyWGlydGRDc3FKcVU5THUzTURLeFZLb0k2dzNxZVBTcVJNdmdRTi1yY2lvc0lSRGhWRFluTmhjdVhyX0praVE5bU1BNTNiMDlTS2NPRkI2MTRfVUY5cHBrbHFfOWtvQjNzb2ltZVpObWMtVk9zQUdLSkR5OVFZcTA2OTB1VVZyZFBLT0RsbEpZSFJaWGhhLV9Yamthd1VGMWxsbUNDb1FGMzNoTTQ?oc=5",
+          "published_at": "2026-10-06T07:00:00Z"
         },
         {
           "title": "First-of-its-kind health equity conference at UB seeks to bridge healthcare gap - Spectrum News",
@@ -460,24 +465,19 @@
           "published_at": "2026-10-09T11:22:00Z"
         },
         {
-          "title": "Germany Hosts The World Health Summit, But Has No Plan For The World's Health - Health Policy Watch",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ2xVN1RJOWlweGNPZGZCeHkzMENWcjl3bXVMQ0RwRDFWSEM3UjBjRGhBR1hucjFsYmVKZ3d0LWlHTnBoSEIyMnRURFVWSmV2eUlQWFZqczEtZmFMN1pJQjNkcGI0aTN5U1oxV2tyS0tSbjdyck5UMHQzNWpmUXNTTXJqRXJPRkNkY1YxQ1I0U21QZk1PbnhrVHZBTXVYTmxCNWFHMXlXNWxFU1cw?oc=5",
-          "published_at": "2026-10-09T15:55:48Z"
+          "title": "Food as Medicine Symposium Explores Nutrition, Health and Community - Stony Brook Matters",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYW9rNTJCeHpickk5Y25IWDNPREt4QjdLRDhod05fOF9PN3huQ3hSbDJmMlctb0xsOUZJMHM5YzF4alhKT1JGR1RjWjZ4WTdZaUVuS3ZzNWRFX2d0Z2p1ZTNCdzZKRDRpUUJCeF9nMmdPTTc1dXh6eEF5TGY2R0M2Yk5BcmpqUlVjWEdmMVFwUDhRSHJhOXM1MGZGTGhyejQ1Tmc?oc=5",
+          "published_at": "2026-10-09T13:30:47Z"
         },
         {
-          "title": "AI data centers impact public health. Here’s how to report the story - Association of Health Care Journalists",
-          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNaU5qUFV5V3VORzEwRUVlVlZrdHZxTnVLbUVvQkRFM1JVSU5NcTN3TXZsSHFDN1JFb3ZLUnpuMjh1WmlpVXhqMlVuU3VDQWs0NlNZamJMNkplMWp1VGdvU1BqWmRDeE9RaFRTcko2QUlNNDNKMWV3T0tha2Q2eHdFWnJXRGIzS3lkX09GdjhZcnRxc0J4aEE1OU1ITlJsRktXbTJDRG5DWmt1enFYX2c?oc=5",
-          "published_at": "2026-10-09T16:15:40Z"
+          "title": "AI, Tech Leaders Are Lobbying Trump Health Officials in a Government-Run Chat Room - KFF Health News",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRGN6UTAxTy1WaEhFblNKTm5YUFFlY2p6MXhBbF9aTnZfOG51MXZMbmdyVnlKblRPLVd3NlV2Q1lrcGFiWHBfQTlNejQ5QlBfQnNuSzl0bDY5aWM0c3ZTRW9sNzB4cmhLcnpGbERfQ2x1ZFJOOTBaVGozYlVmbzFudnhucmx2WXFITm9Ua2oxNzdyRDd1YVNQOUMwUEx5b3B5R213R3hERy1JbFgzbnc?oc=5",
+          "published_at": "2026-10-09T09:00:27Z"
         },
         {
-          "title": "Proposed U.S. census changes could be catastrophic for public health - STAT",
-          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOOHN5eFFXT2ZfQUxsS2p1OXFiSkxSNi1CMldrWC1wRkp4YndjeXRucV9telpHU0htOVRXUF95ejNBd0ZRNUlXNEVQeXl2UWktY0hjOHR4eElGRlRUMzRzUERFckluUnY0SzRGYklDN2Nsc2pPOHFRR1NUc0pUYVc5UDVSYXZsbjNDR3JYaG50ZmRUNVRrNjE2S3pR?oc=5",
-          "published_at": "2026-10-09T09:08:15Z"
-        },
-        {
-          "title": "Chaplains support needs medicine alone can’t reach - ECU Health",
-          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOd3I2czJhU1dCMmNOR1V3WmtYdEx6VmVKd3hXTXlZUmV1WU5XWEVIT1lUMzJhQzdSWHhXV25sZm9RLXQzTDlnLW1UZ0dlNE90dEFJOWtSdUVDWGFJcDdWaU53NEROc1NUbzVFZVFaUUw1OWp2YUxNeVFDOW85dUQzSXFn?oc=5",
-          "published_at": "2026-10-09T18:52:49Z"
+          "title": "Cooper Green Mercy Health Services gives back to community partners on Serve Day - The University of Alabama at Birmingham",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMjhEakdneFdJWWlWd0pXM25KM0M0Qk5aTHhHdFlINTFTbUxDTUJUdFNrVC03SGN5aGo0b2NrNEl5TlgxSmI3UUJrU20yaGJtaGNwblplZ2ptczFSMTVCVFF1bkR5SFZXM2UzbVFaMC1HMllkMEhUaFpUWjFEV3BBdWpheXNMNlMwS190bzVzamZ2M2tJaDBiUmJnTm9IVmNHdEJsYmh4VjdacmJOMndqZEhrUUd3VVRLeWxZdlJ1VQ?oc=5",
+          "published_at": "2026-10-09T19:33:37Z"
         }
       ]
     },
@@ -485,24 +485,19 @@
       "name": "INVESTIGATIVE",
       "items": [
         {
-          "title": "Germany's Left to start Berlin coalition talks after antisemitism deal - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPV3FLdE8zQ00wd2s4TWRFWWR2VTlRNEJkN2VVd1Q4M3pFY05MNkFzeW1Tbk02OWhCT0RNSGxaMlJqSDhrNm5EX0h0NC1YOGlIUW5JTGRvVkdhZnhIeHkyaTJ3S3FBV1JQN2ZjMUlSSy1XV0JjNEE2dk5TT0hGcHBhbWp0bzVZVlBtZVkyWHhUWnB4ZllwWnVBbE5Lc2lNSU1iNi1TQXFfRkM4a2VfRElob25lWFZXVWw5?oc=5",
-          "published_at": "2026-10-08T14:33:43Z"
-        },
-        {
           "title": "Nigeria military plane crash kills 32; Tinubu orders probe - Latest news from Azerbaijan",
           "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdXdzOUlZd1pqYlMxSTV1b3hCSW1KRjh1dTAtUFJxaVVPZ0I1alFtd3ZpUHdzOFVQd2RIWnJ6UFpWSmdkTEFqdzdGcUluQWJ4UUp4Vk84cmNqU2g0VGVxQ1Z1ZFhsT0NCQXljZDdBbmQ0RDZ1TUZwMVBhQmlNS2lXakhzM0Y?oc=5",
           "published_at": "2026-10-06T07:06:34Z"
         },
         {
-          "title": "Shein reveals US FTC probe may lead to significant payments - Inside Retail Asia",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSmlrQ3NhUzdDUVN6UDRwR1FONjNZSURTWGY0aVpuX1NPN2lNYTJiQ0R1andwMmNLcU05bWR0bmxsT1RORE02b29vRFRucnRGZGVWZGRNd1FyWExZVzloRGdyaDhjN2h2ZFJEeDh6T0FSTmxvY3F2QWd4bHN2ejQ1S3hjekV4aGxnaUhmYnNQSjlCYXkwak0zOENlQlc3Zw?oc=5",
-          "published_at": "2026-07-29T07:00:00Z"
-        },
-        {
           "title": "EXCLUSIVE: FBI questions CIA officers over Russia assessment in Brennan probe, sources say - Reuters",
           "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZjBndDBicEVKellSSDFsZFJmMUtjRG9rU2NxR19mUXd2VG9XRUE1cDdNZG9mRmQ3enA3TlNyY0dKNFd3akd5aVlsa0otVkxBNEVfRzJxRlI3aHpQaEhUTWFhazlwc2FydUNoMHQxWGtucDFWWEE4NHQ2MDM2TXcxenVRQVZET1V1NGZkckJUYW8zMThOQ180TGlfTXgwc2ZBSlRUSnNXN3lFZHFUU0Z6bUNXMnZ5Zk1QSVdfWWRUbTk0MUpLRkIw?oc=5",
           "published_at": "2026-05-12T07:00:00Z"
+        },
+        {
+          "title": "Shein reveals US FTC probe may lead to significant payments - Inside Retail Asia",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSmlrQ3NhUzdDUVN6UDRwR1FONjNZSURTWGY0aVpuX1NPN2lNYTJiQ0R1andwMmNLcU05bWR0bmxsT1RORE02b29vRFRucnRGZGVWZGRNd1FyWExZVzloRGdyaDhjN2h2ZFJEeDh6T0FSTmxvY3F2QWd4bHN2ejQ1S3hjekV4aGxnaUhmYnNQSjlCYXkwak0zOENlQlc3Zw?oc=5",
+          "published_at": "2026-07-29T07:00:00Z"
         },
         {
           "title": "Telegram founder Durov questioned again in Paris probe - Latest news from Azerbaijan",
@@ -530,9 +525,19 @@
           "published_at": "2022-11-14T08:00:00Z"
         },
         {
+          "title": "How slow warnings, poor defences left Spain exposed to deadly floods - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNy1XM0FLbmw2NEY1NUZDWlJGbWlodzNxNmx5YWFhRGZ4aDlNV3lJQmRpMmlMUjNHaU9sSEVrVFAxcEQxcllmdTBqR1JTMTIzWW1qamFsbklTd3l2c0cwbWdLUUJEM3RkdUpFb3JXcFBzdnVEbFdiSUpFTExEc3NrZFJQdXNrdFNOWkVsNzhLTnhjX21rczlwTTJKVTQ4YmhBMmhCSTNqcU5JWFhSLTliNXNxUnBsTWtqd0pBS1BVdG84bXFBbmwxSQ?oc=5",
+          "published_at": "2024-11-09T08:00:00Z"
+        },
+        {
           "title": "Russia denies Brazil's participation in investigation of Prigozhin's plane crash - Українська правда",
           "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Sb00zQTZCMEs0eVpIcmZHZ3NMaGFjd05qcVdkQjZ3ZnNUZmhQSXRBZGU0NWFtUk02UmdoTHJaNVZ5MHBGN0RFVjJ2d3RsSmkycFBid0laSURnSldQcWVNNG1UWlLSAXBBVV95cUxNUm5sZlFZTC1lb2tyRV93R3cxMFhtN3VkVndBSVJzd0lRdGhKRXg0TUF2TTczcTh4Z0E0T1ZjSmh5ZTFja2hOeXkxT2FGMkNOQ3JJTWcwQ0g5cDhBSEtJMkExdVg0b2ExMEowM2pHTGcw?oc=5",
           "published_at": "2023-08-30T07:00:00Z"
+        },
+        {
+          "title": "Park Geun-hye: Impeached - Asia Society",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBZaHpjbURBMU5fWk9aaWtpcGVLOUR1aHdaZ1RtZ1pKTkVWQzRTMzZVUE5TR3FMc09USW9fVm5vT3NQZzFIMnJZdUlzc3BvYVJxdzZVSFp6OG9pVU5SMEpwcld2MA?oc=5",
+          "published_at": "2017-03-16T23:40:14Z"
         },
         {
           "title": "Super Micro (SMCI) Taiwan offices raided over NVIDIA (NVDA) chip smuggling investigation - Shacknews",
@@ -545,19 +550,14 @@
           "published_at": "2021-11-24T08:00:00Z"
         },
         {
-          "title": "How slow warnings, poor defences left Spain exposed to deadly floods - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNy1XM0FLbmw2NEY1NUZDWlJGbWlodzNxNmx5YWFhRGZ4aDlNV3lJQmRpMmlMUjNHaU9sSEVrVFAxcEQxcllmdTBqR1JTMTIzWW1qamFsbklTd3l2c0cwbWdLUUJEM3RkdUpFb3JXcFBzdnVEbFdiSUpFTExEc3NrZFJQdXNrdFNOWkVsNzhLTnhjX21rczlwTTJKVTQ4YmhBMmhCSTNqcU5JWFhSLTliNXNxUnBsTWtqd0pBS1BVdG84bXFBbmwxSQ?oc=5",
-          "published_at": "2024-11-09T08:00:00Z"
+          "title": "Former FBI agents sue Patel claiming they were fired for work on Trump election conspiracy case - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNWWc1X1VlYkRrSlEzc0hVNXBZU2pHOTVlSnhQclFFV0NobnoyS19mR2ltSkgwTWdsN0dscHdJeEpOdW1VRzk1TlIyV2k4LU9sb21ONmFEX2MwNHV4Y1pzX1l2aDNxeXBBWGNQS0g3TTdQVS1yU2Noa29yb3VmSlZWOVlDaktfVXhXd3lrTzRCNXRjR0d0OVA2UDAtdHJJMkRBQ0c0NUFEa3JFMFJPQlZEVFhzdzRMWGpkSExSMTI4LVk5d2M?oc=5",
+          "published_at": "2026-03-19T07:00:00Z"
         },
         {
           "title": "Russia could supply spare parts for aircraft through Russians who have relatives abroad – Reuters - Українська правда",
           "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1aOHNYbnVPQ05xZXVXdVNBZVZTaVp4SHBtNVpER0VzVEk3aV8ySTFuNTZDS3k5a0czRndwX3VjV3VGU2x0WGFFX09YYVo4cWp6STZVS2ZCMzdxRHhrbXpTaEhmZl_SAXBBVV95cUxNN0ZGZHE5cGlRdWxnUW9RbUR1djlROXJkTll2N1NUYXJLV3NmeXhrcWtZWjM3TUdsblc5SWZhM0dONTZ5NFdveGdIdEhiZmJYVGdjdHZlQU1iS3hUMEVQcXh4emxQQ0hMQ04tZGVzRENR?oc=5",
           "published_at": "2023-08-23T07:00:00Z"
-        },
-        {
-          "title": "Chinese delivery platforms face government anti-competition probe - Inside Retail Asia",
-          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOb0QtRzVIYnEwTWppajJnaXdJY3VvVEZKT0ZCdV8wcWpnXzlVYjU2c244VVVZSklTMkNITkk1OEFITzVRX2lTMlZaclpzSTBCdGZORURPTmFKOTFnMkZJemxHaWpRSk1SUGRNYmVLeFBEeUwyR19qSGhYY0plWG82Y0ZfY0xfZlBqS25ZZkJxX2RES2c2U0FMMXh4aFVxaHRZT2h3ZEJB?oc=5",
-          "published_at": "2026-01-12T08:00:00Z"
         }
       ]
     },
@@ -575,14 +575,24 @@
           "published_at": "2026-10-09T15:04:00Z"
         },
         {
-          "title": "The Best Movies of the Year Are Finally Hitting Theaters - Yahoo",
-          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbTZzWlllcVduRjlIVzIxMGp6WU4wU3NJR2ZQQUpQVDJoRHlSUkhYUzdVU2ktUHBxUkZuM2pWOGdMbHdPM01qY0piNlIzX2RwZWNQV29OQk41aDA4RTAxMmpMQXE3aHpCemRPR081UEdsU1ZneHV0aUV6Wnh2aHBjMVVwN1pzRkhFT2lrMWduUE50cHlBWDhUUmZtUXRxWGFiVE9xMEpB?oc=5",
-          "published_at": "2026-10-09T19:00:21Z"
+          "title": "Looking for more movies and shows like ‘Practical Magic’? Here are 10 with cozy, witchy vibes - Yahoo",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYzg1ZmRDMGF1VGlHcW1zdW85cHNVUWJfTENuRFU0dzc4SFI2Y3dmRUhydjhyN2FIUVBQTEtMQ19yOFZqNFYyN3B1TUpINTBfcXFHWGs2M0R4ZUwxdWdqWWYtQ3ZvV25idEc4OHdpckZwSnVieHJpZXk5Q2Y3M09kdHhhcjZaa25Cb19rb1RfZWQ5SVFHQURHZUdYRWgtazM5WVh2bQ?oc=5",
+          "published_at": "2026-10-09T21:29:41Z"
         },
         {
           "title": "The latest in entertainment news with Variety - CBS News",
           "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRWo2dTBiZl9PVmF4SVpoM0JWeUE2bTRWSEVvQ3VBdG5hRFVaNUlOeDBGc3hlVjMtekk1TTJHd3FuYi1nWU5NUkZfaEk0WmdUNFJoQmpGQzdkd0lZYzZoUnZZWjJjTnRUdFFMRF9GcURqMXJUaUs2cGFJVXFyLUt5QXJfbllXcmF2UUhBek1PT1hTd1FK?oc=5",
           "published_at": "2026-10-07T21:36:00Z"
+        },
+        {
+          "title": "Chad Lowe shares message of hope following the death of his 13-year-old daughter - Los Angeles Times",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcS1KcVUxRkZZSjZPUkV2ZE5yejdUTGJSU1d3b25GLWlSZ1NkZGJkSDN6R21oMk1vaWQ4eldZV19CMWFQYVU2bTNuNkppM1dVdHRnNjFhMk5kVHlxR1paVHJRQmxLRThidEF5VzZ4dGppSFFXY0x6REhPNkJFTnh6QXU1X3J3V1M4YkEzMFk0TGNnY1h4dm1XQzFSeTZHTW1DNjl5SlNuRUM?oc=5",
+          "published_at": "2026-10-09T18:32:08Z"
+        },
+        {
+          "title": "Why Keri Russell and Matthew Rhys Might Never Get Married - E! News",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQakFSNGtpYkRBeFpIa19GV25oRGQtT0piSzFzOUxEOHZZaHZ3VEl5dXZYdlE5VWdBOWdUZU9CV085NkIzOHdPR0QzNjZuaTRQNWtLZzRIWmVOblljbGRyTHRoOFBtUHF5UU1DakNCdUpVTk1fVC0zYWNJX1RIWFVDclFneTBobUhPSU5seE14NENWcmJtdGZZb3NRWFZobERwal9sc2F3?oc=5",
+          "published_at": "2026-10-09T19:42:00Z"
         },
         {
           "title": "‘The Purge,’ ‘M3GAN,’ and more Blumhouse comic spinoffs in the works (exclusive) - Entertainment Weekly",
@@ -600,9 +610,14 @@
           "published_at": "2026-10-09T17:27:00Z"
         },
         {
-          "title": "Margaret Qualley Reveals What’s More Important Than Finding Love - Yahoo",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQXl3WGVEVnRYLWJpX29DMFExVkk5MTg0ZEJZZTRha2JGQmttTHVmNmdGLTVqb1ZCSmRMc2ZkbzNCcWxPVGhKbkhVaXBJMVA2TUY1TVF5NkdwSDdaSDFPenpCSjJoUGVuWjhnYkx0c3VobGdGWTJObElHNlQ4a1A2RWNNLW43QTBmYjZKMTFLWmhQQmEzdlhUanlPeTZtOUNxNVROcVpYeVB2QQ?oc=5",
-          "published_at": "2026-10-09T19:34:01Z"
+          "title": "New movies to watch this weekend: See 'The Social Reckoning' in theaters, rent or buy 'Spider-Man: Brand New Day,' stream 'Animals' on Netflix - Yahoo",
+          "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPZnVOQXlLNnhQLVZubllhVmZXMzlZQldjNkl3Y0Y0MUQ0TXNLajJEd2pIV1RVanVwaWFYTFdKbTV1WlNMWW03Y2FGeFZDUFZudGpUdjNjYTV2NFFmaS1senNBS2xLb0lvdjl4aGpoSmJ2X3E4RU9UcFNEVElIN1I0dGNKVkJtYnlOR2RYRDhLc2FCcXVUXzRWV1RwaFhCcGtRZDNPNzJXM21DLXU3djd1NmZ3eGZpb2daNmhVZllKZmtBRXlIRXhQYVFZZktZck5LSVo0TUZmTFJKMmgwdVhFXzVkUnlIaXczYXNnZDFIOU1RZTF1S2lZb0gyQnVOalZvcEFxSEItUVpGZzNaQVdzQVBTLVA0Z3A4WnZHcURUQnN5OGVh?oc=5",
+          "published_at": "2026-10-09T14:38:28Z"
+        },
+        {
+          "title": "Dancing With the Stars Reveals 4 Super Bowl Week Guest Stars and Special Guest Judge - E! News",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQUNieTR2c0R2MGk5MG9QdkNBYlJWLWhOa3VUNy05OTZHT2U4UndFdXRuRV9jSWplamtBaDNfdHY1SVE4Y21FQ1RMdFNHcWt6MGVPQS0yYWJibWpwOXhTTWZheExGRm5GMXZlLV9RWllTNjhvSGFuQ3hHU3R3cDZUaUstT2h4aWNfNWFHYXBoRDk4LVNhSk9sRjM0aDJFT0xRVzk0RWZ1WXE2UkJuVy1zaw?oc=5",
+          "published_at": "2026-10-09T22:47:00Z"
         },
         {
           "title": "Entertainment news expert discusses the Paramount Skydance, Warner Bros. Discovery merger - CBS News",
@@ -610,34 +625,19 @@
           "published_at": "2026-10-07T18:21:00Z"
         },
         {
-          "title": "Matthew Lillard explains why he ‘resented’ the Scooby-Doo movies ‘for a long time’ - Entertainment Weekly",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE01MXcwYVRGUFJwSVZUMkxkUThucVNzcldqVU9sa1BCSV96SVFiUWhfTXJTVk4yeGt2QUhyekVabXMzNFhBZllRT1cwZUJJN1VZQm9GbVE3OW5hcDdLbWxiUURpVl9faC1LWW9zZ2RLWjNTcktF?oc=5",
-          "published_at": "2026-10-09T00:15:48Z"
-        },
-        {
-          "title": "Prince live album leads Record Store Day’s Black Friday list | Entertainment News | recorderonline.com - Porterville Recorder",
-          "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNMnFsd2x3YWdzRjRhZGQzS1RuLWU1QkxPQjloYWw4cDZaOFM0SmgxREdhRG5oWnFma1ppOThPMWZrQmRJNU1fdWhDZ1Y2dEY4eGI1V1RoN2xwMzh4LWRhSnNaN3l4dWw0V3BRNktzOERydExHc0ZtNGVGUWxrRmFSUDBXQWVEZHgwMDRLd0l6UWNmOU0wTk05bTBwU24tdklFNXhRdXJVQkJPQWszSW13OG12MFF1SDdaazMzeUNZR1VaQlVlUU1rdHVqOUctNEFyZWEyTjBqelVBRlFsMjJ2eFAycmRPdjR2R2p1VVUwbmNUdXE3UWd5eVdkMjFydw?oc=5",
-          "published_at": "2026-10-09T09:00:00Z"
-        },
-        {
-          "title": "A new “Carrie ”adaptation, “Fjord,” and “Eternally Yours” top this week’s Must List - Yahoo",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNDBWN3k0WGRCek9tYVU4S05MQUdRU2xRWGxac2tXSXIzalF6R0hLVi1ya3pNNVMwa2h2Qi1kVXBEenlEYU9UVDJlbjdWa19hMW9lQ1c4MFk4VEozRzByazFxQkxJZHFPSlhjdFJuTmFQa1ZoZFpJVFBrbnhTR0g1MHk0MlN4SEpzb2tVNnRDa21LajlEZmcyVE5xemlSeUJaWU9Vekh4eW5PZw?oc=5",
-          "published_at": "2026-10-09T19:00:00Z"
-        },
-        {
-          "title": "Céline Dion takes a tumble, but goes on - Porterville Recorder",
-          "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUFcxRjIzV0ZiMkM4eTRhRFJ4Z3FHUlZ4VEF3WGN3TlNreDEtRDRuWVl5em5SU1E0Zl9zWEJ1VEI0TFhzSG5HWUYxQWxEVm5Ydm9Ua1VrUDNVaWNBS21ZOGNGUmdIVl9YdzJQamU2b3pnSU56SnJkM1N2LWNtOUxtQ3JOb3RwUEJzOW9CX1gyV0dzNWlMUGJnS0NoeFROWW5qMlhDSW5NejlkTzRybVZnY00zYjJ6d2tPVHMwZnVHaWxRRFNGR1g2QW1xaXVzVWFaZ004Z01HbmREVVVyQi1WZQ?oc=5",
-          "published_at": "2026-10-09T19:54:00Z"
-        },
-        {
-          "title": "From 'The Social Network' to 'The Social Reckoning.' How Facebook has grown — and stirred up controversy — over the years. - Yahoo",
-          "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQWlNDcks0aWhoVVU3Z0VsazZXMlRkamtjSTVUX0hWOVlSREpXZHRoaEQxZmE1dzRXN0hwLVFYWldYMVZGelNpMG92Q2hsZjFHNF9Fd09LNjJXMjViTmFCUTRQX1JPTUEza2NOVmF6UmVVemNjbm5jbWxfbVVrMEYwc2lVSHlkRXVvS09fNVVHamRmZGhUd0RFbTRXQ1VFZWVTSzl5NWVLekZJcGpCZ1JCd3ZUR0E5akYwX016MWowTmk5XzRFbUVrSDE3enZsNkJHVmw1N1U2ZmFLLVhyZHlMVHNaV0gwNUxLY2pPc0tLYWgzLVVmLS1ndmFWeXJkUlRfR3JrQlNRUHFGaGZi?oc=5",
-          "published_at": "2026-10-09T19:19:52Z"
+          "title": "Margaret Qualley Reveals What’s More Important Than Finding Love - Yahoo",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQXl3WGVEVnRYLWJpX29DMFExVkk5MTg0ZEJZZTRha2JGQmttTHVmNmdGLTVqb1ZCSmRMc2ZkbzNCcWxPVGhKbkhVaXBJMVA2TUY1TVF5NkdwSDdaSDFPenpCSjJoUGVuWjhnYkx0c3VobGdGWTJObElHNlQ4a1A2RWNNLW43QTBmYjZKMTFLWmhQQmEzdlhUanlPeTZtOUNxNVROcVpYeVB2QQ?oc=5",
+          "published_at": "2026-10-09T19:34:01Z"
         },
         {
           "title": "Taylor Swift, Travis Kelce new neighbors rail against privacy fence - Porterville Recorder",
           "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxORWlUU3J0WG5DdnFGR1dHaWowV1hsUE5QaHczZ3lSWnlHS3RHdzRuQ3Rrdi1YWllDV01PeU1MaUdYRnpFOFZTT1BCOVdBU3VkZFZ2UGdyZkRWWFpiYkcwUkxZSGxPYTAtRkhIb2NyU0NCREVZTmJjWllZRFNmc3FzNGlRSG9XQWtRa0NhS0Z5WFdxV0N5ZnhEY1BrNVdPTmk1a0dwUkZraVJ0alBKbTJkWGl3c0J1dUtMWjdRUG1nMDZibVJaOUxIbXdlakY1blVSd2VtRGxQZC1IZ2FlRk9hcXozdE02VVg5Y0JaQkI1VWFDbjV2bHhsSDNPb1dmVUU3bXJVUzlB?oc=5",
           "published_at": "2026-10-09T15:50:00Z"
+        },
+        {
+          "title": "A new “Carrie ”adaptation, “Fjord,” and “Eternally Yours” top this week’s Must List - Yahoo",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNDBWN3k0WGRCek9tYVU4S05MQUdRU2xRWGxac2tXSXIzalF6R0hLVi1ya3pNNVMwa2h2Qi1kVXBEenlEYU9UVDJlbjdWa19hMW9lQ1c4MFk4VEozRzByazFxQkxJZHFPSlhjdFJuTmFQa1ZoZFpJVFBrbnhTR0g1MHk0MlN4SEpzb2tVNnRDa21LajlEZmcyVE5xemlSeUJaWU9Vekh4eW5PZw?oc=5",
+          "published_at": "2026-10-09T19:00:00Z"
         }
       ]
     },
@@ -645,14 +645,14 @@
       "name": "LIFESTYLE",
       "items": [
         {
-          "title": "Trick-or-Treat Hours for City of Pittsburgh - PittsburghPA.gov",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOM1FTLTAtckdNQ2RfWHlqR09lSEk3QTZkQWxUVFl3Ml9PT1lGOWg1RG5HMThQVHQ0ekN5ZUtrV0ZvOV82b3p6QkVPeGNzeEQ4YXgxaGVpZWlCMTRnSlRFbmJ0RjdvWFg2MXp2MnJHSTRVZUNxRkhRV1dKdnB1REs3MDhLcHgxbl9xRHhTd1dicVFaYzg?oc=5",
-          "published_at": "2026-10-09T13:46:30Z"
-        },
-        {
           "title": "12+ things to do this weekend, from the Allentown Night Market and Fall Flower Show to The Last Splash - NEXTpittsburgh",
           "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNUFkUm9uVzdYbWhPOXlUdHBJZzBxdld3bjRnd2Itemtqa29lelIydVV3cXJka21QR0JOYXR4NFJmenUweTRMUmg4Ym5rY3VBUUQ0LWdsQlBHT3N1MlpCUkRuMFlfRkVTajNoTU9PaHNJYnNULVVPWkYxLW1Udmx2UExaWHRvS2ZnUUNlWmVGcWl0RENqeUE?oc=5",
           "published_at": "2026-10-07T14:00:00Z"
+        },
+        {
+          "title": "City Announces Trick-or-Treat Hours and City Halloween Events - PittsburghPA.gov",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWmpnRTJDOW9iWGJlY2VBa2FKeHdYUWVOMjBFQXlUbXpTTV9aUEZpUHZDdnliRjJlUDZOT2s3dnhyZno1Y21IOU1NVnUwN01BdHNoVWNEZWZSa25vRm1NNlJrdGtFd3VaZHFvMmtMSS1aVFpqTER2OUE1Rk40X0lTS25XV094OWMyLUhQdEpUOUllV3BKcjQzeVB4V2wxTVpHS250clZLT3dWTGp4aWZQaVg2aXRGT09iUF9QUzlzVjZ6V2RQaEE?oc=5",
+          "published_at": "2026-10-08T19:41:01Z"
         },
         {
           "title": "Fayette County upcoming events/meetings - Record Herald",
@@ -663,6 +663,16 @@
           "title": "Pittsburgh Halloween events to haunt your calendar - Axios",
           "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONm91QXlrMkZONkpIQmktX0dBN0I5V09YSXZEUDVIZGFzdm9qc3FrTlA5ZGVCYndfVmdIcHRaSjNSTFVHYzI1WnI0Mnc3SXFoTmRpQmNhWXpJVkRjd0lyS2drbXFmcEpOVEtJNzIzajdJc25qbmdyd1dQenZLNlRuTUN5ZnBWNnk4?oc=5",
           "published_at": "2026-10-09T10:45:10Z"
+        },
+        {
+          "title": "10 great weekend events Oct. 9-12 around Pittsburgh: Outdoor movies, trolley rides and more (mostly free!) - Kidsburgh",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdnFwSm1kaUpoeE1oQS11c2lSUHlycUpsY1NoOU0wTlpnU255ZHp0bUxncUNWSkM5MlpubmxfREp3RktEdUlCRkFBSXZJSkRVMUNnZmpneFRvVHZkMG96alZySDF4QjJnb0h5RUpUdjk4THRnZUtwdGdUNUNCX0VTcURiYTVkc095RmhJVnp4ZGlhYTE3aV9zNHhQdWFnaVhJcmV1NGFnb3ptbUN5Q2pPSFJ6MHV6U2JjUlk5UHRTQl9fd3d4WGc?oc=5",
+          "published_at": "2026-10-07T21:28:57Z"
+        },
+        {
+          "title": "Columbus Blue Jackets (2 pts) vs. Pittsburgh Penguins (4 pts) Game Preview - Yahoo Sports",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeU8xc0dIQW1IMzdvSlpoUndkcC1pU2FZS2FmVDUzRzJpWTFjWER6NFM5Yjd4SWlBZ0pfSGp4d0g1cy15aUxOR201VEpMYTRqWFJLWE1VWktYcXEyejJRVFo3Uk42Xy02ak1RX2ZGdDFxLVNTVF9KZ2dMOV9qbG9qMjN3?oc=5",
+          "published_at": "2026-10-09T11:30:04Z"
         },
         {
           "title": "$2.1M Cecil Township home with in-ground hot tub, 7 garage spaces listed for sale (photos) - The Business Journals",
@@ -700,11 +710,6 @@
           "published_at": "2026-10-05T16:31:20Z"
         },
         {
-          "title": "Colts vs. Steelers Score Prediction for NFL Week 5 (Can Pittsburgh Stay Undefeated At Home?) - Sports Illustrated",
-          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSkVIdjkzQnNSZFY3cVNreGNSeTVqOTNEeVhjaGh0YTdac2JkQU1Wczd5UWhRNE5JcjNtRWttMW1aZ2R3VU5hR2JTSzFtSUJGVk12OFd6alV6djdQMEwzVzJibW5MSnI3dnFvTWo5Q3pXVG9CNU5YZEFsblJJdG5ERURQOTdqcDQwV3ZyZURGWFlrRmZzT1NNUDVuLVZrZ1V6dENBTnItZERKX0M0REdxVmdpbUVTeEJmNkFlbzhlZGl4VzA0bjBF?oc=5",
-          "published_at": "2026-10-09T14:00:01Z"
-        },
-        {
           "title": "Food costs are up but SNAP assistance is down, leading to increased need at Pittsburgh food bank - CBS News",
           "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZDc1M3lYdWxROVdENi1WZnBsVHB2SkYyVFpvUVlEUlpybTVvY0hBZ0g1dDRZNktnU05IQk44RkRqc3ZQV0QxMm5GZUdLYTVadzFaZ2s1Z0djSWVpckpvclNicEpBNTdoYjR4c2FuQ2NJY0N2T0lLTVJoZGxqNlotZjR2MEF5YlVTX0h0ZnF5djZ5ejJxcEZUdldkMms4M3Y0aGlLV3lJUkVudC1ISnRmNndMck5INjVmRDFHUndtVG5IRXFWLWt5cldWb1FHa1pwaDFV?oc=5",
           "published_at": "2026-10-07T22:35:00Z"
@@ -713,11 +718,6 @@
           "title": "No. 6 SMU Stuns No. 2 Pitt, Ends Nation’s Longest Home Winning Streak - SMU Athletics",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZ3l3ZHBjcUtjcWtJcGFFQ1FXT2lKczMydXM1NDNQbC1KMUhVWWJVUEFOdnVmTUdDVE1XUnVTVUFfTnBSOWlzV3VCQnJPbjlob3dWXzl3RFQzQkUyZG5Pek5XZjZwVUhvcWtLSFlRbXNLNmptR2dPbG9VVUsxYmRtVVlnZjIySmlNQ1RFQlJYZzh4QVhtV1o1dWhUVVBFWHpUSDRvN1FwcktVbHhQWG9BRUI0cWF6UQ?oc=5",
           "published_at": "2026-10-08T04:14:05Z"
-        },
-        {
-          "title": "Homeless Children’s Awareness Month recognized in Pittsburgh, events planned - WPXI",
-          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQk5RalFrQjZkY2Q0N0FiNGdQT3BUTFk2R0xuTTBleklhbjlOQzF6NVNhSnJYM3JyYmtOc2pFcjNfbmo5QVZ5TGN5RnZXdlh5a3l4b1cyUlVXTmdIVlZjekZ3YTF0eUpVSFNuWmp5ang4R3duTWRMaWlWNkJxbXRONjVtWHFNazlWNmNwZGVsSDU1XzNYOG1lbFdhR1ZIWGdSWnkwWFp5NUU5TkFqcjVka3JlUXZCZzJ6THhlRVdPdVlENDNZTHJTWEUwelVVWUJsQnc?oc=5",
-          "published_at": "2026-10-08T21:20:12Z"
         }
       ]
     },
@@ -730,6 +730,16 @@
           "published_at": "2026-10-09T13:03:36Z"
         },
         {
+          "title": "‘You never get to buy metal again’: Spike wants scrapyards that buy stolen copper to lose their licenses - MyNorthwest.com",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9qSWYzOWI4Ympwdm92ZFpVU0x0aW5nYWNOY1ZuZHRDaWs4akhZbHBTbjlZWXZLVVZLV2RRc0hPRXZkR0lNWjR5RHNSNS1lRnk0VHNfVzFVQnIwdmFJWjVUd0xyVGlpblgtQmxVYg?oc=5",
+          "published_at": "2026-10-09T23:29:34Z"
+        },
+        {
+          "title": "Journey’s Deen Castronovo ‘Doing Great’ After Mid-Show Medical Emergency - Ultimate Classic Rock",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE52R2I5anQwUW81UjhOSFUwUy0xaFRVR3U0Z3NrUUFOa3lHVm5UU2hhYi1VODRfSGhESllBRzhmZHlvRW5iSmdtSzhZdnlnVGNUMl95R1UycVpwOFdvYWViYnkxT0RLUQ?oc=5",
+          "published_at": "2026-10-09T22:57:02Z"
+        },
+        {
           "title": "Ram – Against Review - Angry Metal Guy",
           "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBsTVlkSktnQ0pvbi1zSWNPbGZGa2NoOFFiZWFsY3k0RlctaXZQLWV5V3g0ekVRR2FCOG1Jc0dVSm1TMUZjYmV0N3ItVF9IczRYcEI2RU80UXlLOVBqbXc?oc=5",
           "published_at": "2026-10-09T16:24:26Z"
@@ -740,14 +750,19 @@
           "published_at": "2026-10-09T17:57:39Z"
         },
         {
-          "title": "Walmart’s Metal Carport Is 48% Off, and It’s ‘Great’ for Keeping Vehicles Safe - Yahoo",
-          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQNFFnYjZCM2UzUHpxWXRFSUJ5Z0x3WUZtVXFMVWo5ZWdzRnJGS3VWZUwzMUxWaUltV2xhWGFLVC00QVQyWXRnMU5sUE1sU09QOTJXNkpoQUFXSTRFYkdCdG9EMUVvY0FWSnlsdFQyRTJRTzJiMnp2V2RZajlMeER0Mm16UmFObU80dVpWaEJ0MndZVGoteW5EQl9EQUZYOTZj?oc=5",
-          "published_at": "2026-10-09T14:22:00Z"
+          "title": "The Patiowell Triple-Door Metal Storage Shed Is 43% Off - Yahoo",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUDdqTXNqUHdvLVp4YVlhQU9VRXN0Y3pIQkliQWU3c19ENUs4ZjFUeVFPdkJwd28tWWlvLXFkcHFkZkZhRUZFLWlkZVpubmVLbDVWdWwyTGFfY21RTHF4LUhtdmVfNDRyanNjUVJTMnBveWw0R0xYXzZ5bll0QUJ5U2tkX3FTSmtTTXRjV0VDZkN6akNHVEFKZmt4NGwzX3VxbzdHQXdGNFcyZw?oc=5",
+          "published_at": "2026-10-09T19:15:00Z"
         },
         {
-          "title": "Watch Metallica Debut ‘Fade to Black’ at the Sphere - Ultimate Classic Rock",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZTJ6cGd3YWtSaFhnNTdIVHBhN2ZFclgyaVhvZENlWmhvRXNxbW9YRnF3NDBpMlo5SHFpUjdRUWJla2pld0JFanduS0Zua0Rab0N3WFlTX2ZpcEZhR2g5eWlYUlo1MER2dWlYSEJVVWd5WENMRks2a2ZvaTdObHdQV01yX3FQX2daQUE?oc=5",
-          "published_at": "2026-10-09T12:36:35Z"
+          "title": "Guitar collector finds community, career in Denver's vibrant music scene - 9News",
+          "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQd0NNQkM3LXFrYWR6LXRlQ01zcXBsUmtha2x5Y052ajNCd1h6Q2MzQTFtb1NtT0hQUjdwX0pBWlk5bjlOT1UzSk1LeGl6UHExZXlUcGtlWEtwSjFfN3pBeTIyYUNkeEMzdTV2NllveGhMMk4tWWJ3a0hGbmJfVmdvR3ZxOWJoWE4wVnhWcEEyMVl6aGZSWU9pV09rSmhuaFF3RGlyVGFTVDE3Yl9qYmYySzlya2pkU1hKc3puak9uak82Ti1jR1BHWWZCYWhpRDA5enM2WGdqTm5WWGl4cHVVbDdIZE1FazVmTVFkcjk5NFA4dw?oc=5",
+          "published_at": "2026-10-09T22:45:00Z"
+        },
+        {
+          "title": "Seminole Hard Rock Hotel & Casino Hollywood Unveils 'Zona de Fuego' Florida's First Fully Integrated Latin Gaming & Entertainment Experience - PR Newswire",
+          "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPXzBKRmpEM25JTlpBV2VMWVlFdkphTVVtUkxPOFlvejBxREkyZUVrRGlGY04xVkYyb0l0U082MjhybGdfUmVRcGZDTHFUclM4dmp1SzBfeWpROTFaeE5SZVRWMUcyOFl0MHFsTFJlQlFua1NOV2JUVS1DUHNtZ0Z3TzZxaFZVOTVRTzMzUWtPWFVLMC1BbzB4UW52bFBlZHg2WVUyRVI3amJScWxGVG9yV1B0dVBtZXpFRFRIejNaVTNXc2lfZ0FHMUd6WXE3QkxGRC1tSG54Y3ZqUWRETFNyUDd0TkJSM0ZVc2IxcUZ2eC1mRGwwZzlwRHp0eEw1Zm1WRTN4RnN2aVY2OG9lcmhZRDhrcWkwR1hEbEVJ?oc=5",
+          "published_at": "2026-10-10T00:04:00Z"
         },
         {
           "title": "Metal–organic framework nanovaccines for systemic tumour regression - Nature",
@@ -755,9 +770,9 @@
           "published_at": "2026-10-06T10:45:07Z"
         },
         {
-          "title": "Scientists create record 16-metal framework - Metal Tech News",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVlRyMU1UTlNmOWNQay1IMWo5R1R5MU1qWkVGN0p6NjNlaUZlMG9NODhXWnpsbEI0WDVwS2xQTEpsVGMyWHRrc3BXcEw3YlFsWW1NSjZ2Wl9pQlVVWTV3QmlTTXBMZ2lSWWw3TE9vb0Y4bzQ0YzRaVVBIakpWUXE3OXZYVlpDakRQQm1udndTSnFzNFBsbU9rQ0VVb2xmVFhtQ0l6OE5tdk1ZZ183RGFXQQ?oc=5",
-          "published_at": "2026-10-09T18:15:23Z"
+          "title": "Get up to 20% off Fender this October at Guitar Center! - Guitar.com",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQWVXc1JTN0F3ZnFERHBZbDZaUUhSZ2ZjOW9YcUpBSF9kTXB3YVpZRXh3M2lQc3diWnhEN0Fzd2lpT3RlVlhuVXFtekszM3lPcTVTN0VnTjhoMTQwMWZtUlpoa3pmSmNGT291MG9NT0JvVWEybDN3TGZ6ZHlEQlpZeDFCT2UtSkdXVjBYbVBJNmRmTU9faEhJcFVHQ21pQQ?oc=5",
+          "published_at": "2026-10-09T18:18:37Z"
         },
         {
           "title": "Here's where to find planks and metal for Arc Raiders' Sheltered Retreat project - PC Gamer",
@@ -765,39 +780,24 @@
           "published_at": "2026-10-09T13:57:20Z"
         },
         {
+          "title": "Art of Guitar Making Festival coming to Stony Brook - Newsday",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1rQ3BtSnRmRDAtMVZUaXRIU20wZFlSYUJ0Rl9xcVhnem5BT0ZTV3I3WGZ6RXZXTzNDSTVrRnJSVjJ4dkRiV2xrNnFRMGxIWWhNRkg1UkpfekV4QWg4NGxfZ1MyaEwwMG1kVjd0b0RzaGRQMkM3Nl9vcEVmMjVIQQ?oc=5",
+          "published_at": "2026-10-09T19:35:07Z"
+        },
+        {
+          "title": "Scientists create record 16-metal framework - Metal Tech News",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVlRyMU1UTlNmOWNQay1IMWo5R1R5MU1qWkVGN0p6NjNlaUZlMG9NODhXWnpsbEI0WDVwS2xQTEpsVGMyWHRrc3BXcEw3YlFsWW1NSjZ2Wl9pQlVVWTV3QmlTTXBMZ2lSWWw3TE9vb0Y4bzQ0YzRaVVBIakpWUXE3OXZYVlpDakRQQm1udndTSnFzNFBsbU9rQ0VVb2xmVFhtQ0l6OE5tdk1ZZ183RGFXQQ?oc=5",
+          "published_at": "2026-10-09T18:15:23Z"
+        },
+        {
           "title": "Pilsen residents call for more air quality testing at scrap metal facility - Chicago Tribune",
           "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQnlFMGVmeGJtQlpJU0N1MWREMmxTWGxvUC1PZlNCSDhrdmEtVk9GRlNnZ1NHUDVDc2F5TS1RZUxtNzdYV3lQNmM1VjN4QlRzMkN5a1FvSmZBcWtGRV9NX2x3QVo5M3U5bDNVTkZETF9yTTNnZWJWa1NaeTJubjl1Z0k1TQ?oc=5",
           "published_at": "2026-10-09T11:00:57Z"
         },
         {
-          "title": "Get up to 20% off Fender this October at Guitar Center! - Guitar.com",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQWVXc1JTN0F3ZnFERHBZbDZaUUhSZ2ZjOW9YcUpBSF9kTXB3YVpZRXh3M2lQc3diWnhEN0Fzd2lpT3RlVlhuVXFtekszM3lPcTVTN0VnTjhoMTQwMWZtUlpoa3pmSmNGT291MG9NT0JvVWEybDN3TGZ6ZHlEQlpZeDFCT2UtSkdXVjBYbVBJNmRmTU9faEhJcFVHQ21pQQ?oc=5",
-          "published_at": "2026-10-09T16:18:37Z"
-        },
-        {
-          "title": "What’s good in Portland? Prog post-metal duo SEMUTA share their own map of the city, from all-ages DIY to High Water Mark - IDIOTEQ.com",
-          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBTdUVfVkNSX3N0YnRaN0U3d1A5ckhiVVFscklMU21yUGo1OFYyMTh3R0tZV3pCU2RyRkVLU1JpN0lmUHhkNDBtckY3Y0tkV2FXZmRwTXhib3lJc1JTbUNWUW1tZkFRMWxHcDN3a1puOVhCTVlPVUlfQVNn?oc=5",
-          "published_at": "2026-10-09T06:00:44Z"
-        },
-        {
-          "title": "St. Cloud Tech Homecoming Game Gets Extra Police, Metal Detectors After Fight Threat - KNSI",
-          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNaE5zMHRaY04yVE5DemRzZEpuQnF0QTR5by12WkI0ZE1nLTZPVjF3TjhwbC1ZMTFja0ppX2NrR2x1UVN0dVRzMEM0RDFBS0NSWXJMV0plaTNOYzJJajdvZm15NHZzU3d5NjJ1bDdnZGVCblNqODAwS1hHQ003eHhNbjFNaUlpeEw4UXZUaDJBVzlqV0FUVHVoNmZKbDVZLUI5aXgzeGljM29jM095ZFpkRV9WRHlFblE?oc=5",
-          "published_at": "2026-10-09T10:15:49Z"
-        },
-        {
-          "title": "‘Hecho con amor.' This Boyle Heights guitar tech made Olivia Rodrigo's heart-shaped guitar - NBC Los Angeles",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQclk3dFBBaEc1UXRiUU9xSko0WWgzT3lrRmVKei1kQ3hBUDZtT2gtazhoWlNzWEY3T3F6ZmdBVi1VUDNwRnF4M2phaEZBbkd6NjFFNVR1OWVkaHVDaHBXZGQxc2lmYmZOMW81S19RUTUwZnNDb1Z1NEFRLWtqYy0zaGs5cnRIT0RqVnN2S1ZB0gGWAUFVX3lxTE1qVU10NjM1dmlnYlV1VjBHUEEtVEdQMWFXaWx5YjA2UUdlWkh2WERsSjBzYmtQem5hZjRtcTAwS3NNS2lOYUgyU09sd0FNLXZMcFlBSzdrLVd5cERwM1ZtenZ3dkZHdG0zWkZ0alUxYm40LVRlTWlaZ0s1aXJwaDV4Z3hlUDctR1ZfSGdwQldRSGxUQlh1dw?oc=5",
-          "published_at": "2026-10-08T23:39:59Z"
-        },
-        {
-          "title": "Art of Guitar Making Festival coming to Stony Brook - Newsday",
-          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1rQ3BtSnRmRDAtMVZUaXRIU20wZFlSYUJ0Rl9xcVhnem5BT0ZTV3I3WGZ6RXZXTzNDSTVrRnJSVjJ4dkRiV2xrNnFRMGxIWWhNRkg1UkpfekV4QWg4NGxfZ1MyaEwwMG1kVjd0b0RzaGRQMkM3Nl9vcEVmMjVIQQ?oc=5",
-          "published_at": "2026-10-09T19:33:07Z"
-        },
-        {
-          "title": "'Iconic' Covington hotel won't become a Hard Rock after all - Cincinnati Enquirer",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPY0pBMmFPMUJ2OVAyVTY0T1hDdjhKYklXd3JRNEp3QTBOUnc5U2hhV3BQdWNhT21FeWNKWHZvWHBkODRBTUNqRXJ4cFNyd1hOcGg1N013UmxBSExDamxaMUpBbWhfQ1p4ckpoUElNVk1IZTJNOGZiTlMtR1BicnNPMmV3bWVSamN0STN5WS1rTkN3VEJxb1BRNEQwMk1Ed255OHAySThzdU1EZlVuRGZZ?oc=5",
-          "published_at": "2026-10-09T13:25:00Z"
+          "title": "Slash Honored for His Legendary Guitar Legacy With Les Paul Spirit Award - 95.9 The RAT",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZ3VNZ0ZkUWdaQ0ViWEd6NUFQa1l5eEpKZ2JWY3kxZlZVdktnWTdTZjRENnB0WUIxMWF5V2FramJhQnpmdDVlWUsyMUw1MnZFb0l0SDZHOHMzMFFrcjlaRWJHNHJqbVFXZWxGcXVaZFVzTGRwZHU0ZlJZcWhnak9Mc01mNk03RWtVbG9FYVM4WlExNWNfUUlDQU5aRmNJRHJZVEQ4?oc=5",
+          "published_at": "2026-10-09T14:55:39Z"
         }
       ]
     },
@@ -805,19 +805,14 @@
       "name": "LOCAL NEWS",
       "items": [
         {
-          "title": "Jalen Ramsey Reveals Problem With Steelers - Sports Illustrated",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd2xUdmo5eENCcVFsTTdRRlkyemxZYmtzMGNZT09iemZVZldtbWc1V0pOTl9lVVBGWEE3MTZqUzN2NWRmaVAwM0N6VTNNMmRiNE8welJwMVRaeUdxaWxpV3o2eFBIYWxNRkJSYzltQ0xpcmwwWi1FanF5SjVHa0l5VnQzd05JSzYtZFA0RWZ3?oc=5",
-          "published_at": "2026-10-09T17:41:17Z"
+          "title": "Wolverines Drop Meet to Pittsburgh at Canham - University of Michigan Athletics",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY3pMT1diMWtUMElwQkdNemRCSGo1TWY2Y3VyRm9JODhJYjgzNVYtdng4TElRcmtpNVlkS05GcjU2MkRmc0F6OEl4bzRtSDBtN0lTSnlLUS14dkNZNUJ6bFhyMVI5NWZlVXlaYmo0T3BhRWR3TTVMa2djTy1ENGhxTWxkTDdvenRjang0Z1JHamR5WVc4UGcwbGxJNjZ2eDVmV1E?oc=5",
+          "published_at": "2026-10-09T21:33:59Z"
         },
         {
-          "title": "Two top Washington County finance officials resign citing hostile work environment - The Maine Monitor",
-          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80MVVGdEp2aVJQb1U1dWFOU0tOU2QwcjNTQnhOSXJ4N2I3RzR2eGYzZlZBSWJxcTJwUk50WEU0QzVhYVBsX2I2NVFrYldUNkdkMFdxYzdvdHlEWGVQRml5VFRTWW1DZHlkMkF0Y0hWSWdEa19yZ1lqa243Zw?oc=5",
-          "published_at": "2026-10-09T18:18:34Z"
-        },
-        {
-          "title": "In Pittsburgh, as an autistic person, finding joy is often a challenging journey - Pittsburgh's Public Source",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeTc4QzNaZTNwejdicTlwYWtXcjJsbE5JdENBdDktYUVtaHF3dERyZEhTQWdUT0l0QlJITnpSQzlvQTlCVjF4UmhqdHpwNVVtNWE0ZUc3a3hERjZqSjFEUEh6b0NkSHpYanBEaVFWN1dZQTdqSXZpQU0ya1E4RHA0Mw?oc=5",
-          "published_at": "2026-10-09T09:30:00Z"
+          "title": "Squirrel Hill Tunnel crash causing heavy backups on Parkway East in Pittsburgh - WTAE",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVi05Z1dRb1M3Snd6SXhYZkpkRTZmcU9WVHVCRnZmRkZHUVRQcUd3dENQYzVrdFhLNnl4UjhPekRKZ1VnaUN6b1BEbjVBWEptU3d4YktvZmlycGhVLWs2SFlCWmNJZnFzWC0yWUdpcFB3czMzQWNXVXY4RHFUekI1VW9jaEhtTHBOZlJBTWJrbC05QQ?oc=5",
+          "published_at": "2026-10-09T21:47:00Z"
         },
         {
           "title": "Pittsburgh to see impact from Hurricane Isaias this weekend as rain is expected - CBS News",
@@ -825,9 +820,29 @@
           "published_at": "2026-10-09T10:51:33Z"
         },
         {
-          "title": "Steelers Rookie Puts Entire NFL on Notice Before Colts Showdown - Yahoo Sports",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUGJKMV9YTjRfM3pqQzEwb0k3UGNiTmEwZVZrcUk0OThZUVJ6djk4ekg1RHlRSWR2T0FrMjA1RWRDTW5zTDdLYXNwMWdnYk9YcUFINHo1UE55d0R2SGZFUjh2NGk4RVpHMHhwaUtFSnRNM0xMMGF3YnBZYllQMjBJYWxWOUVpS3M?oc=5",
-          "published_at": "2026-10-09T17:03:28Z"
+          "title": "Pitt Mourns the Passing of Football Legend Mike Ditka - PittsburghPanthers.com",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNb09veXdiVjdSZTlKU1VDR25PbWxYcExteFFlb3o1eVRvOXRlcmNLOEZidTFnV0FvZHJnZnBicXRwQWxJeEpIWEpCWmk4VGMzdnFONFZBVDd5UEdkV2RRZVVFeFNlMFd1dVAyU3REU09pN2lqT19MY1RjWUtHQUhYbVptQWtCUTFOVDdockhzblhrLVZUM1U0c0FLQzRFZ19P?oc=5",
+          "published_at": "2026-10-09T16:26:30Z"
+        },
+        {
+          "title": "In Pittsburgh, as an autistic person, finding joy is often a challenging journey - Pittsburgh's Public Source",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeTc4QzNaZTNwejdicTlwYWtXcjJsbE5JdENBdDktYUVtaHF3dERyZEhTQWdUT0l0QlJITnpSQzlvQTlCVjF4UmhqdHpwNVVtNWE0ZUc3a3hERjZqSjFEUEh6b0NkSHpYanBEaVFWN1dZQTdqSXZpQU0ya1E4RHA0Mw?oc=5",
+          "published_at": "2026-10-09T09:30:00Z"
+        },
+        {
+          "title": "Another early season road test in Pittsburgh | Colts Happy Hour - Colts.com",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQV0lzZGZKa3RHWENydmc4TmVZWUhDVjhwNU55NVpqMmFwRGhDY2liWW8tNWhzZDBzMTVERFhSeXdNVFp3QWNnRTZHamY1ak1jUjFUMk1zMG92ZFJRWW5lbFNIMWpNT25FQi0zV1BSejVuQUZDYXJhSjBOSlNQbDdXNkVXSVpYbHJzbUZjN1RENTd1V28?oc=5",
+          "published_at": "2026-10-09T23:12:55Z"
+        },
+        {
+          "title": "Paul Skenes' best moments of 2026 - MLB.com",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4tZWEyTVFCZVBKalBsU3N2UlRpcnRrYXRmOWJLNGFuRHBqMl9SbUw5LVJKbFdvLVo4VmN1TzlyT1pwLVpTLTZpampPWEFEaVhLQ2piSUdqaTllSkdjcFpJdEVkYktCbXJ3aEM4LWFBaWZFRXR2?oc=5",
+          "published_at": "2026-10-09T23:58:20Z"
+        },
+        {
+          "title": "Superintendent addresses mold at Washington County, Va. schools - WJHL",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQVVSdTFzV0JSRnJYRDNtMnZURFdvR2pDVTFHZWhwWTZ0ZU5LTU11LXFaUTlIejBWVl9URVc2U2VlQnRYUlRTWWtPQlVEbmIxenM4ckFlVTFNakV3VWhSOEtKcnNDOEppelVkQko0bmN1aTlnMkVnS3dGZG9QcDVHZWt5OTlBcWs1N2lJRVpyYTJCOU9zaDJ1UFd30gGfAUFVX3lxTE90N21LQ21IeDRkZVJmcTRacElIdVlUYlg4cExHSGVaVnYyMGszc0FlVUFsQzV3X1Vpenpjel9ZVWxLWFhxVkZuMVR3LUpSZmE2QnI2NXhkckJWRm5SN0JnWDVkWU1LQTBIYTV6UW1sTkZNd2duWlFOTVR3Mjc2RXhjcHlLMEg1d1hoRWRfNHlPd2Z3bnJKaWNCdkZWdUpGQQ?oc=5",
+          "published_at": "2026-10-09T22:06:10Z"
         },
         {
           "title": "Students invited to explore career opportunities at Pittsburgh Connect, Nov. 23 - The Pennsylvania State University",
@@ -835,49 +850,34 @@
           "published_at": "2026-10-09T14:29:17Z"
         },
         {
-          "title": "Suspect on the run after stolen car chase through Washington County - WTMJ",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRldzN3dsc29zYUltUHY3VDhjX1V4UnZQXzI1R2pCLTBrV1VCdktQd3RJc3lTWWN0UGQxUVBnZi1TczZWM3RXUkFoQWJXaHBzT2RLLXNhUnB6NWFFaUVUdmVtbC1DUnZ3TDE0dmYtaFdKWk1uWWdtUzFMVUdsVF9uSF9Ia1ZZSkM2bm9udWVUY3JzalQ3SzdqcGZTVFNHZXdQeGFN?oc=5",
-          "published_at": "2026-10-09T13:37:45Z"
+          "title": "News 09 Oct 2026 - Washington County Sheriff's Office-Ohio",
+          "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNRE00OHBzNVI3NnREcTFuTEEyQ2xLckpRQ1pCOVgzVUtmcFdxWjg0aWd4ZEt0ZmpPa3IwSWEwY2FrNmQySHYwbk9jRHVUdXVVMGp0VlBIQ2hKUnJrZzFyclQxNUptZXY5YThRNmQ2V0pma05KZGR5ZjR4SFpqQWlVMFRXakptSjJ2QUhjRVNXbmkzbjBZUTktRk81bjJFaE9yMVU2a0tuRDE1UGY0R3FESHFrRm1hN2E0Q1hIR0UwOHd6ZVZHaTlTOGVoVE0yRWNuUWxzd19yYUNWWUwta2NUcUhfTjVjS3JqdmpVWWUzQ0FvcVBfMndKcVR5RkYxQV9ibFR3cHBZMXFMbHhFZldPZE4xd0hzSEhiZHBNVGI0eHZnME0zcExVbFRYYWI3Ti1yUHNiZ2JiaElDN0pPdkV0aEZn?oc=5",
+          "published_at": "2026-10-09T20:00:16Z"
         },
         {
-          "title": "Glendale Desert Dogs @ Salt River Rafters | 10/09/2026 - MLB.com",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBJTUVMaGt4ekgwVnhzRWpHd3JuQTktTVNjd1BpdTRxbHNyaFF6cXczajJwVFJuZzhDQk5hVTRWVE5GTm5qZUFlSEpBM255QnFYUXBVSGFURGlWUjFqREhtcS1yX0xNVUR0VmdSX0pZMUhxRVU?oc=5",
-          "published_at": "2026-10-09T20:08:20Z"
+          "title": "Buccaneers' Next Game: Steelers Come to Tampa in Week Six - Tampa Bay Buccaneers",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd09jSUVBc09RMnFoaDM4enZJTm0wakRmd0Y4TXNEcmh5UndhVVpFQ080bXR6dFBjMDltbndCY0J0R05yZWxZVVFLZWJpeHB4MDJmTkhpTDBDMkFXOUpRNi1ucEwxSWlkeDJTT2tKRGJHRmtvSVlRTmhpcHYtT0Vpa19BS29wSU1GVG9sdzNrNnJBOGFMeDJmS05EaS1qNjJFZnZCTXRPN29BVmEz?oc=5",
+          "published_at": "2026-10-09T18:52:04Z"
         },
         {
-          "title": "Colts-Steelers preview: From hurricane remnants to Mike McCarthy, unpredictability will define Week 5 matchup in Pittsburgh - Colts.com",
-          "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQczRIZzlmRXdubmNPTjFLbGhyaWVMcTdMYU9GeHFVWXVNQlFtblo4UnpUekRVbjN0blpTVGpDUDhlYlZKekM0QkoyVlhtSGdPQ0cxQjVDWi1jT0Rhb1hqVGp3T0xwcDVXeXZyS3pQcVJFamVZaFo3ZGwtQ2tHcDZVeVowZ25pazFvOE1uX01ublJ6X01xa2pEOWVKTDdVT09TcTR4SUtMMU83QUN6Wk1OUFZ0MG5sd0tITUVzU3E2ZEpDZkJPV0dhbTJxUWdWSFhSUHk5ZURQVDB6VE5KZ0s5V2N3?oc=5",
-          "published_at": "2026-10-09T16:52:29Z"
+          "title": "Game Preview: 10.09.26 at Columbus Blue Jackets - NHL.com",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQRS1sQTB6dUxwNVNIeVpHbmE4SU1mV3hFckZGbG1QSEY3b2VORzRhUUFpa2UwVm5TVERBMFFMank0OGRyd05lQmdsM1VWWW1tUm9pS1d1MTJNRzJHYnBLRy1lTl9lUVJFcWRadW90OEpiRDBoUmxONTlCVDIwWjF4MC1UaHVoelU?oc=5",
+          "published_at": "2026-10-09T17:47:28Z"
         },
         {
-          "title": "Otis vs. Washington County: Colorado High School Girls Volleyball, Oct. 9, 2026 - CHSAANow.com",
-          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTnlzd3Etd21icVFXTzc0czE0QnF4dmdVRTRMcTRtUGtBWUNOOXhkVzVUNldoX2JVRmNXb2FrSmRCZF9Ib0gtUlZYazJrVUdkNThrbkRqSVB0QjRMN1R6bUN5YUFxZDJuazVWM0M3bVBvS3ZWSElRNHFENGNIMUZMNExPVGZpZUFzM1pNbFUyVXY?oc=5",
-          "published_at": "2026-10-09T06:02:06Z"
-        },
-        {
-          "title": "Stastney Settling In With the Penguins - NHL.com",
-          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9hM3RLYk1zLWgxclMyQlZKTDI1Q0FIMUZKODRHNmZpLUNSTFJxWFZyNmJXbmRURmgzdmkwSFR5VEFMcmhkSUtYb3pkTWF0X1J2RzB4cWtMV2JFNDNQenJoZEs5TlBmbXhRa0w3VUx4VFhvb1NTbmMycVY3RWk?oc=5",
-          "published_at": "2026-10-09T19:52:13Z"
-        },
-        {
-          "title": "Pittsburgh Walk of Fame Gets a New Sign Ahead of 2026 Induction Ceremony - Pittsburgh Magazine",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPc0EzRTdmYXhldXZ0bnMzSXZmUGtRRGFYOWZiQk9tQldPMVFaZ1pVQWVWazhCa0VnR1hDNUd3aUVrTTNIN0RxUS1WVm5WZVRLMUN0SXVET0lHVzlPM1RsUzhpbVdoWkswVnVybHNHbFlzVldJNXdFbkJEaEpESVpzd2dfc3E5RzNjRjUwS3k1dDFzMjY1ZU5XOUc1enlSX3drUEt2YlJZeEtYXzJP?oc=5",
-          "published_at": "2026-10-09T19:30:46Z"
-        },
-        {
-          "title": "How many bridges does Pittsburgh have? Depends how you count. - Spotlight PA",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaTM1TFdRM2ZWU1Rncm9aMTRYSjNFTmdjOERKMVVxMGlNREdlOXVCMEFOS184dFg4dlQ0N2ozVGFvNzNNTmdNLXdCcFcxX2tMYVY0aW0tdFdfcXk3dkluUG83ZFBpMVFUZ3Z2Y1JJT2tEMzRNY3dCQ1V1b3Zpd2p1RWs4STlEY0taZGlRRVp1eHM5MkV0Sm5QX0l0WnY5c0lTS1FOV1FJMVpTRmM5YVhkZFduX1I?oc=5",
-          "published_at": "2026-10-09T09:00:00Z"
+          "title": "Steelers Rookie Puts Entire NFL on Notice Before Colts Showdown - Yahoo Sports",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUGJKMV9YTjRfM3pqQzEwb0k3UGNiTmEwZVZrcUk0OThZUVJ6djk4ekg1RHlRSWR2T0FrMjA1RWRDTW5zTDdLYXNwMWdnYk9YcUFINHo1UE55d0R2SGZFUjh2NGk4RVpHMHhwaUtFSnRNM0xMMGF3YnBZYllQMjBJYWxWOUVpS3M?oc=5",
+          "published_at": "2026-10-09T17:03:28Z"
         },
         {
           "title": "Mike Ditka, an Aliquippa native who became a Pitt standout and NFL legend, dies at 86 - Pittsburgh Post-Gazette",
           "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNS3lqX0h3X1lZdlhqVXpEeE8xX0Fjc3dvY2xQUUoxbzAwWHNveUNJN19ZQlBORFVhenN6MUIwM1hidEFCc252aHFvdktkSHhKOGxNUTNnaHRycWhYX1RVQ0JjWjAzZU1aMVNSaUx5SlZ4d19YQ0dUTFp2V1I4N1Bxa1FsWjQzdHlyT0E?oc=5",
-          "published_at": "2026-10-09T20:14:36Z"
+          "published_at": "2026-10-10T00:44:37Z"
         },
         {
-          "title": "UNC Football Opponent Preview: Pittsburgh Panthers - Yahoo Sports",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaVJVZjZEN1g1VVNNS2Y0UWJ5c3J6d2RHRG5hYWk0WG16a1I5ck9Vd3JZZFBSYlNtbHgwdVQ3OEVSMXpqdmc4TmFOemNyMGZFZDh5anRUQjhfenNQdGVKYm11ZTJiZENxUVF1ZWdEaXRWNk5TZENCNExNN1g1SkJVNWhaUHZfb1BWdmNTcFBudEN1c28?oc=5",
-          "published_at": "2026-10-09T17:00:00Z"
+          "title": "Police pursuit ends in crash in Washington County; suspect in custody - WPXI",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbEU1NXpGVVJWQWdUY0daSU95ZU9ldGk4MDU2STc1dkFDNFR6S1E5YW5XUl9rX0c0UHBoaXFiOHpvTFM3aVFaUzJvTkpaWmJveDVocVlKRHgyMGRaQ0NqXzhEeGp1dzd4OExCbndncm5ueU5KN0VhcUpFbmJ0X2pNakwtT3ZyanR0dG5uWmxKMG1ZcWhpbERlNEs0MElFZ0lLdk1JdDVtVkNQaVRGMVRiNHdvQnN5S2o1LW5R0gHPAUFVX3lxTFByQkhkRE5qMUloSENhWUwtU3dEQ3JVSkZMem9vdmx5VnZFc0MwM3hBTDZCNVgweWkyY2RPTWwyVDBGNnZOZ1RlSlQxMElhX0hyWExmbUNQU0F2QTczNTY1TEc2OVM2dzU4Y0FEY0ZUbnNCeWNmTW80S2FmM19NVDY4eHhKemN3RlNERmxrUGVtXzdmalZ4UjlPcGxfVy1HZUVsNERtUC0yX01UeHVIc0tPdHB6dUhKRFVFQ3RGSHhLY3hsbkdXWVJvX1cta2xmSQ?oc=5",
+          "published_at": "2026-10-09T23:33:04Z"
         }
       ]
     },
@@ -930,8 +930,8 @@
           "published_at": "2026-10-05T16:06:41Z"
         },
         {
-          "title": "Pittsburgh's public crime dashboard details summer spike - USA Today",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdHY5NnNnWldBeHhzSkM4ZFNFNG1zMUEyQ3ZTeFhKSHFPMnJBOW0zSzh6bmQ2b1YtclU0R1BIakhCRXlybWxsZ3ZSS2NXbnJsb2FBQXpLbi14NHpLdlZuajVuVHYxQVUzdVlWOVpTcDVxdFhIZGl5Q2RRd2hKSWVtblk3WmtPdVhHUTcwN3NqX3VzOTBQMk1sMFEtb0FIUnFVTzlnRE9EcEpoa3M5MjE0RG03X0lrdw?oc=5",
+          "title": "Violent summer reflected in Pittsburgh crime data - Buffaloes Wire",
+          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNUlU5VFFRZ0pNaHFmN1lNaUN0OEtlODRZVkY4S0tHYzVZUjFobzJpbjBqN1NkLWxXZWszQklYWU12VDA3UlN0ZkhHeHJEeEhQT2RlSFRrWjJNN1NBV184RzZlRXRnUnBxMEZNamo3dGFmanZqcEo3VXd3bFlzMHBlTnRCR1NwNUdmaDhuMG53MUNUVmdDNzQ2Y2hNOW1QVmIyZEZCbW9BU095Q1NSRG1EQWdGUlAweDB4YmNiMTBUNkNPbnJ4MVg2eEljR0FMa3dKWXNFdFl3SDBCQTlB?oc=5",
           "published_at": "2026-09-08T07:00:00Z"
         },
         {
@@ -945,8 +945,8 @@
           "published_at": "2026-06-13T07:00:00Z"
         },
         {
-          "title": "Violent summer reflected in Pittsburgh crime data - Buffaloes Wire",
-          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNUlU5VFFRZ0pNaHFmN1lNaUN0OEtlODRZVkY4S0tHYzVZUjFobzJpbjBqN1NkLWxXZWszQklYWU12VDA3UlN0ZkhHeHJEeEhQT2RlSFRrWjJNN1NBV184RzZlRXRnUnBxMEZNamo3dGFmanZqcEo3VXd3bFlzMHBlTnRCR1NwNUdmaDhuMG53MUNUVmdDNzQ2Y2hNOW1QVmIyZEZCbW9BU095Q1NSRG1EQWdGUlAweDB4YmNiMTBUNkNPbnJ4MVg2eEljR0FMa3dKWXNFdFl3SDBCQTlB?oc=5",
+          "title": "Pittsburgh's public crime dashboard details summer spike - USA Today",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdHY5NnNnWldBeHhzSkM4ZFNFNG1zMUEyQ3ZTeFhKSHFPMnJBOW0zSzh6bmQ2b1YtclU0R1BIakhCRXlybWxsZ3ZSS2NXbnJsb2FBQXpLbi14NHpLdlZuajVuVHYxQVUzdVlWOVpTcDVxdFhIZGl5Q2RRd2hKSWVtblk3WmtPdVhHUTcwN3NqX3VzOTBQMk1sMFEtb0FIUnFVTzlnRE9EcEpoa3M5MjE0RG03X0lrdw?oc=5",
           "published_at": "2026-09-08T07:00:00Z"
         },
         {
@@ -967,7 +967,12 @@
         {
           "title": "A taste for unusual colors - Chemical & Engineering News",
           "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE54R3lsSzAwSV9QLXZNeTF2ZmEyTF9mbWhRV3E0Z2EtYUJvckJOTTB3SVFKUTNLd1IyQVFsczcxVkR1MTh0TGgzWjQ1dW9EdjJUTkNSeUhVWUI2OHF0TEYyNlpUVHlvN3FLQUNENHpMa3J6TDFa?oc=5",
-          "published_at": "2026-10-09T16:03:19Z"
+          "published_at": "2026-10-09T16:18:05Z"
+        },
+        {
+          "title": "Mr. Bones Pumpkin Patch, that quirky Culver City gem, is back to charm-up fall - NBC Los Angeles",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQV2ZTS0VmTF82NW16RVVxSENBbnptZlBVX25veENLUEtta3NUZy1IaS0zRmJFbU95V3BKUVBTMWd2TTRPbmFMVy01XzJpcjA5U2p6T3JiMFhBMW5VUjVtM2g2TzhyYUVTa0t4YkMzSGhDVExyRUd0LUt5djZqZ1R1ei1NMkZROUJmUmVDQmNUdWJhRnRSeExLdUNPVHphemh1LXcxd2ZVODhwejJld0dheXZIZm93TjJMYXFaN1RyYVU3QdIBygFBVV95cUxPOXA1WmdubVc1QjNhNGk5cGNJa2VqTHpJaVk2VDgwcWZwSXdfeHY2dV91VWNXMHpJaDdldnVtV0hGS29qVXBmYW5nNWRxTnZQcERyTHdscXR1azhUbHRVak9lZXB0MTNDcEhxc2pXWmZRZ0Z2WkZ2MjU3T2dWOTNReU4xdW5lTzdoTlNRZUFKV0hNNW4tS1dBUjNFY1B2SXJJOF9iVW5oMmZTVF9HVHhBdmR2ZUcxXzJ5UHZ0M0dTSjVBbG0tUEFHVzFR?oc=5",
+          "published_at": "2026-10-09T23:59:45Z"
         },
         {
           "title": "Politics Unusual: Councilwoman Carmen De La Rosa, Rebecca Bennett join - FOX 5 New York",
@@ -975,24 +980,14 @@
           "published_at": "2026-10-09T18:34:26Z"
         },
         {
-          "title": "‘Star Trek: Strange New Worlds’ Finished Season 4 Without Making Nielsen Top 10 Streaming Chart - TrekMovie.com",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQS1o2X25qWU9MbzJheXRRcWhKUm9jcmR6Sk5kRTQ2NV9Ua19mSDR3eUtXM2V4bnc0amI4NUtpYzBsTlhXZlU3SXk0Ymx4OW5ILUZlMmlSS1ZmY3VGaGd4eEo3WnIzSGNhYVBQLUE1OGpfMXZsejRURHN6aDl4bFZ5aXRxb2UzT0N4OWdnZVAteU4yVkJxRWFyM2Q5NlFJZHlMeHhqUUp5XzhzQnh3NUxZTGhQNXhnZjhkU1VyVU1WM1JhVlhV?oc=5",
-          "published_at": "2026-10-09T00:15:47Z"
-        },
-        {
-          "title": "The unusual plot behind Maybe Happy Ending at the National Theatre - NBC4 Washington",
-          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZFRhRTNOZEJzTWd6VGkwN2toQ1dTdUNCa05zU290OUg3OXM5Q21mOTlGS1hnQmE4ZlVDdjJuQUgtU2FhNE1xUDRsdGhjTlI2QXJtLVl0QkJFajVpNDNPNUxSWVR4Y01SS1hEaUp0a0FGeENKU2twWHVLMC1GOTI1MFctSkdEM1FEVGRObHlWZ3RCa3pjclR3S1d1RUkxRkZjQWdQa21kTkYtQU1rNkRlZHFwNTZ5TUVRM09jSkx5LWFsM3FHRkFGcFJCTGlNNHFU0gHYAUFVX3lxTE56QVZoZDQ3dUFxYUhSRldJNlpzVjUzc3ZILUdVcWJMZGJTaVFLcUZCay1RMGk0d3V3UEsyRUVxdGR4UzNkVHB4RTF6Mlc3LTQ0OFY2OHZKa0VabE53Q1EzMi16T2lwV3NENmlFSk9EVFRiX0ktcXdUc2YySXpvaHhsNzlhcmdhc0tjcEZvcXR4d3ZTb1lCcnV1eXdobDVPOW9BQTRaTWQtMmpFMDctRTBKT0NRbUh4bDgtcUhUYVAxNEp3c0M5bFI0OEdMVE1SV3lRTUNRLWR3bw?oc=5",
-          "published_at": "2026-10-09T15:06:02Z"
-        },
-        {
-          "title": "Scientists Find a Strange Chemical Loop That May Have Helped Life Get Started - ScienceAlert",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWnF5MDIyU3oxWnRRVjhrdzU5c2p5UFlZU05iMG1VUFYtTEczV3VrS0J5Ty1IdW5OdTRtVTNEQlVLWDBKVDVUdjdSNjNmMndYMWtqS2ltTUZFa2FLdVBUVC15bU5Iem9ETmsyWHZldlNjeUVWM1BVTEtSUlRwUUJ0TzJtZzR0bldlTlVTSDlEZk9IWlo5aDFvR2F0NHdYTk5VaC1vaWVpNW1wQQ?oc=5",
-          "published_at": "2026-10-09T15:01:20Z"
-        },
-        {
           "title": "Golf cart crash at Alpharetta golf course sparks unusual emergency response - WSB-TV",
           "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbmdILXNGNGpRRjlnQ2Raai1GLUhodXlZWW9HR2R1UkZfOUhBcGk5QU13a2ZnTkFJc25YdHJ6akhTMjJGOXlmTXl3VjliMy1kRm9HeVQzWVlnOWdfVXhqc0RzVS1KNG5yTkZNTXhmeExnMmxvdVZOdkc4S2Q1Z1NBYnRFUjFIMGdKWXJNT1VFb0NlLWd4S1ZlX1Z2dl9hSThHc2NxeEd4U2RkZG43N3BOZ1NzSXpFcGFvcE9tV0JFZ0YwSXdqRGV5TWtXbS1uMXg1Vl9rWkQyaV90eHAyZk1pedIB9AFBVV95cUxQQTlsV0hUSGRLa0pqclRROWVFd1ZQRzlYU3VlZXU3cTNGUUliSXJLWExhdmxlZFNJZ0JpSjF1XzBhWjhUZWliRXFDLTZwMmg4N2VoSU9WU0I2cXczTHQtQ3gxTmJGWGh4VzczU3d1RHZpOUNCWkhseTFuSHI2cC1YdE1MSllFMl9VSWN3TmRBQm1ZTEQyQUU1aXdNelFwaWZMOEZ3MjdScTN4endveW5DVDlieldhRXF2ZmtkN3hLbFE2a01EVXlqd2FvdUFFdkR1NFBvRnNUMUExOHdQdVJnTERqNWZ6WkFhdUg5NzBvaFB0b2kx?oc=5",
           "published_at": "2026-10-09T20:38:09Z"
+        },
+        {
+          "title": "Fate/strange Fake, Kino’s Journey Light Novels and More Coming from Yen Press - Crunchyroll",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZGE5RmJUMVVCUHBZZm1yVW94OUx6QTdLMU9kU0dVSkRQMmM3R2dyNmx4UVA1ZDNwUnZtX1E2MjNWT1lxSXZxSUxVUDJaaHQ3RVVZSDU4Y0tQenNYRDZWQlFzTFY3TVNTbDlFTkIxdzNPaFZYYmxCZnJiU2ZqbWM3MWhBQ0ZTNzRUMEUzWWtFUnBobGFwUndwcHhuTDRyN1hNWmNmR0t1Q2RrNV9lSEppalh1cVQ?oc=5",
+          "published_at": "2026-10-09T20:06:00Z"
         },
         {
           "title": "Canada's bizarre mummified toe cocktail - BBC",
@@ -1000,44 +995,49 @@
           "published_at": "2026-10-08T13:20:00Z"
         },
         {
+          "title": "Red Hot Chili Peppers Bassist Flea Relisted His Offbeat L.A.-Area Compound for $5.8 Million - Robb Report",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxORzhseV9LNGRvVmEzekpGSVRfdldhRGRxZmstVllud3BSVEd3T0UzY2h5Y2hkTldwLVF1eEdPbXJyWWh5N09oSXNWWnViUVRMUTVrczZWdUpfS0lLMzdlSUlEY0JDY21yNWZseGJQWWJhZzNqc0NOOHRwLVh0bTZlcDZpckJzZFhfMG44TU5peWZyQzVTNk9JNXpaYTIwdw?oc=5",
+          "published_at": "2026-10-09T22:00:00Z"
+        },
+        {
+          "title": "Carrick’s wildcard move to play Bruno Fernandes in an unusual role will solve two major problems at United - Yahoo Sports",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWVRpWTlvaW9PODlkZmF1NW5jcmVrbHdYQUhEcGFLZTBHaWp1S0JGUGV2b2xENW9RY1FEMUpzUFQ1bmtyWDBibDZsVVJHVHBBSWI3aGJRN1Y5dTNFYUJWOXFndVJLdkVmX2VBWFBzOENoaU1oRENrY3JPeFE4X1EzdUx3MFZrZUJS?oc=5",
+          "published_at": "2026-10-09T21:35:00Z"
+        },
+        {
+          "title": "The unusual plot behind Maybe Happy Ending at the National Theatre - NBC4 Washington",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZFRhRTNOZEJzTWd6VGkwN2toQ1dTdUNCa05zU290OUg3OXM5Q21mOTlGS1hnQmE4ZlVDdjJuQUgtU2FhNE1xUDRsdGhjTlI2QXJtLVl0QkJFajVpNDNPNUxSWVR4Y01SS1hEaUp0a0FGeENKU2twWHVLMC1GOTI1MFctSkdEM1FEVGRObHlWZ3RCa3pjclR3S1d1RUkxRkZjQWdQa21kTkYtQU1rNkRlZHFwNTZ5TUVRM09jSkx5LWFsM3FHRkFGcFJCTGlNNHFU0gHYAUFVX3lxTE56QVZoZDQ3dUFxYUhSRldJNlpzVjUzc3ZILUdVcWJMZGJTaVFLcUZCay1RMGk0d3V3UEsyRUVxdGR4UzNkVHB4RTF6Mlc3LTQ0OFY2OHZKa0VabE53Q1EzMi16T2lwV3NENmlFSk9EVFRiX0ktcXdUc2YySXpvaHhsNzlhcmdhc0tjcEZvcXR4d3ZTb1lCcnV1eXdobDVPOW9BQTRaTWQtMmpFMDctRTBKT0NRbUh4bDgtcUhUYVAxNEp3c0M5bFI0OEdMVE1SV3lRTUNRLWR3bw?oc=5",
+          "published_at": "2026-10-09T15:06:02Z"
+        },
+        {
+          "title": "‘Star Trek: Strange New Worlds’ Finished Season 4 Without Making Nielsen Top 10 Streaming Chart - TrekMovie.com",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQS1o2X25qWU9MbzJheXRRcWhKUm9jcmR6Sk5kRTQ2NV9Ua19mSDR3eUtXM2V4bnc0amI4NUtpYzBsTlhXZlU3SXk0Ymx4OW5ILUZlMmlSS1ZmY3VGaGd4eEo3WnIzSGNhYVBQLUE1OGpfMXZsejRURHN6aDl4bFZ5aXRxb2UzT0N4OWdnZVAteU4yVkJxRWFyM2Q5NlFJZHlMeHhqUUp5XzhzQnh3NUxZTGhQNXhnZjhkU1VyVU1WM1JhVlhV?oc=5",
+          "published_at": "2026-10-09T00:15:47Z"
+        },
+        {
+          "title": "Scientists Find a Strange Chemical Loop That May Have Helped Life Get Started - ScienceAlert",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWnF5MDIyU3oxWnRRVjhrdzU5c2p5UFlZU05iMG1VUFYtTEczV3VrS0J5Ty1IdW5OdTRtVTNEQlVLWDBKVDVUdjdSNjNmMndYMWtqS2ltTUZFa2FLdVBUVC15bU5Iem9ETmsyWHZldlNjeUVWM1BVTEtSUlRwUUJ0TzJtZzR0bldlTlVTSDlEZk9IWlo5aDFvR2F0NHdYTk5VaC1vaWVpNW1wQQ?oc=5",
+          "published_at": "2026-10-09T15:01:20Z"
+        },
+        {
           "title": "The Creepy Side of NEPA: Tales of Pennsylvania Oddities With Marlin Bressi - WNEP",
           "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPNm1ZSHFmSnBRS3FnMFFUVzdDT0hVcmU0azY2T1hELTlIc2FDQkVaWkhneXNqcElQaEFKaHU0ZmJFQlZkLUZxUEg5N2kzYkd6c1dtY2xiaXA5aHdXQnFjQzBiZW52TFdMdjZwUXQtTVhWcXVuOXRFM0lKNnpVTTlCaHY0SlI0NDhJdDV0azRCQUVIeFdYYlB3SDA2Z1E4T2UwMENuMTRHeldGV3V2Q3dEbXZHVVIzYkZFbUMtYVNwaEtCVHlzOUdxcnIzRzNqcUdlR0MtNlE2cTBUS01yWEdlTFROSmpwbWRDV0R5STcwU2dKVy05aGFOYzBSeVdRUkhwWkJlT2RPbE9VX3BQOThN?oc=5",
           "published_at": "2026-10-09T16:49:00Z"
         },
         {
-          "title": "On Friday, there are stocks with unusual volume. Let's take a look. - ChartMill",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOOVl3Nmt3U2E5cmEtcnNyWXF1cXBaTDVnb08xNEdsREViVS1UVmtfcUJRd3Y2YW1CTG5fa1VrX2FPSWxnVlNzNHh3cGNKLWg3cmxYM0YwVUROSGhSQTRqdjNnaEZidXhmTHE2Q0ZqOFdKY2EyVjFaMHJLM20teVFXTUpzd2F4WU96WGhWVFJULVpBSTRSZS0tN2tnVE00dEZOd2N3ZlFxdGVjOVNjbVgxMVpSb19Hdw?oc=5",
-          "published_at": "2026-10-09T17:00:00Z"
+          "title": "Opinion | The Gender Gap Has Taken a Strange Turn - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMkRYM2cxLUNhNTh0bkZLaml5ZXNIaUtiMl8xVlc5M3J1VzllcVhkejZTcHhDUS1PdkRzMjZvVmRyci1VUFZKZTk4VG1MaXRNaFNLWEl0a1NjWWhKNjBUTkExdnZOcjZaTjRGamVtQTQzdDNPTXhLLXluSTUtYWJ2djlCNUpQUmpoZEtqQnVYeVA?oc=5",
+          "published_at": "2026-10-06T09:03:53Z"
         },
         {
-          "title": "Troye Sivan: She’s the Best review – a strange, singular pop star who deserves to be multiplatinum - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObXpRZHJ5T3VhQXp3WDJBRGMybjRlb2FMcnZNNmpaWlhuZndWVFZzTGtTcFhQdGkyT19uXzhTc2tFbFZodkZQUlVucVdVN0xxWGFsYkhaY19ZRDQwREJJZXNxZ1U2R2tsUlRCTWFVVnFoT2JzSWJUTTVScnNocXNrN0NNb0dHUmNnelY0Qw?oc=5",
-          "published_at": "2026-10-09T15:32:00Z"
-        },
-        {
-          "title": "‘Strange Announcement,’ ‘Isn’t Going to End Well’ — NBA World Sounds Alarm On Knicks’ Stance Amid Karl-Anthony Towns Contract Drama - Yahoo Sports",
-          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWk5ES2FGTk9aSDJrMUVKWHNyY21YUjU1d092d2p4bGZoX3BnMXNKTFpiYmYyLUN2NU1PQUZWN0tVLTNqaER1VmlwS29uV1JXSERMWnpvSVR5bFF6bURCT1g1XzQtckJHbDZNQlVHYUlyRXV6QXZCUy1qem9WMUM4ZHZHS0docGNY?oc=5",
-          "published_at": "2026-10-09T15:36:01Z"
-        },
-        {
-          "title": "Strange Sensation Woke Me at 3AM—Now I’m Waiting for a Heart Transplant - Newsweek",
-          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSHdnRW1teTRvTXpmSlgyamxaY2h1U1F1cUhmaDhfSDBuWm9zdjRoLWZHSHpXM3pQbllTeVhGaU5RYXFQVEhNTmpKd1VMRFpkMnhjQkttai1IQWpkRlBZSkJQc0kwQjM5VUM0UW85c25BR0VZcmprMGhSaTZSb2Z0Slc4VkZLT1Z6WVZ1Skg0cEdqUQ?oc=5",
-          "published_at": "2026-10-09T09:00:00Z"
-        },
-        {
-          "title": "JCPS District 1 board candidate talks academic strategic plan, AI - The Courier-Journal",
-          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQNUdCZ0owdXZyLUdXakY3TWlycEt2OXdJVTlBbU1TWmw4elRtSWluSWVibnZNVUpGWVhmajhyU0JLS0R5Skhtc2VSMXAzOFNwaTZuSldyVEVHeGRMTmhwc2liRC13TGlUYVQyek9PdXRUd24xSHZuWUJBdUF3VndhcWVsTDh0cDY3MXI3aWI1ZFFaMzl2aUhhUWdKYnY5SHBtczNWR3hGZHpQcEVLTGZPLXpJVVY3RlhrWTRqZmhnSWdnTHI3aV9V?oc=5",
-          "published_at": "2026-10-09T15:34:00Z"
+          "title": "Martha A. Strange Obituary Oct 8, 2026 - Meng Family Funeral Homes",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBuZkxFMXprTHdEakdoaElmcVVJRkVtUDZoZXZTNkRmWUMzcGVJNG9OdjdIbXRrTzZRb0RDenhZSkNDOV9QN1c1aEtkTTFneld4STFJV2pITnpqSVZyWHhGZzZyZV9WY3dG?oc=5",
+          "published_at": "2026-10-08T07:00:00Z"
         },
         {
           "title": "5 mysterious sewer divers emerge out of NYC manhole, continuing bizarre underground spree: cops - New York Post",
           "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUWdtanNLTS1NMEFXTUd5M2RNNnRjVEV6UHpBdmp3RUM5b3N3NWRLMXN2VnN4VWVfZFlVUHdqUmw4R2VzaElMc2xUQUd5VzFSWG12QUg5ODc1YXlqM2RYMDZNUXhCTDhiVURBMW9aUFgzNDBQSlR0akVxczQ3aG9jUjdYYm5lOGxmM3dPeTc2Y18za0NMOUlWMkNaazdBUDRZRmpyaGw5NWluLXFKb2JHOHdYVlE3OVlpZUQ1bDJlQnFqWWtEdVFMWHRDX1M?oc=5",
           "published_at": "2026-10-09T19:56:00Z"
-        },
-        {
-          "title": "How to Play Unusual Options Activity in Oracle Stock - Barchart.com",
-          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOOVZ2NGJVVXRpczFOYUJQLTdNMXNxdjE5VjBsTGFKSk9mUWwwQ0hkRllXLWZ1czFFcEhOZ0Z4LWRWSFZibldNQzVPTXA1aHJsVTRYVVYydW95ejhNLW9lSTNGZFVhb1JlRnVkdWIzcG8ya3NiNlE0VEt4ZU4tcTlvd3B2ZGVESm1zYnNtNGo5bk9TdVJGQnhkVGZjak4?oc=5",
-          "published_at": "2026-10-09T19:26:32Z"
         }
       ]
     }
