@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-10-09T18:59:28.239299-04:00",
+  "as_of": "2026-10-12T17:30:29.284805-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "336.6400",
-      "change_percent": "-1.1104%",
-      "as_of": "2026-10-09T18:59:28.239299-04:00",
-      "latest_trading_day": "2026-10-09",
+      "price": "340.9700",
+      "change_percent": "1.2862%",
+      "as_of": "2026-10-12T17:30:29.284805-04:00",
+      "latest_trading_day": "2026-10-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.3900",
-      "change_percent": "-1.3655%",
-      "as_of": "2026-10-09T18:59:28.239299-04:00",
-      "latest_trading_day": "2026-10-09",
+      "price": "8.8250",
+      "change_percent": "-6.0170%",
+      "as_of": "2026-10-12T17:30:29.284805-04:00",
+      "latest_trading_day": "2026-10-12",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "262.4300",
-      "change_percent": "3.2945%",
-      "as_of": "2026-10-09T18:59:28.239299-04:00",
-      "latest_trading_day": "2026-10-09",
+      "price": "259.5300",
+      "change_percent": "-1.1051%",
+      "as_of": "2026-10-12T17:30:29.284805-04:00",
+      "latest_trading_day": "2026-10-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "351.6600",
-      "change_percent": "0.9676%",
-      "as_of": "2026-10-09T18:59:28.239299-04:00",
-      "latest_trading_day": "2026-10-09",
+      "price": "352.7200",
+      "change_percent": "0.3014%",
+      "as_of": "2026-10-12T17:30:29.284805-04:00",
+      "latest_trading_day": "2026-10-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "718.6700",
-      "change_percent": "-0.3080%",
-      "as_of": "2026-10-09T18:59:28.239299-04:00",
-      "latest_trading_day": "2026-10-09",
+      "price": "742.9600",
+      "change_percent": "3.3799%",
+      "as_of": "2026-10-12T17:30:29.284805-04:00",
+      "latest_trading_day": "2026-10-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "Curious Events Day",
+    "name": "Columbus Day",
     "region": "US",
-    "date": "2026-10-09",
-    "link": "https://www.checkiday.com/743dc2df38df3dc59cc6ea1db846feca/curious-events-day",
-    "source": "Checkiday"
+    "date": "2026-10-12",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   },
   "world_observance": {
-    "name": "International Beer and Pizza Day",
-    "region": "WORLD",
-    "date": "2026-10-09",
-    "link": "https://www.checkiday.com/4b2d69b119a3f30ff78c9911864cf8fd/international-beer-and-pizza-day",
-    "source": "Checkiday"
+    "name": "Thanksgiving",
+    "region": "Canada",
+    "date": "2026-10-12",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
