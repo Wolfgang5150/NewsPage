@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-12T17:30:29.284805-04:00",
+  "as_of": "2026-10-13T15:41:39.910752-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "340.9700",
       "change_percent": "1.2862%",
-      "as_of": "2026-10-12T17:30:29.284805-04:00",
+      "as_of": "2026-10-13T15:41:39.910752-04:00",
       "latest_trading_day": "2026-10-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "8.8250",
-      "change_percent": "-6.0170%",
-      "as_of": "2026-10-12T17:30:29.284805-04:00",
+      "price": "8.8200",
+      "change_percent": "-6.0703%",
+      "as_of": "2026-10-13T15:41:39.910752-04:00",
       "latest_trading_day": "2026-10-12",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "259.5300",
       "change_percent": "-1.1051%",
-      "as_of": "2026-10-12T17:30:29.284805-04:00",
+      "as_of": "2026-10-13T15:41:39.910752-04:00",
       "latest_trading_day": "2026-10-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "352.7200",
       "change_percent": "0.3014%",
-      "as_of": "2026-10-12T17:30:29.284805-04:00",
+      "as_of": "2026-10-13T15:41:39.910752-04:00",
       "latest_trading_day": "2026-10-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "742.9600",
       "change_percent": "3.3799%",
-      "as_of": "2026-10-12T17:30:29.284805-04:00",
+      "as_of": "2026-10-13T15:41:39.910752-04:00",
       "latest_trading_day": "2026-10-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "Columbus Day",
+    "name": "International Day for Disaster Risk Reduction",
     "region": "US",
-    "date": "2026-10-12",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "date": "2026-10-13",
+    "link": "https://www.checkiday.com/08677910a661114260b85f22f0815251/international-day-for-disaster-risk-reduction",
+    "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Thanksgiving",
-    "region": "Canada",
-    "date": "2026-10-12",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "International Day for Disaster Risk Reduction",
+    "region": "WORLD",
+    "date": "2026-10-13",
+    "link": "https://www.checkiday.com/08677910a661114260b85f22f0815251/international-day-for-disaster-risk-reduction",
+    "source": "Checkiday"
   }
 }
