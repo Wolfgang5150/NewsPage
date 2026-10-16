@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-15T17:53:48.383640-04:00",
+  "as_of": "2026-10-16T13:08:17.681162-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "342.0000",
       "change_percent": "-0.2799%",
-      "as_of": "2026-10-15T17:53:48.383640-04:00",
+      "as_of": "2026-10-16T13:08:17.681162-04:00",
       "latest_trading_day": "2026-10-15",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.6250",
-      "change_percent": "9.8744%",
-      "as_of": "2026-10-15T17:53:48.383640-04:00",
+      "price": "9.6200",
+      "change_percent": "9.8174%",
+      "as_of": "2026-10-16T13:08:17.681162-04:00",
       "latest_trading_day": "2026-10-15",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "254.7600",
       "change_percent": "0.2676%",
-      "as_of": "2026-10-15T17:53:48.383640-04:00",
+      "as_of": "2026-10-16T13:08:17.681162-04:00",
       "latest_trading_day": "2026-10-15",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "349.2200",
       "change_percent": "0.4545%",
-      "as_of": "2026-10-15T17:53:48.383640-04:00",
+      "as_of": "2026-10-16T13:08:17.681162-04:00",
       "latest_trading_day": "2026-10-15",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "736.7200",
       "change_percent": "-0.1112%",
-      "as_of": "2026-10-15T17:53:48.383640-04:00",
+      "as_of": "2026-10-16T13:08:17.681162-04:00",
       "latest_trading_day": "2026-10-15",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Credit Union Day",
+    "name": "National Boss Day",
     "region": "US",
-    "date": "2026-10-15",
-    "link": "https://www.checkiday.com/8f3ebe34d4d9fa66aeea457afde9c76d/international-credit-union-day",
+    "date": "2026-10-16",
+    "link": "https://www.checkiday.com/67976db71740bdc0921a86101be55279/national-boss-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Global Handwashing Day",
+    "name": "Global Cat Day",
     "region": "WORLD",
-    "date": "2026-10-15",
-    "link": "https://www.checkiday.com/4e3b26bb9b8669598c6150d0e1cdd634/global-handwashing-day",
+    "date": "2026-10-16",
+    "link": "https://www.checkiday.com/adef036694d6b05a30931eb8467daf02/global-cat-day",
     "source": "Checkiday"
   }
 }
