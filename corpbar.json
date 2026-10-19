@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-10-16T17:52:17.280623-04:00",
+  "as_of": "2026-10-19T14:56:09.463054-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "343.4600",
       "change_percent": "0.4269%",
-      "as_of": "2026-10-16T17:52:17.280623-04:00",
+      "as_of": "2026-10-19T14:56:09.463054-04:00",
       "latest_trading_day": "2026-10-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "9.1300",
       "change_percent": "-5.0936%",
-      "as_of": "2026-10-16T17:52:17.280623-04:00",
+      "as_of": "2026-10-19T14:56:09.463054-04:00",
       "latest_trading_day": "2026-10-16",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "250.0000",
       "change_percent": "-1.8684%",
-      "as_of": "2026-10-16T17:52:17.280623-04:00",
+      "as_of": "2026-10-19T14:56:09.463054-04:00",
       "latest_trading_day": "2026-10-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "340.5900",
       "change_percent": "-2.4712%",
-      "as_of": "2026-10-16T17:52:17.280623-04:00",
+      "as_of": "2026-10-19T14:56:09.463054-04:00",
       "latest_trading_day": "2026-10-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "709.3250",
       "change_percent": "-3.7185%",
-      "as_of": "2026-10-16T17:52:17.280623-04:00",
+      "as_of": "2026-10-19T14:56:09.463054-04:00",
       "latest_trading_day": "2026-10-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Boss Day",
+    "name": "International Adjust your Chair Day",
     "region": "US",
-    "date": "2026-10-16",
-    "link": "https://www.checkiday.com/67976db71740bdc0921a86101be55279/national-boss-day",
+    "date": "2026-10-19",
+    "link": "https://www.checkiday.com/2023b879dea1056ee4a643bf9c7067cc/international-adjust-your-chair-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Global Cat Day",
+    "name": "International Adjust your Chair Day",
     "region": "WORLD",
-    "date": "2026-10-16",
-    "link": "https://www.checkiday.com/adef036694d6b05a30931eb8467daf02/global-cat-day",
+    "date": "2026-10-19",
+    "link": "https://www.checkiday.com/2023b879dea1056ee4a643bf9c7067cc/international-adjust-your-chair-day",
     "source": "Checkiday"
   }
 }
