@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-10-19T18:47:27.229717-04:00",
+  "as_of": "2026-10-20T13:42:55.033734-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "342.9400",
       "change_percent": "-0.1514%",
-      "as_of": "2026-10-19T18:47:27.229717-04:00",
+      "as_of": "2026-10-20T13:42:55.033734-04:00",
       "latest_trading_day": "2026-10-19",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "9.0100",
       "change_percent": "-1.3143%",
-      "as_of": "2026-10-19T18:47:27.229717-04:00",
+      "as_of": "2026-10-20T13:42:55.033734-04:00",
       "latest_trading_day": "2026-10-19",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "262.4500",
       "change_percent": "4.9800%",
-      "as_of": "2026-10-19T18:47:27.229717-04:00",
+      "as_of": "2026-10-20T13:42:55.033734-04:00",
       "latest_trading_day": "2026-10-19",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "344.1800",
       "change_percent": "1.0541%",
-      "as_of": "2026-10-19T18:47:27.229717-04:00",
+      "as_of": "2026-10-20T13:42:55.033734-04:00",
       "latest_trading_day": "2026-10-19",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "705.4400",
       "change_percent": "-0.5477%",
-      "as_of": "2026-10-19T18:47:27.229717-04:00",
+      "as_of": "2026-10-20T13:42:55.033734-04:00",
       "latest_trading_day": "2026-10-19",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Adjust your Chair Day",
+    "name": "International Chefs Day",
     "region": "US",
-    "date": "2026-10-19",
-    "link": "https://www.checkiday.com/2023b879dea1056ee4a643bf9c7067cc/international-adjust-your-chair-day",
+    "date": "2026-10-20",
+    "link": "https://www.checkiday.com/7afdadfe6b791cb768589f25a46124b1/international-chefs-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Adjust your Chair Day",
+    "name": "International Chefs Day",
     "region": "WORLD",
-    "date": "2026-10-19",
-    "link": "https://www.checkiday.com/2023b879dea1056ee4a643bf9c7067cc/international-adjust-your-chair-day",
+    "date": "2026-10-20",
+    "link": "https://www.checkiday.com/7afdadfe6b791cb768589f25a46124b1/international-chefs-day",
     "source": "Checkiday"
   }
 }
