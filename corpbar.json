@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-20T18:00:16.648485-04:00",
+  "as_of": "2026-10-21T13:48:56.145260-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "339.5000",
       "change_percent": "-1.0031%",
-      "as_of": "2026-10-20T18:00:16.648485-04:00",
+      "as_of": "2026-10-21T13:48:56.145260-04:00",
       "latest_trading_day": "2026-10-20",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.5250",
-      "change_percent": "5.7159%",
-      "as_of": "2026-10-20T18:00:16.648485-04:00",
+      "price": "9.5200",
+      "change_percent": "5.6604%",
+      "as_of": "2026-10-21T13:48:56.145260-04:00",
       "latest_trading_day": "2026-10-20",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "262.6300",
       "change_percent": "0.0686%",
-      "as_of": "2026-10-20T18:00:16.648485-04:00",
+      "as_of": "2026-10-21T13:48:56.145260-04:00",
       "latest_trading_day": "2026-10-20",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,33 +32,33 @@
       "symbol": "GOOGL",
       "price": "340.2750",
       "change_percent": "-1.1346%",
-      "as_of": "2026-10-20T18:00:16.648485-04:00",
+      "as_of": "2026-10-21T13:48:56.145260-04:00",
       "latest_trading_day": "2026-10-20",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "705.4400",
-      "change_percent": "-0.5477%",
-      "as_of": "2026-10-20T18:00:16.648485-04:00",
-      "latest_trading_day": "2026-10-19",
+      "price": "694.2500",
+      "change_percent": "-1.5862%",
+      "as_of": "2026-10-21T13:48:56.145260-04:00",
+      "latest_trading_day": "2026-10-20",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Chefs Day",
+    "name": "International Day of the Nacho",
     "region": "US",
-    "date": "2026-10-20",
-    "link": "https://www.checkiday.com/7afdadfe6b791cb768589f25a46124b1/international-chefs-day",
+    "date": "2026-10-21",
+    "link": "https://www.checkiday.com/d6f5f25dbe8d7689bf49d7a79142fe9b/international-day-of-the-nacho",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Chefs Day",
+    "name": "Global Dignity Day",
     "region": "WORLD",
-    "date": "2026-10-20",
-    "link": "https://www.checkiday.com/7afdadfe6b791cb768589f25a46124b1/international-chefs-day",
+    "date": "2026-10-21",
+    "link": "https://www.checkiday.com/6322b5cd30530f58e35695f2a36a8cb1/global-dignity-day",
     "source": "Checkiday"
   }
 }
