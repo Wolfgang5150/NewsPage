@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-22T18:01:59.713457-04:00",
+  "as_of": "2026-10-23T13:38:35.238235-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "348.2200",
       "change_percent": "1.2297%",
-      "as_of": "2026-10-22T18:01:59.713457-04:00",
+      "as_of": "2026-10-23T13:38:35.238235-04:00",
       "latest_trading_day": "2026-10-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.9800",
-      "change_percent": "2.6749%",
-      "as_of": "2026-10-22T18:01:59.713457-04:00",
+      "price": "9.9700",
+      "change_percent": "2.5720%",
+      "as_of": "2026-10-23T13:38:35.238235-04:00",
       "latest_trading_day": "2026-10-22",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "250.3800",
       "change_percent": "-4.5699%",
-      "as_of": "2026-10-22T18:01:59.713457-04:00",
+      "as_of": "2026-10-23T13:38:35.238235-04:00",
       "latest_trading_day": "2026-10-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "324.2200",
       "change_percent": "-3.1485%",
-      "as_of": "2026-10-22T18:01:59.713457-04:00",
+      "as_of": "2026-10-23T13:38:35.238235-04:00",
       "latest_trading_day": "2026-10-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "648.8500",
       "change_percent": "-6.9776%",
-      "as_of": "2026-10-22T18:01:59.713457-04:00",
+      "as_of": "2026-10-23T13:38:35.238235-04:00",
       "latest_trading_day": "2026-10-22",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "INTERNATIONAL CAPS LOCK DAY",
+    "name": "National Boston Cream Pie Day",
     "region": "US",
-    "date": "2026-10-22",
-    "link": "https://www.checkiday.com/f3882f5952a0738725f007a3ee9071b5/international-caps-lock-day",
+    "date": "2026-10-23",
+    "link": "https://www.checkiday.com/f4302e16f44860a6704d1eb2084f3698/national-boston-cream-pie-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "INTERNATIONAL CAPS LOCK DAY",
+    "name": "Global Champagne Day",
     "region": "WORLD",
-    "date": "2026-10-22",
-    "link": "https://www.checkiday.com/f3882f5952a0738725f007a3ee9071b5/international-caps-lock-day",
+    "date": "2026-10-23",
+    "link": "https://www.checkiday.com/4f744b139c20060a5ddd0af0165d9429/global-champagne-day",
     "source": "Checkiday"
   }
 }
