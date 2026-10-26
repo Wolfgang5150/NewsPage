@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-23T17:47:17.196344-04:00",
+  "as_of": "2026-10-26T14:58:42.591184-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "347.7250",
       "change_percent": "-0.1422%",
-      "as_of": "2026-10-23T17:47:17.196344-04:00",
+      "as_of": "2026-10-26T14:58:42.591184-04:00",
       "latest_trading_day": "2026-10-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.7550",
-      "change_percent": "-2.1565%",
-      "as_of": "2026-10-23T17:47:17.196344-04:00",
+      "price": "9.7500",
+      "change_percent": "-2.2066%",
+      "as_of": "2026-10-26T14:58:42.591184-04:00",
       "latest_trading_day": "2026-10-23",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "248.0000",
       "change_percent": "-0.9506%",
-      "as_of": "2026-10-23T17:47:17.196344-04:00",
+      "as_of": "2026-10-26T14:58:42.591184-04:00",
       "latest_trading_day": "2026-10-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "320.2100",
       "change_percent": "-1.2368%",
-      "as_of": "2026-10-23T17:47:17.196344-04:00",
+      "as_of": "2026-10-26T14:58:42.591184-04:00",
       "latest_trading_day": "2026-10-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "642.6200",
       "change_percent": "-0.9602%",
-      "as_of": "2026-10-23T17:47:17.196344-04:00",
+      "as_of": "2026-10-26T14:58:42.591184-04:00",
       "latest_trading_day": "2026-10-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Boston Cream Pie Day",
+    "name": "National Day of the Deployed",
     "region": "US",
-    "date": "2026-10-23",
-    "link": "https://www.checkiday.com/f4302e16f44860a6704d1eb2084f3698/national-boston-cream-pie-day",
+    "date": "2026-10-26",
+    "link": "https://www.checkiday.com/e1c13168078a67666163b2d6dfe18aea/national-day-of-the-deployed",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Global Champagne Day",
+    "name": "Horseless Carriage Day",
     "region": "WORLD",
-    "date": "2026-10-23",
-    "link": "https://www.checkiday.com/4f744b139c20060a5ddd0af0165d9429/global-champagne-day",
+    "date": "2026-10-26",
+    "link": "https://www.checkiday.com/ff9bb5c80ed2abb9d8d5cb6c6f5a3be4/horseless-carriage-day",
     "source": "Checkiday"
   }
 }
