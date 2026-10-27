@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-10-26T19:03:38.797432-04:00",
+  "as_of": "2026-10-27T14:29:53.324433-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "343.9100",
       "change_percent": "-1.0971%",
-      "as_of": "2026-10-26T19:03:38.797432-04:00",
+      "as_of": "2026-10-27T14:29:53.324433-04:00",
       "latest_trading_day": "2026-10-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "9.6900",
       "change_percent": "-0.6154%",
-      "as_of": "2026-10-26T19:03:38.797432-04:00",
+      "as_of": "2026-10-27T14:29:53.324433-04:00",
       "latest_trading_day": "2026-10-26",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "249.0900",
       "change_percent": "0.4395%",
-      "as_of": "2026-10-26T19:03:38.797432-04:00",
+      "as_of": "2026-10-27T14:29:53.324433-04:00",
       "latest_trading_day": "2026-10-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "316.8000",
       "change_percent": "-1.0649%",
-      "as_of": "2026-10-26T19:03:38.797432-04:00",
+      "as_of": "2026-10-27T14:29:53.324433-04:00",
       "latest_trading_day": "2026-10-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "630.5600",
       "change_percent": "-1.8767%",
-      "as_of": "2026-10-26T19:03:38.797432-04:00",
+      "as_of": "2026-10-27T14:29:53.324433-04:00",
       "latest_trading_day": "2026-10-26",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Day of the Deployed",
+    "name": "American Beer Day",
     "region": "US",
-    "date": "2026-10-26",
-    "link": "https://www.checkiday.com/e1c13168078a67666163b2d6dfe18aea/national-day-of-the-deployed",
+    "date": "2026-10-27",
+    "link": "https://www.checkiday.com/bd0ec8b4fd6be71d5e4091413e8bd203/american-beer-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Horseless Carriage Day",
+    "name": "World Day for Audiovisual Heritage",
     "region": "WORLD",
-    "date": "2026-10-26",
-    "link": "https://www.checkiday.com/ff9bb5c80ed2abb9d8d5cb6c6f5a3be4/horseless-carriage-day",
+    "date": "2026-10-27",
+    "link": "https://www.checkiday.com/15508368b0d8b36a121254bfeb5b9c0f/world-day-for-audiovisual-heritage",
     "source": "Checkiday"
   }
 }
