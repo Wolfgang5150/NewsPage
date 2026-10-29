@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-10-28T18:55:41.876451-04:00",
+  "as_of": "2026-10-29T14:45:01.761932-04:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "343.8300",
       "change_percent": "-0.9421%",
-      "as_of": "2026-10-28T18:55:41.876451-04:00",
+      "as_of": "2026-10-29T14:45:01.761932-04:00",
       "latest_trading_day": "2026-10-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "9.1700",
       "change_percent": "-5.7554%",
-      "as_of": "2026-10-28T18:55:41.876451-04:00",
+      "as_of": "2026-10-29T14:45:01.761932-04:00",
       "latest_trading_day": "2026-10-28",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "254.6000",
       "change_percent": "0.5927%",
-      "as_of": "2026-10-28T18:55:41.876451-04:00",
+      "as_of": "2026-10-29T14:45:01.761932-04:00",
       "latest_trading_day": "2026-10-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "324.8900",
       "change_percent": "1.3444%",
-      "as_of": "2026-10-28T18:55:41.876451-04:00",
+      "as_of": "2026-10-29T14:45:01.761932-04:00",
       "latest_trading_day": "2026-10-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "612.4900",
       "change_percent": "-1.2416%",
-      "as_of": "2026-10-28T18:55:41.876451-04:00",
+      "as_of": "2026-10-29T14:45:01.761932-04:00",
       "latest_trading_day": "2026-10-28",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Animation Day",
+    "name": "International Carignan Day",
     "region": "US",
-    "date": "2026-10-28",
-    "link": "https://www.checkiday.com/6a00ae513007ef63d8e9d7a8274b335b/international-animation-day",
+    "date": "2026-10-29",
+    "link": "https://www.checkiday.com/388c5e3657aa05edd3b82c5a9d419447/international-carignan-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Animation Day",
+    "name": "International Carignan Day",
     "region": "WORLD",
-    "date": "2026-10-28",
-    "link": "https://www.checkiday.com/6a00ae513007ef63d8e9d7a8274b335b/international-animation-day",
+    "date": "2026-10-29",
+    "link": "https://www.checkiday.com/388c5e3657aa05edd3b82c5a9d419447/international-carignan-day",
     "source": "Checkiday"
   }
 }
