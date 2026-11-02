@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-10-30T18:44:37.799398-04:00",
+  "as_of": "2026-11-02T17:32:33.224575-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "344.6300",
-      "change_percent": "-1.2267%",
-      "as_of": "2026-10-30T18:44:37.799398-04:00",
-      "latest_trading_day": "2026-10-30",
+      "price": "338.3200",
+      "change_percent": "-1.8309%",
+      "as_of": "2026-11-02T17:32:33.224575-05:00",
+      "latest_trading_day": "2026-11-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.0000",
-      "change_percent": "-4.1534%",
-      "as_of": "2026-10-30T18:44:37.799398-04:00",
-      "latest_trading_day": "2026-10-30",
+      "price": "9.4250",
+      "change_percent": "4.7222%",
+      "as_of": "2026-11-02T17:32:33.224575-05:00",
+      "latest_trading_day": "2026-11-02",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "240.3500",
-      "change_percent": "-1.4111%",
-      "as_of": "2026-10-30T18:44:37.799398-04:00",
-      "latest_trading_day": "2026-10-30",
+      "price": "245.6300",
+      "change_percent": "2.1968%",
+      "as_of": "2026-11-02T17:32:33.224575-05:00",
+      "latest_trading_day": "2026-11-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "279.8400",
-      "change_percent": "-1.4023%",
-      "as_of": "2026-10-30T18:44:37.799398-04:00",
-      "latest_trading_day": "2026-10-30",
+      "price": "278.9900",
+      "change_percent": "-0.3037%",
+      "as_of": "2026-11-02T17:32:33.224575-05:00",
+      "latest_trading_day": "2026-11-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "614.9900",
-      "change_percent": "-1.5260%",
-      "as_of": "2026-10-30T18:44:37.799398-04:00",
-      "latest_trading_day": "2026-10-30",
+      "price": "606.7300",
+      "change_percent": "-1.3431%",
+      "as_of": "2026-11-02T17:32:33.224575-05:00",
+      "latest_trading_day": "2026-11-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Bandanna Day",
+    "name": "International Doge Day",
     "region": "US",
-    "date": "2026-10-30",
-    "link": "https://www.checkiday.com/2fea89c0899b8530ff6fb387dbbc2c37/national-bandanna-day",
+    "date": "2026-11-02",
+    "link": "https://www.checkiday.com/f8c8ad01a5b7a1141802e8df2d2affeb/international-doge-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Lemur Day",
+    "name": "International Doge Day",
     "region": "WORLD",
-    "date": "2026-10-30",
-    "link": "https://www.checkiday.com/895d28d65cd0d952b00b605f80e57a9f/world-lemur-day",
+    "date": "2026-11-02",
+    "link": "https://www.checkiday.com/f8c8ad01a5b7a1141802e8df2d2affeb/international-doge-day",
     "source": "Checkiday"
   }
 }
