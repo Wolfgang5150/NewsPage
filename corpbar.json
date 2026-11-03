@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-11-02T17:32:33.224575-05:00",
+  "as_of": "2026-11-03T15:22:26.630617-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "338.3200",
       "change_percent": "-1.8309%",
-      "as_of": "2026-11-02T17:32:33.224575-05:00",
+      "as_of": "2026-11-03T15:22:26.630617-05:00",
       "latest_trading_day": "2026-11-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.4250",
-      "change_percent": "4.7222%",
-      "as_of": "2026-11-02T17:32:33.224575-05:00",
+      "price": "9.4200",
+      "change_percent": "4.6667%",
+      "as_of": "2026-11-03T15:22:26.630617-05:00",
       "latest_trading_day": "2026-11-02",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "245.6300",
       "change_percent": "2.1968%",
-      "as_of": "2026-11-02T17:32:33.224575-05:00",
+      "as_of": "2026-11-03T15:22:26.630617-05:00",
       "latest_trading_day": "2026-11-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "278.9900",
       "change_percent": "-0.3037%",
-      "as_of": "2026-11-02T17:32:33.224575-05:00",
+      "as_of": "2026-11-03T15:22:26.630617-05:00",
       "latest_trading_day": "2026-11-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "606.7300",
       "change_percent": "-1.3431%",
-      "as_of": "2026-11-02T17:32:33.224575-05:00",
+      "as_of": "2026-11-03T15:22:26.630617-05:00",
       "latest_trading_day": "2026-11-02",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Doge Day",
+    "name": "National Housewife Day",
     "region": "US",
-    "date": "2026-11-02",
-    "link": "https://www.checkiday.com/f8c8ad01a5b7a1141802e8df2d2affeb/international-doge-day",
+    "date": "2026-11-03",
+    "link": "https://www.checkiday.com/2a0d6ff1dc9352a99407dc29dfdc8f74/national-housewife-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Doge Day",
-    "region": "WORLD",
-    "date": "2026-11-02",
-    "link": "https://www.checkiday.com/f8c8ad01a5b7a1141802e8df2d2affeb/international-doge-day",
-    "source": "Checkiday"
+    "name": "Melbourne Cup",
+    "region": "Australia",
+    "date": "2026-11-03",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
