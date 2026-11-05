@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-11-04T20:56:29.145805-05:00",
+  "as_of": "2026-11-05T15:54:11.230825-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "349.5100",
       "change_percent": "5.3058%",
-      "as_of": "2026-11-04T20:56:29.145805-05:00",
+      "as_of": "2026-11-05T15:54:11.230825-05:00",
       "latest_trading_day": "2026-11-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "10.0400",
       "change_percent": "7.7253%",
-      "as_of": "2026-11-04T20:56:29.145805-05:00",
+      "as_of": "2026-11-05T15:54:11.230825-05:00",
       "latest_trading_day": "2026-11-04",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "266.0300",
       "change_percent": "6.1191%",
-      "as_of": "2026-11-04T20:56:29.145805-05:00",
+      "as_of": "2026-11-05T15:54:11.230825-05:00",
       "latest_trading_day": "2026-11-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "288.9300",
       "change_percent": "3.1782%",
-      "as_of": "2026-11-04T20:56:29.145805-05:00",
+      "as_of": "2026-11-05T15:54:11.230825-05:00",
       "latest_trading_day": "2026-11-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "630.0000",
       "change_percent": "1.4444%",
-      "as_of": "2026-11-04T20:56:29.145805-05:00",
+      "as_of": "2026-11-05T15:54:11.230825-05:00",
       "latest_trading_day": "2026-11-04",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Stress Awareness Day",
+    "name": "American Football Day",
     "region": "US",
-    "date": "2026-11-04",
-    "link": "https://www.checkiday.com/a0d8a3b89523d67d612dd44c16da1206/international-stress-awareness-day",
+    "date": "2026-11-05",
+    "link": "https://www.checkiday.com/7c256f4c99bab9d6ffc6bc60a8fd4e8c/american-football-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Stress Awareness Day",
+    "name": "International Project Management Day",
     "region": "WORLD",
-    "date": "2026-11-04",
-    "link": "https://www.checkiday.com/a0d8a3b89523d67d612dd44c16da1206/international-stress-awareness-day",
+    "date": "2026-11-05",
+    "link": "https://www.checkiday.com/3bfd36775565325bcac3e6d9ac4b7bea/international-project-management-day",
     "source": "Checkiday"
   }
 }
