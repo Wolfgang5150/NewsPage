@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-11-09T18:14:37.156170-05:00",
+  "as_of": "2026-11-10T15:40:26.135826-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "350.6900",
       "change_percent": "2.4301%",
-      "as_of": "2026-11-09T18:14:37.156170-05:00",
+      "as_of": "2026-11-10T15:40:26.135826-05:00",
       "latest_trading_day": "2026-11-09",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "10.7850",
-      "change_percent": "5.6317%",
-      "as_of": "2026-11-09T18:14:37.156170-05:00",
+      "price": "10.7900",
+      "change_percent": "5.6807%",
+      "as_of": "2026-11-10T15:40:26.135826-05:00",
       "latest_trading_day": "2026-11-09",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "266.9300",
       "change_percent": "2.9425%",
-      "as_of": "2026-11-09T18:14:37.156170-05:00",
+      "as_of": "2026-11-10T15:40:26.135826-05:00",
       "latest_trading_day": "2026-11-09",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "288.1500",
       "change_percent": "1.1834%",
-      "as_of": "2026-11-09T18:14:37.156170-05:00",
+      "as_of": "2026-11-10T15:40:26.135826-05:00",
       "latest_trading_day": "2026-11-09",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "641.3700",
       "change_percent": "5.1168%",
-      "as_of": "2026-11-09T18:14:37.156170-05:00",
+      "as_of": "2026-11-10T15:40:26.135826-05:00",
       "latest_trading_day": "2026-11-09",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Chaos Never Dies Day",
+    "name": "International Accounting Day",
     "region": "US",
-    "date": "2026-11-09",
-    "link": "https://www.checkiday.com/672f44d097393d0924904ee01ecb5c57/national-chaos-never-dies-day",
+    "date": "2026-11-10",
+    "link": "https://www.checkiday.com/704a16a5be9a819261a76155c434b0ec/international-accounting-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Freedom Day",
+    "name": "International Accounting Day",
     "region": "WORLD",
-    "date": "2026-11-09",
-    "link": "https://www.checkiday.com/680ee81c982bccdfe704f957716f54df/world-freedom-day",
+    "date": "2026-11-10",
+    "link": "https://www.checkiday.com/704a16a5be9a819261a76155c434b0ec/international-accounting-day",
     "source": "Checkiday"
   }
 }
