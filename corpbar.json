@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-11-12T21:19:03.464062-05:00",
+  "as_of": "2026-11-13T15:43:19.737518-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "354.8800",
       "change_percent": "-0.1350%",
-      "as_of": "2026-11-12T21:19:03.464062-05:00",
+      "as_of": "2026-11-13T15:43:19.737518-05:00",
       "latest_trading_day": "2026-11-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
@@ -14,7 +14,7 @@
       "symbol": "COMP",
       "price": "10.0400",
       "change_percent": "-2.1442%",
-      "as_of": "2026-11-12T21:19:03.464062-05:00",
+      "as_of": "2026-11-13T15:43:19.737518-05:00",
       "latest_trading_day": "2026-11-12",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "267.4400",
       "change_percent": "0.4771%",
-      "as_of": "2026-11-12T21:19:03.464062-05:00",
+      "as_of": "2026-11-13T15:43:19.737518-05:00",
       "latest_trading_day": "2026-11-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "298.7000",
       "change_percent": "1.7891%",
-      "as_of": "2026-11-12T21:19:03.464062-05:00",
+      "as_of": "2026-11-13T15:43:19.737518-05:00",
       "latest_trading_day": "2026-11-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "623.6100",
       "change_percent": "-0.8206%",
-      "as_of": "2026-11-12T21:19:03.464062-05:00",
+      "as_of": "2026-11-13T15:43:19.737518-05:00",
       "latest_trading_day": "2026-11-12",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Tempranillo Day",
+    "name": "National Bread Pudding Day",
     "region": "US",
-    "date": "2026-11-12",
-    "link": "https://www.checkiday.com/8b3874baef8ce56a6555871709f1dc9b/international-tempranillo-day",
+    "date": "2026-11-13",
+    "link": "https://www.checkiday.com/378a0778d15dc2a0b1684599e3e5e51f/national-bread-pudding-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Guinness World Records Day",
+    "name": "World Kindness Day",
     "region": "WORLD",
-    "date": "2026-11-12",
-    "link": "https://www.checkiday.com/aa5cf0395c87bb339de0916213331dbc/guinness-world-records-day",
+    "date": "2026-11-13",
+    "link": "https://www.checkiday.com/9f24e8c4e7e19ff5df673b95d577a99c/world-kindness-day",
     "source": "Checkiday"
   }
 }
