@@ -1,48 +1,48 @@
 {
-  "as_of": "2026-11-13T15:43:19.737518-05:00",
+  "as_of": "2026-11-13T20:55:53.392168-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "354.8800",
-      "change_percent": "-0.1350%",
-      "as_of": "2026-11-13T15:43:19.737518-05:00",
-      "latest_trading_day": "2026-11-12",
+      "price": "356.2700",
+      "change_percent": "0.3917%",
+      "as_of": "2026-11-13T20:55:53.392168-05:00",
+      "latest_trading_day": "2026-11-13",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "10.0400",
-      "change_percent": "-2.1442%",
-      "as_of": "2026-11-13T15:43:19.737518-05:00",
-      "latest_trading_day": "2026-11-12",
+      "price": "10.2100",
+      "change_percent": "1.6932%",
+      "as_of": "2026-11-13T20:55:53.392168-05:00",
+      "latest_trading_day": "2026-11-13",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "267.4400",
-      "change_percent": "0.4771%",
-      "as_of": "2026-11-13T15:43:19.737518-05:00",
-      "latest_trading_day": "2026-11-12",
+      "price": "266.6600",
+      "change_percent": "-0.2917%",
+      "as_of": "2026-11-13T20:55:53.392168-05:00",
+      "latest_trading_day": "2026-11-13",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "298.7000",
-      "change_percent": "1.7891%",
-      "as_of": "2026-11-13T15:43:19.737518-05:00",
-      "latest_trading_day": "2026-11-12",
+      "price": "295.7700",
+      "change_percent": "-0.9809%",
+      "as_of": "2026-11-13T20:55:53.392168-05:00",
+      "latest_trading_day": "2026-11-13",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "623.6100",
-      "change_percent": "-0.8206%",
-      "as_of": "2026-11-13T15:43:19.737518-05:00",
-      "latest_trading_day": "2026-11-12",
+      "price": "641.6900",
+      "change_percent": "2.8992%",
+      "as_of": "2026-11-13T20:55:53.392168-05:00",
+      "latest_trading_day": "2026-11-13",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
