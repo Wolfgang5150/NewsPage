@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-11-13T20:55:53.392168-05:00",
+  "as_of": "2026-11-16T18:09:14.592926-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "356.2700",
-      "change_percent": "0.3917%",
-      "as_of": "2026-11-13T20:55:53.392168-05:00",
-      "latest_trading_day": "2026-11-13",
+      "price": "352.7800",
+      "change_percent": "-0.9796%",
+      "as_of": "2026-11-16T18:09:14.592926-05:00",
+      "latest_trading_day": "2026-11-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "10.2100",
-      "change_percent": "1.6932%",
-      "as_of": "2026-11-13T20:55:53.392168-05:00",
-      "latest_trading_day": "2026-11-13",
+      "price": "10.1850",
+      "change_percent": "-0.2449%",
+      "as_of": "2026-11-16T18:09:14.592926-05:00",
+      "latest_trading_day": "2026-11-16",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "266.6600",
-      "change_percent": "-0.2917%",
-      "as_of": "2026-11-13T20:55:53.392168-05:00",
-      "latest_trading_day": "2026-11-13",
+      "price": "257.7500",
+      "change_percent": "-3.3413%",
+      "as_of": "2026-11-16T18:09:14.592926-05:00",
+      "latest_trading_day": "2026-11-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "295.7700",
-      "change_percent": "-0.9809%",
-      "as_of": "2026-11-13T20:55:53.392168-05:00",
-      "latest_trading_day": "2026-11-13",
+      "price": "283.7200",
+      "change_percent": "-4.0741%",
+      "as_of": "2026-11-16T18:09:14.592926-05:00",
+      "latest_trading_day": "2026-11-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "641.6900",
-      "change_percent": "2.8992%",
-      "as_of": "2026-11-13T20:55:53.392168-05:00",
-      "latest_trading_day": "2026-11-13",
+      "price": "626.4100",
+      "change_percent": "-2.3812%",
+      "as_of": "2026-11-16T18:09:14.592926-05:00",
+      "latest_trading_day": "2026-11-16",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Bread Pudding Day",
+    "name": "International Check Your Wipers Day (North America)",
     "region": "US",
-    "date": "2026-11-13",
-    "link": "https://www.checkiday.com/378a0778d15dc2a0b1684599e3e5e51f/national-bread-pudding-day",
+    "date": "2026-11-16",
+    "link": "https://www.checkiday.com/715be7072c3ae9b20d1016d8f296545f/international-check-your-wipers-day-north-america",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "World Kindness Day",
+    "name": "International Check Your Wipers Day (North America)",
     "region": "WORLD",
-    "date": "2026-11-13",
-    "link": "https://www.checkiday.com/9f24e8c4e7e19ff5df673b95d577a99c/world-kindness-day",
+    "date": "2026-11-16",
+    "link": "https://www.checkiday.com/715be7072c3ae9b20d1016d8f296545f/international-check-your-wipers-day-north-america",
     "source": "Checkiday"
   }
 }
