@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-11-16T18:09:14.592926-05:00",
+  "as_of": "2026-11-17T16:58:31.194073-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "352.7800",
-      "change_percent": "-0.9796%",
-      "as_of": "2026-11-16T18:09:14.592926-05:00",
-      "latest_trading_day": "2026-11-16",
+      "price": "351.9100",
+      "change_percent": "-0.2466%",
+      "as_of": "2026-11-17T16:58:31.194073-05:00",
+      "latest_trading_day": "2026-11-17",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "10.1850",
-      "change_percent": "-0.2449%",
-      "as_of": "2026-11-16T18:09:14.592926-05:00",
-      "latest_trading_day": "2026-11-16",
+      "price": "9.8050",
+      "change_percent": "-3.5890%",
+      "as_of": "2026-11-17T16:58:31.194073-05:00",
+      "latest_trading_day": "2026-11-17",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "257.7500",
-      "change_percent": "-3.3413%",
-      "as_of": "2026-11-16T18:09:14.592926-05:00",
-      "latest_trading_day": "2026-11-16",
+      "price": "257.8900",
+      "change_percent": "0.0543%",
+      "as_of": "2026-11-17T16:58:31.194073-05:00",
+      "latest_trading_day": "2026-11-17",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "283.7200",
-      "change_percent": "-4.0741%",
-      "as_of": "2026-11-16T18:09:14.592926-05:00",
-      "latest_trading_day": "2026-11-16",
+      "price": "280.2000",
+      "change_percent": "-1.2407%",
+      "as_of": "2026-11-17T16:58:31.194073-05:00",
+      "latest_trading_day": "2026-11-17",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "626.4100",
-      "change_percent": "-2.3812%",
-      "as_of": "2026-11-16T18:09:14.592926-05:00",
-      "latest_trading_day": "2026-11-16",
+      "price": "618.8700",
+      "change_percent": "-1.2037%",
+      "as_of": "2026-11-17T16:58:31.194073-05:00",
+      "latest_trading_day": "2026-11-17",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Check Your Wipers Day (North America)",
+    "name": "International Happy Gose Day",
     "region": "US",
-    "date": "2026-11-16",
-    "link": "https://www.checkiday.com/715be7072c3ae9b20d1016d8f296545f/international-check-your-wipers-day-north-america",
+    "date": "2026-11-17",
+    "link": "https://www.checkiday.com/34666c1bb9ad035dc388f53f6a39cdd4/international-happy-gose-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Check Your Wipers Day (North America)",
+    "name": "International Happy Gose Day",
     "region": "WORLD",
-    "date": "2026-11-16",
-    "link": "https://www.checkiday.com/715be7072c3ae9b20d1016d8f296545f/international-check-your-wipers-day-north-america",
+    "date": "2026-11-17",
+    "link": "https://www.checkiday.com/34666c1bb9ad035dc388f53f6a39cdd4/international-happy-gose-day",
     "source": "Checkiday"
   }
 }
