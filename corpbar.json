@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-11-17T22:24:58.142539-05:00",
+  "as_of": "2026-11-18T16:40:32.484123-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "351.9100",
-      "change_percent": "-0.2466%",
-      "as_of": "2026-11-17T22:24:58.142539-05:00",
-      "latest_trading_day": "2026-11-17",
+      "price": "352.4500",
+      "change_percent": "0.1534%",
+      "as_of": "2026-11-18T16:40:32.484123-05:00",
+      "latest_trading_day": "2026-11-18",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.8100",
-      "change_percent": "-3.5398%",
-      "as_of": "2026-11-17T22:24:58.142539-05:00",
-      "latest_trading_day": "2026-11-17",
+      "price": "10.1400",
+      "change_percent": "3.3639%",
+      "as_of": "2026-11-18T16:40:32.484123-05:00",
+      "latest_trading_day": "2026-11-18",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "257.8900",
-      "change_percent": "0.0543%",
-      "as_of": "2026-11-17T22:24:58.142539-05:00",
-      "latest_trading_day": "2026-11-17",
+      "price": "267.7400",
+      "change_percent": "3.8195%",
+      "as_of": "2026-11-18T16:40:32.484123-05:00",
+      "latest_trading_day": "2026-11-18",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "280.2000",
-      "change_percent": "-1.2407%",
-      "as_of": "2026-11-17T22:24:58.142539-05:00",
-      "latest_trading_day": "2026-11-17",
+      "price": "282.4400",
+      "change_percent": "0.7994%",
+      "as_of": "2026-11-18T16:40:32.484123-05:00",
+      "latest_trading_day": "2026-11-18",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "618.8700",
-      "change_percent": "-1.2037%",
-      "as_of": "2026-11-17T22:24:58.142539-05:00",
-      "latest_trading_day": "2026-11-17",
+      "price": "616.3800",
+      "change_percent": "-0.4023%",
+      "as_of": "2026-11-18T16:40:32.484123-05:00",
+      "latest_trading_day": "2026-11-18",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Happy Gose Day",
+    "name": "National Educational Support Professionals Day",
     "region": "US",
-    "date": "2026-11-17",
-    "link": "https://www.checkiday.com/34666c1bb9ad035dc388f53f6a39cdd4/international-happy-gose-day",
+    "date": "2026-11-18",
+    "link": "https://www.checkiday.com/9f834c7da5075ac3cdf4d522318ae280/national-educational-support-professionals-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International Happy Gose Day",
-    "region": "WORLD",
-    "date": "2026-11-17",
-    "link": "https://www.checkiday.com/34666c1bb9ad035dc388f53f6a39cdd4/international-happy-gose-day",
-    "source": "Checkiday"
+    "name": "Buß- und Bettag",
+    "region": "Germany",
+    "date": "2026-11-18",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
