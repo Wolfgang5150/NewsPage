@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-11-18T16:40:32.484123-05:00",
+  "as_of": "2026-11-18T21:54:07.150078-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "352.4500",
       "change_percent": "0.1534%",
-      "as_of": "2026-11-18T16:40:32.484123-05:00",
+      "as_of": "2026-11-18T21:54:07.150078-05:00",
       "latest_trading_day": "2026-11-18",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "10.1400",
-      "change_percent": "3.3639%",
-      "as_of": "2026-11-18T16:40:32.484123-05:00",
+      "price": "10.1300",
+      "change_percent": "3.2620%",
+      "as_of": "2026-11-18T21:54:07.150078-05:00",
       "latest_trading_day": "2026-11-18",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "267.7400",
       "change_percent": "3.8195%",
-      "as_of": "2026-11-18T16:40:32.484123-05:00",
+      "as_of": "2026-11-18T21:54:07.150078-05:00",
       "latest_trading_day": "2026-11-18",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "282.4400",
       "change_percent": "0.7994%",
-      "as_of": "2026-11-18T16:40:32.484123-05:00",
+      "as_of": "2026-11-18T21:54:07.150078-05:00",
       "latest_trading_day": "2026-11-18",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,18 +41,18 @@
       "symbol": "META",
       "price": "616.3800",
       "change_percent": "-0.4023%",
-      "as_of": "2026-11-18T16:40:32.484123-05:00",
+      "as_of": "2026-11-18T21:54:07.150078-05:00",
       "latest_trading_day": "2026-11-18",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Educational Support Professionals Day",
+    "name": "Daily Observance",
     "region": "US",
     "date": "2026-11-18",
-    "link": "https://www.checkiday.com/9f834c7da5075ac3cdf4d522318ae280/national-educational-support-professionals-day",
-    "source": "Checkiday"
+    "link": "https://www.checkiday.com",
+    "source": "Static Fallback"
   },
   "world_observance": {
     "name": "Buß- und Bettag",
