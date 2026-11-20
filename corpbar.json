@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-11-19T21:49:52.673404-05:00",
+  "as_of": "2026-11-20T16:38:50.935390-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "349.2100",
-      "change_percent": "-0.9193%",
-      "as_of": "2026-11-19T21:49:52.673404-05:00",
-      "latest_trading_day": "2026-11-19",
+      "price": "342.5600",
+      "change_percent": "-1.9043%",
+      "as_of": "2026-11-20T16:38:50.935390-05:00",
+      "latest_trading_day": "2026-11-20",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.9700",
-      "change_percent": "-1.5795%",
-      "as_of": "2026-11-19T21:49:52.673404-05:00",
-      "latest_trading_day": "2026-11-19",
+      "price": "9.6350",
+      "change_percent": "-3.3601%",
+      "as_of": "2026-11-20T16:38:50.935390-05:00",
+      "latest_trading_day": "2026-11-20",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "257.3700",
-      "change_percent": "-3.8732%",
-      "as_of": "2026-11-19T21:49:52.673404-05:00",
-      "latest_trading_day": "2026-11-19",
+      "price": "246.8200",
+      "change_percent": "-4.0992%",
+      "as_of": "2026-11-20T16:38:50.935390-05:00",
+      "latest_trading_day": "2026-11-20",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "272.6600",
-      "change_percent": "-3.4627%",
-      "as_of": "2026-11-19T21:49:52.673404-05:00",
-      "latest_trading_day": "2026-11-19",
+      "price": "265.2900",
+      "change_percent": "-2.7030%",
+      "as_of": "2026-11-20T16:38:50.935390-05:00",
+      "latest_trading_day": "2026-11-20",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "596.2200",
-      "change_percent": "-3.2707%",
-      "as_of": "2026-11-19T21:49:52.673404-05:00",
-      "latest_trading_day": "2026-11-19",
+      "price": "560.8400",
+      "change_percent": "-5.9341%",
+      "as_of": "2026-11-20T16:38:50.935390-05:00",
+      "latest_trading_day": "2026-11-20",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "Great American Smokeout",
+    "name": "Daily Observance",
     "region": "US",
-    "date": "2026-11-19",
-    "link": "https://www.checkiday.com/68efee8455d07e61368815bb6e0c9818/great-american-smokeout",
-    "source": "Checkiday"
+    "date": "2026-11-20",
+    "link": "https://www.checkiday.com",
+    "source": "Static Fallback"
   },
   "world_observance": {
-    "name": "International Men's Day",
+    "name": "Daily World Observance",
     "region": "WORLD",
-    "date": "2026-11-19",
-    "link": "https://www.checkiday.com/c8d1de15176362c7edd868b93187a634/international-mens-day",
-    "source": "Checkiday"
+    "date": "2026-11-20",
+    "link": "https://www.checkiday.com",
+    "source": "Static Fallback"
   }
 }
