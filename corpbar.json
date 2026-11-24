@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-11-20T21:56:39.203450-05:00",
+  "as_of": "2026-11-23T20:26:21.596847-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "342.5600",
-      "change_percent": "-1.9043%",
-      "as_of": "2026-11-20T21:56:39.203450-05:00",
-      "latest_trading_day": "2026-11-20",
+      "price": "349.0800",
+      "change_percent": "1.9033%",
+      "as_of": "2026-11-23T20:26:21.596847-05:00",
+      "latest_trading_day": "2026-11-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.6400",
-      "change_percent": "-3.3099%",
-      "as_of": "2026-11-20T21:56:39.203450-05:00",
-      "latest_trading_day": "2026-11-20",
+      "price": "9.9700",
+      "change_percent": "3.4232%",
+      "as_of": "2026-11-23T20:26:21.596847-05:00",
+      "latest_trading_day": "2026-11-23",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "246.8200",
-      "change_percent": "-4.0992%",
-      "as_of": "2026-11-20T21:56:39.203450-05:00",
-      "latest_trading_day": "2026-11-20",
+      "price": "255.3900",
+      "change_percent": "3.4722%",
+      "as_of": "2026-11-23T20:26:21.596847-05:00",
+      "latest_trading_day": "2026-11-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "265.2900",
-      "change_percent": "-2.7030%",
-      "as_of": "2026-11-20T21:56:39.203450-05:00",
-      "latest_trading_day": "2026-11-20",
+      "price": "282.1000",
+      "change_percent": "6.3365%",
+      "as_of": "2026-11-23T20:26:21.596847-05:00",
+      "latest_trading_day": "2026-11-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "560.8400",
-      "change_percent": "-5.9341%",
-      "as_of": "2026-11-20T21:56:39.203450-05:00",
-      "latest_trading_day": "2026-11-20",
+      "price": "597.6000",
+      "change_percent": "6.5545%",
+      "as_of": "2026-11-23T20:26:21.596847-05:00",
+      "latest_trading_day": "2026-11-23",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International STAND UP to Bullying Day",
+    "name": "National Cashew Day",
     "region": "US",
-    "date": "2026-11-20",
-    "link": "https://www.checkiday.com/f421a030758412195a4c9e6b76f324aa/international-stand-up-to-bullying-day",
+    "date": "2026-11-23",
+    "link": "https://www.checkiday.com/48a15eb1c952993dc2c1ad6384f90aee/national-cashew-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "International STAND UP to Bullying Day",
-    "region": "WORLD",
-    "date": "2026-11-20",
-    "link": "https://www.checkiday.com/f421a030758412195a4c9e6b76f324aa/international-stand-up-to-bullying-day",
-    "source": "Checkiday"
+    "name": "勤労感謝の日",
+    "region": "Japan",
+    "date": "2026-11-23",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   }
 }
