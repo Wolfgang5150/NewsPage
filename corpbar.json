@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-11-23T20:26:21.596847-05:00",
+  "as_of": "2026-11-24T18:20:42.303132-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "349.0800",
-      "change_percent": "1.9033%",
-      "as_of": "2026-11-23T20:26:21.596847-05:00",
-      "latest_trading_day": "2026-11-23",
+      "price": "354.0700",
+      "change_percent": "1.4295%",
+      "as_of": "2026-11-24T18:20:42.303132-05:00",
+      "latest_trading_day": "2026-11-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.9700",
-      "change_percent": "3.4232%",
-      "as_of": "2026-11-23T20:26:21.596847-05:00",
-      "latest_trading_day": "2026-11-23",
+      "price": "9.8350",
+      "change_percent": "-1.3541%",
+      "as_of": "2026-11-24T18:20:42.303132-05:00",
+      "latest_trading_day": "2026-11-24",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "255.3900",
-      "change_percent": "3.4722%",
-      "as_of": "2026-11-23T20:26:21.596847-05:00",
-      "latest_trading_day": "2026-11-23",
+      "price": "252.2900",
+      "change_percent": "-1.2138%",
+      "as_of": "2026-11-24T18:20:42.303132-05:00",
+      "latest_trading_day": "2026-11-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "282.1000",
-      "change_percent": "6.3365%",
-      "as_of": "2026-11-23T20:26:21.596847-05:00",
-      "latest_trading_day": "2026-11-23",
+      "price": "279.0500",
+      "change_percent": "-1.0812%",
+      "as_of": "2026-11-24T18:20:42.303132-05:00",
+      "latest_trading_day": "2026-11-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "597.6000",
-      "change_percent": "6.5545%",
-      "as_of": "2026-11-23T20:26:21.596847-05:00",
-      "latest_trading_day": "2026-11-23",
+      "price": "589.8200",
+      "change_percent": "-1.3019%",
+      "as_of": "2026-11-24T18:20:42.303132-05:00",
+      "latest_trading_day": "2026-11-24",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Cashew Day",
+    "name": "National Carménère Day",
     "region": "US",
-    "date": "2026-11-23",
-    "link": "https://www.checkiday.com/48a15eb1c952993dc2c1ad6384f90aee/national-cashew-day",
+    "date": "2026-11-24",
+    "link": "https://www.checkiday.com/d3a92a4a720c04ce774b15b50b1f357e/national-carmenere-day",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "勤労感謝の日",
-    "region": "Japan",
-    "date": "2026-11-23",
-    "link": "https://date.nager.at/",
-    "source": "Nager.Date"
+    "name": "Brownielocks Day",
+    "region": "WORLD",
+    "date": "2026-11-24",
+    "link": "https://www.checkiday.com/b5cdf893815e6dd41c4249c5f496605a/brownielocks-day",
+    "source": "Checkiday"
   }
 }
