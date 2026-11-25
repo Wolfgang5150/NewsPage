@@ -1,64 +1,64 @@
 {
-  "as_of": "2026-11-24T18:20:42.303132-05:00",
+  "as_of": "2026-11-25T17:53:12.010793-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
-      "price": "354.0700",
-      "change_percent": "1.4295%",
-      "as_of": "2026-11-24T18:20:42.303132-05:00",
-      "latest_trading_day": "2026-11-24",
+      "price": "355.5800",
+      "change_percent": "0.4265%",
+      "as_of": "2026-11-25T17:53:12.010793-05:00",
+      "latest_trading_day": "2026-11-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "9.8350",
-      "change_percent": "-1.3541%",
-      "as_of": "2026-11-24T18:20:42.303132-05:00",
-      "latest_trading_day": "2026-11-24",
+      "price": "10.5950",
+      "change_percent": "7.5635%",
+      "as_of": "2026-11-25T17:53:12.010793-05:00",
+      "latest_trading_day": "2026-11-25",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
     },
     {
       "symbol": "AMZN",
-      "price": "252.2900",
-      "change_percent": "-1.2138%",
-      "as_of": "2026-11-24T18:20:42.303132-05:00",
-      "latest_trading_day": "2026-11-24",
+      "price": "244.4300",
+      "change_percent": "-3.1155%",
+      "as_of": "2026-11-25T17:53:12.010793-05:00",
+      "latest_trading_day": "2026-11-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
     },
     {
       "symbol": "GOOGL",
-      "price": "279.0500",
-      "change_percent": "-1.0812%",
-      "as_of": "2026-11-24T18:20:42.303132-05:00",
-      "latest_trading_day": "2026-11-24",
+      "price": "273.1000",
+      "change_percent": "-2.1322%",
+      "as_of": "2026-11-25T17:53:12.010793-05:00",
+      "latest_trading_day": "2026-11-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
     },
     {
       "symbol": "META",
-      "price": "589.8200",
-      "change_percent": "-1.3019%",
-      "as_of": "2026-11-24T18:20:42.303132-05:00",
-      "latest_trading_day": "2026-11-24",
+      "price": "609.8900",
+      "change_percent": "3.4027%",
+      "as_of": "2026-11-25T17:53:12.010793-05:00",
+      "latest_trading_day": "2026-11-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "National Carménère Day",
+    "name": "International Day for the Elimination of Violence against Women",
     "region": "US",
-    "date": "2026-11-24",
-    "link": "https://www.checkiday.com/d3a92a4a720c04ce774b15b50b1f357e/national-carmenere-day",
+    "date": "2026-11-25",
+    "link": "https://www.checkiday.com/6c786d98a01df0cdcdaba6c1b7fa1c66/international-day-for-the-elimination-of-violence-against-women",
     "source": "Checkiday"
   },
   "world_observance": {
-    "name": "Brownielocks Day",
+    "name": "International Day for the Elimination of Violence against Women",
     "region": "WORLD",
-    "date": "2026-11-24",
-    "link": "https://www.checkiday.com/b5cdf893815e6dd41c4249c5f496605a/brownielocks-day",
+    "date": "2026-11-25",
+    "link": "https://www.checkiday.com/6c786d98a01df0cdcdaba6c1b7fa1c66/international-day-for-the-elimination-of-violence-against-women",
     "source": "Checkiday"
   }
 }
