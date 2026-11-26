@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-11-25T17:53:12.010793-05:00",
+  "as_of": "2026-11-26T17:44:44.577506-05:00",
   "tickers": [
     {
       "symbol": "AAPL",
       "price": "355.5800",
       "change_percent": "0.4265%",
-      "as_of": "2026-11-25T17:53:12.010793-05:00",
+      "as_of": "2026-11-26T17:44:44.577506-05:00",
       "latest_trading_day": "2026-11-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/aapl",
       "source": "Nasdaq"
     },
     {
       "symbol": "COMP",
-      "price": "10.5950",
-      "change_percent": "7.5635%",
-      "as_of": "2026-11-25T17:53:12.010793-05:00",
+      "price": "10.6100",
+      "change_percent": "7.7157%",
+      "as_of": "2026-11-26T17:44:44.577506-05:00",
       "latest_trading_day": "2026-11-25",
       "link": "https://www.nasdaq.com/market-activity/index/comp",
       "source": "Nasdaq"
@@ -23,7 +23,7 @@
       "symbol": "AMZN",
       "price": "244.4300",
       "change_percent": "-3.1155%",
-      "as_of": "2026-11-25T17:53:12.010793-05:00",
+      "as_of": "2026-11-26T17:44:44.577506-05:00",
       "latest_trading_day": "2026-11-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/amzn",
       "source": "Nasdaq"
@@ -32,7 +32,7 @@
       "symbol": "GOOGL",
       "price": "273.1000",
       "change_percent": "-2.1322%",
-      "as_of": "2026-11-25T17:53:12.010793-05:00",
+      "as_of": "2026-11-26T17:44:44.577506-05:00",
       "latest_trading_day": "2026-11-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/googl",
       "source": "Nasdaq"
@@ -41,24 +41,24 @@
       "symbol": "META",
       "price": "609.8900",
       "change_percent": "3.4027%",
-      "as_of": "2026-11-25T17:53:12.010793-05:00",
+      "as_of": "2026-11-26T17:44:44.577506-05:00",
       "latest_trading_day": "2026-11-25",
       "link": "https://www.nasdaq.com/market-activity/stocks/meta",
       "source": "Nasdaq"
     }
   ],
   "us_holiday": {
-    "name": "International Day for the Elimination of Violence against Women",
+    "name": "Thanksgiving Day",
     "region": "US",
-    "date": "2026-11-25",
-    "link": "https://www.checkiday.com/6c786d98a01df0cdcdaba6c1b7fa1c66/international-day-for-the-elimination-of-violence-against-women",
-    "source": "Checkiday"
+    "date": "2026-11-26",
+    "link": "https://date.nager.at/",
+    "source": "Nager.Date"
   },
   "world_observance": {
-    "name": "International Day for the Elimination of Violence against Women",
+    "name": "Day of the Covenant",
     "region": "WORLD",
-    "date": "2026-11-25",
-    "link": "https://www.checkiday.com/6c786d98a01df0cdcdaba6c1b7fa1c66/international-day-for-the-elimination-of-violence-against-women",
+    "date": "2026-11-26",
+    "link": "https://www.checkiday.com/2d000c6cb00f8095c45a3bbffa1c10cb/day-of-the-covenant",
     "source": "Checkiday"
   }
 }
